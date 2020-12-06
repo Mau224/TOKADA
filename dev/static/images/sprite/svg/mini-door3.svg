@@ -1,0 +1,10 @@
+<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M17 3.5H3V17.5H17V3.5Z" stroke="black" stroke-width="1.5" stroke-miterlimit="10"/>
+<path d="M10 3V17" stroke="black" stroke-width="1.5"/>
+<ellipse cx="7.5" cy="10.5" rx="0.5" ry="1" fill="black"/>
+<ellipse cx="7.5" cy="10.5" rx="0.5" ry="1" fill="black"/>
+<ellipse cx="7.5" cy="10.5" rx="0.5" ry="1" fill="black"/>
+<ellipse cx="12.5" cy="10.5" rx="0.5" ry="1" fill="black"/>
+<ellipse cx="12.5" cy="10.5" rx="0.5" ry="1" fill="black"/>
+<ellipse cx="12.5" cy="10.5" rx="0.5" ry="1" fill="black"/>
+</svg>

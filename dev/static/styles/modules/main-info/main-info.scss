@@ -1,0 +1,522 @@
+.main-info__container {
+  padding-left: $psize;
+  padding-top: 7.8vw;
+  padding-bottom: 7.8vw;
+  border-radius: 8px;
+  position: relative;
+
+  h1 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 3.2vw;
+    line-height: 110%;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #ffffff;
+    max-width: 48vw;
+  }
+
+  p {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1vw;
+    line-height: 130%;
+    color: white;
+    max-width: 30vw;
+    padding-top: $f30;
+    padding-bottom: 4.5vw;
+  }
+}
+
+.main-info__link-more {
+  padding: 1.05vw 4.38vw;
+  font-style: normal;
+  font-weight: bold;
+  font-size: $f20;
+  line-height: 100%;
+  color: #33C5F3;
+  height: $f70;
+  background-color: white;
+  border-radius: 8px;
+}
+
+.main-info {
+  background: url("../images/content/bg__main.jpg") no-repeat;
+  background-size: cover;
+  border-radius: 8px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 54.4vw;
+    height: 54.4vw;
+    right: -15vw;
+    top: 17vw;
+    z-index: -1;
+    background: url("../images/content/bg__circle.svg") no-repeat;
+    background-position: center;
+    background-size: contain;
+    animation: spin 5s linear 0s infinite;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    background: url("../images/content/circle-opacity.svg") no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 40vw;
+    height: 40vw;
+    left: -13vw;
+    top: 28vw;
+    z-index: -1;
+  }
+
+  @media 	only screen and (-webkit-min-device-pixel-ratio: 1.5),
+  only screen and (min--moz-device-pixel-ratio: 1.5),
+  only screen and (-o-min-device-pixel-ratio: 3/2),
+  only screen and (min-resolution: $retina-dppx),
+  only screen and (min-resolution: $retina-dpi)  {
+    background-image: url("../images/content/bg__main@2x.jpg");
+  }
+}
+
+@keyframes spin {
+  from {transform:rotate(0deg);}
+  to {transform:rotate(360deg);}
+}
+
+@-webkit-keyframes spin {
+  from {transform:rotate(0deg);}
+  to {transform:rotate(360deg);}
+}
+
+.main-info__window-page {
+  background: url("../images/content/bg__main-advantages.jpg") no-repeat;
+  background-size: cover;
+  border-radius: 8px;
+  position: relative;
+
+  .main-info__container {
+    h1 {
+      max-width: 40vw;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    background: url("../images/content/circle-opacity2.svg") no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 40vw;
+    height: 40vw;
+    left: -13vw;
+    top: 40vw;
+    z-index: -1;
+  }
+
+  @media 	only screen and (-webkit-min-device-pixel-ratio: 1.5),
+    only screen and (min--moz-device-pixel-ratio: 1.5),
+    only screen and (-o-min-device-pixel-ratio: 3/2),
+    only screen and (min-resolution: $retina-dppx),
+    only screen and (min-resolution: $retina-dpi)  {
+  background-image: url("../images/content/bg__main-advantages@2x.jpg");
+  }
+}
+
+.main-info__window-pvh {
+  background: url("../images/content/bg__main-window-pvh.jpg") no-repeat;
+  background-size: cover;
+  border-radius: 8px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background: url("../images/content/circle-opacity2.svg") no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 40vw;
+    height: 40vw;
+    left: -13vw;
+    top: 40vw;
+    z-index: -1;
+  }
+
+  @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+  only screen and (min--moz-device-pixel-ratio: 1.5),
+  only screen and (-o-min-device-pixel-ratio: 3/2),
+  only screen and (min-resolution: $retina-dppx),
+  only screen and (min-resolution: $retina-dpi) {
+    background-image: url("../images/content/bg__main-window-pvh@2x.jpg");
+  }
+}
+
+.main-info__doors-page {
+  background: url("../images/content/bg__main-doors.jpg") no-repeat;
+  background-size: cover;
+  border-radius: 8px;
+  position: relative;
+
+  .main-info__container {
+    h1 {
+      max-width: 40vw;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    background: url("../images/content/circle-opacity2.svg") no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 40vw;
+    height: 40vw;
+    left: -13vw;
+    top: 40vw;
+    z-index: -1;
+  }
+
+  @media 	only screen and (-webkit-min-device-pixel-ratio: 1.5),
+    only screen and (min--moz-device-pixel-ratio: 1.5),
+    only screen and (-o-min-device-pixel-ratio: 3/2),
+    only screen and (min-resolution: $retina-dppx),
+    only screen and (min-resolution: $retina-dpi)  {
+  background-image: url("../images/content/bg__main-doors@2x.jpg");
+  }
+}
+
+.main-info__facade-page {
+  background: url("../images/content/bg__main-facade.jpg") no-repeat;
+  background-size: cover;
+  border-radius: 8px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background: url("../images/content/circle-opacity2.svg") no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 40vw;
+    height: 40vw;
+    left: -13vw;
+    top: 40vw;
+    z-index: -1;
+  }
+
+  @media 	only screen and (-webkit-min-device-pixel-ratio: 1.5),
+    only screen and (min--moz-device-pixel-ratio: 1.5),
+    only screen and (-o-min-device-pixel-ratio: 3/2),
+    only screen and (min-resolution: $retina-dppx),
+    only screen and (min-resolution: $retina-dpi)  {
+  background-image: url("../images/content/bg__main-facade@2x.jpg");
+  }
+}
+
+.main-info__clients-page {
+  background: url("../images/content/bg__main-clients.jpg") no-repeat;
+  background-size: cover;
+  border-radius: 8px;
+  position: relative;
+
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   background: url("../images/content/circle-opacity2.svg") no-repeat;
+  //   background-position: center;
+  //   background-size: contain;
+  //   width: 40vw;
+  //   height: 40vw;
+  //   left: -13vw;
+  //   top: 40vw;
+  //   z-index: -1;
+  // }
+
+  @media 	only screen and (-webkit-min-device-pixel-ratio: 1.5),
+    only screen and (min--moz-device-pixel-ratio: 1.5),
+    only screen and (-o-min-device-pixel-ratio: 3/2),
+    only screen and (min-resolution: $retina-dppx),
+    only screen and (min-resolution: $retina-dpi)  {
+    background-image: url("../images/content/bg__main-clients@2x.jpg");
+  }
+}
+
+.main-info__balcony-page {
+  background: url("../images/content/bg__main-balcony.jpg") no-repeat;
+  background-size: cover;
+  border-radius: 8px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background: url("../images/content/circle-opacity2.svg") no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 40vw;
+    height: 40vw;
+    left: -13vw;
+    top: 40vw;
+    z-index: -1;
+  }
+
+  @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+  only screen and (min--moz-device-pixel-ratio: 1.5),
+  only screen and (-o-min-device-pixel-ratio: 3/2),
+  only screen and (min-resolution: $retina-dppx),
+  only screen and (min-resolution: $retina-dpi) {
+    background-image: url("../images/content/bg__main-balcony@2x.jpg");
+  }
+}
+
+.main-info__swingdoors-page {
+  background: url("../images/content/bg__main-swingdoors.jpg") no-repeat;
+  background-size: cover;
+  border-radius: 8px;
+  position: relative;
+
+
+  .main-info__container {
+    h1 {
+      max-width: 36vw;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    background: url("../images/content/circle-opacity2.svg") no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 40vw;
+    height: 40vw;
+    left: -13vw;
+    top: 40vw;
+    z-index: -1;
+  }
+
+  @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+  only screen and (min--moz-device-pixel-ratio: 1.5),
+  only screen and (-o-min-device-pixel-ratio: 3/2),
+  only screen and (min-resolution: $retina-dppx),
+  only screen and (min-resolution: $retina-dpi) {
+    background-image: url("../images/content/bg__main-swingdoors@2x.jpg");
+  }
+}
+
+.main-info__aluminumdoors-page {
+  background: url("../images/content/bg__main-aluminumdoors.jpg") no-repeat;
+  background-size: cover;
+  border-radius: 8px;
+  position: relative;
+
+  .main-info__container {
+    h1 {
+      max-width: 40vw;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    background: url("../images/content/circle-opacity2.svg") no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 40vw;
+    height: 40vw;
+    left: -13vw;
+    top: 40vw;
+    z-index: -1;
+  }
+
+  @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+  only screen and (min--moz-device-pixel-ratio: 1.5),
+  only screen and (-o-min-device-pixel-ratio: 3/2),
+  only screen and (min-resolution: $retina-dppx),
+  only screen and (min-resolution: $retina-dpi) {
+    background-image: url("../images/content/bg__main-aluminumdoors@2x.jpg");
+  }
+}
+
+.main-info__complete-page {
+  background: url("../images/content/bg__main-complete.jpg") no-repeat;
+  background-size: cover;
+  border-radius: 8px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background: url("../images/content/circle-opacity2.svg") no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 40vw;
+    height: 40vw;
+    left: -13vw;
+    top: 40vw;
+    z-index: -1;
+  }
+
+  @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+  only screen and (min--moz-device-pixel-ratio: 1.5),
+  only screen and (-o-min-device-pixel-ratio: 3/2),
+  only screen and (min-resolution: $retina-dppx),
+  only screen and (min-resolution: $retina-dpi) {
+    background-image: url("../images/content/bg__main-complete@2x.jpg");
+  }
+}
+
+.main-info__location {
+  position: relative;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 0.875vw;
+  line-height: 100%;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: white;
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(4px);
+  border-radius: 8px;
+  width: 100%;
+  max-width: 17.63vw;
+  padding: 0.95vw;
+  padding-left: 2vw;
+  text-align: right;
+  white-space: nowrap;
+  margin-bottom: $f20;
+
+  svg {
+    position: absolute;
+    left: 0.7vw;
+    top: 0.8vw;
+    width: 0.85vw;
+    height: 1vw;
+    fill: white;
+  }
+}
+
+//advantages-page
+.main-info__advantages {
+  background: url(../images/content/bd__main.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  
+    @media 	only screen and (-webkit-min-device-pixel-ratio: 1.5),
+    only screen and (min--moz-device-pixel-ratio: 1.5),
+    only screen and (-o-min-device-pixel-ratio: 3/2),
+    only screen and (min-resolution: $retina-dppx),
+    only screen and (min-resolution: $retina-dpi)  {
+    background-image: url("../images/content/bg__main@2x.jpg");
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .main-info__container {
+    padding: 20px 27px;
+  }
+
+  .main-info {
+    width: 100%;
+    height: 330px;
+    background-position: center;
+
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 316px;
+      height: 316px;
+      right: -210px;
+      top: 111%;
+      z-index: -1;
+      background: url("../images/content/circle-mob.svg") no-repeat;
+    }
+  }
+
+  .main-info__location {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 100%;
+    max-width: none;
+    align-items: center;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    padding-left: 39px;
+    max-width: 282px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-right: 14px;
+    white-space: nowrap;
+
+    svg {
+      width: 12px;
+      height: 14px;
+      top: 13px;
+      left: 18px;
+    }
+  }
+
+  .main-info__mob {
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 28px;
+      line-height: 120%;
+      max-width: none;
+
+      display: flex;
+      align-items: center;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      order: 1;
+      color: #000000;
+      padding-top: 34px;
+      padding-bottom: 34px;
+    }
+
+    p {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 120%;
+      color: #000000;
+      max-width: none;
+      padding-bottom: 45px;
+      order: 2;
+    }
+
+    a {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 100%;
+      color: #ffffff;
+      width: 100%;
+      height: 60px;
+      max-width: 332px;
+      padding: 22px 125px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #33C5F3;
+      order: 3;
+    }
+  }
+
+}
+
+@media (max-width: 375px) {
+  .main-info__location {
+    font-size: 12px;
+  }
+}

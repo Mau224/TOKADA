@@ -1,0 +1,335 @@
+.overlay__mega-menu {
+  display: flex;
+  flex-direction: column;
+  height: 0;
+  width: 100%;
+  position: fixed;
+  /* Stay in place */
+  z-index: 190;
+  /* Sit on top */
+  left: 0;
+  top: 10vw;
+  background-color: #ffffff;
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  transition: 0.5s;
+  /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+
+  .header__mob-main {
+    display: none;
+  }
+}
+
+
+.overlay-menu.active {
+  height: 100%;
+}
+
+.mega-menu {
+  padding-left: $psize;
+  padding-right: $psize;
+  margin-top: $f30;
+  padding-bottom: $f60;
+  overflow-y: auto;
+}
+
+
+.mega-menu__col {
+  display: flex;
+  flex-direction: column;
+
+  a {
+    font-style: normal;
+    font-weight: bold;
+    font-size: $f22;
+    line-height: 100%;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #33C5F3;
+    margin-bottom: $f30;
+  }
+}
+
+.mega-menu__col-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: $f26;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  svg {
+    stroke: black;
+    fill: #fff;
+    width: $f20;
+    height: $f20;
+  }
+
+  a {
+    font-style: normal;
+    font-weight: bold;
+    font-size: $f18;
+    line-height: 100%;
+    color: #37364D;
+    margin-left: 0.4vw;
+    margin-bottom: 0;
+    text-transform: none;
+  }
+}
+
+
+.mega-menu__svg-wrapper {
+  margin-bottom: $f30;
+
+  svg {
+    stroke: black;
+    fill: #fff;
+    width: $f36;
+    height: $f55;
+  }
+}
+
+.mega-menu__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr auto;
+}
+
+.mega-menu__action {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: $f46 $f75;
+  background: linear-gradient(92.28deg, rgba(39, 104, 231, 0.08) -0.06%, rgba(39, 231, 109, 0.12) 99.3%);
+  border-radius: 8px;
+  margin-top: $f46;
+  margin-bottom: 9vw;
+
+  h2 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: $f30;
+    line-height: 110%;
+    /* or 33px */
+    max-width: 29vw;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    padding-bottom: 0;
+  }
+
+  p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1vw;
+    line-height: 130%;
+    color: #000;
+    padding-bottom: 0;
+  }
+
+  a {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1vw;
+    line-height: 100%;
+    color: #ffffff;
+    width: 100%;
+    max-width: 16.53vw;
+    height: $f60;
+    padding: $f22;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #33C5F3;
+    border-radius: 8px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+    .overlay__mega-menu {
+      display: flex;
+      flex-direction: column;
+      height: 0;
+      width: 100%;
+      position: fixed;
+      /* Stay in place */
+      z-index: 1000;
+      /* Sit on top */
+      left: 0;
+      top: 70px;
+      background-color: #ffffff;
+      overflow-x: hidden;
+      /* Disable horizontal scroll */
+      transition: 0.5s;
+      /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+    }
+
+  .mega-menu__action {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 18px;
+    background: linear-gradient(92.28deg, rgba(39, 104, 231, 0.08) -0.06%, rgba(39, 231, 109, 0.12) 99.3%);
+    border-radius: 8px;
+    margin-top: 60px;
+
+    h2 {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 26px;
+      line-height: 110%;
+      text-align: center;
+      padding-bottom: 30px;
+      max-width: none;
+    }
+
+    p {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 130%;
+      text-align: center;
+      color: #000;
+      padding-bottom: 30px;
+    }
+
+    a {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 100%;
+      color: #ffffff;
+      width: 100%;
+      height: 60px;
+      max-width: 295px;
+      padding: 22px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #33C5F3;
+      border-radius: 8px;
+    }
+  }
+
+  .mega-menu {
+    display: none;
+  }
+
+  .overlay__mega-menu {
+    .header__mob-main {
+      display: block;
+      padding-bottom: 120px;
+      padding-top: 60px;
+    }
+  }
+
+  //это стили в категория мобильного меню они туда преходят динамически из .mega-menu__wrapper
+
+  .mega-menu__wrapper {
+    grid-template-columns: auto;
+  }
+
+  .mega-menu__col {
+    a {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 29px;
+      color: #33C5F3;
+      margin-right: 0;
+      padding-left: 0;
+      width: 100%;
+      margin-bottom: 30px;
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .mega-menu__base-link {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: #000;
+      width: 6px;
+      height: 2px;
+      transform: rotate(45deg);
+      right: 4px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-color: #000;
+      width: 6px;
+      height: 2px;
+      transform: rotate(-45deg);
+      right: 0;
+    }
+
+    // .open-spoiler.active {
+    //   &::before {
+    //     transform: rotate(-45deg);
+    //   }
+
+    //   &::after {
+    //     transform: rotate(45deg);
+    //   }
+    // }
+  }
+
+  .open-spoiler.active {
+    &::before {
+      transform: rotate(-45deg);
+    }
+
+    &::after {
+      transform: rotate(45deg);
+    }
+  }
+
+  .mega-menu__col-item {
+    margin-bottom: 24px;
+
+    svg {
+      display: none;
+    }
+
+    a {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 100%;
+      margin-bottom: 0;
+      color: #000000;
+      margin-left: 0;
+
+      // отключют стрелки от  класса .mega-menu__col а
+
+      &::before {
+        display: none;
+      }
+
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  .mega-menu__svg-wrapper {
+    display: none;
+  }
+
+  //это спойлеры
+
+  .mega-menu__item-list {
+    display: none;
+  }
+
+  .open-spoiler.active + .mega-menu__item-list {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+}

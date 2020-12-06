@@ -1,0 +1,130 @@
+.comments {
+  padding-top: $f60;
+  padding-bottom: $f60;
+}
+
+.comments__container {
+  h1  {
+    font-style: normal;
+    font-weight: bold;
+    font-size: $f50;
+    line-height: 110%;
+
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    padding-bottom: $f50;
+  }
+}
+
+.comments__title {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  margin-bottom: $f30;
+
+  a {
+    font-style: normal;
+    font-weight: 500;
+    font-size: $f18;
+    line-height: 100%;
+    background-color: #33C5F3;
+    border-radius: 8px;
+    padding-top: $f22;
+    padding-bottom: $f22;
+    width: 100%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 17.63vw;
+  }
+}
+
+.comments__list {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.comments__item {
+  max-width: 28.31vw;
+  margin-right: $f20;
+  border: 1px solid rgba(51, 197, 243, 0.3);
+  margin-bottom: $f20;
+
+  &:nth-child(3n+3) {
+    margin-right: 0;
+  }
+}
+
+.comments__btn {
+  margin-top: $f40;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+
+  a {
+    font-style: normal;
+    font-weight: normal;
+    font-size: $f18;
+    line-height: 100%;
+    color: #37364D;
+    padding: $f22 $f70;
+    background: #FFFFFF;
+    border: 1px solid rgba(39, 104, 231, 0.2);
+    box-sizing: border-box;
+    border-radius: 8px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .comments__list {
+    flex-direction: column;
+  }
+
+  .comments__title {
+    flex-direction: column;
+
+    a {
+      display: none;
+    }
+  }
+
+  .comments__item {
+    max-width: none;
+    margin-bottom: 14px;
+    margin-right: 0;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .comments__btn {
+    margin-top: 60px;
+
+    a {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 100%;
+      padding: 22px 70px;
+    }
+  }
+
+  .comments {
+    padding-top: 40px;
+    padding-bottom: 100px;
+  }
+
+  .comments__container {
+    h1 {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 28px;
+      line-height: 120%;
+      padding-bottom: 35px;
+    }
+  }
+}

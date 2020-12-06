@@ -1,0 +1,192 @@
+extends layout/doors-layout
+
+block variables
+    -var title = 'Doors'
+
+block content
+  section
+    .main-info.main-info__doors-page
+        .main-info__container
+            a(href="#" class="main-info__location") работаем в Москве и области
+                +icon("marker")
+            h1(data-da="main-info__mob,first,867") Алюминиевые ДВЕРИ от производителя
+            p(data-da="main-info__mob,first,867") У нас вы легко подберете подходящую по конструкции, размеру, типу открывания, оформлению и комплектации модель.
+            a(href="#" class="main-info__link-more" data-da="main-info__mob,first,867") Подробнее
+    .main-info__mob
+  section.types-profile
+    .types-profile__container
+      h1 Виды профилей
+      p Наша компания занимается производством и изготовлением дверей из алюминиевого профиля для частных домов и офисных помещений.
+    .types-profile__list
+      .types-profile__item
+        h2 Алюминиевые двери
+        p Алюминиевые двери обладают непревзойденными эксплуатационными характеристиками, а именно: надежностью и долговечностью.
+        span От 15 000 р.
+        picture
+          source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/doors__item-img1.webp 1x, images/content/doors__item-img1@2x.webp 2x")
+          img(src="images/content/doors__item-img1.jpg" srcset="images/content/doors__item-img1@2x.jpg" alt="картинка окна")
+        .types-profile__advantages-list
+          .types-profile__advantages-item
+            .types-profile__svg
+              +icon("clock")
+            p Долговечность
+          .types-profile__advantages-item
+            .types-profile__svg
+              +icon("voice")
+            p Высокая шумоизоляция
+        .types-profile__btn
+          a(href="#" class="types-profile__link disabled-on-mob") Смотреть подробнее
+          a(href="#" class="types-profile__link disabled-on-desktop") Подробнее
+      .types-profile__item
+        h2 Двери ПВХ
+        p Главные преимуществом пластмассовых дверей остается их практичность. Они не гниют, не ржавеют и легко моются.
+        span От 15 000 р.
+        picture
+          source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/doors__item-img2.webp 1x, images/content/doors__item-img2@2x.webp 2x")
+          img(src="images/content/doors__item-img2.jpg" srcset="images/content/doors__item-img2@2x.jpg" alt="картинка окна")
+        .types-profile__advantages-list
+          .types-profile__advantages-item.types-profile__advantages-item--second
+            .types-profile__svg.types-profile__svg--second
+              +icon("cup")
+            p Сохранение тепла
+          .types-profile__advantages-item.types-profile__advantages-item--second
+            .types-profile__svg.types-profile__svg--second
+              +icon("flower")
+            p Элегантный внешний вид
+        .types-profile__btn
+          a(href="#" class="types-profile__link disabled-on-mob") Смотреть подробнее
+          a(href="#" class="types-profile__link disabled-on-desktop") Подробнее
+  section.types-open
+    .types-open__container
+      h1 Способы открывания
+      p Наша компания предоставляет широкий выбор алюминиевых и пластиковых дверей. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    .types-open__list
+      .types-open__item
+        .types-open__item-img
+          picture
+            source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/types-open__item-img1.webp 1x, images/content/types-open__item-img1@2x.webp 2x")
+            img(src="images/content/types-open__item-img1.png" srcset="images/content/types-open__item-img1@2x.png" alt="картинка окна")
+        h2 Распашные двери
+        p Классический вид дверей. Самый простой вариант, не требующий сложных механизмов при монтаже.
+        a(href="#") Подробнее
+      .types-open__item
+        .types-open__item-img
+          picture
+            source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/types-open__item-img2.webp 1x, images/content/types-open__item-img2@2x.webp 2x")
+            img(src="images/content/types-open__item-img2.png" srcset="images/content/types-open__item-img2@2x.png" alt="картинка окна")
+        h2 Раздвижные двери
+        p Стильное, современное и практичное решение для обустройства как просторных помещений, так и малогабаритных комнат. 
+        a(href="#") Подробнее
+      .types-open__item
+        .types-open__item-img
+          picture
+            source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/types-open__item-img3.webp 1x, images/content/types-open__item-img3@2x.webp 2x")
+            img(src="images/content/types-open__item-img3.png" srcset="images/content/types-open__item-img3@2x.png" alt="картинка окна")
+        h2 Автоматические двери
+        p Идеальное воплощение концепта «умного дома». Незаменимая деталь в общественных зданиях, магазинах, крупных компаниях.
+        a(href="#") Подробнее
+  section.other-vars
+    .other-vars__container
+      h1 Другие вариации
+      p Краткое описание данных категорий. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rutrum mattis est duis at..
+    .other-vars_wrapper
+      .other-vars__item
+        .other-vars__item-wrapper
+          .other-vars__img-block
+            picture
+              source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/other-vars__item-img1.webp 1x, images/content/other-vars__item-img1@2x.webp 2x")
+              img(src="images/content/other-vars__item-img1.jpg" srcset="images/content/other-vars__item-img1@2x.jpg" alt="картинка окна")
+          .other-vars__item-col
+            h2 Офисные двери
+            p Такие двери просты в установке, эффективно справляются с функцией звукоизоляции и климатической поддержки.
+            span От 15 000 р.
+            .other-vars__point-list
+              .other-vars__point-item
+                +icon("pint")
+                p Долговечность
+              .other-vars__point-item
+                +icon("pint")
+                p Максимальная шумоизоляция
+              .other-vars__point-item
+                +icon("pint")
+                p Недорогой вариант
+        .other-vars__btns
+          a(href="#" class="disabled-on-mob") Смотреть подробнее
+          a(href="#" class="disabled-on-desktop") Подробнее
+      .other-vars__item
+        .other-vars__item-wrapper.other-vars__item-wrapper--second
+          .other-vars__img-block
+            picture
+              source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/other-vars__item-img2.webp 1x, images/content/other-vars__item-img2@2x.webp 2x")
+              img(src="images/content/other-vars__item-img2.jpg" srcset="images/content/other-vars__item-img2@2x.jpg" alt="картинка окна")
+          .other-vars__item-col
+            h2 Лофт перегородки
+            p Хотите создать в помещении легкое, воздушное пространство, сделать его стильным? Обратите внимание на современный тренд - лофт перегородки.
+            span От 15 000 р.
+            .other-vars__point-list
+              .other-vars__point-item
+                +icon("pint")
+                p Долговечность
+              .other-vars__point-item
+                +icon("pint")
+                p Максимальная шумоизоляция
+              .other-vars__point-item
+                +icon("pint")
+                p Недорогой вариант
+        .other-vars__btns
+          a(href="#" class="disabled-on-mob") Смотреть подробнее
+          a(href="#" class="disabled-on-desktop") Подробнее
+  section.works.works__page-door
+    .works__container
+        h1 Примеры установки дверей
+        .works__title
+            p Что радует компанию больше, чем довольный клиент? Правильно! Успешный результат проделанной работы. Ознакомиться с нашими проектами можно здесь:
+            a(href="#") Все работы
+        .works__list
+            .works__item
+                picture
+                    source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/works-img1.webp 1x, images/content/works-img1@2x.webp 2x")
+                    img(src="images/content/works-img1.jpg" srcset="images/content/works-img1@2x.jpg" alt="картинка работы")
+                p Остекление фасада магазина
+            .works__item
+                picture
+                    source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/works-img2.webp 1x, images/content/works-img2@2x.webp 2x")
+                    img(src="images/content/works-img2.jpg" srcset="images/content/works-img2@2x.jpg" alt="картинка работы")
+                p Остекление фасада магазина
+            .works__item
+                picture
+                    source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/works-img3.webp 1x, images/content/works-img3@2x.webp 2x")
+                    img(src="images/content/works-img3.jpg" srcset="images/content/works-img3@2x.jpg" alt="картинка работы")
+                p Остекление фасада магазина
+            .works__item
+                picture
+                    source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/works-img4.webp 1x, images/content/works-img4@2x.webp 2x")
+                    img(src="images/content/works-img4.jpg" srcset="images/content/works-img4@2x.jpg" alt="картинка работы")
+                p Остекление фасада магазина
+            .works__item
+                picture
+                    source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/works-img5.webp 1x, images/content/works-img5@2x.webp 2x")
+                    img(src="images/content/works-img5.jpg" srcset="images/content/works-img5@2x.jpg" alt="картинка работы")
+                p Остекление фасада магазина
+            .works__item
+                picture
+                    source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/works-img6.webp 1x, images/content/works-img6@2x.webp 2x")
+                    img(src="images/content/works-img6.jpg" srcset="images/content/works-img6@2x.jpg" alt="картинка работы")
+                p Остекление фасада магазина
+            .works__item
+                picture
+                    source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/works-img7.webp 1x, images/content/works-img7@2x.webp 2x")
+                    img(src="images/content/works-img7.jpg" srcset="images/content/works-img7@2x.jpg" alt="картинка работы")
+                p Остекление фасада магазина
+            .works__item
+                picture
+                    source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/works-img8.webp 1x, images/content/works-img8@2x.webp 2x")
+                    img(src="images/content/works-img8.jpg" srcset="images/content/works-img8@2x.jpg" alt="картинка работы")
+                p Остекление фасада магазина
+            .works__item
+                picture
+                    source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/works-img9.webp 1x, images/content/works-img9@2x.webp 2x")
+                    img(src="images/content/works-img9.jpg" srcset="images/content/works-img9@2x.jpg" alt="картинка работы")
+                p Остекление фасада магазина
+        .works__btn
+            a(href="#" class="works__all-link") Все работы

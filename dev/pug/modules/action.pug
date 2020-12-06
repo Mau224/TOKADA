@@ -1,0 +1,18 @@
+section.action
+  .action__container
+    //picture
+    //    source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/action__bg.webp 1x, images/content/action__bg@2x.webp 2x")
+    //    img(src="images/content/action__bg.png" srcset="images/content/action__bg@2x.png" alt="фоноваякартинка сообщений")
+    .action__img
+      picture
+        source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/action__mobail.webp 1x, images/content/action__mobail@2x.webp 2x")
+        img(src="images/content/action__mobail.png" srcset="images/content/action__mobail@2x.png" alt="картинка телефона в акции")
+    form(class="action__form" method="post")
+      h1 СМС - СКИДКА
+      p Получите в ответном SMS уникальный код: Вас ждет скидка до 5000 рублей на покупки*
+      label(for="tel")
+      input(type="tel" name="phone" id="tel" placeholder="Номер телефона" title="Введите телефон" minlength="3" maxlength="30" required)
+      .action__form-footer
+        p Нажимая на кнопку вы соглашаетесь на обработку
+          a(href="#") персональных данных
+        button(type="submit" class="action__sub-btn") Отправить

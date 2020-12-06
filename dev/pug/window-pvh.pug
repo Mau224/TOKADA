@@ -1,0 +1,174 @@
+extends layout/window-pvh-layout
+
+block variables
+  -var title = 'Window-pvh'
+
+block content
+  section
+    .main-info.main-info__window-pvh
+      .main-info__container
+        a(href="#" class="main-info__location") работаем в Москве и области
+          +icon("marker")
+        h1(data-da="main-info__mob,first,867") ОКНА ПВХ от производителя
+        p(data-da="main-info__mob,first,867") У нас вы легко подберете подходящую по конструкции, размеру, типу открывания, оформлению и комплектации модель.
+        a(href="#" class="main-info__link-more" data-da="main-info__mob,first,867") Подробнее
+    .main-info__mob
+  section.recomend.recomend__pvh
+    .recomend__container
+      h1 Для каких ситуаций подходит
+      p Новейшие пластиковые окна эффективно отражают жару и удерживают тепло в доме. Обеспечивают поступление свежего воздуха без пыли, сквозняков и уличного шума.
+    .recomend__list
+      .recomend__item.recomend__item--first
+        picture
+          source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/pvh__img1.webp 1x, images/content/pvh__img1@2x.webp 2x")
+          img(src="images/content/pvh__img1.jpg" srcset="images/content/pvh__img1@2x.jpg" alt="картинка окна")
+        .recomend__item-title
+          h2 Для дома
+          p Пластиковые окна для вашего дома - это один из самых экономичных и практичных вариантов.
+      .recomend__item
+        picture
+          source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/pvh__img2.webp 1x, images/content/pvh__img2@2x.webp 2x")
+          img(src="images/content/pvh__img2.jpg" srcset="images/content/pvh__img2@2x.jpg" alt="картинка окна")
+        .recomend__item-title
+          h2 Остекление коммерческих объектов
+      .recomend__item
+        picture
+          source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/pvh__img3.webp 1x, images/content/pvh__img3@2x.webp 2x")
+          img(src="images/content/pvh__img3.jpg" srcset="images/content/pvh__img3@2x.jpg" alt="картинка окна")
+        .recomend__item-title
+          h2 В нежилые помещения
+    .recomend__btns
+      a(href="#" class="recomend__arrow recomend__left")
+      a(href="#" class="recomend__arrow recomend__right active")
+  section.plus
+    .plus__container
+      h1 Преимущества остекления алюминием
+      p Пластиковые конструкции прослужат вам не один десяток лет, радуя эстетичным внешним видом, теплом и своей надежностью. 
+    .plus__wrapper
+      .plus__list
+        .plus__item
+          +icon("pint")
+          p Долговечность
+        .plus__item
+          +icon("pint")
+          p Теплоизоляция
+        .plus__item
+          +icon("pint")
+          p Шумоизоляция
+        .plus__item
+          +icon("pint")
+          p Звукоизоляция
+        .plus__item
+          +icon("pint")
+          p Пожаробезопасность
+        .plus__item
+          +icon("pint")
+          p Высокая герметичность при правильном монтаже
+        .plus__item
+          +icon("pint")
+          p Устойчивость к гниению, разрушению
+        .plus__item
+          +icon("pint")
+          p Элегантный внешний вид
+      .plus__img-block
+        picture
+          source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/plus__img.webp 1x, images/content/plus__img@2x.webp 2x")
+          img(src="images/content/plus__img.jpg" srcset="images/content/plus__img@2x.jpg" class="types__img-window" alt="картинка окна")
+    .plus__advantage-list
+      .plus__advantage-item
+        .plus__advantage-item-img-block
+          +icon("pen-line")
+        h2 Бесплатный замер
+        p Оконные профили «РЕХАУ» надежно изолируют звук и тепло. ПВХ можно заполнять толстыми стеклопакетами.
+      .plus__advantage-item
+        .plus__advantage-item-img-block
+          +icon("bas")
+        h2 Быстрая доставка
+        p Ответственность за сохранность оконных конструкций во время доставки полностью лежит на специалистах нашей компании.
+      .plus__advantage-item
+        .plus__advantage-item-img-block
+          +icon("tool")
+        h2 Качественный монтаж
+        p Качественный монтаж – залог того, что конструкции прослужат долго и достойно выполнят возложенную на них миссию.
+      .plus__advantage-item
+        .plus__advantage-item-img-block
+          +icon("shield")
+        h2 Гарантия до 10 лет
+        p Мы даем пожизненную гарантию на наши стеклопакеты. Кроме этого, на все наши окна действует гарантия 5 лет.
+  section.action.action__no-bg
+    .action__container.action__container-window
+      h1 Не знаете какой профиль выбрать?
+      .action__wrapper
+        .action__img.action__img-window
+          .action__title.action__title--first(data-da="action__form-window,first,867")
+            h3 Вам может помочь:
+            p Калькулятор расчета
+          picture
+            source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/action__mobail-window.webp 1x, images/content/action__mobail-window@2x.webp 2x")
+            img(src="images/content/action__mobail-window.png" srcset="images/content/action__mobail-window@2x.png" alt="картинка телефона в акции")
+        form(class="action__form action__form-window" method="post")
+          .action__title
+            h3 Или:
+            p Заполните форму связи и наш специалист свяжется с вами в течении 10 минут!
+          label(for="name")
+          input(type="tel" name="phone" id="name" placeholder="Имя" title="Введите имя" minlength="3" maxlength="30" required)
+          label(for="tel")
+          input(type="tel" name="phone" id="tel" placeholder="Номер телефона" title="Введите телефон" minlength="3" maxlength="30" required)
+          .action__form-footer.action__form-footer-window
+            p Нажимая на кнопку вы соглашаетесь на обработку
+              a(href="#") персональных данных
+            button(type="submit" class="action__sub-btn") Отправить
+  section.works
+    .works__container
+      h1 Примеры выполненных работ
+      .works__title
+        p Что радует компанию больше, чем довольный клиент? Правильно! Успешный результат проделанной работы. Ознакомиться с нашими проектами можно здесь:
+        a(href="#") Все работы
+      .works__list
+        .works__item
+          picture
+            source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/works-img1.webp 1x, images/content/works-img1@2x.webp 2x")
+            img(src="images/content/works-img1.jpg" srcset="images/content/works-img1@2x.jpg" alt="картинка работы")
+          p Остекление фасада магазина
+        .works__item
+          picture
+            source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/works-img2.webp 1x, images/content/works-img2@2x.webp 2x")
+            img(src="images/content/works-img2.jpg" srcset="images/content/works-img2@2x.jpg" alt="картинка работы")
+          p Остекление фасада магазина
+        .works__item
+          picture
+            source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/works-img3.webp 1x, images/content/works-img3@2x.webp 2x")
+            img(src="images/content/works-img3.jpg" srcset="images/content/works-img3@2x.jpg" alt="картинка работы")
+          p Остекление фасада магазина
+        .works__item
+          picture
+            source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/works-img4.webp 1x, images/content/works-img4@2x.webp 2x")
+            img(src="images/content/works-img4.jpg" srcset="images/content/works-img4@2x.jpg" alt="картинка работы")
+          p Остекление фасада магазина
+        .works__item
+          picture
+            source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/works-img5.webp 1x, images/content/works-img5@2x.webp 2x")
+            img(src="images/content/works-img5.jpg" srcset="images/content/works-img5@2x.jpg" alt="картинка работы")
+          p Остекление фасада магазина
+        .works__item
+          picture
+            source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/works-img6.webp 1x, images/content/works-img6@2x.webp 2x")
+            img(src="images/content/works-img6.jpg" srcset="images/content/works-img6@2x.jpg" alt="картинка работы")
+          p Остекление фасада магазина
+        .works__item
+          picture
+            source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/works-img7.webp 1x, images/content/works-img7@2x.webp 2x")
+            img(src="images/content/works-img7.jpg" srcset="images/content/works-img7@2x.jpg" alt="картинка работы")
+          p Остекление фасада магазина
+        .works__item
+          picture
+            source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/works-img8.webp 1x, images/content/works-img8@2x.webp 2x")
+            img(src="images/content/works-img8.jpg" srcset="images/content/works-img8@2x.jpg" alt="картинка работы")
+          p Остекление фасада магазина
+        .works__item
+          picture
+            source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/works-img9.webp 1x, images/content/works-img9@2x.webp 2x")
+            img(src="images/content/works-img9.jpg" srcset="images/content/works-img9@2x.jpg" alt="картинка работы")
+          p Остекление фасада магазина
+      .works__btn
+        a(href="#" class="works__all-link") Все работы

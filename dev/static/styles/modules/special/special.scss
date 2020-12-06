@@ -1,0 +1,147 @@
+.special {
+  padding-top: $f60;
+  padding-bottom: $f60;
+}
+
+.special__container {
+  h1 {
+    padding-bottom: $f35;
+  }
+
+  p {
+    padding-bottom: $f60;
+  }
+}
+
+.special__list {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.special__item {
+  max-width: 20.94vw;
+  margin-right: $f20;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  h2 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: $f24;
+    line-height: 120%;
+    padding-bottom: $f20;
+  }
+
+  p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1vw;
+    line-height: 130%;
+    padding-bottom: $f30;
+  }
+}
+
+.special__link {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1vw;
+  line-height: 130%;
+  text-decoration-line: underline;
+  color: #33C5F3;
+
+  span {
+    display: none;
+  }
+}
+
+.specila__img-block {
+  max-width: 20.94vw;
+  height: 21.88vw;
+  margin-bottom: $f30;
+
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .special {
+    padding-top: 66px;
+    padding-bottom: 46px;
+  }
+
+  .special__container {
+    h1 {
+      font-size: 26px;
+      padding-bottom: 32px;
+      max-width: 560px;
+    }
+
+    p {
+      font-size: 16px;
+      padding-bottom: 40px;
+    }
+  }
+
+  .special__list {
+    flex-direction: column;
+  }
+
+  .special__item {
+    margin-right: 0;
+    margin-bottom: 40px;
+    max-width: none;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    h2 {
+      font-size: 24px;
+      padding-bottom: 20px;
+    }
+
+    p {
+      font-size: 16px;
+      padding-bottom: 30px;
+    }
+  }
+
+  .special__link {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 100%;
+    text-decoration: none;
+    border: 1px solid #33C5F3;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    width: 100%;
+    max-width: 335px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    text-transform: lowercase;
+
+    span {
+      display: inline-block;
+      padding-right: 5px;
+      text-transform: none;
+    }
+  }
+
+  .specila__img-block {
+    max-width: 560px;
+    height: 246px;
+    margin-bottom: 28px;
+
+    img {
+      object-fit: cover;
+    }
+  }
+}

@@ -1,0 +1,219 @@
+.faq__title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  a {
+    padding: 1.375vw 4.38vw;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.13vw;
+    line-height: 100%;
+    color: #37364D;
+    border: 1px solid rgba(39, 104, 231, 0.2);
+    box-sizing: border-box;
+    border-radius: 8px;
+  }
+}
+
+.faq__container {
+  h1 {
+    padding-bottom: 1vw;
+  }
+}
+
+.faq {
+  padding-top: $f60;
+  margin-bottom: $f60;
+}
+
+.faq__block {
+  display: none;
+  padding-left: $f40;
+  padding-right: $f40;
+  padding-bottom: $f30;
+  margin-bottom: $f30;
+  transition: 0.3s;
+
+  p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: $f14;
+    line-height: 130%;
+    color: #232735;
+    padding-bottom: $f30;
+    padding-left: $f14;
+    border-left: 2px solid #33C5F3;
+
+    &:first-child {
+      padding-top: 0;
+      margin-top: $f30;
+    }
+
+    &:last-child {
+      padding-bottom: 0;
+    }
+  }
+}
+
+.faq__item {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  p {
+    max-width: none;
+  }
+}
+
+.faq__item-header {
+  position: relative;
+  width: 100%;
+  padding: $f22 $f40;
+  background: #FFFFFF;
+  border: 1px solid rgba(12, 115, 254, 0.2);
+  box-sizing: border-box;
+  border-radius: 8px;
+  margin-bottom: $f20;
+
+  p {
+    font-style: normal;
+    font-weight: bold;
+    font-size: $f18;
+    line-height: 100%;
+    color: #232735;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    right: 2.5vw;
+    width: $f14;
+    height: $f14;
+    mask: url("../images/content/plus.svg") no-repeat;
+    mask-size: cover;
+    background-color: #000;
+    background-size: contain;
+    background-position: center;
+    transition: 0.3s;
+    speak-as: none;
+  }
+}
+
+.faq__item-header.active + .faq__block {//это стили для переключение спойлера в актиновм положении .faq__item-header
+  display: block;
+  background: linear-gradient(0deg, #F4F5FA, #F4F5FA), #FFFFFF;
+  border: 1px solid rgba(39, 104, 231, 0.2);
+  box-sizing: border-box;
+  border-radius: 0 0 8px 8px;
+  border-top: 0;
+  margin-top: -1px;
+}
+
+.faq__item-header.active {//это стили для переключение спойлера в актиновм положении .faq__item-header
+  background: linear-gradient(0deg, #F4F5FA, #F4F5FA), #FFFFFF;
+  border: 1px solid rgba(39, 104, 231, 0.2);
+  box-sizing: border-box;
+  border-radius: 8px;
+  border-bottom: 0;
+  padding-bottom: $f20;
+  margin-bottom: 0;
+  border-radius: 8px 8px 0 0;
+
+  p {
+    color: #33C5F3;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    background-color: #33C5F3;
+  }
+}
+
+.faq__list {
+  margin-top: $f36;
+}
+
+@media (max-width: $mobile-width) {
+  .faq__container {
+    h1 {
+      padding-bottom: 20px;
+    }
+  }
+
+  .faq {
+    margin-bottom: 72px;
+  }
+
+  .faq__title {
+    a {
+      display: none;
+    }
+
+    p {
+      padding-bottom: 40px;
+    }
+  }
+
+  .faq__item-header {
+    padding-bottom: 22px;
+    padding-top: 20px;
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    p {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 100%;
+      max-width: 270px;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &::before {
+      width: 14px;
+      height: 14px;
+      right: 20px;
+      mask: url("../images/content/plus.svg") no-repeat;
+      mask-size: cover;
+      background-color: #000;
+    }
+  }
+
+  .faq__block {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+    margin-bottom: 14px;
+
+    p {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 130%;
+      padding-left: 14px;
+
+      &:first-child {
+        margin-top: 20px;
+      }
+    }
+  }
+
+  .faq__item {
+    p {
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .faq__item-header.active {//это стили для переключение спойлера в актиновм положении .faq__item-header
+    padding-bottom: 0;
+  }
+}

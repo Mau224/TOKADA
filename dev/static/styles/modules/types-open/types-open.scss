@@ -1,0 +1,143 @@
+.types-open__container {
+  h1 {
+    padding-bottom: $f35;
+  }
+
+  p {
+    padding-bottom: $f60;
+  }
+}
+
+.types-open {
+  padding-bottom: $f60;
+}
+
+.types-open__item {
+  width: 33.33333%;
+  margin-right: $f20;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  h2 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: $f24;
+    line-height: 120%;
+    padding-bottom: $f20;
+  }
+
+  p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1vw;
+    line-height: 130%;
+    padding-bottom: $f20;
+  }
+
+  a {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1vw;
+    line-height: 130%;
+
+    text-decoration: underline;
+    color: #33C5F3;
+  }
+}
+
+.types-open__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.types-open__item-img {
+  width: 100%;
+  height: 26.44vw;
+  background-color: var(--grey-bg);
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin-bottom: $f30;
+
+  img {
+    width: auto;
+    height: 18.8vw;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .types-open__container {
+    h1 {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 26px;
+      line-height: 100%;
+      padding-bottom: 30px;
+    }
+
+    p {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 130%;
+      padding-bottom: 40px;
+    }
+  }
+
+  .types-open {
+    padding-bottom: 40px;
+    padding-top: 40px;
+  }
+
+  .types-open__list {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .types-open__item {
+    width: auto;
+    margin-bottom: 50px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    h2 {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 22px;
+      line-height: 120%;
+      padding-bottom: 20px;
+    }
+
+    p {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 120%;
+      padding-bottom: 20px;
+    }
+
+    a {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 130%;
+    }
+  }
+
+  .types-open__item-img {
+    height: 310px;
+    min-width: 335px;
+    margin-bottom: 30px;
+
+    img {
+      height: 221.85px;
+    }
+  }
+}

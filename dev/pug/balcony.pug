@@ -1,0 +1,162 @@
+extends layout/balcony-layout
+
+block variables
+  -var title = 'Balcony'
+
+block content
+  section
+    .main-info.main-info__balcony-page
+      .main-info__container
+        a(href="#" class="main-info__location") работаем в Москве и области
+          +icon("marker")
+        h1(data-da="main-info__mob,first,867") ОСТЕКЛЕНИЕ БАЛКОНОВ И ЛОДЖИЙ от производителя
+        p(data-da="main-info__mob,first,867") У нас вы легко подберете подходящую по конструкции, размеру, типу открывания, оформлению и комплектации модель.
+        a(href="#" class="main-info__link-more" data-da="main-info__mob,first,867") Подробнее
+    .main-info__mob
+  section.types
+    .types__container
+      h1 Виды алюминиевых окон
+      .types__title 
+        p Если вы хотите иметь качественные, экологичные и максимально долговечные окна, то окна из алюминия - это то, что вам нужно!
+        a(href="#") Бесплатный вызов замерщика
+      .types__main
+        .types__img-block
+          picture
+            source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/window-grad.webp 1x, images/content/window-grad@2x.webp 2x")
+            img(src="images/content/window-grad.png" srcset="images/content/window-grad@2x.png" class="types__img-window" alt="картинка окна")
+          picture
+            source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/window-elem.webp 1x, images/content/window-elem@2x.webp 2x")
+            img(src="images/content/window-elem.png" srcset="images/content/window-elem@2x.png" class="types__img-elem" alt="картинка за окном")
+        .types__text-col
+          p Теплый профиль: Alumark, Alumark, Alumark 
+          h2 Теплые окна
+          p Тёплые окна - решение для помещений, где необходима тепло- и звукоизоляция.
+          span(class="types__price") От 15 000 р.
+          .types__advantages-list
+            .types__advantages-item
+              .types__svg-block
+                +icon("cup")
+              p Максимальное тепло
+            .types__advantages-item
+              .types__svg-block
+                +icon("lock")
+              p Максимальное тепло
+            .types__advantages-item
+              .types__svg-block
+                +icon("flower")
+              p Максимальное тепло
+      .types__btn-block
+        a(href="#") Смотреть подробнее
+  section.types.types--second
+    .types__container
+      h1 Виды алюминиевых окон
+      .types__title 
+        p Если вы хотите иметь качественные, экологичные и максимально долговечные окна, то окна из алюминия - это то, что вам нужно!
+        a(href="#") Бесплатный вызов замерщика
+      .types__main.types__main--second
+        .types__text-col
+          p Теплый профиль: Alumark, Alumark, Alumark 
+          h2 Теплые окна
+          p Тёплые окна - решение для помещений, где необходима тепло- и звукоизоляция.
+          span(class="types__price") От 15 000 р.
+          .types__advantages-list
+            .types__advantages-item.types__advantages-item--second
+              .types__svg-block.types__svg-block--second
+                +icon("pen")
+              p Максимальное тепло
+            .types__advantages-item.types__advantages-item--second
+              .types__svg-block.types__svg-block--second
+                +icon("san")
+              p Максимальное тепло
+            .types__advantages-item.types__advantages-item--second
+              .types__svg-block.types__svg-block--second
+                +icon("many")
+              p Максимальное тепло
+        .types__img-block
+          picture
+            source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/window-grad.webp 1x, images/content/window-grad@2x.webp 2x")
+            img(src="images/content/window-grad.png" srcset="images/content/window-grad@2x.png" class="types__img-window" alt="картинка окна")
+          picture
+            source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/window-elem.webp 1x, images/content/window-elem@2x.webp 2x")
+            img(src="images/content/window-elem.png" srcset="images/content/window-elem@2x.png" class="types__img-elem-second" alt="картинка за окном")
+      .types__btn-block
+        a(href="#") Смотреть подробнее
+  section.balcony-price
+    .balcony-price__container
+      h1 Сколько стоит остеклить балкон
+      p Наша компания предоставляет широкий выбор алюминиевых и пластиковых дверей. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      .balcony-price__list
+        .balcony-price__item
+          .balcony__img-wrapper
+            .balcony-price__img-block
+              picture
+                source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/balcony-price__img1.webp 1x, images/content/balcony-price__img1@2x.webp 2x")
+                img(src="images/content/balcony-price__img1.png" srcset="images/content/balcony-price__img1@2x.png" alt="картинка за окном")
+          h2 Прямой балкон
+          p Классическое расположение. Самый простой вариант, не требующий сложных механизмов при монтаже.
+          span От 15 000
+          a(href="#") Узнать точную стоимость
+        .balcony-price__item
+          .balcony__img-wrapper
+            .balcony-price__img-block
+              picture
+                source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/balcony-price__img1.webp 1x, images/content/balcony-price__img1@2x.webp 2x")
+                img(src="images/content/balcony-price__img1.png" srcset="images/content/balcony-price__img1@2x.png" alt="картинка за окном")
+          h2 Прямой балкон
+          p Классическое расположение. Самый простой вариант, не требующий сложных механизмов при монтаже.
+          span От 15 000
+          a(href="#") Узнать точную стоимость
+  section.works
+    .works__container
+      h1 Наши работы
+      .works__title
+        p У нас вы легко подберете подходящую по конструкции, размеру, типу открывания, оформлению и комплектации модель.
+        a(href="#") Все работы
+      .works__list
+        .works__item
+          picture
+            source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/works-img1.webp 1x, images/content/works-img1@2x.webp 2x")
+            img(src="images/content/works-img1.jpg" srcset="images/content/works-img1@2x.jpg" alt="картинка работы")
+          p Остекление фасада магазина
+        .works__item
+          picture
+            source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/works-img2.webp 1x, images/content/works-img2@2x.webp 2x")
+            img(src="images/content/works-img2.jpg" srcset="images/content/works-img2@2x.jpg" alt="картинка работы")
+          p Остекление фасада магазина
+        .works__item
+          picture
+            source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/works-img3.webp 1x, images/content/works-img3@2x.webp 2x")
+            img(src="images/content/works-img3.jpg" srcset="images/content/works-img3@2x.jpg" alt="картинка работы")
+          p Остекление фасада магазина
+        .works__item
+          picture
+            source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/works-img4.webp 1x, images/content/works-img4@2x.webp 2x")
+            img(src="images/content/works-img4.jpg" srcset="images/content/works-img4@2x.jpg" alt="картинка работы")
+          p Остекление фасада магазина
+        .works__item
+          picture
+            source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/works-img5.webp 1x, images/content/works-img5@2x.webp 2x")
+            img(src="images/content/works-img5.jpg" srcset="images/content/works-img5@2x.jpg" alt="картинка работы")
+          p Остекление фасада магазина
+        .works__item
+          picture
+            source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/works-img6.webp 1x, images/content/works-img6@2x.webp 2x")
+            img(src="images/content/works-img6.jpg" srcset="images/content/works-img6@2x.jpg" alt="картинка работы")
+          p Остекление фасада магазина
+        .works__item
+          picture
+            source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/works-img7.webp 1x, images/content/works-img7@2x.webp 2x")
+            img(src="images/content/works-img7.jpg" srcset="images/content/works-img7@2x.jpg" alt="картинка работы")
+          p Остекление фасада магазина
+        .works__item
+          picture
+            source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/works-img8.webp 1x, images/content/works-img8@2x.webp 2x")
+            img(src="images/content/works-img8.jpg" srcset="images/content/works-img8@2x.jpg" alt="картинка работы")
+          p Остекление фасада магазина
+        .works__item
+          picture
+            source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/works-img9.webp 1x, images/content/works-img9@2x.webp 2x")
+            img(src="images/content/works-img9.jpg" srcset="images/content/works-img9@2x.jpg" alt="картинка работы")
+          p Остекление фасада магазина
+      .works__btn
+        a(href="#" class="works__all-link") Все работы

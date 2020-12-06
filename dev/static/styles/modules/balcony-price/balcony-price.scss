@@ -1,0 +1,163 @@
+.balcony-price {
+  padding-top: $f60;
+  padding-bottom: $f60;
+}
+
+.balcony-price__container {
+  h1 {
+    padding-bottom: $f35;
+  }
+
+  p {
+    padding-bottom: $f60;
+  }
+}
+
+.balcony-price__list {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.balcony-price__item {
+  width: 49%;
+  display: flex;
+  flex-direction: column;
+  margin-right: $f20;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  h2 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: $f24;
+    line-height: 120%;
+    padding-bottom: $f20;
+  }
+
+  p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1vw;
+    line-height: 130%;
+    color: #000;
+    padding-bottom: $f30;
+  }
+
+  span {
+    font-style: normal;
+    font-weight: bold;
+    font-size: $f24;
+    line-height: 120%;
+    padding-bottom: $f40;
+  }
+
+  a {
+    color: white;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.13vw;
+    line-height: 100%;
+    background: #33C5F3;
+    border-radius: 8px;
+    padding: $f22 $f40;
+    position: relative;
+    width: fit-content;
+  }
+}
+
+.balcony-price__img-block {
+  max-width: 28.375vw;
+  height: 16.063vw;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.balcony__img-wrapper {
+  border-radius: 8px;
+  background-color: var(--grey-bg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: $f90;
+  padding-bottom: $f90;
+  margin-bottom: $f30;
+}
+
+@media (max-width: $mobile-width) {
+  .balcony-price {
+    padding-top: 46px;
+    padding-bottom: 40px;
+  }
+
+  .balcony-price__container {
+    h1 {
+      padding-bottom: 35px;
+    }
+
+    p {
+      padding-bottom: 40px;
+    }
+  }
+
+  .balcony-price__list {
+    flex-direction: column;
+  }
+
+  .balcony-price__item {
+    width: 100%;
+    margin-bottom: 40px;
+    margin-right: 0;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    h2 {
+      font-size: 22px;
+      padding-bottom: 20px;
+    }
+
+    p {
+      font-size: 16px;
+      padding-bottom: 30px;
+    }
+
+    span {
+      display: none;
+    }
+
+    a {
+      padding-top: 22px;
+      padding-bottom: 22px;
+      width: 100%;
+      max-width: 335px;
+      font-size: 18px;
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .balcony__img-wrapper {
+    width: 100%;
+    padding-top: 87px;
+    padding-bottom: 87px;
+    margin-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .balcony-price__img-block {
+    width: 100%;
+    max-width: 474px;
+    height: 100%;
+    max-height: 250px;
+  }
+}

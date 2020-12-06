@@ -1,0 +1,13 @@
+.contact-form__wrap {
+  margin-top: 0;
+}
+
+.contact-form {
+  padding-bottom: $f60;
+}
+
+@media (max-width: $mobile-width) {
+  .contact-form {
+    display: none;
+  }
+}

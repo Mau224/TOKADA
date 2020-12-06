@@ -1,0 +1,336 @@
+.reviews__container {
+  h1 {
+    padding-bottom: 1vw;
+  }
+}
+
+.reviews {
+  padding-top: $f60;
+  padding-left: $psize;
+  padding-right: $psize;
+  padding-bottom: $f60;
+  margin-right: 0;
+  margin-left: 0;
+  background-color: #ffffff;
+}
+
+.reviews__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: $f60;
+
+  a {
+    color: white;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.13vw;
+    line-height: 100%;
+    background: #33C5F3;
+    border-radius: 8px;
+    padding: $f22 5vw;
+  }
+}
+
+.reviews__options {
+  display: flex;
+}
+
+.reviews__options input[type="radio"] {
+  display: none;
+}
+
+.reviews__options label {
+  background: transparent;
+  border: 1px solid rgba(12, 115, 254, 0.2);
+  box-sizing: border-box;
+  border-radius: 8px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.13vw;
+  line-height: 100%;
+  color: #000000;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.375vw 5vw;
+  cursor: pointer;
+  margin-right: 1.9vw;
+}
+
+.reviews__options input[type="radio"]:checked + label {
+  border: 2px solid #33C5F3;
+  padding: 1.375vw 4.9375vw;
+  box-sizing: border-box;
+  border-radius: 8px;
+  color: #33C5F3;
+}
+
+.reviews__item-title {
+  display: flex;
+  align-items: center;
+  padding-bottom: $f20;
+  justify-content: space-between;
+  padding-left: $f30;
+  padding-right: $f30;
+}
+
+.reviews__item {
+  padding-top: $f23;
+  border-radius: 8px;
+  background-color: #ffffff;
+
+  p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1vw;
+    padding-left: $f30;
+    padding-right: $f30;
+    line-height: 130%;
+    color: #37364D;
+    padding-bottom: 5.625vw;
+  }
+}
+
+.reviews__star-list {
+  display: flex;
+
+  svg {
+    width: $f22;
+    height: $f22;
+    margin-right: 0.4vw;
+    fill: #F2994A;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.reviews__item-footer-wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 0.3vw;
+  width: 100%;
+  margin-right: 0.3vw;
+  margin-bottom: 0.3vw;
+  background: linear-gradient(0deg, #FAFAFA, #FAFAFA), #FFFFFF;
+  border-radius: 0px 0px 8px 8px;
+  padding: $f21 $f30;
+}
+
+.reviews__item-footer {
+  display: flex;
+  width: 100%;
+
+  p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1vw;
+    line-height: 100%;
+    letter-spacing: 0.02em;
+    padding-left: 0;
+    padding-right: 0;
+    text-transform: uppercase;
+    padding-bottom: 0;
+  }
+}
+
+.reviews__list {
+  padding-top: $f30;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: $f20;
+}
+
+.reviews__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: $f40;
+
+  a {
+    padding: $f22 $f70;
+    font-style: normal;
+    font-weight: normal;
+    font-size: $f18;
+    line-height: 100%;
+    color: #37364D;
+    border: 1px solid rgba(39, 104, 231, 0.2);
+    box-sizing: border-box;
+    border-radius: 8px;
+  }
+}
+
+.reviews__footer-btns {
+  a {
+    position: relative;
+    border: 0;
+    padding: 1vw;
+    padding-left: 4vw;
+    width: $f46;
+    height: $f46;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: $f46;
+      max-height: $f46;
+      background: url("../images/content/arrow__rev.svg") no-repeat;
+      background-position: center;
+      background-size: cover;
+      padding: 1.5vw;
+      border: 0;
+      border-radius: 50%;
+      margin-right: $f40;
+      top: 0.3vw;
+    }
+  }
+}
+
+.reviews__left-btn {
+  position: relative;
+  &::before {
+    transform: rotate(180deg);
+  }
+}
+
+.reviews__disabled-on-desktop {
+  display: none;
+}
+
+@media (max-width: $mobile-width) {
+  .reviews {
+    background-color: white;
+    padding-bottom: 86px;
+  }
+
+  .reviews__container {
+    h1 {
+      padding-bottom: 20px;
+    }
+
+    p {
+      padding-bottom: 30px;
+    }
+  }
+
+  .reviews__footer-btns {
+    display: none;
+  }
+
+  .reviews__options {
+    flex-direction: column;
+    width: 100%;
+
+    label {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 100%;
+      padding: 22px;
+      height: 58px;
+      text-align: center;
+      margin-right: 0;
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .reviews__list {
+    grid-template-columns: auto;
+    grid-column-gap: 0;
+    grid-row-gap: 14px;
+    padding-top: 30px;
+  }
+
+  .reviews__item {
+    border-radius: 8px;
+
+    p {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 130%;
+      max-width: none;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-bottom: 30px;
+    }
+  }
+
+  .reviews__item-footer-wrap {
+    display: flex;
+    align-items: center;
+    margin: 6px;
+    margin-top: 0;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    p {
+      padding-bottom: 0;
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  .reviews__item-title {
+    padding-bottom: 34px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+
+    img {
+      width: 43px;
+      height: 17px;
+    }
+
+    .reviews__star-list {
+      svg {
+        width: 16.13px;
+        height: 16.13px;
+        margin-right: 7.33px;
+      }
+    }
+  }
+
+  .reviews__footer {
+    flex-direction: column;
+
+    a {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 100%;
+      height: 62px;
+      width: 100%;
+      max-width: 336px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &:first-child {
+        background-color: #33C5F3;
+        margin-bottom: 14px;
+        color: white;
+      }
+    }
+  }
+
+  .reviews__disabled-on-mob {
+    display: none!important;//перекрывает обращение к a
+  }
+
+  .reviews__disabled-on-desktop {
+    display: flex;
+  }
+}

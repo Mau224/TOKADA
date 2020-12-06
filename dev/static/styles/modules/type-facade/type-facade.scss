@@ -1,0 +1,173 @@
+.type-facade__container {
+  h1 {
+    padding-bottom: $f35;
+  }
+
+  p {
+    padding-bottom: $f60;
+  }
+}
+
+.type-facade {
+  padding-top: $f60;
+  padding-bottom: $f60;
+}
+
+.type-facade__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  column-gap: $f20;
+  row-gap: $f60;
+}
+
+.type-facade__item {
+  h2 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: $f24;
+    line-height: 120%;
+    padding-bottom: $f20;
+  }
+
+  p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1vw;
+    line-height: 130%;
+    margin-bottom: $f30;
+  }
+
+  span {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 120%;
+  }
+
+  img {
+    width: 100%;
+    height: 21.88vw;
+    margin-bottom: $f30;
+    border-radius: 8px;
+  }
+}
+
+.type-facade__btns {
+  display: none;
+}
+
+@media (max-width: $mobile-width) {
+  .type-facade {
+    padding-top: 66px;
+    padding-bottom: 46px;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .type-facade__container {
+    margin-left: 20px;
+    margin-right: 20px;
+
+    h1 {
+      padding-bottom: 35px;
+    }
+
+    p {
+      padding-bottom: 40px;
+    }
+  }
+
+  .type-facade__list {
+    margin-left: 20px;
+    overflow: hidden;
+    display: flex;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+  }
+
+  .type-facade__item {
+    margin-right: 20px;
+    min-width: 276px;
+    width: 276px;
+
+    img {
+      height: 267px;
+      margin-bottom: 30px;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    h2 {
+      font-size: 22px;
+      padding-bottom: 20px;
+    }
+
+    p {
+      font-size: 16px;
+      padding-bottom: 20px;
+      margin-bottom: 0;
+    }
+
+    span {
+      font-size: 22px;
+      margin-bottom: 30px;
+    }
+  }
+
+  .type-facade__btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 26px;
+    width: 100%;
+  }
+
+  .type-facade__arrow {
+    width: 46px;
+    height: 46px;
+    position: relative;
+    background-color: transparent;
+    margin-right: 20px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      background-color: #C4C4C4;
+      top: 0;
+      left: 0;
+      z-index: 99;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      background: url("../images/content/arrow__mob-slider.svg") no-repeat;
+      background-position: center;
+      width: 16px;
+      height: 16px;
+      top: 15px;
+      left: 15px;
+      z-index: 100;
+    }
+  }
+
+  .type-facade__left {
+    &::after {
+      transform: rotate(180deg);
+    }
+  }
+
+  .type-facade__arrow.active::before {
+    background-color: #33C5F3;
+  }
+}

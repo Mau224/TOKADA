@@ -1,0 +1,264 @@
+.whyus {
+  padding-top: $f60;
+  padding-bottom: $f60;
+}
+
+.whyus__container {
+  h1 {
+    padding-bottom: $f35;
+  }
+
+  p {
+    padding-bottom: $f60;
+  }
+}
+
+.whyus__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  row-gap: $f20;
+  column-gap: $f20;
+  margin-right: $f20;
+}
+
+.whyus__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.whyus__item {
+  border-radius: 8px;
+  background-color: #fff;
+  padding: $f40;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 10.75vw;
+    height: 10.75vw;
+    background: linear-gradient(267.89deg, rgba(199, 184, 245, 0.3) 0%, rgba(51, 197, 243, 0.3) 100%);
+    border-radius: 50%;
+    left: -3vw;
+    top: -2.2vw;
+  }
+
+  h3 {
+    font-style: normal;
+    font-weight: 800;
+    font-size: $f55;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: #33C5F3;
+    margin-right: $f24;
+  }
+
+  h4 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: $f20;
+    line-height: 120%;
+    max-width: 14vw;
+  }
+
+  p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1vw;
+    line-height: 130%;
+    color: #232735;
+  }
+}
+
+.whyus__item-title {
+  display: flex;
+  align-items: center;
+  padding-bottom: $f35;
+}
+
+.whyus__btns {
+  display: none;
+}
+
+.whyus__img-block {
+  position: relative;
+
+  img {
+    min-width: 29.40vw;
+    height: 30vw;
+    border-radius: 8px;
+  }
+
+  .whyus__person {
+    position: absolute;
+    min-width: 23vw;
+    height: 24vw;
+    top: 6vw;
+    left: -2vw;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .whyus__container {
+    h1 {
+      padding-bottom: 35px;
+      padding-left: 20px;
+    }
+
+    p {
+      padding-bottom: 40px;
+      padding-left: 20px;
+    }
+  }
+
+  .whyus__list {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    row-gap: 0;
+    column-gap: 0;
+    margin-right: 0;
+    padding-left: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    margin-top: 25px;
+  }
+
+  .whyus__item {
+    margin-right: 20px;
+    min-width: 276px;
+    padding: 26px 20px;
+    background-color: var(--grey-bg);
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &::before {
+      display: none;
+    }
+
+    h3 {
+      font-size: 35px;
+      line-height: 120%;
+      padding-bottom: 23px;
+    }
+
+    h4 {
+      font-size: 20px;
+      max-width: 236px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+
+    &:hover {
+      background-color: #33C5F3;
+      h3 {
+        color: #fff;
+      }
+
+      h4 {
+        color: #fff;
+      }
+
+      p {
+        color: #fff;
+      }
+    }
+  }
+
+  .whyus__item-title {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .whyus__wrapper {
+    flex-direction: column-reverse;
+  }
+
+  .whyus {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .whyus__img-block {
+    margin-right: 20px;
+    margin-left: 20px;
+
+    img {
+      width: 335.41px;
+      height: 355.4px;
+      border-radius: 8px;
+    }
+  }
+
+  .whyus__img-block .whyus__person {
+    position: absolute;
+    min-width: none;
+    height: 267px;
+    top: 87px;
+    left: -18px;
+    width: 319px;
+  }
+
+  .whyus__btns {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+
+    a {
+      width: 46px;
+      height: 46px;
+      position: relative;
+      background-color: transparent;
+      margin-right: 20px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 46px;
+        height: 46px;
+        border-radius: 50%;
+        background-color: #C4C4C4;
+        top: 0;
+        left: 0;
+        z-index: 99;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        background: url("../images/content/arrow__mob-slider.svg") no-repeat;
+        background-position: center;
+        width: 16px;
+        height: 16px;
+        top: 15px;
+        left: 15px;
+        z-index: 100;
+      }
+    }
+  }
+
+  .whyus__left {
+    &::after {
+      transform: rotate(180deg);
+    }
+  }
+
+  .whyus__right.active {
+    &::before {
+      background-color: #33C5F3;
+    }
+  }
+}

@@ -1,0 +1,152 @@
+.commentone {
+  padding-top: $f30;
+  padding-bottom: 0.5vw;
+}
+
+.commentone__container {
+  h1 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: $f50;
+    line-height: 110%;
+    letter-spacing: 0.02em;
+    color: #040404;
+    padding-bottom: $f50;
+  }
+}
+
+.commentone__item {
+  border: 1px solid rgba(51, 197, 243, 0.3);
+}
+
+.commentone__text {
+  p {
+    max-width: none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1vw;
+    line-height: 160%;
+    color: #37364D;
+    padding-bottom: $f20;
+  }
+}
+
+.commentone__block {
+  margin-right: $f20;
+}
+
+.commentone__wrapper {
+  display: flex;
+  width: 100%;
+}
+
+.commentone__info {
+  padding: $f30;
+  padding-bottom: $f20;
+  min-width: 20.94vw;
+  max-height: 24vw;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 96px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+
+  p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: $f20;
+    line-height: 130%;
+    padding-bottom: $f50;
+  }
+}
+
+.commentone__info-btns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  a {
+    font-style: normal;
+    font-weight: normal;
+    font-size: $f18;
+    line-height: 100%;
+    color: #8B8B8B;
+    background-color: #fff;
+    padding-top: $f22;
+    padding-bottom: $f22;
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: $f20;
+    display: flex;
+    justify-content: center;
+    border: 1px solid rgba(12, 115, 254, 0.2);
+
+    &:last-child {
+      background-color: #33C5F3;
+      color: white;
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .commentone__wrapper {
+    flex-direction: column;
+  }
+
+  .commentone {
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+
+  .commentone__container {
+    h1 {
+      font-size: 28px;
+      padding-bottom: 40px;
+    }
+  }
+
+  .commentone__text {
+    p {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 130%;
+      padding-bottom: 30px;
+    }
+  }
+
+  .commentone__block {
+    margin-right: 0;
+    margin-bottom: 26px;
+  }
+
+  .commentone__info {
+    padding: 30px;
+    padding-bottom: 20px;
+    height: auto;
+    max-height: none;
+    max-width: none;
+    box-shadow: 0px 0px 96px rgba(0, 0, 0, 0.1);
+
+    p {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 130%;
+      max-width: none;
+      text-align: center;
+      padding-bottom: 50px;
+    }
+  }
+
+  .commentone__info-btns {
+    a {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 100%;
+      padding-top: 22px;
+      padding-bottom: 22px;
+      max-width: 335px;
+    }
+  }
+}

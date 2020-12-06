@@ -1,0 +1,128 @@
+.profile__container {
+  h1 {
+    padding-bottom: 1vw;
+  }
+}
+
+
+.profile__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: $f60;
+
+  a {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.13vw;
+    line-height: 100%;
+    color: #37364D;
+    background: #FFFFFF;
+    border: 1px solid rgba(39, 104, 231, 0.2);
+    padding: 1.375vw 4.38vw;
+    border-radius: 8px;
+  }
+}
+
+.profile__list {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  justify-items: center;
+  align-items: center;
+  grid-column-gap: $f55;
+  background-color: var(--grey-bg);
+  padding: 7.2vw;
+  border-radius: 8px;
+
+  img {
+    //margin-right: $f55;
+    object-fit: cover;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.profile {
+  padding-top: $f30;
+  padding-bottom: $f30;
+}
+
+@media (max-width: $mobile-width) {
+  .profile {
+    padding-top: 46px;
+    padding-bottom: 46px;
+  }
+
+  .profile__container {
+    h1 {
+      padding-bottom: 20px;
+    }
+
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 62px;
+      width: 100%;
+      max-width: none;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 100%;
+      border: 1px solid rgba(39, 104, 231, 0.2);
+      box-sizing: border-box;
+      border-radius: 8px;
+      max-width: 336px;
+      margin: 0 auto;
+      margin-top: 30px;
+    }
+  }
+
+  .profile__title {
+    padding-bottom: 20px;
+
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 62px;
+      width: 100%;
+      max-width: 335px;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 100%;
+    }
+  }
+
+  .profile__list {
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: auto;
+    grid-column-gap: 12px;
+    padding: 20px;
+
+    picture {
+      &:last-child {
+        img {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    img {
+      width: 141px;
+      height: 79px;
+      object-fit: contain;
+      margin-bottom: 24px;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .profile__list {
+    align-items: center;
+  }
+}

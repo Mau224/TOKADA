@@ -1,0 +1,249 @@
+.other-vars {
+  padding-top: $f60;
+  background-color: var(--grey-bg);
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: $psize;
+  padding-right: $psize;
+  padding-bottom: $f90;
+}
+
+.other-vars__container {
+  h1 {
+    padding-bottom: $f35;
+  }
+
+  p {
+    padding-bottom: $f60;
+  }
+}
+
+.other-vars__item-col {
+  h2 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: $f36;
+    line-height: 100%;
+    padding-bottom: $f46;
+  }
+
+  p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: $f20;
+    line-height: 120%;
+    padding-bottom: $f40;
+    max-width: 27vw;
+  }
+
+  span {
+    font-style: normal;
+    font-weight: bold;
+    font-size: $f24;
+    line-height: 120%;
+  }
+}
+
+.other-vars__point-list {
+  margin-top: $f50;
+
+  &--complete {
+    margin-top: 0;
+  }
+}
+
+.other-vars__point-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.63vw;
+
+  svg {
+    width: $f21;
+    height: 1vw;
+    fill: #33C5F3;
+  }
+
+  p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 130%;
+    margin-left: $f21;
+    padding-bottom: 0;
+  }
+}
+
+.other-vars__item-wrapper {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  border-radius: 8px;
+  padding-top: $f100;
+  padding-bottom: $f90;
+  padding-left: $f30;
+  padding-right: $f60;
+
+  &--second {
+    flex-direction: row-reverse;
+    padding-left: $f100;
+  }
+}
+
+//Стили для complete.html
+.other-vars__item-wrapper-complete {
+  padding: $f60 $f50;
+
+  .other-vars__img-block {
+    height: 20.2vw;
+  }
+}
+
+//конец стилей complete.html
+
+.other-vars__img-block {
+  width: 100%;
+  max-width: 40vw;
+  height: 28.4vw;
+
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+  }
+}
+
+.other-vars__btns {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  a {
+    color: white;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.13vw;
+    line-height: 100%;
+    background: #33C5F3;
+    border-radius: 8px;
+    padding: 1.375vw 2.5vw;
+    position: absolute;
+    top: -2vw;
+  }
+}
+
+.other-vars__item {
+  margin-bottom: $f60;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .other-vars {
+    background-color: #fff;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .other-vars__container {
+    h1 {
+      padding-bottom: 35px;
+    }
+
+    p {
+      padding-bottom: 40px;
+    }
+  }
+
+  .other-vars__item-wrapper {
+    padding: 0;
+    flex-direction: column;
+  }
+
+  .other-vars__img-block {
+    max-width: none;
+    height: 246px;
+    margin-bottom: 30px;
+
+    img {
+      object-fit: cover;
+      border-radius: 8px;
+    }
+  }
+
+  .other-vars__item-col {
+    h2 {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 22px;
+      line-height: 120%;
+      padding-bottom: 20px;
+    }
+
+    p {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 120%;
+      padding-bottom: 30px;
+    }
+
+    span {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 22px;
+      line-height: 120%;
+    }
+  }
+
+  .other-vars__point-list {
+    margin-top: 40px;
+  }
+
+  .other-vars__point-item {
+    margin-bottom: 25px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    svg {
+      width: 21.09px;
+      height: 16px;
+    }
+
+    p {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 130%;
+      padding-bottom: 0;
+      margin-left: 20px;
+    }
+  }
+
+  .other-vars__btns {
+    justify-content: flex-start;
+    margin-top: 40px;
+
+    a {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 100%;
+      padding: 22px;
+      position: relative;
+      top: 0;
+      width: 100%;
+      max-width: 335px;
+      text-align: center;
+      justify-content: center;
+    }
+  }
+
+  .other-vars__item {
+    margin-bottom: 80px;
+  }
+}

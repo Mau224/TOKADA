@@ -1,0 +1,109 @@
+section.calc
+	.calc__container
+		h1 Калькулятор алюминевых окон
+		p У нас вы легко подберете подходящую по конструкции, размеру, типу открывания, оформлению и комплектации модель.
+		.calc__main
+			.calc__option-row-wrap
+				.calc__option
+					p
+						span 01.
+						| Выберите тип профиля
+					.calc__row-wrap
+						input(type="radio" id="tab-1" name="radio1"  checked)
+						label(for="tab-1") Холодный
+						input(type="radio" id="tab-2" name="radio1")
+						label(for="tab-2") Теплый
+				.calc__option
+					p
+						span 02.
+						| Выберите производителя
+					.calc__row-wrap
+						.calc__select
+							.select
+								.select__header
+									span.select__current Alumil
+								.select__body
+									.select__item 123
+									.select__item 321
+									.select__item 456
+			.calc__option.calc__option-column-wrap
+				p
+					span 02.
+					| Выберите производителя
+				.calc__second-wrap
+					input(type="radio" id="rad-1" name="radio2"  checked)
+					label(for="rad-1")
+						+icon("calc__img1")
+						p Одностворчатое
+					input(type="radio" id="rad-2" name="radio2")
+					label(for="rad-2")
+						+icon("calc__img2")
+						p Одностворчатое
+					input(type="radio" id="rad-3" name="radio2")
+					label(for="rad-3")
+						picture
+							source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/calc__img3.webp 1x, images/content/calc__img3@2x.webp 2x")
+							img(src="images/content/calc__img3.jpg" srcset="images/content/calc__img3@2x.jpg" alt="картинка окна")
+						p Одностворчатое
+					input(type="radio" id="rad-4" name="radio2")
+					label(for="rad-4")
+						picture
+							source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/calc__img4.webp 1x, images/content/calc__img4@2x.webp 2x")
+							img(src="images/content/calc__img4.jpg" srcset="images/content/calc__img4@2x.jpg" alt="картинка окна")
+						p Одностворчатое
+					input(type="radio" id="rad-5" name="radio2")
+					label(for="rad-5")
+						picture
+							source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/calc__img5.webp 1x, images/content/calc__img5@2x.webp 2x")
+							img(src="images/content/calc__img5.jpg" srcset="images/content/calc__img5@2x.jpg" alt="картинка окна")
+						p Одностворчатое
+			.calc__option.calc__option-column-wrap
+				p
+					span 02.
+					| Выберите производителя
+				.calc__row-wrap
+					input(type="radio" id="var-1" name="radio3"  checked)
+					label(for="var-1") Однокамерный
+					input(type="radio" id="var-2" name="radio3")
+					label(for="var-2") Двухкамерный
+					input(type="radio" id="var-3" name="radio3")
+					label(for="var-3") Энергосберегающий
+					input(type="radio" id="var-4" name="radio3")
+					label(for="var-4") Звукоизолирующий
+			.calc__option.calc__option-last
+				.calc__column-option
+					p Нужен подоконник?
+					.calc__row-wrap
+						.calc__switch-block
+							p Да
+							label(class="switch")
+								input(type="checkbox" class="switch-theme swaper")
+								span(class="slider round")
+							p Нет
+				.calc__column-option
+					p Нужен подоконник?
+					.calc__row-wrap
+						.calc__switch-block
+							p(class="calc__switch-text mybtn") Да
+							label(class="switch")
+								input(type="checkbox" name="prim" class="switch-theme")
+								span(class="slider round" id="swaper")
+							p Нет
+				.calc__column-option
+					p Нужен подоконник?
+					.calc__row-wrap
+						.calc__switch-block
+							p Да
+							label(class="switch")
+								input(type="checkbox" id="one" onclick="radioFunCenter(this);" name="prim" class="switch-theme color chkbox")
+								span(class="slider round")
+							p Нет
+			.calc__form-wrap
+				form(class="calc__form" method="post")
+					input(type="text" name="name" id="autor" placeholder="Имя" title="Введите имя" minlength="2" maxlength="30" required)
+					input(type="tel" name="phone" id="mobile" placeholder="Номер телефона" title="Введите телефон" minlength="3" maxlength="30" required)
+					.calc__form-footer
+						button(type="submit" class="calc__sub-btn") Отправить
+						p Нажимая на кнопку вы соглашаетесь на обработку
+							a(href="#") персональных данных
+				p Специалисты Токада помогут вам с выбором, ответят на все вопросы и рассчитают стоимость окон!

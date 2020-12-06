@@ -1,0 +1,27 @@
+include ../helpers/mixins
+block variables
+
+doctype html
+html(lang="ru-RU" data-theme="light")
+	include ../helpers/head
+	body(class="body")
+		.wrapper
+			include ../modules/header/header
+			block content
+			include ../modules/advantages
+			include ../modules/service
+			include ../modules/call
+			block content2
+			include ../modules/action
+			block content3
+			include ../modules/time
+			include ../modules/calc
+			block content4
+			include ../modules/reviews
+			include ../modules/map
+			include ../modules/faq
+			include ../modules/footer/footer
+			include ../modules/modal
+			include ../modules/modal-action
+			include ../modules/modal-reviews
+			script(src="js/main.js")

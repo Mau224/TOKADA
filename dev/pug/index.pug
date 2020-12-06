@@ -1,0 +1,227 @@
+extends layout/main
+
+block variables
+	-var title = 'Home'
+
+block content
+	section
+		.main-info
+			.main-info__container
+				a(href="#" class="main-info__location") работаем в Москве и области
+					+icon("marker")
+				h1(data-da="main-info__mob,first,867") Алюминиевые окна от производителя
+				p(data-da="main-info__mob,first,867") У нас вы легко подберете подходящую по конструкции, размеру, типу открывания, оформлению и комплектации модель.
+				a(href="#" class="main-info__link-more" data-da="main-info__mob,first,867") Подробнее
+		.main-info__mob
+block content2
+	section.works
+		.works__container
+			h1 Наши работы
+			.works__title
+				p У нас вы легко подберете подходящую по конструкции, размеру, типу открывания, оформлению и комплектации модель.
+				a(href="#") Все работы
+			.works__list
+				.works__item
+					picture
+						source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/works-img1.webp 1x, images/content/works-img1@2x.webp 2x")
+						img(src="images/content/works-img1.jpg" srcset="images/content/works-img1@2x.jpg" alt="картинка работы")
+					.works__span
+						span Окна
+					p Остекление фасада магазина
+				.works__item
+					picture
+						source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/works-img2.webp 1x, images/content/works-img2@2x.webp 2x")
+						img(src="images/content/works-img2.jpg" srcset="images/content/works-img2@2x.jpg" alt="картинка работы")
+					.works__span
+						span Окна
+						span Двери
+					p Остекление фасада магазина
+				.works__item
+					picture
+						source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/works-img3.webp 1x, images/content/works-img3@2x.webp 2x")
+						img(src="images/content/works-img3.jpg" srcset="images/content/works-img3@2x.jpg" alt="картинка работы")
+					.works__span
+						span Фасады
+					p Остекление фасада магазина
+				.works__item
+					picture
+						source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/works-img4.webp 1x, images/content/works-img4@2x.webp 2x")
+						img(src="images/content/works-img4.jpg" srcset="images/content/works-img4@2x.jpg" alt="картинка работы")
+					.works__span
+						span Окна
+					p Остекление фасада магазина
+				.works__item
+					picture
+						source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/works-img5.webp 1x, images/content/works-img5@2x.webp 2x")
+						img(src="images/content/works-img5.jpg" srcset="images/content/works-img5@2x.jpg" alt="картинка работы")
+					.works__span
+						span Окна
+						span Двери
+					p Остекление фасада магазина
+				.works__item
+					picture
+						source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/works-img6.webp 1x, images/content/works-img6@2x.webp 2x")
+						img(src="images/content/works-img6.jpg" srcset="images/content/works-img6@2x.jpg" alt="картинка работы")
+					.works__span
+						span Фасады
+					p Остекление фасада магазина
+				.works__item
+					picture
+						source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/works-img7.webp 1x, images/content/works-img7@2x.webp 2x")
+						img(src="images/content/works-img7.jpg" srcset="images/content/works-img7@2x.jpg" alt="картинка работы")
+					.works__span
+						span Окна
+					p Остекление фасада магазина
+				.works__item
+					picture
+						source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/works-img8.webp 1x, images/content/works-img8@2x.webp 2x")
+						img(src="images/content/works-img8.jpg" srcset="images/content/works-img8@2x.jpg" alt="картинка работы")
+					.works__span
+						span Окна
+						span Двери
+					p Остекление фасада магазина
+				.works__item
+					picture
+						source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/works-img9.webp 1x, images/content/works-img9@2x.webp 2x")
+						img(src="images/content/works-img9.jpg" srcset="images/content/works-img9@2x.jpg" alt="картинка работы")
+					.works__span
+						span Фасады
+					p Остекление фасада магазина
+			.works__btn
+				a(href="#" class="works__all-link") Все работы
+block content3
+	section.profile
+		.profile__container
+			h1 Профили
+			.profile__title
+				p У нас вы легко подберете подходящую по конструкции, размеру, типу открывания, оформлению и комплектации модель.
+				a(href="#" data-da="profile__container,last,867") Все профили
+			.profile__list
+				picture
+					source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/profile__img1.webp 1x, images/content/profile__img1@2x.webp 2x")
+					img(src="images/content/profile__img1.png" srcset="images/content/profile__img1@2x.png" alt="логотип компании партнера")
+				picture
+					source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/profile__img2.webp 1x, images/content/profile__img2@2x.webp 2x")
+					img(src="images/content/profile__img2.png" srcset="images/content/profile__img2@2x.png" alt="логотип компании партнера")
+				picture
+					source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/profile__img3.webp 1x, images/content/profile__img3@2x.webp 2x")
+					img(src="images/content/profile__img3.png" srcset="images/content/profile__img3@2x.png" alt="логотип компании партнера")
+				picture
+					source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/profile__img4.webp 1x, images/content/profile__img4@2x.webp 2x")
+					img(src="images/content/profile__img4.png" srcset="images/content/profile__img4@2x.png" alt="логотип компании партнера")
+				picture
+					source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/profile__img5.webp 1x, images/content/profile__img5@2x.webp 2x")
+					img(src="images/content/profile__img5.png" srcset="images/content/profile__img5@2x.png" alt="логотип компании партнера")
+	section.stages
+		.stages__container
+			h1 Этапы работы
+			p У нас вы легко подберете подходящую по конструкции, размеру, типу открывания, оформлению и комплектации модель.
+			.stages__list
+				.stages__item
+					.stages__item-title
+						h3 01
+						h4 Замер строений окон
+					picture
+						source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/stage__img1.webp 1x, images/content/stage__img1@2x.webp 2x")
+						img(src="images/content/stage__img1.png" srcset="images/content/stage__img1@2x.png" alt="картинка в обьекте")
+					p Чаще всего металлопластиковые окна устанавливают потому
+					a(href="#") Заказать звонок
+				.stages__item
+					.stages__item-title
+						h3 02
+						h4 Замер строений окон
+					picture
+						source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/stage__img1.webp 1x, images/content/stage__img1@2x.webp 2x")
+						img(src="images/content/stage__img1.png" srcset="images/content/stage__img1@2x.png" alt="картинка в обьекте")
+					p Чаще всего металлопластиковые окна устанавливают потому
+					a(href="#") Заказать звонок
+				.stages__item
+					.stages__item-title
+						h3 03
+						h4 Изготовление окон по заказу
+					p Чаще всего металлопластиковые окна устанавливают потому
+				.stages__item
+					.stages__item-title
+						h3 04
+						h4 Монтаж окон
+					p Чаще всего металлопластиковые окна устанавливают потому
+				.stages__item
+					.stages__item-title
+						h3 05
+						h4 Довольный клиент
+					p Чаще всего металлопластиковые окна устанавливают потому
+				.stages__item
+					.stages__item-title
+						h3 06
+						h4 Гарантия на установленные окна
+					p Чаще всего металлопластиковые окна устанавливают потому
+			.stages__btns
+				button(type="button" class="stages__left stages__arrow")
+				button(type="button" class="stages__right active stages__arrow")
+block content4
+	section.sert
+		.sert__container
+			h1 Сетрификаты
+			p У нас вы легко подберете подходящую по конструкции, размеру, типу открывания, оформлению и комплектации модель.
+			.sert__list
+				.sert__item
+					a(href="#" class="sert__link-pdf")
+						img(src="images/content/pdf.svg" alt="картинка пдф")
+						| .PDF (126 kb.)
+					h2 Cертификат соответствия качества
+					p
+						+icon("calendar")
+						| 27.06.2020
+					a(href="#" class="sert__link-save") Скачать
+				.sert__item
+					a(href="#" class="sert__link-pdf")
+						img(src="images/content/pdf.svg" alt="картинка пдф")
+						| .PDF (126 kb.)
+					h2 Cертификат соответствия качества
+					p
+						+icon("calendar")
+						| 27.06.2020
+					a(href="#" class="sert__link-save") Скачать
+				.sert__item
+					a(href="#" class="sert__link-pdf")
+						img(src="images/content/pdf.svg" alt="картинка пдф")
+						| .PDF (126 kb.)
+					h2 Cертификат соответствия качества
+					p
+						+icon("calendar")
+						| 27.06.2020
+					a(href="#" class="sert__link-save") Скачать
+				.sert__item
+					a(href="#" class="sert__link-pdf")
+						img(src="images/content/pdf.svg" alt="картинка пдф")
+						| .PDF (126 kb.)
+					h2 Cертификат соответствия качества
+					p
+						+icon("calendar")
+						| 27.06.2020
+					a(href="#" class="sert__link-save") Скачать
+			.sert__btns
+				button(type="button" class="sert__left sert__arrow")
+				button(type="button" class="sert__right active sert__arrow")
+	section.form
+		.form__container
+			form(class="form__main" method="post")
+				h1 Бесплатный вызов замерщика
+				p Отправьте заявку прямо сейчас, и мы вам перезвоним.
+				.form__wrap
+					label(for="persone")
+					input(type="text" name="name" id="persone" placeholder="Имя" title="Введите имя" minlength="2" maxlength="30" required)
+					label(for="phone-num")
+					input(type="tel" name="phone" id="phone-num" placeholder="Номер телефона" title="Введите телефон" minlength="3" maxlength="30" required)
+				.form__form-footer
+					p Нажимая на кнопку вы соглашаетесь на обработку
+						a(href="#") персональных данных
+					button(type="submit" class="form__sub-btn") Отправить
+			.form__img-wrap
+				picture
+					source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/form__img-person.webp 1x, images/content/form__img-person@2x.webp 2x")
+					img(src="images/content/form__img-person.png" srcset="images/content/form__img-person@2x.png" class="form__img-pers" alt="картинка формы")
+				picture
+					source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/form__img.webp 1x, images/content/form__img@2x.webp 2x")
+					img(src="images/content/form__img.jpg" srcset="images/content/form__img@2x.jpg" class="form__img-bg" alt="картинка формы")
+

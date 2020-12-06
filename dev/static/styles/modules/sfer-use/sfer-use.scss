@@ -1,0 +1,155 @@
+.sfer-use {
+  padding-top: $f60;
+  padding-bottom: $f60;
+}
+
+.sfer-use__container {
+  h1 {
+    padding-bottom: $f35;
+  }
+
+  p {
+    padding-bottom: $f60;
+  }
+}
+
+.sfer-use__item {
+  display: flex;
+  justify-content: space-between;
+  padding: $f26 $f30;
+  border-radius: 8px;
+  background-color: #fff;
+
+  &--complete {
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.04);
+  }
+}
+
+.sfer-use__item-col {
+  h2 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: $f24;
+    line-height: 100%;
+    padding-bottom: $f30;
+  }
+
+  p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1vw;
+    line-height: 120%;
+    padding-bottom: 3.7vw;
+    max-width: 17vw;
+    color: #000;
+  } 
+}
+
+.sfer-use__link {
+  border: 1px solid #33C5F3;
+  box-sizing: border-box;
+  border-radius: 8px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 100%;
+  color: #33C5F3;
+  padding: $f22 $f40;
+
+  &:hover {
+    background-color: #33C5F3;
+    color: white;
+  }
+}
+
+.sfer-use__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  row-gap: $f40;
+  column-gap: $f40;
+}
+
+.sfer-use__img-block {
+  width: 18.44vw;
+  height: 18.44vw;
+
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+  }
+}
+
+.sfer-use__link-wrap {
+  height: auto;
+}
+
+@media (max-width: $mobile-width) {
+  .sfer-use__container {
+    h1 {
+      font-size: 24px;
+      padding-bottom: 20px;
+    }
+
+    p {
+      font-size: 16px;
+      padding-bottom: 30px;
+    }
+  }
+
+  .sfer-use {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .sfer-use__link {
+    font-size: 16px;
+    height: 100%;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    width: 100%;
+    max-width: 335px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .sfer-use__item {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .sfer-use__list {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    row-gap: 60px;
+  }
+
+  .sfer-use__item-col {
+    h2 {
+      font-size: 24px;
+    }
+
+    p {
+      font-size: 16px;
+      max-width: none;
+    }
+  }
+
+  .sfer-use__img-block {
+    width: 100%;
+    max-width: 560px;
+    height: 246px;
+    margin-bottom: 30px;
+
+    img {
+      object-fit: cover;
+    }
+  }
+
+  .sfer-use__link-wrap {
+    height: 60px;
+    display: flex;
+    align-items: center;
+  }
+}

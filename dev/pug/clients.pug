@@ -1,0 +1,172 @@
+extends layout/clients-layout
+
+block variables
+  -var title = 'Clients'
+
+block content
+  section
+    .main-info.main-info__clients-page
+      .main-info__container
+        a(href="#" class="main-info__location") работаем в Москве и области
+          +icon("marker")
+        h1(data-da="main-info__mob,first,867") Сотрудничество с корпоративными клиентами
+        p(data-da="main-info__mob,first,867") У нас вы легко подберете подходящую по конструкции, размеру, типу открывания, оформлению и комплектации модель.
+        a(href="#" class="main-info__link-more" data-da="main-info__mob,first,867") Подробнее
+    .main-info__mob
+  section.special
+    .special__container
+      h1 Специальные предложения для корпоративных клиентов
+      p Данные предложения предоставляются корпоративным отделом индивидуально.
+    .special__list
+      .special__item
+        .specila__img-block
+          picture
+            source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/special__img1.webp 1x, images/content/special__img1@2x.webp 2x")
+            img(src="images/content/special__img1.jpg" srcset="images/content/special__img1@2x.jpg" alt="картинка окна")
+        h2 Стационарные перегородки
+        p Главное преимущество стационарных перегородок - скорость монтажа и адаптивность под нужды помещения.
+        a(href="#" class="special__link") 
+          span Смотреть
+          | Подробнее
+      .special__item
+        .specila__img-block
+          picture
+            source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/special__img2.webp 1x, images/content/special__img2@2x.webp 2x")
+            img(src="images/content/special__img2.jpg" srcset="images/content/special__img2@2x.jpg" alt="картинка окна")
+        h2 Раздвижные перегородки
+        p Прочные и надежные конструкции, качественный материал, прекрасная звукоизоляция.
+        a(href="#" class="special__link") 
+          span Смотреть
+          | Подробнее
+      .special__item
+        .specila__img-block
+          picture
+            source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/special__img3.webp 1x, images/content/special__img3@2x.webp 2x")
+            img(src="images/content/special__img3.jpg" srcset="images/content/special__img3@2x.jpg" alt="картинка окна")
+        h2 Мобильные перегородки
+        p Мобильные перегородки позволят создать индивидуальное рабочее пространство для сотрудников и повысить рабочий настрой.
+        a(href="#" class="special__link") 
+          span Смотреть
+          | Подробнее
+      .special__item
+        .specila__img-block
+          picture
+            source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/special__img4.webp 1x, images/content/special__img4@2x.webp 2x")
+            img(src="images/content/special__img4.jpg" srcset="images/content/special__img4@2x.jpg" alt="картинка окна")
+        h2 Торговые павильоны
+        p Остекление павильона позволяет наполнить помещение светом, что ведет к экономии электроэнергии. 
+        a(href="#" class="special__link") 
+          span Смотреть
+          | Подробнее
+  section.offer
+    .offer__container
+      h1 Мы предлагаем сотрудничество
+      p У нас вы легко подберете подходящую по конструкции, размеру, типу открывания, оформлению и комплектации модель.
+      .offer__list
+        .offer__item
+          h2 Архитекторам
+          picture
+            source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/offer__img1.webp 1x, images/content/offer__img1@2x.webp 2x")
+            img(src="images/content/offer__img1.jpg" srcset="images/content/offer__img1@2x.jpg" alt="картинка окна")
+          p Сотрудничая с дизайнерами , мы готовы к нестандартным задачам и смелым идеям.
+          .offer__popup-block
+            p Сотрудничая с дизайнерами , мы готовы к нестандартным задачам и смелым идеям.
+            a(href="#") Связаться со специалистом
+        .offer__item
+          h2 Дизайнерам
+          picture
+            source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/offer__img1.webp 1x, images/content/offer__img1@2x.webp 2x")
+            img(src="images/content/offer__img1.jpg" srcset="images/content/offer__img1@2x.jpg" alt="картинка окна")
+          .offer__popup-block
+            p Сотрудничая с дизайнерами , мы готовы к нестандартным задачам и смелым идеям.
+            a(href="#") Связаться со специалистом
+        .offer__item
+          h2 Строительным организациям
+          picture
+            source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/offer__img3.webp 1x, images/content/offer__img3@2x.webp 2x")
+            img(src="images/content/offer__img3.jpg" srcset="images/content/offer__img3@2x.jpg" alt="картинка окна")
+          .offer__popup-block
+            p Сотрудничая с дизайнерами , мы готовы к нестандартным задачам и смелым идеям.
+            a(href="#") Связаться со специалистом
+        .offer__item
+          h2 Производствам
+          picture
+            source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/offer__img4.webp 1x, images/content/offer__img4@2x.webp 2x")
+            img(src="images/content/offer__img4.jpg" srcset="images/content/offer__img4@2x.jpg" alt="картинка окна")
+          .offer__popup-block
+            p Сотрудничая с дизайнерами , мы готовы к нестандартным задачам и смелым идеям.
+            a(href="#") Связаться со специалистом
+        .offer__item
+          h2 Бюджетным организациям
+          picture
+            source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/offer__img5.webp 1x, images/content/offer__img5@2x.webp 2x")
+            img(src="images/content/offer__img5.jpg" srcset="images/content/offer__img5@2x.jpg" alt="картинка окна")
+          .offer__popup-block
+            p Сотрудничая с дизайнерами , мы готовы к нестандартным задачам и смелым идеям.
+            a(href="#") Связаться со специалистом
+        .offer__item
+          h2 Строителям и прорабам
+          picture
+            source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/offer__img6.webp 1x, images/content/offer__img6@2x.webp 2x")
+            img(src="images/content/offer__img6.jpg" srcset="images/content/offer__img6@2x.jpg" alt="картинка окна")
+          .offer__popup-block
+            p Сотрудничая с дизайнерами , мы готовы к нестандартным задачам и смелым идеям.
+            a(href="#") Связаться со специалистом
+      .offer__btns
+        a(href="#" class="offer__arrow offer__left")
+        a(href="#" class="offer__arrow offer__right active")
+block content2
+  section.works
+    .works__container
+      h1 Примеры установки дверей
+      .works__title
+        p Что радует компанию больше, чем довольный клиент? Правильно! Успешный результат проделанной работы. Ознакомиться с нашими проектами можно здесь:
+        a(href="#") Все работы
+      .works__list
+        .works__item
+          picture
+            source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/works-img1.webp 1x, images/content/works-img1@2x.webp 2x")
+            img(src="images/content/works-img1.jpg" srcset="images/content/works-img1@2x.jpg" alt="картинка работы")
+          p Остекление фасада магазина
+        .works__item
+          picture
+            source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/works-img2.webp 1x, images/content/works-img2@2x.webp 2x")
+            img(src="images/content/works-img2.jpg" srcset="images/content/works-img2@2x.jpg" alt="картинка работы")
+          p Остекление фасада магазина
+        .works__item
+          picture
+            source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/works-img3.webp 1x, images/content/works-img3@2x.webp 2x")
+            img(src="images/content/works-img3.jpg" srcset="images/content/works-img3@2x.jpg" alt="картинка работы")
+          p Остекление фасада магазина
+        .works__item
+          picture
+            source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/works-img4.webp 1x, images/content/works-img4@2x.webp 2x")
+            img(src="images/content/works-img4.jpg" srcset="images/content/works-img4@2x.jpg" alt="картинка работы")
+          p Остекление фасада магазина
+        .works__item
+          picture
+            source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/works-img5.webp 1x, images/content/works-img5@2x.webp 2x")
+            img(src="images/content/works-img5.jpg" srcset="images/content/works-img5@2x.jpg" alt="картинка работы")
+          p Остекление фасада магазина
+        .works__item
+          picture
+            source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/works-img6.webp 1x, images/content/works-img6@2x.webp 2x")
+            img(src="images/content/works-img6.jpg" srcset="images/content/works-img6@2x.jpg" alt="картинка работы")
+          p Остекление фасада магазина
+        .works__item
+          picture
+            source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/works-img7.webp 1x, images/content/works-img7@2x.webp 2x")
+            img(src="images/content/works-img7.jpg" srcset="images/content/works-img7@2x.jpg" alt="картинка работы")
+          p Остекление фасада магазина
+        .works__item
+          picture
+            source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/works-img8.webp 1x, images/content/works-img8@2x.webp 2x")
+            img(src="images/content/works-img8.jpg" srcset="images/content/works-img8@2x.jpg" alt="картинка работы")
+          p Остекление фасада магазина
+        .works__item
+          picture
+            source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/works-img9.webp 1x, images/content/works-img9@2x.webp 2x")
+            img(src="images/content/works-img9.jpg" srcset="images/content/works-img9@2x.jpg" alt="картинка работы")
+          p Остекление фасада магазина
+      .works__btn
+        a(href="#" class="works__all-link") Все работы

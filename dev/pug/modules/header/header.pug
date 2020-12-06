@@ -1,0 +1,192 @@
+header.header
+	.header__container
+		.header__wrap-img
+			a(href="index.html").header__logo
+				p
+					span окна
+					br
+					| Токаdа
+		.header__main-nav(data-da="header__mob-main-wrap,last,867")
+			a(href="#" class="header__link-action js-open-modal" data-modal="3") Акции
+			a(href="comment.html" class="header__link-reviews") Отзывы
+			a(href="#") Работы
+			a(href="#" class="disabled-on-mob") Калькулятор
+			a(href="contact.html") Контакты
+		.header__location
+			.header__place
+				p Наш адрес:
+				a(href="#") Дорожная 29
+					+icon("mark")
+				.header__place-block
+					.header__place-img
+						iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d287508.12969453563!2d37.56122208241319!3d55.738396483171435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54afc73d4b0c9%3A0x3d44d6cc5757cf4c!2z0JzQvtGB0LrQstCw!5e0!3m2!1sru!2sru!4v1606249059661!5m2!1sru!2sru" frameborder="0" style="border:0;" allowfullscreen="true" aria-hidden="false" tabindex="0")
+					.header__place-contact-block
+						p Москва, ул. Дорожная 29
+						a(href="#") Смотреть на карте
+			.header__time-work.header__place
+				p Режим работы
+				a(href="#") Пн-Вс c 8:00 - 22:00
+					+icon("time")
+		.header__socials(data-da="header__mob-info-wrapper,last,867")
+			a(href="#")
+				+icon("inst")
+			a(href="#")
+				+icon("tg")
+			a(href="#")
+				+icon("whatsapp")
+			a(href="#")
+				+icon("viber")
+		.header__tel
+			p Звонок бесплатный
+			a(href="tel:+79057990999") +7 905 7990999
+				+icon("phone")
+		.header__mob-wrapper
+			.header__mob-links
+				a(href="#" class="header__link-call-mob")
+					+icon("phone")
+				a(href="#" class="header__mob-avatar js-open-modal" data-modal="1") замер
+					+icon("avatar")
+	.header__list
+		a(href="#" data-da="header__mob-wrapper,last,867").header__burger
+			span
+		.header__link-list
+			a(href="window.html" class="header__sp-link open-spoiler") Окна
+				+icon("window")
+			a(href="doors.html" class="header__sp-link open-spoiler") Двери
+				+icon("door")
+			a(href="facade.html" class="header__sp-link open-spoiler") Фасады
+				+icon("key")
+			a(href="complete.html" class="header__sp-link open-spoiler") Комплектующие
+				+icon("circle")
+			a(href="clients.html" class="header__sp-link open-spoiler") Корпоративым клиентам
+				+icon("circle")
+		.header__main-links
+			a(href="#" class="header__link-call") Заказать звонок
+				+icon("phone")
+			a(href="#" class="header__link-avatar js-open-modal" data-modal="1") бесплатный замер
+				+icon("avatar")
+	.overlay__mega-menu.overlay-menu
+		.header__mega-menu.mega-menu
+			.mega-menu__wrapper(data-da="header__spoiler-list,first,867")
+				.mega-menu__col
+					.mega-menu__svg-wrapper
+						+icon("door-menu")
+					a(href="#" class="mega-menu__base-link open-spoiler") Окна
+					.mega-menu__item-list
+						.mega-menu__col-item
+							+icon("mini-win1")
+							a(href="window.html") Алюминиевые окна
+						.mega-menu__col-item
+							+icon("mini-win2")
+							a(href="window-pvh.html") Пластиковые окна
+						.mega-menu__col-item
+							+icon("mini-win3")
+							a(href="balcony.html") Балконы и лождии
+				.mega-menu__col
+					.mega-menu__svg-wrapper
+						+icon("door-menu2")
+					a(href="#" class="mega-menu__base-link open-spoiler") Двери
+					.mega-menu__item-list
+						.mega-menu__col-item
+							+icon("mini-door1")
+							a(href="aluminumdoors.html") Алюминиевые двери
+						.mega-menu__col-item
+							+icon("mini-door2")
+							a(href="#") Двери ПВХ
+						.mega-menu__col-item
+							+icon("mini-door3")
+							a(href="Swingdoors.html") Распашные двери
+						.mega-menu__col-item
+							+icon("mini-door4")
+							a(href="#") Раздвижные двери
+						.mega-menu__col-item
+							+icon("mini-door5")
+							a(href="#") Автоматические двери
+						.mega-menu__col-item
+							+icon("mini-door6")
+							a(href="#") Офисные двери
+						.mega-menu__col-item
+							+icon("mini-door7")
+							a(href="#") Лофт перегородки
+				.mega-menu__col
+					.mega-menu__svg-wrapper
+						+icon("door-menu3")
+					a(href="#" class="mega-menu__base-link open-spoiler") Фасады
+					.mega-menu__item-list
+						.mega-menu__col-item
+							+icon("mini-fac1")
+							a(href="#") Навесы и козырьки
+						.mega-menu__col-item
+							+icon("mini-fac2")
+							a(href="#") Панорамное остекление
+						.mega-menu__col-item
+							+icon("mini-fac3")
+							a(href="#") Входные группы
+						.mega-menu__col-item
+							+icon("mini-fac4")
+							a(href="#") Зимние сады
+				.mega-menu__col
+					.mega-menu__svg-wrapper
+						+icon("door-menu4")
+					a(href="#" class="mega-menu__base-link open-spoiler") Корпоративным клиентам
+					.mega-menu__item-list
+						.mega-menu__col-item
+							+icon("mini-cli1")
+							a(href="#") Автоматические двери
+						.mega-menu__col-item
+							+icon("mini-cli2")
+							a(href="#") Стационарные перегородки
+						.mega-menu__col-item
+							+icon("mini-cli3")
+							a(href="#") Раздвижные перегородки
+						.mega-menu__col-item
+							+icon("mini-cli4")
+							a(href="#") Мобильные перегородки
+						.mega-menu__col-item
+							+icon("mini-cli5")
+							a(href="#") Торговые павильоны
+				.mega-menu__col
+					.mega-menu__svg-wrapper
+						+icon("door-menu5")
+					a(href="#" class="mega-menu__base-link open-spoiler") Комплектующие
+					.mega-menu__item-list
+						.mega-menu__col-item
+							+icon("mini-comp1")
+							a(href="#") Стеклопакеты
+						.mega-menu__col-item
+							+icon("mini-comp2")
+							a(href="#") Подоконники
+						.mega-menu__col-item
+							+icon("mini-comp3")
+							a(href="#") Фурнитура
+						.mega-menu__col-item
+							+icon("mini-comp4")
+							a(href="#") Ламинация
+						.mega-menu__col-item
+							+icon("mini-comp5")
+							a(href="#") Москитные сетки
+						.mega-menu__col-item
+							+icon("mini-comp6")
+							a(href="#") Жалюзи
+			.mega-menu__action(data-da="header__mob-main,last,867")
+				h2 Окна, двери и раздвижные системы
+				p У нас вы легко подберете подходящую по конструкции, размеру, типу открывания, оформлению и комплектации модель.
+				a(href="#") Узнать цены
+		.header__mob-main
+			h2 Меню
+			.header__mob-main-wrap
+			h2 Категории
+			.header__spoiler-list
+		.overlay-mob-tel(id="myNav2")
+			.header__mob-info-wrapper
+				.header__mob-addr.header__mob-info
+					h2 Адрес
+					a(href="#") Дорожная 29
+				.header__mob-time.header__mob-info
+					h2 Режим работы
+					a(href="#") Пн-Вс c 8:00 - 22:00
+				.header__mob-tel.header__mob-info
+					h2 Телефон
+					.header__mob-wrap
+						a(href="#") +7 905 7990999
+						p Звонок бесплатный

@@ -1,0 +1,42 @@
+// Sizes
+$base-font-size: 16px;
+
+$content: 1000px;
+
+// Fonts
+$fontfamali: "Circe", "Arial", sans-serif;
+$gradient: linear-gradient(to right, #FC4A4A 7%, #DC26FA 40%);
+$f28: 1.75vw;
+$f26: 1.63vw;
+$f24: 1.5vw;
+$f12: 0.75vw;
+$f14: 0.875vw;
+$f18: 1.13vw;
+$f20: 1.25vw;
+$f21: 1.3125vw;
+$f22: 1.375vw;
+$f23: 1.438vw;
+$f34: 2.15vw;
+$f35: 2.19vw;
+$f36: 2.25vw;
+$f30: 1.9vw;
+$f40: 2.5vw;
+$f46: 2.88vw;
+$f50: 3.13vw;
+$f55: 3.45vw;
+$f60: 3.7vw;
+$f70: 4.38vw;
+$f75: 4.69vw;
+$f90: 5.625vw;
+$f100: 7vw;
+$f149: 9.31vw;
+$f282: 17.63vw;
+
+$psize: 6.25vw;
+
+//media
+//$tablet-width: 1023px;
+$mobile-width: 867px;
+
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;

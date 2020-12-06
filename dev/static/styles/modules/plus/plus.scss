@@ -1,0 +1,235 @@
+.plus__container {
+  h1 {
+    padding-bottom: $f36;
+    max-width: 35vw;
+  }
+
+  p {
+    padding-bottom: $f60;
+  }
+}
+
+.plus__list {
+  display: grid;
+  grid-template-columns: repeat(2, fit-content(19vw));
+  grid-auto-rows: minmax(min-content, max-content);
+  row-gap: $f40;
+  column-gap: $f40;
+  align-content: center;
+  align-items: center;
+}
+
+.plus__item {
+  display: flex;
+  align-items: center;
+
+  svg {
+    min-width: $f21;
+    min-height: 1vw;
+    max-width: $f21;
+    max-height: 1vw;
+    fill: #33C5F3;
+  }
+
+  p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1vw;
+    line-height: 130%;
+    color: #000;
+    margin-left: $f20;
+  }
+}
+
+.plus__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.plus__img-block {
+  img {
+    width: 35.75vw;
+    height: 27.25vw;
+  }
+}
+
+.plus {
+  padding-bottom: $f55;
+  background-color: var(--grey-bg);
+  margin-left: 0;
+  margin-right: 0;
+  padding-top: $f60;
+  padding-left: $psize;
+  padding-right: $psize;
+}
+
+//window-pvh.html style
+.plus__advantage-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: $f20;
+  padding-top: $f60;
+}
+
+.plus__advantage-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 8px;
+  background-color: #fff;
+  padding-top: $f40;
+  padding-bottom: $f40;
+
+  h2 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: $f24;
+    line-height: 120%;
+    text-align: center;
+    margin-bottom: $f20;
+  }
+
+  p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 130%;
+    color: #000;
+    text-align: center;
+  }
+}
+
+.plus__advantage-item-img-block {
+  width: 4.69vw;
+  height: 4.69vw;
+  border-radius: 50%;
+  border: 1px solid #33C5F3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: $f20;
+
+  svg {
+    width: $f34;
+    height: $f34;
+    fill: #33C5F3;
+  }
+}
+
+//переопределение стилей для swingdoors.html
+.plus__list-swingdoors {
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.plus__wrapper-swingdoors {
+  align-items: center;
+}
+
+.plus__img-block-swingdoors {
+  img {
+    width: 43.13vw;
+    height: 28.25vw;
+    border-radius: 8px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .plus__list {
+    display: grid;
+    grid-template-columns: auto;
+    grid-auto-rows: auto;
+    row-gap: 24px;
+    column-gap: 0;
+  }
+
+  .plus__wrapper {
+    flex-direction: column-reverse;
+  }
+
+  .plus__container {
+    h1 {
+      padding-bottom: 32px;
+    }
+
+    p {
+      padding-bottom: 30px;
+    }
+  }
+
+  .plus__img-block {
+    img {
+      min-width: 335px;
+      width: 100%;
+      height: 303.44px;
+      margin-bottom: 30px;
+      object-fit: cover;
+    }
+  }
+
+  .plus__item {
+    svg {
+      min-width: 21.09px;
+      min-height: 16px;
+      max-width: 21.09px;
+      max-height: 16px;
+    }
+
+    p {
+      margin-left: 20px;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 130%;
+      max-width: none;
+    }
+  }
+
+  .plus {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+    background-color: #fff;
+  }
+
+  //window-pvh.html style
+  .plus__advantage-list {
+    display: grid;
+    grid-template-columns: auto;
+    padding-top: 40px;
+  }
+
+  .plus__advantage-item {
+    margin-bottom: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.04);
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    h2 {
+      font-size: 22px;
+      padding-bottom: 20px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+  }
+
+  .plus__advantage-item-img-block {
+    width: 75px;
+    height: 75px;
+
+    svg {
+      width: 33.17px;
+      height: 33.01px;
+    }
+  }
+}

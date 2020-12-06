@@ -1,0 +1,297 @@
+.sert__container {
+  padding-bottom: $f100;
+
+  h1 {
+    padding-bottom: 1vw;
+  }
+
+  p {
+    padding-bottom: $f60;
+  }
+}
+
+.sert {
+  padding-top: $f60;
+  margin-right: 0;
+  margin-left: 0;
+  padding-left: $psize;
+  padding-right: $psize;
+  background-color: var(--grey-bg);
+}
+
+.sert__link-pdf {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.7vw;
+  line-height: $f18;
+  color: #828282;
+  display: flex;
+  align-items: center;
+
+  img {
+    width: $f28;
+    height: $f28;
+  }
+}
+
+.sert__item {
+  border: 1px solid rgba(12, 115, 254, 0.3);
+  box-sizing: border-box;
+  border-radius: 26px 0;
+  padding: $f50 $f28;
+
+  h2 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: $f22;
+    line-height: $f28;
+    color: #404349;
+    padding-bottom: $f22;
+    padding-top: $f22;
+  }
+
+  p {
+    display: flex;
+    align-items: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.75vw;
+    line-height: $f18;
+    padding-bottom: $f22;
+    color: #828282;
+
+    svg {
+      width: $f14;
+      height: $f14;
+      margin-right: 0.5vw;
+    }
+  }
+}
+
+.sert__link-save {
+  font-weight: bold;
+  font-size: 0.75vw;
+  line-height: $f18;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #33C5F3;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 0.85vw;
+    height: 1vw;
+    background: url("../images/content/sert-arrow.svg") no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    background-size: contain;
+    right: -2.5vw;
+    top: -0.02vw;
+    z-index: 100;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: $f30;
+    height: $f30;
+    background-color: #33C5F3;
+    background-size: contain;
+    background-position: center;
+    border-radius: 50%;
+    background-size: cover;
+    right: -3vw;
+  }
+}
+
+.sert__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: $f20;
+}
+
+.sert__btns {
+  display: none;
+}
+
+@media (max-width: $mobile-width) {
+  .sert__container {
+    padding-bottom: 0;
+
+    h1 {
+      padding-bottom: 20px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    p {
+      padding-bottom: 40px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+
+  .sert {
+    margin-bottom: 40px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 40px;
+    background-color: #ffffff;
+  }
+
+  .sert__list {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    justify-content: space-between;
+    grid-column-gap: auto;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    padding-left: 20px;
+  }
+
+  .sert__item {
+    min-width: 275px;
+    height: 254px;
+    padding: 30px 28px;
+    margin-right: 20px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    h2 {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 19px;
+      line-height: 26px;
+      padding-top: 22px;
+      padding-bottom: 22px;
+    }
+
+    p {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 18px;
+      display: flex;
+      align-items: center;
+      padding-bottom: 24px;
+      padding-left: 0;
+      padding-right: 0;
+
+      svg {
+        width: 14px;
+        height: 14px;
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .sert__link-pdf {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+
+    img {
+      width: 21px;
+      height: 28px;
+    }
+  }
+
+  .sert__link-save {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    max-width: 98px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 12px;
+      height: 16px;
+      background: url("../images/content/sert-arrow.svg") no-repeat;
+      background-position: center;
+      border-radius: 50%;
+      background-size: cover;
+      right: 4.5px;
+      top: 1.5px;
+      z-index: 100;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      background-color: #33C5F3;
+      background-size: contain;
+      background-position: center;
+      border-radius: 50%;
+      background-size: cover;
+      right: -5px;
+    }
+  }
+
+  .sert__btns {
+    display: flex;
+    align-items: center;
+    margin-top: 24px;
+    padding-bottom: 40px;
+    justify-content: center;
+  }
+
+  .sert__arrow {
+    width: 46px;
+    height: 46px;
+    position: relative;
+    background-color: transparent;
+
+    &:first-child {
+      margin-right: 20px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      background: url("../images/content/arrow__mob-slider.svg") no-repeat;
+      background-position: center;
+      width: 16px;
+      height: 16px;
+      top: 15px;
+      left: 15px;
+      z-index: 100;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      background-color: #C4C4C4;
+      top: 0;
+      left: 0;
+      z-index: 99;
+    }
+  }
+
+  .sert__arrow.active {
+    &::after {
+      background-color: #33C5F3;
+    }
+  }
+
+  .sert__left {
+    &::before {
+      transform: rotate(180deg);
+    }
+  }
+}

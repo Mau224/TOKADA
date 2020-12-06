@@ -1,0 +1,294 @@
+mixin icon(name,mod)
+	if(mod)
+		svg(class="svg-sprite-icon icon-" + name + ' ' + mod)
+			use(xlink:href="images/sprite/symbol/sprite.svg#" + name)
+	else
+		svg(class="svg-sprite-icon icon-" + name)
+			use(xlink:href="images/sprite/symbol/sprite.svg#" + name)
+
+-
+	var db__slider = [
+		{
+			icon: 'images/content/slider-item.svg',
+			width: '168',
+			height: '68'
+		},
+		{
+			icon: 'images/content/slider-item2.svg',
+			width: '166',
+			height: '69'
+		},
+		{
+			icon: 'images/content/slider-item3.svg',
+			imgclass: 'home__logo-mob3',
+			width: '126',
+			height: '73'
+		},
+		{
+			icon: 'images/content/slider-item4.svg',
+			imgclass: 'home__logo-mob4',
+			width: '96',
+			height: '64'
+		},
+		{
+			icon: 'images/content/slider-item5.svg',
+			width: '158',
+			height: '89'
+		},
+		{
+			icon: 'images/content/slider-item6.svg',
+			width: '147',
+			height: '77'
+		},
+		{
+			icon: 'images/content/slider-item7.svg',
+			width: '166',
+			height: '101'
+		},
+		{
+			icon: 'images/content/slider-item8.svg',
+			width: '183',
+			height: '85'
+		},
+	]
+-
+	var db__service = [
+		{
+			text: 'Разработка сайтов',
+			img: 'images/content/service1.png',
+			width: '168',
+			height: '68',
+			class: 'home-service__big-item'
+		},
+		{
+			text: 'Маркетинг',
+			img: 'images/content/service1.png',
+			width: '168',
+			height: '68',
+			class: 'home-service__big-item'
+		},
+		{
+			text: 'SMM',
+			img: 'images/content/service1.png',
+			width: '168',
+			height: '68'
+		},
+		{
+			text: 'Фотосъемка',
+			img: 'images/content/service1.png',
+			width: '168',
+			height: '68'
+		},
+		{
+			text: 'Презентации',
+			img: 'images/content/service1.png',
+			width: '168',
+			height: '68'
+		},
+		{
+			text: 'Панорамы',
+			img: 'images/content/service1.png',
+			width: '168',
+			height: '68'
+		}
+	]
+
+-
+	var db__about = [
+		{
+			icon: 'images/content/about-item1.png',
+			img2: 'images/content/about-item1@2x.png',
+			webp: 'images/content/about-item1.webp 1x, images/content/about-item1@2x.webp 2x',
+			webpmob: 'images/content/about-item1-mob.webp 1x, images/content/about-item1-mob@2x.webp 2x',
+			width: '573',
+			height: '388'
+		},
+		{
+			icon: 'images/content/about-item2.png',
+			img2: 'images/content/about-item2@2x.png',
+			webp: 'images/content/about-item2.webp 1x, images/content/about-item2@2x.webp 2x',
+			webpmob: 'images/content/about-item2-mob.webp 1x, images/content/about-item2-mob@2x.webp 2x',
+			width: '573',
+			height: '388'
+		},
+		{
+			icon: 'images/content/about-item3.png',
+			img2: 'images/content/about-item3@2x.png',
+			webp: 'images/content/about-item3.webp 1x, images/content/about-item3@2x.webp 2x',
+			webpmob: 'images/content/about-item3-mob.webp 1x, images/content/about-item3-mob@2x.webp 2x',
+			width: '573',
+			height: '388'
+		},
+		{
+			icon: 'images/content/about-item4.png',
+			img2: 'images/content/about-item4@2x.png',
+			webp: 'images/content/about-item4.webp 1x, images/content/about-item4@2x.webp 2x',
+			webpmob: 'images/content/about-item4-mob.webp 1x, images/content/about-item4-mob@2x.webp 2x',
+			width: '573',
+			height: '388'
+		},
+		{
+			icon: 'images/content/about-item1.png',
+			img2: 'images/content/about-item1@2x.png',
+			webp: 'images/content/about-item1.webp 1x, images/content/about-item1@2x.webp 2x',
+			webpmob: 'images/content/about-item1-mob.webp 1x, images/content/about-item1-mob@2x.webp 2x',
+			width: '573',
+			height: '388'
+		},
+		{
+			icon: 'images/content/about-item1.png',
+			img2: 'images/content/about-item1@2x.png',
+			webp: 'images/content/about-item1.webp 1x, images/content/about-item1@2x.webp 2x',
+			webpmob: 'images/content/about-item1-mob.webp 1x, images/content/about-item1-mob@2x.webp 2x',
+			width: '573',
+			height: '388'
+		}
+	]
+
+-
+	var db__team = [
+		{
+			img: 'images/content/img-team1.png',
+			img2:'images/content/img-team1@2x.png',
+			webp: 'images/content/img-team1.webp 1x, images/content/img-team1@2x.webp 2x',
+			webpmob: 'images/content/img-team1-mob.webp 1x, images/content/img-team1-mob@2x.webp 2x',
+			width: '270',
+			height: '270',
+			name: 'Эдвард',
+			prof: 'Seo-специалист'
+		},
+		{
+			img: 'images/content/img-team2.png',
+			img2: 'images/content/img-team2@2x.png',
+			webp: 'images/content/img-team2.webp 1x, images/content/img-team2@2x.webp 2x',
+			webpmob: 'images/content/img-team2-mob.webp 1x, images/content/img-team2-mob@2x.webp 2x',
+			width: '270',
+			height: '270',
+			name: 'Артем',
+			prof: 'Веб-дизайнер'
+		},
+		{
+			img: 'images/content/img-team3.png',
+			img2: 'images/content/img-team3@2x.png',
+			webp: 'images/content/img-team3.webp 1x, images/content/img-team3@2x.webp 2x',
+			webpmob: 'images/content/img-team3-mob.webp 1x, images/content/img-team3-mob@2x.webp 2x',
+			width: '270',
+			height: '270',
+			name: 'Анна',
+			prof: 'backand разработчик'
+		},
+		{
+			img: 'images/content/img-team4.png',
+			img2: 'images/content/img-team4@2x.png',
+			webp: 'images/content/img-team4.webp 1x, images/content/img-team4@2x.webp 2x',
+			webpmob: 'images/content/img-team4-mob.webp 1x, images/content/img-team4-mob@2x.webp 2x',
+			width: '270',
+			height: '270',
+			name: 'Артем',
+			prof: 'Иллюстратор'
+		},
+		{
+			img: 'images/content/img-team2.png',
+			img2: 'images/content/img-team2@2x.png',
+			webp: 'images/content/img-team2.webp 1x, images/content/img-team2@2x.webp 2x',
+			webpmob: 'images/content/img-team2-mob.webp 1x, images/content/img-team2-mob@2x.webp 2x',
+			width: '270',
+			height: '270',
+			name: 'Татьяна',
+			prof: 'Журналист'
+		},
+		{
+			img: 'images/content/img-team6.png',
+			img2: 'images/content/img-team6@2x.png',
+			webp: 'images/content/img-team6.webp 1x, images/content/img-team6@2x.webp 2x',
+			webpmob: 'images/content/img-team6-mob.webp 1x, images/content/img-team6-mob@2x.webp 2x',
+			width: '217',
+			height: '258',
+			name: 'Катя',
+			prof: 'SMM-специалист'
+		},
+	]
+
+-
+	var db__achievements = [
+		{
+			name: '7',
+			prof: 'Лет опыта'
+		},
+		{
+			name: '350+',
+			prof: 'Завершенных проектов'
+		},
+		{
+			name: '70',
+			prof: 'Довольных клиентов'
+		}
+	]
+
+-
+	var db__projects = [
+		{
+			text: 'INVEST RADAR',
+			text2: 'Корпоротивный портал по продаже металла'
+		},
+		{
+			text: 'ПРОФИЛЬМЕТ',
+			text2: 'Корпоротивный портал по продаже металла'
+		},
+		{
+			text: 'ГК "Русь-К"',
+			text2: 'Корпоротивный портал по продаже металла'
+		}
+	]
+
+-
+	var db__spoilers = [
+		{
+			text: 'Маркетинг',
+			text2: 'У программы стажировки уже существовал логотип и знак, оттуда и родился наш главный символ, симпатичный бренд-персонаж, — дружелюбный кот с гривой льва. Грива 						кота — обязательный и постоянный элемент, символизирующий взросление, профессиональный рост, обрастание опытом и полезными навыками в процессе обучения			   					.Бренд-персонаж довольно взрослый, спокойный и по-житейски мудрый, он выступает в качестве наставника и старшего друга стажеров.',
+			link1: 'Копротивный сайт',
+			link2: 'SMM-продвижение',
+			link3: 'Маркетинг влияния',
+			link4: 'SEO-оптимизация',
+		},
+		{
+			text: 'Программирование',
+			text2: 'У программы стажировки уже существовал логотип и знак, оттуда и родился наш главный символ, симпатичный бренд-персонаж, — дружелюбный кот с гривой льва. Грива 						кота — обязательный и постоянный элемент, символизирующий взросление, профессиональный рост, обрастание опытом и полезными навыками в процессе обучения			   					.Бренд-персонаж довольно взрослый, спокойный и по-житейски мудрый, он выступает в качестве наставника и старшего друга стажеров.',
+			link1: 'Копротивный сайт',
+			link2: 'SMM-продвижение',
+			link3: 'Маркетинг влияния',
+			link4: 'SEO-оптимизация',
+		},
+		{
+			text: 'Видеопродакшн',
+			text2: 'У программы стажировки уже существовал логотип и знак, оттуда и родился наш главный символ, симпатичный бренд-персонаж, — дружелюбный кот с гривой льва. Грива 						кота — обязательный и постоянный элемент, символизирующий взросление, профессиональный рост, обрастание опытом и полезными навыками в процессе обучения			   					.Бренд-персонаж довольно взрослый, спокойный и по-житейски мудрый, он выступает в качестве наставника и старшего друга стажеров.',
+			link1: 'Копротивный сайт',
+			link2: 'SMM-продвижение',
+			link3: 'Маркетинг влияния',
+			link4: 'SEO-оптимизация',
+		},
+		{
+			text: 'Упаковка продукта',
+			text2: 'У программы стажировки уже существовал логотип и знак, оттуда и родился наш главный символ, симпатичный бренд-персонаж, — дружелюбный кот с гривой льва. Грива 						кота — обязательный и постоянный элемент, символизирующий взросление, профессиональный рост, обрастание опытом и полезными навыками в процессе обучения			   					.Бренд-персонаж довольно взрослый, спокойный и по-житейски мудрый, он выступает в качестве наставника и старшего друга стажеров.',
+			link1: 'Копротивный сайт',
+			link2: 'SMM-продвижение',
+			link3: 'Маркетинг влияния',
+			link4: 'SEO-оптимизация',
+		},
+		{
+			text: '3D панорамы',
+			text2: 'У программы стажировки уже существовал логотип и знак, оттуда и родился наш главный символ, симпатичный бренд-персонаж, — дружелюбный кот с гривой льва. Грива 						кота — обязательный и постоянный элемент, символизирующий взросление, профессиональный рост, обрастание опытом и полезными навыками в процессе обучения			   					.Бренд-персонаж довольно взрослый, спокойный и по-житейски мудрый, он выступает в качестве наставника и старшего друга стажеров.',
+			link1: 'Копротивный сайт',
+			link2: 'SMM-продвижение',
+			link3: 'Маркетинг влияния',
+			link4: 'SEO-оптимизация',
+		},
+		{
+			text: 'Фотосъемка',
+			text2: 'У программы стажировки уже существовал логотип и знак, оттуда и родился наш главный символ, симпатичный бренд-персонаж, — дружелюбный кот с гривой льва. Грива 						кота — обязательный и постоянный элемент, символизирующий взросление, профессиональный рост, обрастание опытом и полезными навыками в процессе обучения			   					.Бренд-персонаж довольно взрослый, спокойный и по-житейски мудрый, он выступает в качестве наставника и старшего друга стажеров.',
+			link1: 'Копротивный сайт',
+			link2: 'SMM-продвижение',
+			link3: 'Маркетинг влияния',
+			link4: 'SEO-оптимизация',
+		},
+	]
