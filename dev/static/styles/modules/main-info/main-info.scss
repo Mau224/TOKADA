@@ -250,6 +250,12 @@
   border-radius: 8px;
   position: relative;
 
+  .main-info__container {
+    h1 {
+      max-width: 53vw;
+    }
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -314,6 +320,9 @@
   position: relative;
 
   .main-info__container {
+    padding-top: 3.5vw;
+    padding-bottom: 3.5vw;
+
     h1 {
       max-width: 40vw;
     }
