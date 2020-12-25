@@ -10,7 +10,7 @@
   }
 
   p {
-    padding-bottom: $f60;
+    color: #8B8B8B;
   }
 }
 
@@ -43,7 +43,8 @@
     font-weight: normal;
     font-size: $f20;
     line-height: 120%;
-    padding-bottom: $f20;
+    padding-bottom: $f60;
+    max-width: 32vw;
   }
 
   span {
@@ -94,6 +95,7 @@
     position: relative;
     padding-left: $f30;
     max-width: 13vw;
+    color: #000;
   }
 
   &--second {
@@ -131,6 +133,9 @@
   padding: 1.375vw 2.5vw;
   position: absolute;
   top: 2vw;
+  min-width: 15.5vw;
+  display: flex;
+  justify-content: center;
 }
 
 .types-profile__btn {
@@ -142,6 +147,38 @@
 
 .disabled-on-desktop {
   display: none;
+}
+
+//стили для кнопки акций
+.types-profile__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: $f60;
+
+  p {
+    padding-bottom: 0;
+  }
+
+  a {
+    color: white;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.13vw;
+    line-height: 100%;
+    background: #33C5F3;
+    border-radius: 8px;
+    padding: 1.375vw 2.5vw;
+  }
+}
+
+//корректировка стилей для ingroup
+.types-profile-ingroup {
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: $psize;
+  padding-right: $psize;
+  //background-color: var(--grey-bg);
 }
 
 @media (max-width: $mobile-width) {
@@ -259,6 +296,35 @@
   }
 }
 
+//стили страницы slidingdoors
+.types-profile__slidingdoors-list {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: $f30;
+
+  h2 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: $f24;
+    line-height: 120%;
+  }
+
+  p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: $f20;
+    line-height: 120%;
+    padding-bottom: $f20;
+    color: #000000;
+  }
+
+  img {
+    max-width: 8.12vw;
+    height: 13.55vw;
+    margin-right: $f55;
+  }
+}
+
 @media (max-width: 530px) {
   .types-profile__list {
     flex-direction: column;
@@ -282,6 +348,7 @@
 
     p {
       order: 3;
+      max-width: 100%;
     }
 
     span {
@@ -304,5 +371,50 @@
 
   .types-profile__btn {
     order: 6;
+  }
+
+  //стили страницы slidingdoors
+  .types-profile__slidingdoors-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+    width: 100%;
+
+    h2 {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 22px;
+      line-height: 120%;
+      padding-bottom: 20px;
+    }
+
+    p {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 120%;
+      padding-bottom: 18px;
+    }
+
+    img {
+      max-width: 100%;
+      width: 109px;
+      height: 180px;
+      margin-right: 0;
+    }
+  }
+
+  //корректировка стилей для ingroup
+  .types-profile-ingroup {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  //стили для кнопки акций
+  .types-profile__title {
+    a {
+      display: none;
+    }
   }
 }

@@ -1,0 +1,108 @@
+extends layout/fittings-layout
+
+block variables
+  -var title = 'Фурнитура от производителя'
+  - var description = 'Фурнитура от производителя'
+
+block content
+    section
+        .main-info.main-info__fittings-page.main-info__other-page
+            .main-info__container
+                a(href="#" class="main-info__location") Москва и Московская область
+                    +icon("marker")
+                h1(data-da="main-info__mob,first,867") ФУРНИТУРА от производителя
+                p(data-da="main-info__mob,first,867") У нас вы легко подберете подходящую по конструкции, размеру, типу открывания, оформлению и комплектации модель.
+                a(href="#" class="main-info__link-more" data-da="main-info__mob,first,867") Подробнее
+        .main-info__mob
+    section.offer
+        .offer__container
+            h1 Ассортимент фурнитуры
+            .offer__container-title
+                p Мы предлагаем различную фурнитуру для дверей и окон.
+                a(href="#" data-modal="10" class="js-open-modal") Получить скидку 30% на остекление
+            .offer__slider.swiper-container.slider
+                .offer__list.swiper-wrapper
+                    .offer__item.offer-fittings__item.swiper-slide
+                        h2 Оконные и дверные ручки
+                        picture
+                            source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/offer-fittings__img1.webp 1x, images/content/offer-fittings__img1@2x.webp 2x")
+                            img(src="images/content/offer-fittings__img1.jpg" srcset="images/content/offer-fittings__img1@2x.jpg" alt="картинка окна")
+                        p Сотрудничая с дизайнерами , мы готовы к нестандартным задачам и смелым идеям.
+                        .offer__popup-block
+                            p Сотрудничая с дизайнерами , мы готовы к нестандартным задачам и смелым идеям.
+                            a(href="#" class="js-open-modal" data-modal="10") Связаться со специалистом
+                    .offer__item.offer-fittings__item.swiper-slide
+                        h2 Блокираторы и ограничители
+                        picture
+                            source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/offer-fittings__img2.webp 1x, images/content/offer-fittings__img2@2x.webp 2x")
+                            img(src="images/content/offer-fittings__img2.jpg" srcset="images/content/offer-fittings__img2@2x.jpg" alt="картинка окна")
+                        p Сотрудничая с дизайнерами , мы готовы к нестандартным задачам и смелым идеям.
+                        .offer__popup-block
+                            p Блокиратор дверей не позволит ребенку прищемить пальцы или остаться одному в запертой комнате.
+                            a(href="#" class="js-open-modal" data-modal="10") Связаться со специалистом
+                    .offer__item.offer-fittings__item.swiper-slide
+                        h2 Детские замки
+                        picture
+                            source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/offer-fittings__img3.webp 1x, images/content/offer-fittings__img3@2x.webp 2x")
+                            img(src="images/content/offer-fittings__img3.jpg" srcset="images/content/offer-fittings__img3@2x.jpg" alt="картинка окна")
+                        p Сотрудничая с дизайнерами , мы готовы к нестандартным задачам и смелым идеям.
+                        .offer__popup-block
+                            p Сотрудничая с дизайнерами , мы готовы к нестандартным задачам и смелым идеям.
+                            a(href="#" class="js-open-modal" data-modal="10") Связаться со специалистом
+                    .offer__item.offer-fittings__item.swiper-slide
+                        h2 Петлевые группы
+                        picture
+                            source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/offer-fittings__img4.webp 1x, images/content/offer-fittings__img4@2x.webp 2x")
+                            img(src="images/content/offer-fittings__img4.jpg" srcset="images/content/offer-fittings__img4@2x.jpg" alt="картинка окна")
+                        p Сотрудничая с дизайнерами , мы готовы к нестандартным задачам и смелым идеям.
+                        .offer__popup-block
+                            p Сотрудничая с дизайнерами , мы готовы к нестандартным задачам и смелым идеям.
+                            a(href="#" class="js-open-modal" data-modal="10") Связаться со специалистом
+                    .offer__item.offer-fittings__item.swiper-slide
+                        h2 Элементы створки
+                        picture
+                            source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/offer-fittings__img5.webp 1x, images/content/offer-fittings__img5@2x.webp 2x")
+                            img(src="images/content/offer-fittings__img5.jpg" srcset="images/content/offer-fittings__img5@2x.jpg" alt="картинка окна")
+                        p Сотрудничая с дизайнерами , мы готовы к нестандартным задачам и смелым идеям.
+                        .offer__popup-block
+                            p Сотрудничая с дизайнерами , мы готовы к нестандартным задачам и смелым идеям.
+                            a(href="#" class="js-open-modal" data-modal="10") Связаться со специалистом
+                    .offer__item.offer-fittings__item.swiper-slide
+                        h2 Запоры и приводы
+                        picture
+                            source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/offer-fittings__img6.webp 1x, images/content/offer-fittings__img6@2x.webp 2x")
+                            img(src="images/content/offer-fittings__img6.jpg" srcset="images/content/offer-fittings__img6@2x.jpg" alt="картинка окна")
+                        p Сотрудничая с дизайнерами , мы готовы к нестандартным задачам и смелым идеям.
+                        .offer__popup-block
+                            p Сотрудничая с дизайнерами , мы готовы к нестандартным задачам и смелым идеям.
+                            a(href="#" class="js-open-modal" data-modal="10") Связаться со специалистом
+                    .offer__item.offer-fittings__item.swiper-slide
+                        h2 Прижимы
+                        picture
+                            source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/offer-fittings__img7.webp 1x, images/content/offer-fittings__img7@2x.webp 2x")
+                            img(src="images/content/offer-fittings__img7.jpg" srcset="images/content/offer-fittings__img7@2x.jpg" alt="картинка окна")
+                        p Сотрудничая с дизайнерами , мы готовы к нестандартным задачам и смелым идеям.
+                        .offer__popup-block
+                            p Сотрудничая с дизайнерами , мы готовы к нестандартным задачам и смелым идеям.
+                            a(href="#" class="js-open-modal" data-modal="10") Связаться со специалистом
+                    .offer__item.offer-fittings__item.swiper-slide
+                        h2 Доводчики
+                        picture
+                            source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/offer-fittings__img8.webp 1x, images/content/offer-fittings__img8@2x.webp 2x")
+                            img(src="images/content/offer-fittings__img8.jpg" srcset="images/content/offer-fittings__img8@2x.jpg" alt="картинка окна")
+                        p Сотрудничая с дизайнерами , мы готовы к нестандартным задачам и смелым идеям.
+                        .offer__popup-block
+                            p Сотрудничая с дизайнерами , мы готовы к нестандартным задачам и смелым идеям.
+                            a(href="#" class="js-open-modal" data-modal="10") Связаться со специалистом
+                    .offer__item.offer-fittings__item.swiper-slide
+                        h2 Комплектующие
+                        picture
+                            source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/offer-fittings__img9.webp 1x, images/content/offer-fittings__img9@2x.webp 2x")
+                            img(src="images/content/offer-fittings__img9.jpg" srcset="images/content/offer-fittings__img9@2x.jpg" alt="картинка окна")
+                        p Сотрудничая с дизайнерами , мы готовы к нестандартным задачам и смелым идеям.
+                        .offer__popup-block
+                            p Сотрудничая с дизайнерами , мы готовы к нестандартным задачам и смелым идеям.
+                            a(href="#" class="js-open-modal" data-modal="10") Связаться со специалистом
+                .offer__btns
+                    a(href="#" class="offer__arrow offer__left swiper-button-prev slider__arrows")
+                    a(href="#" class="offer__arrow offer__right active swiper-button-next slider__arrows")

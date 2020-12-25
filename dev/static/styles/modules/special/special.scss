@@ -3,13 +3,39 @@
   padding-bottom: $f60;
 }
 
+//.special__title {
+//  display: flex;
+//  justify-content: space-between;
+//  align-items: center;
+//  padding-bottom: 3.7vw;
+//
+//  a {
+//    color: white;
+//    font-style: normal;
+//    font-weight: 500;
+//    font-size: 1.13vw;
+//    line-height: 100%;
+//    background: #33C5F3;
+//    border-radius: 8px;
+//    padding: 1.375vw 2.5vw;
+//  }
+//}
+
 .special__container {
   h1 {
     padding-bottom: $f35;
+    max-width: 32vw;
   }
 
   p {
+    color: #8B8B8B;
     padding-bottom: $f60;
+  }
+}
+
+.special__title {
+  p {
+    padding-bottom: 0;
   }
 }
 
@@ -66,6 +92,60 @@
     width: 100%;
     height: 100%;
     border-radius: 8px;
+  }
+}
+
+//корректировки для страницы ламинатов
+
+.special-laminate__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .specila__img-block {
+    max-height: 11.5vw;
+  }
+}
+
+//корректировки на странице подокоников
+.special-windowsill__item {
+  max-width: 100%;
+
+  .specila__img-block {
+    max-width: 100%;
+  }
+}
+
+//страница акций
+.special-action__item {
+  max-width: 100%;
+
+  span {
+    font-style: normal;
+    font-weight: normal;
+    font-size: $f20;
+    line-height: 120%;
+    color: #8B8B8B;
+  }
+
+  p {
+    margin-top: $f30;
+    color: #000;
+  }
+
+  h2 {
+    padding-bottom: $f20;
+  }
+
+  span {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 130%;
+  }
+
+  .specila__img-block {
+    max-width: 100%;
   }
 }
 
@@ -143,5 +223,19 @@
     img {
       object-fit: cover;
     }
+  }
+
+  //корректировки для страницы ламинатов
+  .special-laminate__item {
+    align-items: flex-start;
+
+    .specila__img-block {
+      max-height: 230px;
+      min-width: 217px;
+    }
+  }
+
+  .special-laminate__list {
+    flex-direction: row;
   }
 }

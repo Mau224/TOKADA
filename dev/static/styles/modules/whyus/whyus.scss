@@ -10,6 +10,7 @@
 
   p {
     padding-bottom: $f60;
+    color: #8B8B8B;
   }
 }
 
@@ -39,7 +40,11 @@
     position: absolute;
     width: 10.75vw;
     height: 10.75vw;
-    background: linear-gradient(267.89deg, rgba(199, 184, 245, 0.3) 0%, rgba(51, 197, 243, 0.3) 100%);
+    background: linear-gradient(
+      267.89deg,
+      rgba(199, 184, 245, 0.3) 0%,
+      rgba(51, 197, 243, 0.3) 100%
+    );
     border-radius: 50%;
     left: -3vw;
     top: -2.2vw;
@@ -51,7 +56,7 @@
     font-size: $f55;
     line-height: 120%;
     text-transform: uppercase;
-    color: #33C5F3;
+    color: #33c5f3;
     margin-right: $f24;
   }
 
@@ -60,7 +65,7 @@
     font-weight: bold;
     font-size: $f20;
     line-height: 120%;
-    max-width: 14vw;
+    max-width: 18vw;
   }
 
   p {
@@ -86,7 +91,7 @@
   position: relative;
 
   img {
-    min-width: 29.40vw;
+    min-width: 29.4vw;
     height: 30vw;
     border-radius: 8px;
   }
@@ -120,11 +125,14 @@
     column-gap: 0;
     margin-right: 0;
     padding-left: 20px;
+    position: relative;
+    width: 74%;
+
 
     display: flex;
     justify-content: space-between;
-    overflow: hidden;
     margin-top: 25px;
+    order: 2;
   }
 
   .whyus__item {
@@ -157,7 +165,7 @@
     }
 
     &:hover {
-      background-color: #33C5F3;
+      background-color: #33c5f3;
       h3 {
         color: #fff;
       }
@@ -179,7 +187,9 @@
 
   .whyus__wrapper {
     flex-direction: column-reverse;
+    // position: relative;
   }
+
 
   .whyus {
     padding-top: 40px;
@@ -191,6 +201,9 @@
   .whyus__img-block {
     margin-right: 20px;
     margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    order: 3;
 
     img {
       width: 335.41px;
@@ -212,6 +225,9 @@
     display: flex;
     justify-content: center;
     margin-top: 30px;
+    position: relative;
+    width: 100%;
+    order: 1;
 
     a {
       width: 46px;
@@ -230,7 +246,7 @@
         width: 46px;
         height: 46px;
         border-radius: 50%;
-        background-color: #C4C4C4;
+        background-color: #33c5f3;
         top: 0;
         left: 0;
         z-index: 99;
@@ -256,9 +272,9 @@
     }
   }
 
-  .whyus__right.active {
-    &::before {
-      background-color: #33C5F3;
-    }
-  }
+  // .whyus__right.active {
+  //   &::before {
+  //     background-color: #33c5f3;
+  //   }
+  // }
 }

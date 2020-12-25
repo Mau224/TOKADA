@@ -65,17 +65,38 @@
     font-size: $f20;
     line-height: 120%;
     color: #37364D;
+    max-width: 14vw;
   }
 
   &--action {
     background-color: #33C5F3;
+    z-index: 1;
+    position: relative;
+    overflow: hidden;
+
+    svg {
+      position: absolute;
+      z-index: 2;
+      width: $f282;
+      height: $f282;
+      top: -1vw;
+      left: 8vw;
+      fill: #8AE2FE;
+      opacity: 0.5;
+    }
 
     h4 {
       color: #fff;
+      position: relative;
+      z-index: 3;
+      max-width: 21vw;
     }
 
     p {
       color: #fff;
+      position: relative;
+      z-index: 3;
+      padding-top: $f40;
     }
   }
 }
@@ -83,7 +104,7 @@
 .advantages__item-title {
   display: flex;
   align-items: center;
-  padding-bottom: $f40;
+  padding-bottom: 0.5vw;
 }
 
 .advantages {
@@ -172,8 +193,11 @@
     padding-left: 0;
   }
 
+
+  //Другое название , потому что блок чуть-чуть другой не стал заморачиваться уже то же самое что и обертки XXX__slider
   .advantages__block {
-    flex-direction: column-reverse;
+    flex-direction: column;
+    width: 94.5%; //cтили для выравнивания перелистывания слайдов
   }
 
   .advantages__list {
@@ -183,7 +207,7 @@
     grid-column-gap: 0;
     // height: 237px;
     max-height: none;
-    overflow: hidden;
+    // overflow: hidden;
     display: flex;
     justify-content: space-between;
     padding-left: 20px;
@@ -223,6 +247,15 @@
     margin-right: 20px;
     cursor: pointer;
     max-height: none;
+    border-radius: 8px;
+
+    &--action {
+      svg {
+        width: 276px;
+        height: 276px;
+        top: 0;
+      }
+    }
 
     &:last-child {
       margin-right: 0;
@@ -239,6 +272,7 @@
 
       h4 {
         color: white;
+        max-width: 100%;
       }
 
       p {
@@ -259,6 +293,7 @@
       font-weight: bold;
       font-size: 20px;
       line-height: 120%;
+      max-width: 100%;
     }
 
     p {
@@ -278,16 +313,16 @@
   }
 
   .advantages__left {
-    &::before {
+    &::after {
       transform: rotate(180deg);
     }
   }
 
-  .advantages__arrow.active {
-    &::after {
-      background-color: #33C5F3;
-    }
-  }
+  // .advantages__arrow.active {
+  //   &::after {
+  //     background-color: #33C5F3;
+  //   }
+  // }
 
   .advantages__arrow {
     width: 46px;
@@ -299,7 +334,7 @@
       margin-right: 20px;
     }
 
-    &::before {
+    &::after {
       content: "";
       position: absolute;
       background: url("../images/content/arrow__mob-slider.svg") no-repeat;
@@ -311,13 +346,13 @@
       z-index: 100;
     }
 
-    &::after {
+    &::before {
       content: "";
       position: absolute;
       width: 46px;
       height: 46px;
       border-radius: 50%;
-      background-color: #C4C4C4;
+      background-color:#33C5F3;
       top: 0;
       left: 0;
       z-index: 99;

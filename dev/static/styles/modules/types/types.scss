@@ -1,5 +1,5 @@
 .types {
-  padding-top: $f60;
+  //padding-top: $f60;
   margin-bottom: $f70;
 }
 
@@ -8,6 +8,10 @@
   justify-content: space-between;
   align-items: center;
   padding-bottom: $f60;
+
+  p {
+    color: #8B8B8B;
+  }
 
   a {
     color: white;
@@ -111,7 +115,7 @@
     //   left: -3.3vw;
     //   z-index: 1;
     //   top: -1.3vw;
-    // } 
+    // }
   }
 
     &--second {
@@ -198,7 +202,7 @@
 @media (max-width: $mobile-width) {
   .types__title {
     padding-bottom: 10px;
-    
+
     a {
       display: none;
     }
@@ -216,7 +220,7 @@
 
     &--second {
       padding-top: 0;
-      margin-bottom: 85px;
+      margin-bottom: 68px;
     }
   }
 

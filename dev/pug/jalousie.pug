@@ -1,0 +1,68 @@
+extends layout/jalousie-layout
+
+block variables
+  -var title = 'Жалюзи'
+  - var description = 'Жалюзи'
+
+block content
+    section
+        .main-info.main-info__jalousie-page.main-info__other-page
+            .main-info__container
+                a(href="#" class="main-info__location") Москва и Московская область
+                    +icon("marker")
+                h1(data-da="main-info__mob,first,867") Жалюзи
+                p(data-da="main-info__mob,first,867") У нас вы легко подберете подходящую по конструкции, размеру, типу открывания, оформлению и комплектации модель.
+                a(href="#" class="main-info__link-more" data-da="main-info__mob,first,867") Подробнее
+        .main-info__mob
+    section.special
+        .special__container
+            h1 Жалюзи для пластиковых окон
+            .special__title.block__title
+                p Рассмотрим самые популярные виды жалюзи, существующие на современном рынке:
+                a(href="#" data-modal="10" class="js-open-modal") Получить скидку 30% на остекление
+        .special__list
+            .special__item.special-windowsill__item
+                .specila__img-block
+                    picture
+                        source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/special-jalousie__img1.webp 1x, images/content/special-jalousie__img1@2x.webp 2x")
+                        img(src="images/content/special-jalousie__img1.jpg" srcset="images/content/special-jalousie__img1@2x.jpg" alt="картинка окна")
+                h2 Рулонные
+                p Механизм работы таких жалюзи весьма прост. Поднимаясь вверх, полотно движется по направляющим, закручиваясь на валик. Зафиксировать жалюзи можно на любом уровне.
+            .special__item.special-windowsill__item
+                .specila__img-block
+                    picture
+                        source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/special-jalousie__img2.webp 1x, images/content/special-jalousie__img2@2x.webp 2x")
+                        img(src="images/content/special-jalousie__img2.jpg" srcset="images/content/special-jalousie__img2@2x.jpg" alt="картинка окна")
+                h2 Горизонтальные
+                p Этот вид считается классическим и самым популярным. Основой конструкции здесь являются планки, расположенные горизонтально.
+            .special__item.special-windowsill__item
+                .specila__img-block
+                    picture
+                        source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/special-jalousie__img3.webp 1x, images/content/special-jalousie__img3@2x.webp 2x")
+                        img(src="images/content/special-jalousie__img3.jpg" srcset="images/content/special-jalousie__img3@2x.jpg" alt="картинка окна")
+                h2 Вертикальные
+                p Такие жалюзи смотрятся особенно элегантно. Также они визуально увеличивают высоту помещения.
+    //корректирующие стили для этого блока просто для добавления блока заголовка
+    section.plus__panoramic-advantages
+        h1 Преимущества панорамного остекления
+        .plus__advantage-list
+            .plus__advantage-item
+                .plus__advantage-item-img-block
+                    +icon("flower")
+                h2 Эстетичность
+                p С помощью жалюзи можно создать интересное дизайнерское решение.
+            .plus__advantage-item
+                .plus__advantage-item-img-block
+                    +icon("forest")
+                h2 Экологичность
+                p Не выделяет вредных веществ, опасных для здоровья человека.
+            .plus__advantage-item
+                .plus__advantage-item-img-block
+                    +icon("book")
+                h2 Большой выбор
+                p Производители предлагают большой выбор жалюзи для любого дизайнерского решения.
+            .plus__advantage-item
+                .plus__advantage-item-img-block
+                    +icon("broom")
+                h2 Простой уход
+                p Достаточно переодически протирать жалюзи мягкой тряпкой.

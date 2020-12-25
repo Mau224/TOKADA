@@ -2,6 +2,10 @@
   h1 {
     padding-bottom: 1vw;
   }
+
+  p {
+    color: #8B8B8B;
+  }
 }
 
 .reviews {
@@ -19,6 +23,10 @@
   justify-content: space-between;
   align-items: center;
   padding-bottom: $f60;
+
+  p {
+    color: #8B8B8B;
+  }
 
   a {
     color: white;
@@ -74,6 +82,11 @@
   justify-content: space-between;
   padding-left: $f30;
   padding-right: $f30;
+
+  img {
+    width: 4vw;
+    height: 2vw;
+  }
 }
 
 .reviews__item {

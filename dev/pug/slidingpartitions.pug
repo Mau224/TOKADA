@@ -1,0 +1,83 @@
+extends layout/slidingpartitions-layout
+
+block variables
+  -var title = 'Раздвижные перегородки'
+  - var description = 'Раздвижные перегородки'
+
+block content
+    section
+        .main-info.main-info__slidingpartitions-page.main-info__other-page
+            .main-info__container
+                a(href="#" class="main-info__location") Москва и Московская область
+                    +icon("marker")
+                h1(data-da="main-info__mob,first,867") РАЗДВИЖНЫЕ ПЕРЕГОРОДКИ
+                p(data-da="main-info__mob,first,867") У нас вы легко подберете подходящую по конструкции, размеру, типу открывания, оформлению и комплектации модель.
+                a(href="#" class="main-info__link-more" data-da="main-info__mob,first,867") Подробнее
+        .main-info__mob
+    section.types-open
+        .types-open__container
+            h1 Виды раздвижных перегородок
+            .types-open__title.block__title
+                p Раздвижные перегородки можно подразделить на два вида:
+                a(href="#" data-modal="10" class="js-open-modal") Получить скидку 30% на остекление
+        .types-open__list
+            .types-open__item.types-open__item-slidingpartitions
+                .types-open__item-img
+                    picture
+                        source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/types-open__slidingpartitions-img1.webp 1x, images/content/types-open__slidingpartitions-img1@2x.webp 2x")
+                        img(src="images/content/types-open__slidingpartitions-img1.jpg" srcset="images/content/types-open__slidingpartitions-img1@2x.jpg" alt="картинка окна")
+                h2 Раздвижные перегородки
+                p Раздвижные перегородки - функциональный объект и полноценное украшение пространства.
+            .types-open__item.types-open__item-slidingpartitions
+                .types-open__item-img
+                    picture
+                        source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/types-open__slidingpartitions-img2.webp 1x, images/content/types-open__slidingpartitions-img2@2x.webp 2x")
+                        img(src="images/content/types-open__slidingpartitions-img2.jpg" srcset="images/content/types-open__slidingpartitions-img2@2x.jpg" alt="картинка окна")
+                h2 Перегородки гармошки
+                p Если вы хотите рационально использовать пространство, то раздвижные перегородки гармошкой ваш вариант.
+    //.types-open-wintergarden создает отступ от верхнего блока
+    section.types-open.types-open-wintergarden
+        .types-open__container
+            h1 Виды заполнения
+            p Наша компания осуществляет заполнение раздвижных перегородок при помощи новейших технологий и современного оборудования.
+        .types-open__list
+            .types-open__item
+                .types-open__item-img
+                    picture
+                        source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/types-open-second__slidingpartitions-img1.webp 1x, images/content/types-open-second__slidingpartitions-img1@2x.webp 2x")
+                        img(src="images/content/types-open-second__slidingpartitions-img1.png" srcset="images/content/types-open-second__slidingpartitions-img1@2x.png" alt="картинка окна")
+                h2 Глухое заполнение
+                p Оптимальный способ разграничения пространства за максимально короткое время и с минимумом затрат.
+            .types-open__item
+                .types-open__item-img
+                    picture
+                        source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/types-open-second__slidingpartitions-img2.webp 1x, images/content/types-open-second__slidingpartitions-img2@2x.webp 2x")
+                        img(src="images/content/types-open-second__slidingpartitions-img2.png" srcset="images/content/types-open-second__slidingpartitions-img2@2x.png" alt="картинка окна")
+                h2 Комбинированное заполнение
+                p Благодаря тому, что в одном модуле есть возможность комбинировать различные материалы, такие перегородки пользуются наибольшим спросом у наших заказчиков.
+            .types-open__item
+                .types-open__item-img
+                    picture
+                        source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/types-open-second__slidingpartitions-img3.webp 1x, images/content/types-open-second__slidingpartitions-img3@2x.webp 2x")
+                        img(src="images/content/types-open-second__slidingpartitions-img3.png" srcset="images/content/types-open-second__slidingpartitions-img3@2x.png" alt="картинка окна")
+                h2 Стеклянное заполнение
+                p Подобная перегородка создаст ощущение максимальной легкости вашего помещения.
+    //корректирующие стили для этого блока просто для добавления блока заголовка
+    section.plus__panoramic-advantages
+        h1 Преимущества раздвижных перегородок
+        .plus__advantage-list.plus__advantage-list-ingroup
+            .plus__advantage-item
+                .plus__advantage-item-img-block
+                    +icon("forest")
+                h2 Экономия пространства
+                p Главной функцией перегородок является визуальное увеличение площади помещения.
+            .plus__advantage-item
+                .plus__advantage-item-img-block
+                    +icon("lock")
+                h2 Надежность
+                p Прочные и надежные конструкции, качественный материал, прекрасная звукоизоляция.
+            .plus__advantage-item
+                .plus__advantage-item-img-block
+                    +icon("clock")
+                h2 Долговечность
+                p При правильной эксплуатации перегородки служат десятилетиями, не теряя привлекательного внешнего вида и функциональности.

@@ -1,9 +1,15 @@
 .main-info__container {
   padding-left: $psize;
-  padding-top: 7.8vw;
-  padding-bottom: 7.8vw;
+  //padding-top: 6vw;
+  //padding-bottom: 6vw;
   border-radius: 8px;
   position: relative;
+  height: 30vw;
+  max-height: 40vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: fit-content;
 
   h1 {
     font-style: normal;
@@ -13,7 +19,8 @@
     letter-spacing: 0.02em;
     text-transform: uppercase;
     color: #ffffff;
-    max-width: 48vw;
+    max-width: 42vw;
+    margin-bottom: $f40;
   }
 
   p {
@@ -23,8 +30,8 @@
     line-height: 130%;
     color: white;
     max-width: 30vw;
-    padding-top: $f30;
     padding-bottom: 4.5vw;
+    display: none;
   }
 }
 
@@ -34,10 +41,18 @@
   font-weight: bold;
   font-size: $f20;
   line-height: 100%;
-  color: #33C5F3;
-  height: $f70;
+  color: #000;
+  height: 3.38vw;
   background-color: white;
   border-radius: 8px;
+  //display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  max-width: 15.1vw;
+
+  //временно отключ кнопуку
+  display: none;
 }
 
 .main-info {
@@ -74,10 +89,10 @@
   }
 
   @media 	only screen and (-webkit-min-device-pixel-ratio: 1.5),
-  only screen and (min--moz-device-pixel-ratio: 1.5),
-  only screen and (-o-min-device-pixel-ratio: 3/2),
-  only screen and (min-resolution: $retina-dppx),
-  only screen and (min-resolution: $retina-dpi)  {
+    only screen and (min--moz-device-pixel-ratio: 1.5),
+    only screen and (-o-min-device-pixel-ratio: 3/2),
+    only screen and (min-resolution: $retina-dppx),
+    only screen and (min-resolution: $retina-dpi)  {
     background-image: url("../images/content/bg__main@2x.jpg");
   }
 }
@@ -92,17 +107,8 @@
   to {transform:rotate(360deg);}
 }
 
-.main-info__window-page {
-  background: url("../images/content/bg__main-advantages.jpg") no-repeat;
-  background-size: cover;
-  border-radius: 8px;
-  position: relative;
-
-  .main-info__container {
-    h1 {
-      max-width: 40vw;
-    }
-  }
+.main-info__other-page {
+  margin-bottom: 0;
 
   &::before {
     content: "";
@@ -115,6 +121,25 @@
     left: -13vw;
     top: 40vw;
     z-index: -1;
+  }
+
+  p {
+    display: none;
+  }
+}
+
+.main-info__window-page {
+  background: url("../images/content/bg__main-advantages.jpg") no-repeat;
+  background-size: cover;
+  border-radius: 8px;
+  position: relative;
+  margin-bottom: $f60;
+
+
+  .main-info__container {
+    h1 {
+      max-width: 40vw;
+    }
   }
 
   @media 	only screen and (-webkit-min-device-pixel-ratio: 1.5),
@@ -126,36 +151,58 @@
   }
 }
 
-.main-info__window-pvh {
-  background: url("../images/content/bg__main-window-pvh.jpg") no-repeat;
-  background-size: cover;
+.main-info__action-page {
+  background: url("../images/content/bg__main-action.jpg") no-repeat;
+  background-size: contain;
   border-radius: 8px;
   position: relative;
+  margin-bottom: $f60;
 
-  &::before {
-    content: "";
-    position: absolute;
-    background: url("../images/content/circle-opacity2.svg") no-repeat;
-    background-position: center;
-    background-size: contain;
-    width: 40vw;
-    height: 40vw;
-    left: -13vw;
-    top: 40vw;
-    z-index: -1;
+  .action-page__form {
+    position: relative;
+    top: 4vw;
   }
 
-  @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+  .action__present {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 15vw;
+    height: 14vw;
+  }
+
+
+  .main-info__container {
+    align-items: center;
+
+    h1 {
+      max-width: 70vw;
+      text-align: center;
+      font-weight: 800;
+      font-size: $f60;
+      line-height: $f70;
+      letter-spacing: -0.02em;
+      text-transform: uppercase;
+      position: relative;
+      top: 11vw;
+    }
+
+    a {
+      display: none;
+    }
+  }
+
+  @media 	only screen and (-webkit-min-device-pixel-ratio: 1.5),
   only screen and (min--moz-device-pixel-ratio: 1.5),
   only screen and (-o-min-device-pixel-ratio: 3/2),
   only screen and (min-resolution: $retina-dppx),
-  only screen and (min-resolution: $retina-dpi) {
-    background-image: url("../images/content/bg__main-window-pvh@2x.jpg");
+  only screen and (min-resolution: $retina-dpi)  {
+    background-image: url("../images/content/bg__main-action@2x.jpg");
   }
 }
 
-.main-info__doors-page {
-  background: url("../images/content/bg__main-doors.jpg") no-repeat;
+.main-info__loftpartitions-page {
+  background: url("../images/content/bg__main-loftpartitions.jpg") no-repeat;
   background-size: cover;
   border-radius: 8px;
   position: relative;
@@ -166,17 +213,341 @@
     }
   }
 
-  &::before {
-    content: "";
-    position: absolute;
-    background: url("../images/content/circle-opacity2.svg") no-repeat;
-    background-position: center;
-    background-size: contain;
-    width: 40vw;
-    height: 40vw;
-    left: -13vw;
-    top: 40vw;
-    z-index: -1;
+  @media 	only screen and (-webkit-min-device-pixel-ratio: 1.5),
+  only screen and (min--moz-device-pixel-ratio: 1.5),
+  only screen and (-o-min-device-pixel-ratio: 3/2),
+  only screen and (min-resolution: $retina-dppx),
+  only screen and (min-resolution: $retina-dpi)  {
+    background-image: url("../images/content/bg__main-loftpartitions@2x.jpg");
+  }
+}
+
+.main-info__jalousie-page {
+  background: url("../images/content/bg__main-jalousie.jpg") no-repeat;
+  background-size: cover;
+  border-radius: 8px;
+  position: relative;
+
+  .main-info__container {
+    h1 {
+      max-width: 40vw;
+    }
+  }
+
+  @media 	only screen and (-webkit-min-device-pixel-ratio: 1.5),
+  only screen and (min--moz-device-pixel-ratio: 1.5),
+  only screen and (-o-min-device-pixel-ratio: 3/2),
+  only screen and (min-resolution: $retina-dppx),
+  only screen and (min-resolution: $retina-dpi)  {
+    background-image: url("../images/content/bg__main-jalousie@2x.jpg");
+  }
+}
+
+.main-info__shopping-page {
+  background: url("../images/content/bg__main-shopping.jpg") no-repeat;
+  background-size: cover;
+  border-radius: 8px;
+  position: relative;
+  margin-bottom: $f60;
+
+  .main-info__container {
+    h1 {
+      max-width: 40vw;
+    }
+  }
+
+  @media 	only screen and (-webkit-min-device-pixel-ratio: 1.5),
+  only screen and (min--moz-device-pixel-ratio: 1.5),
+  only screen and (-o-min-device-pixel-ratio: 3/2),
+  only screen and (min-resolution: $retina-dppx),
+  only screen and (min-resolution: $retina-dpi)  {
+    background-image: url("../images/content/bg__main-shopping@2x.jpg");
+  }
+}
+
+.main-info__mosquito-page {
+  background: url("../images/content/bg__main-mosquito.jpg") no-repeat;
+  background-size: cover;
+  border-radius: 8px;
+  position: relative;
+
+  .main-info__container {
+    h1 {
+      max-width: 40vw;
+    }
+  }
+
+  @media 	only screen and (-webkit-min-device-pixel-ratio: 1.5),
+  only screen and (min--moz-device-pixel-ratio: 1.5),
+  only screen and (-o-min-device-pixel-ratio: 3/2),
+  only screen and (min-resolution: $retina-dppx),
+  only screen and (min-resolution: $retina-dpi)  {
+    background-image: url("../images/content/bg__main-mosquito@2x.jpg");
+  }
+}
+
+
+.main-info__tent-page {
+  background: url("../images/content/bg__main-tent.jpg") no-repeat;
+  background-size: cover;
+  border-radius: 8px;
+  position: relative;
+
+  .main-info__container {
+    h1 {
+      max-width: 40vw;
+    }
+  }
+
+  @media 	only screen and (-webkit-min-device-pixel-ratio: 1.5),
+  only screen and (min--moz-device-pixel-ratio: 1.5),
+  only screen and (-o-min-device-pixel-ratio: 3/2),
+  only screen and (min-resolution: $retina-dppx),
+  only screen and (min-resolution: $retina-dpi)  {
+    background-image: url("../images/content/bg__main-tent@2x.jpg");
+  }
+}
+
+.main-info__panoramic-page {
+  background: url("../images/content/bg__main-panoramic.jpg") no-repeat;
+  background-size: cover;
+  border-radius: 8px;
+  position: relative;
+  margin-bottom: $f60;
+
+  .main-info__container {
+    h1 {
+      max-width: 40vw;
+    }
+  }
+
+  @media 	only screen and (-webkit-min-device-pixel-ratio: 1.5),
+  only screen and (min--moz-device-pixel-ratio: 1.5),
+  only screen and (-o-min-device-pixel-ratio: 3/2),
+  only screen and (min-resolution: $retina-dppx),
+  only screen and (min-resolution: $retina-dpi)  {
+    background-image: url("../images/content/bg__main-panoramic@2x.jpg");
+  }
+}
+
+.main-info__ingroup-page {
+  background: url("../images/content/bg__main-group.jpg") no-repeat;
+  background-size: cover;
+  border-radius: 8px;
+  position: relative;
+
+  .main-info__container {
+    h1 {
+      max-width: 40vw;
+    }
+  }
+
+  @media 	only screen and (-webkit-min-device-pixel-ratio: 1.5),
+  only screen and (min--moz-device-pixel-ratio: 1.5),
+  only screen and (-o-min-device-pixel-ratio: 3/2),
+  only screen and (min-resolution: $retina-dppx),
+  only screen and (min-resolution: $retina-dpi)  {
+    background-image: url("../images/content/bg__main-group@2x.jpg");
+  }
+}
+
+.main-info__wintergardens-page {
+  background: url("../images/content/bg__main-wintergardens.jpg") no-repeat;
+  background-size: cover;
+  border-radius: 8px;
+  position: relative;
+
+  .main-info__container {
+    h1 {
+      max-width: 40vw;
+    }
+  }
+
+  @media 	only screen and (-webkit-min-device-pixel-ratio: 1.5),
+  only screen and (min--moz-device-pixel-ratio: 1.5),
+  only screen and (-o-min-device-pixel-ratio: 3/2),
+  only screen and (min-resolution: $retina-dppx),
+  only screen and (min-resolution: $retina-dpi)  {
+    background-image: url("../images/content/bg__main-wintergardens@2x.jpg");
+  }
+}
+
+.main-info__stationary-page {
+  background: url("../images/content/bg__main-stationary.jpg") no-repeat;
+  background-size: cover;
+  border-radius: 8px;
+  position: relative;
+
+  .main-info__container {
+    h1 {
+      max-width: 40vw;
+    }
+  }
+
+  @media 	only screen and (-webkit-min-device-pixel-ratio: 1.5),
+  only screen and (min--moz-device-pixel-ratio: 1.5),
+  only screen and (-o-min-device-pixel-ratio: 3/2),
+  only screen and (min-resolution: $retina-dppx),
+  only screen and (min-resolution: $retina-dpi)  {
+    background-image: url("../images/content/bg__main-stationary@2x.jpg");
+  }
+}
+
+.main-info__slidingpartitions-page {
+  background: url("../images/content/bg__main-slidingpartitions.jpg") no-repeat;
+  background-size: cover;
+  border-radius: 8px;
+  position: relative;
+  margin-bottom: $f60;
+
+  .main-info__container {
+    h1 {
+      max-width: 40vw;
+    }
+  }
+
+  @media 	only screen and (-webkit-min-device-pixel-ratio: 1.5),
+  only screen and (min--moz-device-pixel-ratio: 1.5),
+  only screen and (-o-min-device-pixel-ratio: 3/2),
+  only screen and (min-resolution: $retina-dppx),
+  only screen and (min-resolution: $retina-dpi)  {
+    background-image: url("../images/content/bg__main-slidingpartitions@2x.jpg");
+  }
+}
+
+.main-info__mobilepartitions-page {
+  background: url("../images/content/bg__main-mobilepartitions.jpg") no-repeat;
+  background-size: cover;
+  border-radius: 8px;
+  position: relative;
+
+  .main-info__container {
+    h1 {
+      max-width: 40vw;
+    }
+  }
+
+  @media 	only screen and (-webkit-min-device-pixel-ratio: 1.5),
+  only screen and (min--moz-device-pixel-ratio: 1.5),
+  only screen and (-o-min-device-pixel-ratio: 3/2),
+  only screen and (min-resolution: $retina-dppx),
+  only screen and (min-resolution: $retina-dpi)  {
+    background-image: url("../images/content/bg__main-mobilepartitions@2x.jpg");
+  }
+}
+
+.main-info__glassunit-page {
+  background: url("../images/content/bg__main-glassunit.jpg") no-repeat;
+  background-size: cover;
+  border-radius: 8px;
+  position: relative;
+
+  .main-info__container {
+    h1 {
+      max-width: 40vw;
+    }
+  }
+
+  @media 	only screen and (-webkit-min-device-pixel-ratio: 1.5),
+  only screen and (min--moz-device-pixel-ratio: 1.5),
+  only screen and (-o-min-device-pixel-ratio: 3/2),
+  only screen and (min-resolution: $retina-dppx),
+  only screen and (min-resolution: $retina-dpi)  {
+    background-image: url("../images/content/bg__main-glassunit@2x.jpg");
+  }
+}
+
+.main-info__windowsill-page {
+  background: url("../images/content/bg__main-windowsill.jpg") no-repeat;
+  background-size: cover;
+  border-radius: 8px;
+  position: relative;
+  margin-bottom: 0;
+
+  .main-info__container {
+    h1 {
+      max-width: 40vw;
+    }
+  }
+
+  @media 	only screen and (-webkit-min-device-pixel-ratio: 1.5),
+  only screen and (min--moz-device-pixel-ratio: 1.5),
+  only screen and (-o-min-device-pixel-ratio: 3/2),
+  only screen and (min-resolution: $retina-dppx),
+  only screen and (min-resolution: $retina-dpi)  {
+    background-image: url("../images/content/bg__main-windowsill@2x.jpg");
+  }
+}
+
+.main-info__fittings-page {
+  background: url("../images/content/bg__main-fittings.jpg") no-repeat;
+  background-size: cover;
+  border-radius: 8px;
+  position: relative;
+
+  .main-info__container {
+    h1 {
+      max-width: 40vw;
+    }
+  }
+
+  @media 	only screen and (-webkit-min-device-pixel-ratio: 1.5),
+  only screen and (min--moz-device-pixel-ratio: 1.5),
+  only screen and (-o-min-device-pixel-ratio: 3/2),
+  only screen and (min-resolution: $retina-dppx),
+  only screen and (min-resolution: $retina-dpi)  {
+    background-image: url("../images/content/bg__main-fittings@2x.jpg");
+  }
+}
+
+.main-info__laminate-page {
+  background: url("../images/content/bg__main-laminate.jpg") no-repeat;
+  background-size: cover;
+  border-radius: 8px;
+  position: relative;
+
+  .main-info__container {
+    h1 {
+      max-width: 40vw;
+    }
+  }
+
+  @media 	only screen and (-webkit-min-device-pixel-ratio: 1.5),
+  only screen and (min--moz-device-pixel-ratio: 1.5),
+  only screen and (-o-min-device-pixel-ratio: 3/2),
+  only screen and (min-resolution: $retina-dppx),
+  only screen and (min-resolution: $retina-dpi)  {
+    background-image: url("../images/content/bg__main-laminate@2x.jpg");
+  }
+}
+
+.main-info__window-pvh {
+  background: url("../images/content/bg__main-window-pvh.jpg") no-repeat;
+  background-size: cover;
+  border-radius: 8px;
+  position: relative;
+  margin-bottom: 0;
+
+  @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+    only screen and (min--moz-device-pixel-ratio: 1.5),
+    only screen and (-o-min-device-pixel-ratio: 3/2),
+    only screen and (min-resolution: $retina-dppx),
+    only screen and (min-resolution: $retina-dpi) {
+    background-image: url("../images/content/bg__main-window-pvh@2x.jpg");
+  }
+}
+
+.main-info__doors-page {
+  background: url("../images/content/bg__main-doors.jpg") no-repeat;
+  background-size: cover;
+  border-radius: 8px;
+  position: relative;
+  margin-bottom: 0;
+
+  .main-info__container {
+    h1 {
+      max-width: 40vw;
+    }
   }
 
   @media 	only screen and (-webkit-min-device-pixel-ratio: 1.5),
@@ -188,24 +559,58 @@
   }
 }
 
+
+.main-info__autodoors-page {
+  background: url("../images/content/bg__main-autodoors.jpg") no-repeat;
+  background-size: cover;
+  border-radius: 8px;
+  position: relative;
+  margin-bottom: 0;
+
+  .main-info__container {
+    h1 {
+      max-width: 46vw;
+    }
+  }
+
+  @media 	only screen and (-webkit-min-device-pixel-ratio: 1.5),
+  only screen and (min--moz-device-pixel-ratio: 1.5),
+  only screen and (-o-min-device-pixel-ratio: 3/2),
+  only screen and (min-resolution: $retina-dppx),
+  only screen and (min-resolution: $retina-dpi)  {
+    background-image: url("../images/content/bg__main-autodoors@2x.jpg");
+  }
+}
+
+
+.main-info__officedoors-page {
+  background: url("../images/content/bg__main-officeoors.jpg") no-repeat;
+  background-size: cover;
+  border-radius: 8px;
+  position: relative;
+  margin-bottom: $f60;
+
+  .main-info__container {
+    h1 {
+      max-width: 40vw;
+    }
+  }
+
+  @media 	only screen and (-webkit-min-device-pixel-ratio: 1.5),
+  only screen and (min--moz-device-pixel-ratio: 1.5),
+  only screen and (-o-min-device-pixel-ratio: 3/2),
+  only screen and (min-resolution: $retina-dppx),
+  only screen and (min-resolution: $retina-dpi)  {
+    background-image: url("../images/content/bg__main-officeoors@2x.jpg");
+  }
+}
+
 .main-info__facade-page {
   background: url("../images/content/bg__main-facade.jpg") no-repeat;
   background-size: cover;
   border-radius: 8px;
   position: relative;
-
-  &::before {
-    content: "";
-    position: absolute;
-    background: url("../images/content/circle-opacity2.svg") no-repeat;
-    background-position: center;
-    background-size: contain;
-    width: 40vw;
-    height: 40vw;
-    left: -13vw;
-    top: 40vw;
-    z-index: -1;
-  }
+  margin-bottom: 0;
 
   @media 	only screen and (-webkit-min-device-pixel-ratio: 1.5),
     only screen and (min--moz-device-pixel-ratio: 1.5),
@@ -221,19 +626,7 @@
   background-size: cover;
   border-radius: 8px;
   position: relative;
-
-  // &::before {
-  //   content: "";
-  //   position: absolute;
-  //   background: url("../images/content/circle-opacity2.svg") no-repeat;
-  //   background-position: center;
-  //   background-size: contain;
-  //   width: 40vw;
-  //   height: 40vw;
-  //   left: -13vw;
-  //   top: 40vw;
-  //   z-index: -1;
-  // }
+  margin-bottom: 0;
 
   @media 	only screen and (-webkit-min-device-pixel-ratio: 1.5),
     only screen and (min--moz-device-pixel-ratio: 1.5),
@@ -249,6 +642,8 @@
   background-size: cover;
   border-radius: 8px;
   position: relative;
+  background-position: right;
+  margin-bottom: $f60;
 
   .main-info__container {
     h1 {
@@ -256,24 +651,11 @@
     }
   }
 
-  &::before {
-    content: "";
-    position: absolute;
-    background: url("../images/content/circle-opacity2.svg") no-repeat;
-    background-position: center;
-    background-size: contain;
-    width: 40vw;
-    height: 40vw;
-    left: -13vw;
-    top: 40vw;
-    z-index: -1;
-  }
-
   @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
-  only screen and (min--moz-device-pixel-ratio: 1.5),
-  only screen and (-o-min-device-pixel-ratio: 3/2),
-  only screen and (min-resolution: $retina-dppx),
-  only screen and (min-resolution: $retina-dpi) {
+    only screen and (min--moz-device-pixel-ratio: 1.5),
+    only screen and (-o-min-device-pixel-ratio: 3/2),
+    only screen and (min-resolution: $retina-dppx),
+    only screen and (min-resolution: $retina-dpi) {
     background-image: url("../images/content/bg__main-balcony@2x.jpg");
   }
 }
@@ -291,33 +673,48 @@
     }
   }
 
-  &::before {
-    content: "";
-    position: absolute;
-    background: url("../images/content/circle-opacity2.svg") no-repeat;
-    background-position: center;
-    background-size: contain;
-    width: 40vw;
-    height: 40vw;
-    left: -13vw;
-    top: 40vw;
-    z-index: -1;
-  }
-
   @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
-  only screen and (min--moz-device-pixel-ratio: 1.5),
-  only screen and (-o-min-device-pixel-ratio: 3/2),
-  only screen and (min-resolution: $retina-dppx),
-  only screen and (min-resolution: $retina-dpi) {
+    only screen and (min--moz-device-pixel-ratio: 1.5),
+    only screen and (-o-min-device-pixel-ratio: 3/2),
+    only screen and (min-resolution: $retina-dppx),
+    only screen and (min-resolution: $retina-dpi) {
     background-image: url("../images/content/bg__main-swingdoors@2x.jpg");
   }
 }
+
+.main-info__slidingdoors-page {
+  background: url("../images/content/bg__main-slidingdoors.jpg") no-repeat;
+  background-size: cover;
+  border-radius: 8px;
+  position: relative;
+
+
+  .main-info__container {
+    h1 {
+      max-width: 36vw;
+    }
+  }
+
+  //&::before {
+  //  top: 40vw;
+  //}
+
+  @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+    only screen and (min--moz-device-pixel-ratio: 1.5),
+    only screen and (-o-min-device-pixel-ratio: 3/2),
+    only screen and (min-resolution: $retina-dppx),
+    only screen and (min-resolution: $retina-dpi) {
+    background-image: url("../images/content/bg__main-slidingdoors@2x.jpg");
+  }
+}
+
 
 .main-info__aluminumdoors-page {
   background: url("../images/content/bg__main-aluminumdoors.jpg") no-repeat;
   background-size: cover;
   border-radius: 8px;
   position: relative;
+  margin-bottom: $f60;
 
   .main-info__container {
     padding-top: 3.5vw;
@@ -328,24 +725,11 @@
     }
   }
 
-  &::before {
-    content: "";
-    position: absolute;
-    background: url("../images/content/circle-opacity2.svg") no-repeat;
-    background-position: center;
-    background-size: contain;
-    width: 40vw;
-    height: 40vw;
-    left: -13vw;
-    top: 40vw;
-    z-index: -1;
-  }
-
   @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
-  only screen and (min--moz-device-pixel-ratio: 1.5),
-  only screen and (-o-min-device-pixel-ratio: 3/2),
-  only screen and (min-resolution: $retina-dppx),
-  only screen and (min-resolution: $retina-dpi) {
+    only screen and (min--moz-device-pixel-ratio: 1.5),
+    only screen and (-o-min-device-pixel-ratio: 3/2),
+    only screen and (min-resolution: $retina-dppx),
+    only screen and (min-resolution: $retina-dpi) {
     background-image: url("../images/content/bg__main-aluminumdoors@2x.jpg");
   }
 }
@@ -355,25 +739,17 @@
   background-size: cover;
   border-radius: 8px;
   position: relative;
+  margin-bottom: 0;
 
-  &::before {
-    content: "";
-    position: absolute;
-    background: url("../images/content/circle-opacity2.svg") no-repeat;
-    background-position: center;
-    background-size: contain;
-    width: 40vw;
-    height: 40vw;
-    left: -13vw;
-    top: 40vw;
-    z-index: -1;
+  h1 {
+    max-width: 32vw;
   }
 
   @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
-  only screen and (min--moz-device-pixel-ratio: 1.5),
-  only screen and (-o-min-device-pixel-ratio: 3/2),
-  only screen and (min-resolution: $retina-dppx),
-  only screen and (min-resolution: $retina-dpi) {
+    only screen and (min--moz-device-pixel-ratio: 1.5),
+    only screen and (-o-min-device-pixel-ratio: 3/2),
+    only screen and (min-resolution: $retina-dppx),
+    only screen and (min-resolution: $retina-dpi) {
     background-image: url("../images/content/bg__main-complete@2x.jpg");
   }
 }
@@ -415,8 +791,8 @@
   background: url(../images/content/bd__main.jpg) no-repeat;
   background-position: center;
   background-size: cover;
-  
-    @media 	only screen and (-webkit-min-device-pixel-ratio: 1.5),
+
+  @media 	only screen and (-webkit-min-device-pixel-ratio: 1.5),
     only screen and (min--moz-device-pixel-ratio: 1.5),
     only screen and (-o-min-device-pixel-ratio: 3/2),
     only screen and (min-resolution: $retina-dppx),
@@ -428,6 +804,11 @@
 @media (max-width: $mobile-width) {
   .main-info__container {
     padding: 20px 27px;
+
+
+    p {
+      display: inline-block;
+    }
   }
 
   .main-info {
@@ -458,7 +839,7 @@
     letter-spacing: -0.02em;
     text-transform: uppercase;
     padding-left: 39px;
-    max-width: 282px;
+    max-width: 289px;
     padding-top: 14px;
     padding-bottom: 14px;
     padding-right: 14px;
@@ -500,11 +881,12 @@
       line-height: 120%;
       color: #000000;
       max-width: none;
-      padding-bottom: 45px;
+      padding-bottom: 0;
       order: 2;
     }
 
     a {
+      display: none;
       font-style: normal;
       font-weight: bold;
       font-size: 16px;
@@ -514,7 +896,6 @@
       height: 60px;
       max-width: 332px;
       padding: 22px 125px;
-      display: flex;
       justify-content: center;
       align-items: center;
       background-color: #33C5F3;
@@ -522,9 +903,73 @@
     }
   }
 
+
+  .main-info__action-page {
+    background-size: cover;
+    background: url("../images/content/bg__action-mob.jpg") no-repeat;
+    background-size: cover;
+
+
+    @media 	only screen and (-webkit-min-device-pixel-ratio: 1.5),
+    only screen and (min--moz-device-pixel-ratio: 1.5),
+    only screen and (-o-min-device-pixel-ratio: 3/2),
+    only screen and (min-resolution: $retina-dppx),
+    only screen and (min-resolution: $retina-dpi)  {
+      background-image: url("../images/content/bg__action-mob@2x.jpg");
+    }
+
+    .action-page__form {
+      display: none;
+    }
+
+    .action__present {
+      position: absolute;
+      top: 88%;
+      right: 26%;
+      width: 177.12px;
+      height: 197.14px;
+      object-fit: cover;
+    }
+
+    .main-info__mob {
+      padding: 0;
+    }
+
+
+    .main-info__container {
+      width: auto;
+
+      h1 {
+        max-width: 100%;
+        text-align: left;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 28px;
+        line-height: 120%;
+        letter-spacing: -0.02em;
+        text-transform: uppercase;
+        position: relative;
+        top: 0;
+      }
+
+      a {
+        display: inline-block;
+        padding: 0;
+      }
+    }
+  }
+  .link__action-slae {
+    padding: 0!important;
+  }
+
+  .main-info__other-page {
+    p {
+      display: inline-block;
+    }
+  }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 374px) {
   .main-info__location {
     font-size: 12px;
   }

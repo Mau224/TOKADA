@@ -10,7 +10,7 @@
   transition: 0.3s all;
 }
 
-//тут стили для модального окна акций 
+//тут стили для модального окна акций
 
 .header__container.active {
   z-index: 500;
@@ -80,38 +80,38 @@
   position: relative;
   flex-wrap: wrap;
 
-  &::before {
-    content: "";
-    position: absolute;
-    width: 38px;
-    height: 1px;
-    transform: rotate(90deg);
-    background-image: linear-gradient(87deg, rgba(0, 0, 0, 0), #1B3975 50%, rgba(0, 0, 0, 0));
-    background-repeat: no-repeat; /* убираем повторение градиента, необходимо для работы background-size */
-    background-position: 50% 100%;
-    background-size: 100% 1px;
-    background-origin: padding-box, border-box;
-    top: 1.7vw;
-    right: -2.6vw;
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    width: 38px;
-    height: 1px;
-    transform: rotate(90deg);
-    background-image: linear-gradient(87deg, rgba(0, 0, 0, 0), #1B3975 50%, rgba(0, 0, 0, 0));
-    background-repeat: no-repeat; /* убираем повторение градиента, необходимо для работы background-size */
-    background-position: 50% 100%;
-    background-size: 100% 1px;
-    background-origin: padding-box, border-box;
-    top: 1.7vw;
-    left: -2.6vw;
-  }
+  //&::before {
+  //  content: "";
+  //  position: absolute;
+  //  width: 38px;
+  //  height: 1px;
+  //  transform: rotate(90deg);
+  //  background-image: linear-gradient(87deg, rgba(0, 0, 0, 0), #1B3975 50%, rgba(0, 0, 0, 0));
+  //  background-repeat: no-repeat; /* убираем повторение градиента, необходимо для работы background-size */
+  //  background-position: 50% 100%;
+  //  background-size: 100% 1px;
+  //  background-origin: padding-box, border-box;
+  //  top: 1.7vw;
+  //  right: -2.6vw;
+  //}
+  //
+  //&::after {
+  //  content: "";
+  //  position: absolute;
+  //  width: 38px;
+  //  height: 1px;
+  //  transform: rotate(90deg);
+  //  background-image: linear-gradient(87deg, rgba(0, 0, 0, 0), #1B3975 50%, rgba(0, 0, 0, 0));
+  //  background-repeat: no-repeat; /* убираем повторение градиента, необходимо для работы background-size */
+  //  background-position: 50% 100%;
+  //  background-size: 100% 1px;
+  //  background-origin: padding-box, border-box;
+  //  top: 1.7vw;
+  //  left: -2.6vw;
+  //}
 
   a {
-    margin-right: $f21;
+    margin-right: $f30;
     font-style: normal;
     font-weight: bold;
     line-height: 100%;
@@ -123,7 +123,7 @@
 }
 
 .header__location {
-  display: flex;
+  display: none;
   margin-left: 2vw;
 }
 
@@ -156,22 +156,11 @@
     font-size: 1vw;
     line-height: 130%;
   }
-
-  &:hover {
-    .header__place-block {
-      width: 38vw;
-      height: 13.65vw;
-      opacity: 1;
-      visibility: visible;
-    }
-  }
 }
 
 .header__place-block {
   opacity: 0;
   visibility: hidden;
-  width: 0;
-  height: 0;
   display: flex;
   justify-content: space-between;
   padding: $f18;
@@ -180,7 +169,7 @@
   position: absolute;
   width: 38vw;
   height: 13.65vw;
-  left: -2.5vw;
+  top: 4vw;
   z-index: 500;
 }
 
@@ -234,32 +223,52 @@
 
 .header__socials {
   display: grid;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-row-gap: 0.6vw;
-  grid-column-gap: 0.7vw;
+  grid-column-gap: $f22;
 
   a {
-    width: 1vw;
-    height: 1vw;
+    width: $f24;
+    height: $f24;
     display: flex;
     align-items: center;
     align-content: center;
 
     svg {
-      width: 1vw;
-      height: 1vw;
+      width: $f24;
+      height: $f24;
     }
   }
 }
 
 .header__tel {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: relative;
+
+  &:hover {
+    .header__place-block {
+      width: 38vw;
+      height: 13.65vw;
+      opacity: 1;
+      visibility: visible;
+
+      p {
+        font-style: normal;
+        font-weight: normal;
+        font-size: $f18;
+        line-height: 27px;
+      }
+    }
+  }
+
   svg {
     width: 0.95vw;
     height: 0.95vw;
     left: 0;
     position: absolute;
-    top: 0.2vw;
+    top: 0.3vw;
   }
 
   p {
@@ -274,9 +283,11 @@
     font-weight: normal;
     font-size: $f18;
     line-height: $f28;
-    text-transform: uppercase;
     position: relative;
-    padding-left: 1vw;
+    padding-left: 1.4vw;
+    display: flex;
+    align-items: center;
+    max-width: 13.5vw;
   }
 }
 
@@ -296,6 +307,8 @@
   align-items: center;
   align-content: center;
   order: 2;
+  width: 100%;
+  justify-content: space-around;
 
   a {
     font-style: normal;
@@ -416,7 +429,7 @@
   border-radius: 8px;
   color: #ffffff;
   background-color:#33C5F3;
-  background: linear-gradient(90deg, #33C5F3, #B8A0FF, #33C5F3, #B8A0FF);
+  background: linear-gradient(90deg, #88E2FF, #A88AFF, #88E2FF, #A88AFF);
   background-size: 320% 200%;
   animation: GradientBreathe 4s linear infinite;
   transition: background-color 1s ease;
@@ -648,7 +661,7 @@
 
     &::before {
       transform: rotate(-45deg);
-    } 
+    }
   }
 
   .header__wrap-img {
@@ -901,7 +914,7 @@
     grid-template-columns: repeat(4, max-content);
     grid-template-rows: auto;
     column-gap: 20px;
-    
+
     a {
       width: 20px;
       height: 20px;

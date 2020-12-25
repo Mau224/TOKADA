@@ -1,14 +1,17 @@
 .recomend {
   margin-left: 0;
   margin-right: 0;
-  padding-bottom: $f60;
+  padding-bottom: 7.5vw;
   background-color: var(--grey-bg);
   padding-top: $f60;
+  padding-left: $psize;
+  position: relative;
+  // margin-bottom: $f60;
+  // padding-right: $psize;
 }
 
 .recomend__container {
-  padding-left: $psize;
-  padding-right: $psize;
+   padding-right: $psize;
 
   h1 {
     padding-bottom: $f34;
@@ -16,9 +19,15 @@
 
   p {
     padding-bottom: $f60;
+    color: #8B8B8B;
   }
 }
 
+.recomend__title {
+  p {
+    padding-bottom: 0;
+  }
+}
 
 //стиль для блока на страницу windows-pvh
 .recomend.recomend__pvh {
@@ -26,12 +35,20 @@
 }
 //конец стилей
 
+.recomend__slider {
+  width: 100%;
+  height: 100%;
+  // padding-left: $psize;
+  // padding-right: $psize;
+}
+
 .recomend__list {
   display: flex;
-  justify-content: space-between;
-  overflow: hidden;
-  margin-left: $psize;
+  // justify-content: space-between;
+  // padding-left: $psize;
   width: 100%;
+  min-width: 0;
+  height: 30vw;
 }
 
 .recomend__item-title {
@@ -41,23 +58,42 @@
   padding-top: $f30;
 }
 
+.recomend__item.swiper-slide-active {
+  min-width: 35.75vw;
+  // transition: 0.7s  ease;
+
+  p {
+    visibility: visible;
+    opacity: 1;
+    width: 21vw;
+    height: auto;
+  }
+
+  img {
+    width: 35.75vw;
+    height: 26.39vw;
+    border-radius: 8px;
+  }
+}
+
 .recomend__item {
-  width: 28.32vw;
-  margin-right: $f40;
+  min-width: 28.32vw;
+  // margin-right: $f40;
+  border-radius: 8px;
 
   img {
     width: 28.32vw;
     height: 21.9vw;
   }
 
-  &--first {
-    width: 35.75vw;
+  // &--first {
+  //   min-width: 35.75vw;
 
-    img {
-      width: 35.75vw;
-      height: 26.39vw;
-    }
-  }
+  //   img {
+  //     width: 35.75vw;
+  //     height: 26.39vw;
+  //   }
+  // }
 
   h2 {
     font-style: normal;
@@ -72,24 +108,31 @@
     font-weight: normal;
     font-size: 1vw;
     line-height: 130%;
-    max-width: 21vw;
+    max-width: 20.9vw;
+    opacity: 0;
+    width: 0;
+    height: 0;
+    visibility: hidden;
+    transition: 0.3s;
   }
 }
 
 .recomend__btns {
   height: 2.88vw;
-  margin-left: $psize;
-  margin-right: $psize;
+  padding-right: $psize;
   display: flex;
   justify-content: flex-end;
-  position: relative;
-  top: -3vw;
+  position: absolute;
+  width: 100%;
+  z-index: 20;
+  right: -3vw;
 }
 
 .recomend__arrow {
   position: relative;
   width: 2.88vw;
   height: 2.88vw;
+  outline: none;
 
   &:first-child {
     margin-right: $f20;
@@ -114,6 +157,11 @@
   &::before {
     transform: rotate(180deg);
   }
+}
+
+//изменение фона на странице panoramic
+.recomend-panoramic {
+  background-color: #fff;
 }
 
 @media (max-width: $mobile-width) {
@@ -144,12 +192,20 @@
   }
 
   .recomend__list {
-    margin-left: 20px;
+    padding-left: 0;
+    padding-right: 0;
+    min-width: auto;
+    height: auto;
+  }
+
+  .recomend__slider {
+    height: auto;
   }
 
   .recomend__item {
     min-width: 276px;
-    margin-right: 13px;
+    width: 276px;
+    // margin-right: 13px;
 
     img {
       width: 276px;
@@ -162,6 +218,7 @@
       font-size: 22px;
       line-height: 120%;
       max-width: none;
+      padding-bottom: 20px;
     }
 
     p {
@@ -170,6 +227,10 @@
       font-size: 16px;
       line-height: 130%;
       max-width: none;
+      padding-bottom: 30px;
+      width: 276px;
+      opacity: 1;
+      visibility: visible;
     }
 
     &--first {
@@ -182,11 +243,26 @@
     }
   }
 
+  .recomend__item.swiper-slide-active {
+    min-width: 276px;
+    // transition: 0.7s  ease;
+
+    p {
+      width: 276px;
+    }
+
+    img {
+      width: 276px;
+      height: 250px;
+    }
+  }
+
   .recomend__btns {
     height: 46px;
     top: 0;
     justify-content: center;
     align-items: center;
+    position: relative;
   }
 
   .recomend__arrow {
@@ -195,6 +271,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    &:first-child {
+      margin-right: 20px;
+    }
 
     &::before {
       content: "";
@@ -214,20 +294,31 @@
       width: 46px;
       height: 46px;
       border-radius: 50%;
-      background-color: #C4C4C4;
+      background-color: #33c5f3;
       top: 0;
       left: 0;
       z-index: 99;
     }
   }
 
-  .recomend__right.active {
+  .recomend__arrow.swiper-button-disabled {
+
     &::after {
-      background-color: #33C5F3;
+      background-color: #c4c4c4;
     }
   }
 
+  // .recomend__right.active {
+  //   &::after {
+  //     background-color: #33c5f3;
+  //   }
+  // }
+
   .recomend {
     padding-bottom: 85px;
+    padding-left: 0;
+    background-color: #fff;
+    margin-bottom: 0;
+    padding-top: 45px;
   }
 }

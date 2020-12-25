@@ -8,14 +8,24 @@
   }
 
   p {
+    color: #8B8B8B;
     padding-bottom: $f60;
   }
+}
+
+.offer__title {
+  p{
+    padding-bottom: 0;
+  }
+}
+
+.offer__container-title {
+  padding-bottom: $f60;
 }
 
 .offer__list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
   row-gap: $f20;
   column-gap: $f20;
 }
@@ -62,7 +72,7 @@
   opacity: 0;
   top: 0;
   visibility: hidden;
-  transition: 1s ease;
+  transition: 0.3s ease;
   background: linear-gradient(0deg, rgba(25, 158, 214, 0.6), rgba(25, 158, 214, 0.6));
   background-size: cover;
   position: absolute;
@@ -99,6 +109,160 @@
   display: none;
 }
 
+//добавление кнопки акций
+.offer__container-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  a {
+    color: white;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.13vw;
+    line-height: 100%;
+    background: #33C5F3;
+    border-radius: 8px;
+    padding: 1.375vw 2.5vw;
+  }
+
+  p {
+    padding-bottom: 0;
+  }
+}
+
+//корректировки для страницы loftpartitions
+.offer-loftpartitions {
+  margin-bottom: $f100;
+}
+
+//корректировка стилей для страницы стеклопакетов
+.offer-glassunit__item {
+  background-color: var(--grey-bg);
+  border-radius: 8px;
+  min-height: 22vw;
+
+  &:hover {
+    h2 {
+      color: #fff;
+    }
+  }
+
+  h2 {
+    color: #000000;
+  }
+}
+
+.offer-glassunit__img-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: $f75;
+
+  svg {
+    width: $f30;
+    height: $f30;
+    fill: #33c5f3;
+  }
+
+  img {
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    max-height: 14vw;
+  }
+}
+
+.offer-glassunit__svg-wrap {
+  width: 4.69vw;
+  height: 4.69vw;
+  border-radius: 50%;
+  border: 1px solid #33C5F3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.25vw;
+  margin-left: $f60;
+  position: relative;
+
+  &--no {
+    svg {
+      fill: #C4C4C4;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: $f75;
+      height: 1px;
+      background-color: #33c5f3;
+      top: 2.2vw;
+      left: 0;
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+//корректировки для страницы фарнитуры
+.offer-fittings__item {
+  min-height: 21.9vw;
+  background-color: var(--grey-bg);
+  border-radius: 8px;
+
+  &:hover {
+    h2 {
+      color: #fff;
+    }
+  }
+
+  h2 {
+    color: #000000;
+    max-width: 17vw;
+  }
+
+  img {
+    max-height: 19vw;
+    height: 100%;
+    object-fit: contain;
+    max-width: 18vw;
+    top: 3vw;
+    right: -6vw;
+  }
+}
+
+//корректировка стилей для страницы торговых павильонов
+.offer-shopping__item {
+  p {
+    display: inline-block;
+    position: absolute;
+    z-index: 200;
+    color: #fff;
+    top: 5vw;
+    padding-left: $f40;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1vw;
+    line-height: 130%;
+  }
+}
+
+//корректировки на странице маскитных сеток
+.offer-mosquito__item {
+  &:hover {
+    h2 {
+      color: #fff;
+    }
+  }
+  h2 {
+    color: #000;
+  }
+}
+
+.offer-mosquito {
+  margin-bottom: $f60;
+}
+
 @media (max-width: $mobile-width) {
   .offer {
     padding-top: 46px;
@@ -125,6 +289,10 @@
     grid-template-rows: auto;
     justify-content: space-between;
     padding-left: 20px;
+  }
+
+  .offer__slider {
+    width: 94.5%; //cтили для выравнивания перелистывания слайдов
   }
 
   .offer__item {
@@ -194,7 +362,7 @@
         width: 46px;
         height: 46px;
         border-radius: 50%;
-        background-color: #C4C4C4;
+        background-color:  #33C5F3;
         top: 0;
         left: 0;
         z-index: 99;
@@ -220,9 +388,128 @@
     }
   }
 
-  .offer__right.active {
-    &::before {
-      background-color: #33C5F3;
+  //добавление кнопки акций
+  .offer__container-title {
+    a {
+      display: none;
+    }
+  }
+
+
+  //корректировка стилей для страницы стеклопакетов
+  .offer-glassunit__item {
+    background-color: #fff;
+    border-radius: 8px;
+    min-height: 100%;
+
+    &:hover {
+      h2 {
+        color: #fff;
+      }
+    }
+
+    h2 {
+      color: #000000;
+      padding-left: 20px;
+    }
+
+    p {
+      padding-left: 20px;
+    }
+  }
+
+  .offer-glassunit__img-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 35px;
+    background-color: var(--grey-bg);
+    padding-bottom: 34px;
+    border-radius: 8px;
+
+    svg {
+      width: 30px;
+      height: 30px;
+      fill: #33c5f3;
+    }
+
+    img {
+      width: 137px;
+      height: 221.18px;
+      object-fit: contain;
+      max-height: 100%;
+    }
+  }
+
+  .offer-glassunit__svg-wrap {
+    width: 75px;
+    height: 75px;
+    margin-left: 30px;
+
+    &--no {
+      svg {
+        fill: #C4C4C4;
+      }
+
+      &::before {
+        width: 75px;
+        top: 37px;
+      }
+    }
+  }
+
+  //корректировки для страницы фарнитуры
+  .offer-fittings__item {
+    min-height: 401px;
+    background-color: #fff;
+
+    picture {
+      background-color: var(--grey-bg);
+      padding-bottom: 22px;
+      min-height: 266px;
+      border-radius: 8px;
+    }
+
+    &:hover {
+      h2 {
+        color: #000;
+      }
+    }
+
+    h2 {
+      max-width: 273px;
+      padding-left: 20px;
+    }
+
+    p {
+      padding-left: 20px;
+    }
+
+    img {
+      max-height: 199px;
+      height: 100%;
+      object-fit: contain;
+      max-width: 189px;
+      top: 3vw;
+      right: -6vw;
+    }
+  }
+
+  //корректировка стилей для страницы торговых павильонов
+  .offer-shopping__item {
+    p {
+      display: inline-block;
+      position: relative;
+      z-index: 200;
+      font-size: 16px;
+      top: 0;
+    }
+  }
+
+  //корректировки на странице маскитных сеток
+  .offer-mosquito__item {
+    h2 {
+      color: #000;
     }
   }
 }

@@ -6,6 +6,7 @@
 
   p {
     padding-bottom: $f60;
+    color: #8B8B8B;
   }
 }
 
@@ -13,7 +14,7 @@
   margin-left: 0;
   margin-right: 0;
   margin-top: $f60;
-  margin-bottom: $f60;
+  padding-bottom: $f60;
   padding-left: $psize;
   padding-right: $psize;
   background: linear-gradient(to top, #F8F8F8 20%, white 22%);
@@ -105,6 +106,15 @@
 
     &.is-open {
       .select__body { display: block; }
+      .select__header {
+        &::before {
+          transform: rotate(-45deg);
+        }
+
+        &::after {
+          transform: rotate(45deg);
+        }
+      }
     }
 
     &__header {
@@ -128,6 +138,7 @@
         background-color: black;
         right: 2.4vw;
         top: 2vw;
+        transition: 0.3s;
       }
 
       &::after {
@@ -139,6 +150,7 @@
         background-color: black;
         right: 2.04vw;
         top: 2vw;
+        transition: 0.3s;
       }
     }
 
@@ -160,6 +172,16 @@
 
     &__item {
       cursor: pointer;
+      width: 100%;
+      min-width: 33.19vw;
+      background: #FFFFFF;
+      border: 1px solid #33C5F3;
+      box-sizing: border-box;
+      border-radius: 8px;
+      padding: 1.13vw 1.75vw;
+      position: relative;
+      margin-top: $f20;
+      font-size: 1vw;
     }
   }
 }
@@ -180,6 +202,7 @@
     stroke: #000;
     height: 5vw;
     max-width: 9vw;
+    width: 100%;
   }
 }
 

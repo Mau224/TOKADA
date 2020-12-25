@@ -6,6 +6,7 @@
 .footer__container {
   padding-left: $psize;
   padding-right: $psize;
+  height: 100vh;
 }
 
 .footer__header {
@@ -37,10 +38,10 @@
   font-size: $f18;
   line-height: $f28;
   color: #ffffff;
-  margin-right: 8.5vw;
+  margin-right: $f80;
 
   &:first-child {
-    padding: 1.25vw 2.91vw;
+    padding: 1vw 2.91vw;
     padding-left: 3.8vw;
     border: 1px solid rgba(255, 255, 255, 0.1);
     box-sizing: border-box;
@@ -279,6 +280,10 @@
 .footer__info-item-text {
   display: flex;
   flex-direction: column;
+
+  p {
+    color: #8B8B8B;
+  }
 }
 
 .footer__social-text {
@@ -324,6 +329,21 @@
   }
 }
 
+.footer__dir-info {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: $f60;
+
+  a {
+    font-style: normal;
+    font-weight: normal;
+    font-size: $f18;
+    line-height: 100%;
+    text-transform: none;
+  }
+}
+
+
 @media (max-width: $mobile-width) {
   .footer__header-link {
     font-style: normal;
@@ -335,7 +355,7 @@
     display: flex;
     align-items: center;
     margin-bottom: 30px;
-    order: 1;
+    order: 3;
 
     &:first-child {//последний из-за reverse
       margin-bottom: 0;
@@ -345,6 +365,7 @@
       justify-content: center;
       width: 100%;
       max-width: 335px;
+      order: 1;
 
       svg {
         top: 22px;
@@ -363,7 +384,7 @@
   }
 
   .footer__header-link-mail {
-    order: 2;
+    order: 3;
   }
 
 
@@ -411,6 +432,20 @@
   .footer__container {
     padding-left: 20px;
     padding-right: 20px;
+    height: 100%;
+  }
+
+  .footer__dir-col {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+    margin-top: 40px;
+
+    h3 {
+      &::before {
+        display: none;
+      }
+    }
   }
 
   .footer__mob-header {
@@ -542,7 +577,17 @@
   }
 
   .footer__social-list {
-    display: none;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 170px;
+    order: 2;
+
+    svg {
+      width: 25.82px;
+      height: 25.82px;
+    }
   }
 
   .footer__socials {
@@ -575,7 +620,7 @@
     &--location {
       a {
         padding-top: 3px;
-        
+
         svg {
           width: 15px;
           height: 15px;

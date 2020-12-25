@@ -1,0 +1,171 @@
+extends layout/glassunit-layout
+
+block variables
+  -var title = 'Стеклопакеты от производителя'
+  - var description = 'Стеклопакеты от производителя'
+
+block content
+    section
+        .main-info.main-info__glassunit-page.main-info__other-page
+            .main-info__container
+                a(href="#" class="main-info__location") Москва и Московская область
+                    +icon("marker")
+                h1(data-da="main-info__mob,first,867") стеклопакеты от производителя
+                p(data-da="main-info__mob,first,867") У нас вы легко подберете подходящую по конструкции, размеру, типу открывания, оформлению и комплектации модель.
+                a(href="#" class="main-info__link-more" data-da="main-info__mob,first,867") Подробнее
+        .main-info__mob
+    section.offer
+        .offer__container
+            h1 Виды стеклопакетов для пластиковых окон и дверей
+            .offer__container-title
+                p В зависимости от потребностей и места установки оконной конструкции различают следующие виды стеклопакетов:
+                a(href="#" data-modal="10" class="js-open-modal") Получить скидку 30% на остекление
+            .offer__slider.swiper-container.slider
+                .offer__list.swiper-wrapper
+                    .offer__item.offer-glassunit__item.swiper-slide
+                        h2 Энергосберегающий
+                        .offer-glassunit__img-wrap
+                            picture
+                                source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/offer-glassunit__img4.webp 1x, images/content/offer-glassunit__img4@2x.webp 2x")
+                                img(src="images/content/offer-glassunit__img4.png" srcset="images/content/offer-glassunit__img4@2x.png" alt="картинка окна")
+                            .offer-glassunit__svg-wrap
+                                +icon("lightning")
+                        p с повышенным уровнем теплоизоляции
+                        .offer__popup-block
+                            p Сотрудничая с дизайнерами , мы готовы к нестандартным задачам и смелым идеям.
+                            a(href="#" class="js-open-modal" data-modal="10") Связаться со специалистом
+                    .offer__item.offer-glassunit__item.swiper-slide
+                        h2 Солнцезащитный
+                        .offer-glassunit__img-wrap
+                            picture
+                                source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/offer-glassunit__img4.webp 1x, images/content/offer-glassunit__img4@2x.webp 2x")
+                                img(src="images/content/offer-glassunit__img4.png" srcset="images/content/offer-glassunit__img4@2x.png" alt="картинка окна")
+                            .offer-glassunit__svg-wrap.offer-glassunit__svg-wrap--no
+                                +icon("san")
+                        p Сотрудничая с дизайнерами , мы готовы к нестандартным задачам и смелым идеям.
+                        .offer__popup-block
+                            p Сотрудничая с дизайнерами , мы готовы к нестандартным задачам и смелым идеям.
+                            a(href="#" class="js-open-modal" data-modal="10") Связаться со специалистом
+                    .offer__item.offer-glassunit__item.swiper-slide
+                        h2 Самоочищающийся
+                        .offer-glassunit__img-wrap
+                            picture
+                                source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/offer-glassunit__img3.webp 1x, images/content/offer-glassunit__img3@2x.webp 2x")
+                                img(src="images/content/offer-glassunit__img3.png" srcset="images/content/offer-glassunit__img3@2x.png" alt="картинка окна")
+                            .offer-glassunit__svg-wrap.offer-glassunit__svg-wrap--no
+                                +icon("broom")
+                        p Сотрудничая с дизайнерами , мы готовы к нестандартным задачам и смелым идеям.
+                        .offer__popup-block
+                            p Сотрудничая с дизайнерами , мы готовы к нестандартным задачам и смелым идеям.
+                            a(href="#" class="js-open-modal" data-modal="10") Связаться со специалистом
+                    .offer__item.offer-glassunit__item.swiper-slide
+                        h2 Шумозащитный
+                        .offer-glassunit__img-wrap
+                            picture
+                                source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/offer-glassunit__img4.webp 1x, images/content/offer-glassunit__img4@2x.webp 2x")
+                                img(src="images/content/offer-glassunit__img4.png" srcset="images/content/offer-glassunit__img4@2x.png" alt="картинка окна")
+                            .offer-glassunit__svg-wrap
+                                +icon("voice")
+                        p Сотрудничая с дизайнерами , мы готовы к нестандартным задачам и смелым идеям.
+                        .offer__popup-block
+                            p Сотрудничая с дизайнерами , мы готовы к нестандартным задачам и смелым идеям.
+                            a(href="#" class="js-open-modal" data-modal="10") Связаться со специалистом
+                    .offer__item.offer-glassunit__item.swiper-slide
+                        h2 Вандалозащитный
+                        .offer-glassunit__img-wrap
+                            picture
+                                source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/offer-glassunit__img4.webp 1x, images/content/offer-glassunit__img4@2x.webp 2x")
+                                img(src="images/content/offer-glassunit__img4.png" srcset="images/content/offer-glassunit__img4@2x.png" alt="картинка окна")
+                            .offer-glassunit__svg-wrap.offer-glassunit__svg-wrap--no
+                                +icon("hammer")
+                        p Сотрудничая с дизайнерами , мы готовы к нестандартным задачам и смелым идеям.
+                        .offer__popup-block
+                            p Сотрудничая с дизайнерами , мы готовы к нестандартным задачам и смелым идеям.
+                            a(href="#" class="js-open-modal" data-modal="10") Связаться со специалистом
+                    .offer__item.offer-glassunit__item.swiper-slide
+                        h2 Мультифункциональный
+                        .offer-glassunit__img-wrap
+                            picture
+                                source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/offer-glassunit__img3.webp 1x, images/content/offer-glassunit__img3@2x.webp 2x")
+                                img(src="images/content/offer-glassunit__img3.png" srcset="images/content/offer-glassunit__img3@2x.png" alt="картинка окна")
+                            .offer-glassunit__svg-wrap
+                                +icon("power")
+                        p Сотрудничая с дизайнерами , мы готовы к нестандартным задачам и смелым идеям.
+                        .offer__popup-block
+                            p Сотрудничая с дизайнерами , мы готовы к нестандартным задачам и смелым идеям.
+                            a(href="#" class="js-open-modal" data-modal="10") Связаться со специалистом
+                .offer__btns
+                    a(href="#" class="offer__arrow offer__left swiper-button-prev slider__arrows")
+                    a(href="#" class="offer__arrow offer__right active swiper-button-next slider__arrows")
+    //.types-open-wintergarden создает отступ
+    section.types-open.types-open-wintergarden
+        .types-open__container
+            h1 Виды стеклопакетов по количеству камер
+            p По количеству камер стеклопакеты разделяются на однокамерные и двухкамерные.
+        .types-open__list
+            .types-open__item.types-open__item-glassunit
+                .types-open__item-img
+                    picture
+                        source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/types-open__glassunit-img1.webp 1x, images/content/types-open__glassunit-img1@2x.webp 2x")
+                        img(src="images/content/types-open__glassunit-img1.png" srcset="images/content/types-open__glassunit-img1@2x.png" alt="картинка окна")
+                h2 Однокамерные
+                p Основные достоинства - невысокая стоимость, легкий вес, отличная светопропускная способность.
+            .types-open__item.types-open__item-glassunit
+                .types-open__item-img
+                    picture
+                        source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/types-open__glassunit-img2.webp 1x, images/content/types-open__glassunit-img2@2x.webp 2x")
+                        img(src="images/content/types-open__glassunit-img2.png" srcset="images/content/types-open__glassunit-img2@2x.png" alt="картинка окна")
+                h2 Двухкамерные
+                p Это самые распространенные конструкции для жилых помещений. Отличаются хорошими изоляционными свойствами.
+    section.special
+        .special__container
+            h1 Декоративные решения
+            p Декоративные решения позволят придать построенным зданиям неповторимый, запоминающийся стиль.
+        .special__list
+            .special__item
+                .specila__img-block
+                    picture
+                        source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/special-glassunit__img1.webp 1x, images/content/special-glassunit__img1@2x.webp 2x")
+                        img(src="images/content/special-glassunit__img1.jpg" srcset="images/content/special-glassunit__img1@2x.jpg" alt="картинка окна")
+                h2 Цветной стеклопакет
+                p Цветные стеклопакеты - это неповторимый стиль. Они придадут уникальность и сделают запоминаемым любое сооружение.
+            .special__item
+                .specila__img-block
+                    picture
+                        source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/special-glassunit__img2.webp 1x, images/content/special-glassunit__img2@2x.webp 2x")
+                        img(src="images/content/special-glassunit__img2.jpg" srcset="images/content/special-glassunit__img2@2x.jpg" alt="картинка окна")
+                h2 Декоративный стеклопакет
+                p Декор стеклопакета позволяет оживить весь фасад здания. Украсить оконный проем можно снаружи или изнутри.
+            .special__item
+                .specila__img-block
+                    picture
+                        source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/special-glassunit__img3.webp 1x, images/content/special-glassunit__img3@2x.webp 2x")
+                        img(src="images/content/special-glassunit__img3.jpg" srcset="images/content/special-glassunit__img3@2x.jpg" alt="картинка окна")
+                h2 Тонированный стеклопакет
+                p Интересное дизайнерское и архитектурное решение, придающее интерьеру и внешнему облику зданий оригинальный внешний вид.
+            .special__item
+                .specila__img-block
+                    picture
+                        source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/special-glassunit__img4.webp 1x, images/content/special-glassunit__img4@2x.webp 2x")
+                        img(src="images/content/special-glassunit__img4.jpg" srcset="images/content/special-glassunit__img4@2x.jpg" alt="картинка окна")
+                h2 Матовый стеклопакет
+                p Матовые окна пропускают меньше света, создавая при этом в помещении атмосферу уюта и комфорта.
+    //корректирующие стили для этого блока просто для добавления блока заголовка
+    section.plus__panoramic-advantages
+        h1 Как выбрать стеклопакет?
+        .plus__advantage-list.plus__advantage-list-ingroup
+            .plus__advantage-item
+                .plus__advantage-item-img-block
+                    +icon("walls")
+                h2 Количество камер
+                p Количество камер имеет значение не только для теплоизоляции, но и для сокращения уровня шума.
+            .plus__advantage-item
+                .plus__advantage-item-img-block
+                    +icon("carbon")
+                h2 Свойства
+                p Перед покупкой окна следует внимательно рассмотреть все свойства стеклопакета.
+            .plus__advantage-item
+                .plus__advantage-item-img-block
+                    +icon("flower")
+                h2 Декоративные решения
+                p Декоративные решения позволят придать построенным зданиям неповторимый, запоминающийся стиль.

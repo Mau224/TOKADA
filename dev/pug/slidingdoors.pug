@@ -1,0 +1,124 @@
+extends layout/slidingdoors-layout
+
+block variables
+  -var title = 'Раздвижные двери от производителя'
+  - var description = 'Раздвижные двери от производителя'
+
+block content
+    section
+        .main-info.main-info__slidingdoors-page.main-info__other-page
+            .main-info__container
+                a(href="#" class="main-info__location") Москва и Московская область
+                    +icon("marker")
+                h1(data-da="main-info__mob,first,867") Раздвижные двери от производителя
+                p(data-da="main-info__mob,first,867") У нас вы легко подберете подходящую по конструкции, размеру, типу открывания, оформлению и комплектации модель.
+                a(href="#" class="main-info__link-more" data-da="main-info__mob,first,867") Подробнее
+        .main-info__mob
+    section.types-profile
+        .types-profile__container
+            h1 Виды раздвижных дверей
+            .types-profile__title
+                p Раздвижные двери имеют два вида:
+                a(href="#" data-modal="10" class="js-open-modal") Получить скидку 30% на остекление
+        .types-profile__list
+            .types-profile__item
+                h2 Холодный профиль
+                p Холодные двери изготавливаются из неизолированного алюминиевого профиля. Заполняются однокамерными стеклопакетами или стеклами.
+                picture
+                    source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/slidedoors__item-img1.webp 1x, images/content/slidedoors__item-img1@2x.webp 2x")
+                    img(src="images/content/slidedoors__item-img1.jpg" srcset="images/content/slidedoors__item-img1@2x.jpg" alt="картинка окна")
+                .types-profile__advantages-list.types-profile__slidingdoors-list
+                    picture
+                        source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/slididoors-adv-item.webp 1x, images/content/slididoors-adv-item@2x.webp 2x")
+                        img(src="images/content/slididoors-adv-item.png" srcset="images/content/slididoors-adv-item@2x.png" alt="картинка окна")
+                    .type-profile__slididoors-adv-block
+                        h2 Применяется:
+                        p - Внутренние помещения
+                        p - Раздвижные межкомнатные двери
+                        p - Офисные перегородки
+
+                .types-profile__btn
+                    a(href="doors.html" class="types-profile__link disabled-on-mob") Смотреть подробнее
+                    a(href="doors.html" class="types-profile__link disabled-on-desktop") Подробнее
+            .types-profile__item
+                h2 Теплый профиль
+                p Теплые алюминиевые двери раздвижного типа изготавливаются из изолированных профилей с высокими теплоизоляционными характеристиками.
+                picture
+                    source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/slidedoors__item-img2.webp 1x, images/content/slidedoors__item-img2@2x.webp 2x")
+                    img(src="images/content/slidedoors__item-img2.jpg" srcset="images/content/slidedoors__item-img2@2x.jpg" alt="картинка окна")
+                .types-profile__advantages-list.types-profile__slidingdoors-list
+                    picture
+                        source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/slididoors-adv-item2.webp 1x, images/content/slididoors-adv-item2@2x.webp 2x")
+                        img(src="images/content/slididoors-adv-item2.png" srcset="images/content/slididoors-adv-item2@2x.png" alt="картинка окна")
+                    .type-profile__slididoors-adv-block
+                        h2 Применяется:
+                        p - Входные группы
+                        p - Вход в магазин, офис, ресторан
+                        p - Двери для частного дома
+
+                .types-profile__btn
+                    a(href="aluminumdoors.html" class="types-profile__link disabled-on-mob") Смотреть подробнее
+                    a(href="aluminumdoors.html" class="types-profile__link disabled-on-desktop") Подробнее
+    section.types-open
+        .types-open__container
+            h1 Способы остекления
+            p По способу открывания делятся на:
+        .types-open__list
+            .types-open__item
+                .types-open__item-img.types-open__item-slidingdoors-img
+                    picture
+                        source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/slidingdoors-open-img1.webp 1x, images/content/slidingdoors-open-img1@2x.webp 2x")
+                        img(src="images/content/slidingdoors-open-img1.png" srcset="images/content/slidingdoors-open-img1@2x.png" alt="картинка окна")
+                    +icon("slidingdoors-arrow")
+                h2 Параллельно-раздвижные
+                p Параллельно-раздвижные створки плавно перемещаются по направляющим. Устанавливаются в неширокие проемы.
+            .types-open__item
+                .types-open__item-img.types-open__item-slidingdoors-img
+                    picture
+                        source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/slidingdoors-open-img1.webp 1x, images/content/slidingdoors-open-img1@2x.webp 2x")
+                        img(src="images/content/slidingdoors-open-img1.png" srcset="images/content/slidingdoors-open-img1@2x.png" alt="картинка окна")
+                    +icon("slidingdoors-arrow-2")
+                h2 Подъемно-сдвижные
+                p Подъемно-сдвижные системы при нажатии на ручку при помощи специальной каретки слегка приподнимают створку и плавно отводят ее в сторону. Устанавливаются в широкие проемы.
+            .types-open__item
+                .types-open__item-img.types-open__item-slidingdoors-img
+                    picture
+                        source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/slidingdoors-open-img1.webp 1x, images/content/slidingdoors-open-img1@2x.webp 2x")
+                        img(src="images/content/slidingdoors-open-img1.png" srcset="images/content/slidingdoors-open-img1@2x.png" alt="картинка окна")
+                    +icon("slidingdoors-arrow")
+                h2 Складные гармошки
+                p Складывающиеся гармошки открывают проем практически на всю ширину. Есть ограничения по количеству створок и ширине проема!
+    section.plus
+        .plus__container
+            h1 Преимущества раздвижных дверей
+            p Благодаря удобству, надежности и стильному внешнему виду, раздвижные двери последнее время являются чемпионами потребительского спроса!
+        .plus__wrapper
+            .plus__list
+                .plus__item
+                    +icon("pint")
+                    p Надежные
+                .plus__item
+                    +icon("pint")
+                    p Безопасные
+                .plus__item
+                    +icon("pint")
+                    p Долговечные
+                .plus__item
+                    +icon("pint")
+                    p Простые в эксплуатации
+                .plus__item
+                    +icon("pint")
+                    p Противовзломные
+                .plus__item
+                    +icon("pint")
+                    p Функциональные
+                .plus__item
+                    +icon("pint")
+                    p Современные
+                .plus__item
+                    +icon("pint")
+                    p Легкие
+            .plus__img-block.plus__img-block-swingdoors
+                picture
+                    source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/plus__slidedoors.webp 1x, images/content/plus__slidedoors@2x.webp 2x")
+                    img(src="images/content/plus__slidedoors.jpg" srcset="images/content/plus__slidedoors@2x.jpg" class="types__img-window" alt="картинка окна")

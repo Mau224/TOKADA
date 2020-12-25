@@ -1,0 +1,135 @@
+extends layout/mobilepartitions-layout
+
+block variables
+  -var title = 'Мобильные перегородки'
+  - var description = 'Мобильные перегородки'
+
+block content
+    section
+        .main-info.main-info__mobilepartitions-page.main-info__other-page
+            .main-info__container
+                a(href="#" class="main-info__location") Москва и Московская область
+                    +icon("marker")
+                h1(data-da="main-info__mob,first,867") Мобильные перегородки
+                p(data-da="main-info__mob,first,867") У нас вы легко подберете подходящую по конструкции, размеру, типу открывания, оформлению и комплектации модель.
+                a(href="#" class="main-info__link-more" data-da="main-info__mob,first,867") Подробнее
+        .main-info__mob
+    section.offer
+        .offer__container
+            h1 Виды мобильных перегородок
+            .offer__title.block__title
+                p Мобильные перегородки для зонирования пространства: делаем правильный выбор.
+                a(href="#" data-modal="10" class="js-open-modal") Получить скидку 30% на остекление
+            .offer__slider.swiper-container.slider
+                .offer__list.swiper-wrapper
+                    .offer__item.swiper-slide
+                        h2 Низкие перегородки до 1.3м
+                        picture
+                            source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/offer-mobilepartitions__img1.webp 1x, images/content/offer-mobilepartitions__img1@2x.webp 2x")
+                            img(src="images/content/offer-mobilepartitions__img1.jpg" srcset="images/content/offer-mobilepartitions__img1@2x.jpg" alt="картинка окна")
+                        .offer__popup-block
+                            p Сотрудничая с дизайнерами , мы готовы к нестандартным задачам и смелым идеям.
+                            a(href="#" class="js-open-modal" data-modal="10") Связаться со специалистом
+                    .offer__item.swiper-slide
+                        h2 Средние перегородки до 1.8м
+                        picture
+                            source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/offer-mobilepartitions__img2.webp 1x, images/content/offer-mobilepartitions__img2@2x.webp 2x")
+                            img(src="images/content/offer-mobilepartitions__img2.jpg" srcset="images/content/offer-mobilepartitions__img2@2x.jpg" alt="картинка окна")
+                        .offer__popup-block
+                            p Сотрудничая с дизайнерами , мы готовы к нестандартным задачам и смелым идеям.
+                            a(href="#" class="js-open-modal" data-modal="10") Связаться со специалистом
+                    .offer__item.swiper-slide
+                        h2 Сплошные перегородки
+                        picture
+                            source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/offer-mobilepartitions__img3.webp 1x, images/content/offer-mobilepartitions__img3@2x.webp 2x")
+                            img(src="images/content/offer-mobilepartitions__img3.jpg" srcset="images/content/offer-mobilepartitions__img3@2x.jpg" alt="картинка окна")
+                        .offer__popup-block
+                            p Сотрудничая с дизайнерами , мы готовы к нестандартным задачам и смелым идеям.
+                            a(href="#" class="js-open-modal" data-modal="10") Связаться со специалистом
+                .offer__btns
+                    a(href="#" class="offer__arrow offer__left swiper-button-prev slider__arrows")
+                    a(href="#" class="offer__arrow offer__right active swiper-button-next slider__arrows")
+    //.types-open-wintergarden создает отступ от верхнего блока
+    section.types-open.types-open-wintergarden
+        .types-open__container
+            h1 Способы остекления
+            p Наша компания осуществляет остекление дверей при помощи новейших технологий, современного оборудования и высококачественных материалов.
+        .types-open__list
+            .types-open__item
+                .types-open__item-img
+                    picture
+                        source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/types-open__mobilepartitions-img1.webp 1x, images/content/types-open__mobilepartitions-img1@2x.webp 2x")
+                        img(src="images/content/types-open__mobilepartitions-img1.png" srcset="images/content/types-open__mobilepartitions-img1@2x.png" alt="картинка окна")
+                h2 Глухое заполнение
+                p Обладают хорошей звукоизоляцией, создают уединенное комфортное пространство для плодотворной работы.
+            .types-open__item
+                .types-open__item-img
+                    picture
+                        source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/types-open__mobilepartitions-img2.webp 1x, images/content/types-open__mobilepartitions-img2@2x.webp 2x")
+                        img(src="images/content/types-open__mobilepartitions-img2.png" srcset="images/content/types-open__mobilepartitions-img2@2x.png" alt="картинка окна")
+                h2 Комбинированное заполнение
+                p Благодаря тому, что в одном модуле есть возможность комбинировать различные материалы, такие перегородки пользуются наибольшим спросом у наших заказчиков.
+            .types-open__item
+                .types-open__item-img
+                    picture
+                        source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/types-open__mobilepartitions-img3.webp 1x, images/content/types-open__mobilepartitions-img3@2x.webp 2x")
+                        img(src="images/content/types-open__mobilepartitions-img3.png" srcset="images/content/types-open__mobilepartitions-img3@2x.png" alt="картинка окна")
+                h2 Стеклянное заполнение
+                p Подобная перегородка создаст ощущение максимальной легкости вашего помещения.
+    section.recomend
+        .recomend__container
+            h1 Где применяются
+            p Универсальное решение для быстрой организации индивидуальных рабочих мест.
+        .recomend__slider.swiper-container
+            .recomend__list.swiper-wrapper
+                .recomend__item.recomend__item--first.swiper-slide
+                    picture
+                        source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/recomend-mobilepartitions__img1.webp 1x, images/content/recomend-mobilepartitions__img1@2x.webp 2x")
+                        img(src="images/content/recomend-mobilepartitions__img1.jpg" srcset="images/content/recomend-mobilepartitions__img1@2x.jpg" class="types__img-window" alt="картинка окна")
+                    .recomend__item-title
+                        h2 Офисы
+                .recomend__item.swiper-slide
+                    picture
+                        source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/recomend-mobilepartitions__img2.webp 1x, images/content/recomend-mobilepartitions__img2@2x.webp 2x")
+                        img(src="images/content/recomend-mobilepartitions__img2.jpg" srcset="images/content/recomend-mobilepartitions__img2@2x.jpg" class="types__img-window" alt="картинка окна")
+                    .recomend__item-title
+                        h2 Сервисные центры
+                .recomend__item.swiper-slide
+                    picture
+                        source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/recomend-mobilepartitions__img3.webp 1x, images/content/recomend-mobilepartitions__img3@2x.webp 2x")
+                        img(src="images/content/recomend-mobilepartitions__img3.jpg" srcset="images/content/recomend-mobilepartitions__img3@2x.jpg" class="types__img-window" alt="картинка окна")
+                    .recomend__item-title
+                        h2 Остекление витрин
+                .recomend__item.swiper-slide
+                    picture
+                        source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/recomend-mobilepartitions__img3.webp 1x, images/content/recomend-mobilepartitions__img3@2x.webp 2x")
+                        img(src="images/content/recomend-mobilepartitions__img3.jpg" srcset="images/content/recomend-mobilepartitions__img3@2x.jpg" class="types__img-window" alt="картинка окна")
+                    .recomend__item-title
+                        h2 Бизнес центры
+            .recomend__btns
+                a(href="#" class="recomend__arrow recomend__left swiper-button-prev")
+                a(href="#" class="recomend__arrow recomend__right swiper-button-next active")
+    //корректирующие стили для этого блока просто для добавления блока заголовка
+    section.plus__panoramic-advantages
+        h1 Преимущества мобильных перегородок
+        .plus__advantage-list
+            .plus__advantage-item
+                .plus__advantage-item-img-block
+                    +icon("cubes")
+                h2 Зонирование пространства
+                p Оперативная сборка конструкции без прерывания рабочего процесса.
+            .plus__advantage-item
+                .plus__advantage-item-img-block
+                    +icon("many")
+                h2 Экономичность
+                p Это самый простой, недорогой и современный способ зонирования пространства.
+            .plus__advantage-item
+                .plus__advantage-item-img-block
+                    +icon("bas")
+                h2 Легкая транспортировка
+                p Конструкции имеют легкий вес, что сказывается на удобстве и скорости транспортировки.
+            .plus__advantage-item
+                .plus__advantage-item-img-block
+                    +icon("people")
+                h2 Новые рабочие места
+                p Быстрая трансформация пространства: разбиение на отдельные зоны, индивидуальные рабочие места.

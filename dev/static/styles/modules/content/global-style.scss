@@ -66,6 +66,7 @@ a {
   text-decoration: none;
   color: #000000;
   cursor: pointer;
+  outline: none;
 }
 
 a:visited {
@@ -125,6 +126,40 @@ button::-moz-focus-inner {
   border: 0;
 }
 
+p {
+  color: #000;
+}
+
+//блок для скидки 30%
+.block__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 3.7vw;
+
+  @media (max-width: $mobile-width) {
+    a {
+      display: none;
+    }
+  }
+
+  a {
+    color: white;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.13vw;
+    line-height: 100%;
+    background: #33C5F3;
+    border-radius: 8px;
+    padding: 1.375vw 2.5vw;
+  }
+
+  p {
+    padding-bottom: 0;
+    color: #8B8B8B;
+  }
+}
+
 
 section {
   margin-left: $psize;
@@ -135,7 +170,7 @@ section {
     margin-right: 20px;
   }
 
-  @media (max-width: 375px) {
+  @media (max-width: 374px) {
     margin-left: 10px;
     margin-right: 10px;
   }
@@ -167,7 +202,6 @@ p {
   font-size: $f20;
   line-height: 130%;
   max-width: 34vw;
-  color: #8B8B8B;
 
   @media (max-width: $mobile-width) {
     font-style: normal;
@@ -207,5 +241,15 @@ input {
       font-size: 16px;
       line-height: 24px;
     }
+  }
+}
+
+//cтили для swiper слайдеров на мобильной версиии
+
+
+.slider__arrows.swiper-button-disabled {
+
+  &::before {
+    background-color: #c4c4c4;
   }
 }

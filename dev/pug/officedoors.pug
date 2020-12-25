@@ -1,0 +1,78 @@
+extends layout/officedoors-layout
+
+block variables
+  -var title = 'Офисные двери от производителя'
+  - var description = 'Офисные двери от производителя'
+
+block content
+  section
+    .main-info.main-info__officedoors-page.main-info__other-page
+      .main-info__container
+        a(href="#" class="main-info__location") Москва и Московская область
+          +icon("marker")
+        h1(data-da="main-info__mob,first,867") офисные двери от производителя
+        p(data-da="main-info__mob,first,867") У нас вы легко подберете подходящую по конструкции, размеру, типу открывания, оформлению и комплектации модель.
+        a(href="#" class="main-info__link-more" data-da="main-info__mob,first,867") Подробнее
+    .main-info__mob
+  section.types-open
+    .types-open__container
+      h1 Способы открывания
+      p По способу открывания офисные двери делятся на распашные и раздвижные.
+    .types-open__list
+      .types-open__item.types-open__item-officedoors
+        .types-open__item-img
+          picture
+            source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/types-open-officedoors__item-img1.webp 1x, images/content/types-open-officedoors__item-img1@2x.webp 2x")
+            img(src="images/content/types-open-officedoors__item-img1.png" srcset="images/content/types-open-officedoors__item-img1@2x.png" alt="картинка окна")
+        h2 Распашные двери
+        p Распашные офисные двери - функциональный объект и полноценное украшение пространства.
+        a(href="Swingdoors.html") Подробнее
+      .types-open__item.types-open__item-officedoors
+        .types-open__item-img
+          picture
+            source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/types-open-officedoors__item-img2.webp 1x, images/content/types-open-officedoors__item-img2@2x.webp 2x")
+            img(src="images/content/types-open-officedoors__item-img2.png" srcset="images/content/types-open-officedoors__item-img2@2x.png" alt="картинка окна")
+        h2 Раздвижные двери
+        p Система раздвижных дверей обуславливает их движение строго параллельно стене, поэтому это удобный вариант для открывания и закрывания.
+        a(href="slidingdoors.html") Подробнее
+  section.plus
+    .plus__container
+      h1 Как выбрать офисные двери
+      p При выборе офисных дверей важно учитывать несколько аспектов:
+    .plus__wrapper
+      .plus__list.plus__list-officedoors
+        .plus__item.plus__item-officedoors
+          .plus__item-officedoors-title
+            +icon("pint")
+            h2 Износостойкость
+          p В помещениях с высокой проходимостью лучше устанавливать модели среднего ценового сегмента с отделкой из износостойких материалов.
+        .plus__item.plus__item-officedoors
+          .plus__item-officedoors-title
+            +icon("pint")
+            h2 Дизайнерские решения
+          p В классическую офисную обстановку хорошо впишутся модели МДФ, ламинированные, с отделкой шпоном и многие другие.
+        .plus__item.plus__item-officedoors
+          .plus__item-officedoors-title
+            +icon("pint")
+            h2 Конструктивные особенности.
+          p Офисные двери выпускаются в широкой размерной линейке, изготавливаются по индивидуальным эскизам, имеют разные системы открывания: распашные
+      .plus__img-block
+        picture
+          source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/plus__officedoors-img.webp 1x, images/content/plus__officedoors-img@2x.webp 2x")
+          img(src="images/content/plus__officedoors-img.jpg" srcset="images/content/plus__officedoors-img@2x.jpg" class="types__img-window" alt="картинка окна")
+    .plus__advantage-list.plus__advantage-list-ingroup
+      .plus__advantage-item
+        .plus__advantage-item-img-block
+          +icon("voice")
+        h2 Усиленная звукоизоляция
+        p Для комфортного нахождения в офисе необходимо звукоизолировать двери.
+      .plus__advantage-item
+        .plus__advantage-item-img-block
+          +icon("lock")
+        h2 Защита от взлома
+        p Соответствующая техника безопасности, наличие защиты на двери могут предотвратить преступление
+      .plus__advantage-item
+        .plus__advantage-item-img-block
+          +icon("shield")
+        h2 Противопожарные свойства
+        p Противопожарные двери - защита от распространения огня и дыма между офисными помещениями.

@@ -1,68 +1,66 @@
 extends layout/facade-layout
 
 block variables
-    -var title = 'Facade'
+    -var title = 'Фасады от производителя'
+    - var description = 'Фасады от производителя'
 
 block content
   section
-    .main-info.main-info__facade-page
+    .main-info.main-info__facade-page.main-info__other-page
         .main-info__container
-            a(href="#" class="main-info__location") работаем в Москве и области
+            a(href="#" class="main-info__location") Москва и Московская область
                 +icon("marker")
-            h1(data-da="main-info__mob,first,867") Алюминиевые фасады от производителя
+            h1(data-da="main-info__mob,first,867") фасады от производителя
             p(data-da="main-info__mob,first,867") У нас вы легко подберете подходящую по конструкции, размеру, типу открывания, оформлению и комплектации модель.
             a(href="#" class="main-info__link-more" data-da="main-info__mob,first,867") Подробнее
     .main-info__mob
   section.type-facade
     .type-facade__container
       h1 Виды фасадных остеклений
-      p Стеклянный фасад – это практичное решение для наружного оформления объекта. 
-    .type-facade__list
-      .type-facade__item
-        picture
-          source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/type-facade__img1.webp 1x, images/content/type-facade__img1@2x.webp 2x")
-          img(src="images/content/type-facade__img1.jpg" srcset="images/content/type-facade__img1@2x.jpg" alt="картинка за окном")
-        h2 Структурное
-        p Структурное остекление фасадов дает приток естественного солнечного света,  современность и легкость внешнему виду. 
-        span От 15 000 руб./м2
-      .type-facade__item
-        picture
-          source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/type-facade__img2.webp 1x, images/content/type-facade__img2@2x.webp 2x")
-          img(src="images/content/type-facade__img2.jpg" srcset="images/content/type-facade__img2@2x.jpg" alt="картинка за окном")
-        h2 Полуструктурное
-        p Полуструктурное остекление фасада – это сочетание высокой надежности  и эстетичности структурных решений.  
-        span От 15 000 руб./м2
-      .type-facade__item
-        picture
-          source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/type-facade__img3.webp 1x, images/content/type-facade__img3@2x.webp 2x")
-          img(src="images/content/type-facade__img3.jpg" srcset="images/content/type-facade__img3@2x.jpg" alt="картинка за окном")
-        h2 Спайдерное
-        p Спайдерная система остекления позволяет небольшими крепежами стягивать стеклянные полотна большой площади.
-        span От 15 000 руб./м2
-      .type-facade__item
-        picture
-          source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/type-facade__img4.webp 1x, images/content/type-facade__img4@2x.webp 2x")
-          img(src="images/content/type-facade__img4.jpg" srcset="images/content/type-facade__img4@2x.jpg" alt="картинка за окном")
-        h2 Стоечно-ригельное
-        p Такая система остекления актуальна для оформления промышленных и коммерческих зданий, высотных и частных домов. 
-        span От 15 000 руб./м2
-      .type-facade__item
-        picture
-          source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/type-facade__img5.webp 1x, images/content/type-facade__img5@2x.webp 2x")
-          img(src="images/content/type-facade__img5.jpg" srcset="images/content/type-facade__img5@2x.jpg" alt="картинка за окном")
-        h2 Джамбо-остекление
-        p Объекты с этим остеклением выделяются на фоне городских многоэтажек. Внутри помещений с “джамбо” светло и комфортно. 
-        span От 15 000 руб./м2
-      .type-facade__item
-        picture
-          source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/type-facade__img6.webp 1x, images/content/type-facade__img6@2x.webp 2x")
-          img(src="images/content/type-facade__img6.jpg" srcset="images/content/type-facade__img6@2x.jpg" alt="картинка за окном")
-        h2 Панорамное
-        p Панорамное остекление - это еще один способ расширить жилое или рабочее пространство.. 
-        span От 15 000 руб./м2
-    .type-facade__btns
-      button(type="button" class="type-facade__left type-facade__arrow")
-      button(type="button" class="type-facade__right active type-facade__arrow")
+      .type-facade__titele.block__title
+        p Стеклянный фасад – это практичное решение для наружного оформления объекта.
+        a(href="#" data-modal="10" class="js-open-modal") Получить скидку 30% на остекление
+    .type-facade__slider.slider.swiper-container
+      .type-facade__list.swiper-wrapper
+        .type-facade__item.swiper-slide
+          picture
+            source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/type-facade__img1.webp 1x, images/content/type-facade__img1@2x.webp 2x")
+            img(src="images/content/type-facade__img1.jpg" srcset="images/content/type-facade__img1@2x.jpg" alt="картинка за окном")
+          h2 Структурное
+          p Структурное остекление фасадов дает приток естественного солнечного света,  современность и легкость внешнему виду.
+        .type-facade__item.swiper-slide
+          picture
+            source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/type-facade__img2.webp 1x, images/content/type-facade__img2@2x.webp 2x")
+            img(src="images/content/type-facade__img2.jpg" srcset="images/content/type-facade__img2@2x.jpg" alt="картинка за окном")
+          h2 Полуструктурное
+          p Полуструктурное остекление фасада – это сочетание высокой надежности  и эстетичности структурных решений.
+        .type-facade__item.swiper-slide
+          picture
+            source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/type-facade__img3.webp 1x, images/content/type-facade__img3@2x.webp 2x")
+            img(src="images/content/type-facade__img3.jpg" srcset="images/content/type-facade__img3@2x.jpg" alt="картинка за окном")
+          h2 Спайдерное
+          p Спайдерная система остекления позволяет небольшими крепежами стягивать стеклянные полотна большой площади.
+        .type-facade__item.swiper-slide
+          picture
+            source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/type-facade__img4.webp 1x, images/content/type-facade__img4@2x.webp 2x")
+            img(src="images/content/type-facade__img4.jpg" srcset="images/content/type-facade__img4@2x.jpg" alt="картинка за окном")
+          h2 Стоечно-ригельное
+          p Такая система остекления актуальна для оформления промышленных и коммерческих зданий, высотных и частных домов.
+        .type-facade__item.swiper-slide
+          picture
+            source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/type-facade__img5.webp 1x, images/content/type-facade__img5@2x.webp 2x")
+            img(src="images/content/type-facade__img5.jpg" srcset="images/content/type-facade__img5@2x.jpg" alt="картинка за окном")
+          h2 Джамбо-остекление
+          p Объекты с этим остеклением выделяются на фоне городских многоэтажек. Внутри помещений с “джамбо” светло и комфортно.
+        .type-facade__item.swiper-slide
+          picture
+            source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/type-facade__img6.webp 1x, images/content/type-facade__img6@2x.webp 2x")
+            img(src="images/content/type-facade__img6.jpg" srcset="images/content/type-facade__img6@2x.jpg" alt="картинка за окном")
+          h2 Панорамное
+          p Панорамное остекление - это еще один способ расширить жилое или рабочее пространство..
+      .type-facade__btns
+        button(type="button" class="type-facade__left type-facade__arrow swiper-button-prev slider__arrows")
+        button(type="button" class="type-facade__right active type-facade__arrow swiper-button-next slider__arrows")
   section.sfer-use
     .sfer-use__container
       h1 Сферы применения
@@ -77,7 +75,7 @@ block content
             h2 Зимние сады и беседки
             p Современная остекленная беседка - прекрасное место отдыха. Это возможность наслаждаться природой в тепле, когда пожелаете.
             .sfer-use__link-wrap
-              a(href="#" class="sfer-use__link") Смотреть подробнее
+              a(href="wintergardens.html" class="sfer-use__link") Смотреть подробнее
         .sfer-use__item
           .sfer-use__img-block
             picture
@@ -85,9 +83,9 @@ block content
               img(src="images/content/sfer-use__img2.jpg" srcset="images/content/sfer-use__img2@2x.jpg" alt="картинка за окном")
           .sfer-use__item-col
             h2 Навесы и козырьки
-            p Стеклянные козырьки и навесы широко используются в современном дизайне, создавая привлекательный внешний вид любому сооружению.
+            p Стеклянные козырьки и навесы - широко используются в современном дизайне, создавая привлекательный внешний вид любому сооружению.
             .sfer-use__link-wrap
-              a(href="#" class="sfer-use__link") Смотреть подробнее
+              a(href="tent.html" class="sfer-use__link") Смотреть подробнее
         .sfer-use__item
           .sfer-use__img-block
             picture
@@ -97,7 +95,7 @@ block content
             h2 Панорамное  остекление
             p Панорамное остекление - хороший выбор визуально расширить пространство помещения, и сделать фасад особенно эффектным.
             .sfer-use__link-wrap
-              a(href="#" class="sfer-use__link") Смотреть подробнее
+              a(href="panoramic.html" class="sfer-use__link") Смотреть подробнее
         .sfer-use__item
           .sfer-use__img-block
             picture
@@ -107,58 +105,4 @@ block content
             h2 Входные группы
             p Входные группы из алюминия не только облагораживают общий вид, но и служат тепловым шлюзом в зимнее время года.
             .sfer-use__link-wrap
-              a(href="#" class="sfer-use__link") Смотреть подробнее
-  section.works.works__page-door
-    .works__container
-        h1 Примеры фасадных работ
-        .works__title
-            p На этой странице представлены примеры фасадных работ, реализованных компанией «Окна TOKADA».
-            a(href="#") Все работы
-        .works__list
-            .works__item
-                picture
-                    source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/works-img1.webp 1x, images/content/works-img1@2x.webp 2x")
-                    img(src="images/content/works-img1.jpg" srcset="images/content/works-img1@2x.jpg" alt="картинка работы")
-                p Остекление фасада магазина
-            .works__item
-                picture
-                    source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/works-img2.webp 1x, images/content/works-img2@2x.webp 2x")
-                    img(src="images/content/works-img2.jpg" srcset="images/content/works-img2@2x.jpg" alt="картинка работы")
-                p Остекление фасада магазина
-            .works__item
-                picture
-                    source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/works-img3.webp 1x, images/content/works-img3@2x.webp 2x")
-                    img(src="images/content/works-img3.jpg" srcset="images/content/works-img3@2x.jpg" alt="картинка работы")
-                p Остекление фасада магазина
-            .works__item
-                picture
-                    source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/works-img4.webp 1x, images/content/works-img4@2x.webp 2x")
-                    img(src="images/content/works-img4.jpg" srcset="images/content/works-img4@2x.jpg" alt="картинка работы")
-                p Остекление фасада магазина
-            .works__item
-                picture
-                    source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/works-img5.webp 1x, images/content/works-img5@2x.webp 2x")
-                    img(src="images/content/works-img5.jpg" srcset="images/content/works-img5@2x.jpg" alt="картинка работы")
-                p Остекление фасада магазина
-            .works__item
-                picture
-                    source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/works-img6.webp 1x, images/content/works-img6@2x.webp 2x")
-                    img(src="images/content/works-img6.jpg" srcset="images/content/works-img6@2x.jpg" alt="картинка работы")
-                p Остекление фасада магазина
-            .works__item
-                picture
-                    source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/works-img7.webp 1x, images/content/works-img7@2x.webp 2x")
-                    img(src="images/content/works-img7.jpg" srcset="images/content/works-img7@2x.jpg" alt="картинка работы")
-                p Остекление фасада магазина
-            .works__item
-                picture
-                    source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/works-img8.webp 1x, images/content/works-img8@2x.webp 2x")
-                    img(src="images/content/works-img8.jpg" srcset="images/content/works-img8@2x.jpg" alt="картинка работы")
-                p Остекление фасада магазина
-            .works__item
-                picture
-                    source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/works-img9.webp 1x, images/content/works-img9@2x.webp 2x")
-                    img(src="images/content/works-img9.jpg" srcset="images/content/works-img9@2x.jpg" alt="картинка работы")
-                p Остекление фасада магазина
-        .works__btn
-            a(href="#" class="works__all-link") Все работы
+              a(href="ingroup.html" class="sfer-use__link") Смотреть подробнее

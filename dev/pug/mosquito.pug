@@ -1,0 +1,153 @@
+extends layout/mosquito-layout
+
+block variables
+  -var title = 'Москитные сетки'
+  - var description = 'Москитные сетки'
+
+block content
+    section
+        .main-info.main-info__mosquito-page.main-info__other-page
+            .main-info__container
+                a(href="#" class="main-info__location") Москва и Московская область
+                    +icon("marker")
+                h1(data-da="main-info__mob,first,867") Москитные сетки
+                p(data-da="main-info__mob,first,867") Предлагаем рассмотреть различные варианты москитных сеток:
+                a(href="#" class="main-info__link-more" data-da="main-info__mob,first,867") Подробнее
+        .main-info__mob
+    section.offer.offer-mosquito
+        .offer__container
+            h1 Виды москитных сеткок на окна и двери
+            .offer__container-title
+                p Предлагаем рассмотреть различные варианты москитных сеток:
+                a(href="#" data-modal="10" class="js-open-modal") Получить скидку 30% на остекление
+            .offer__slider.swiper-container.slider
+                .offer__list.swiper-wrapper
+                    .offer__item.offer-mosquito__item.swiper-slide
+                        h2 Рамочные
+                        picture
+                            source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/offer-mosquito__img1.webp 1x, images/content/offer-mosquito__img1@2x.webp 2x")
+                            img(src="images/content/offer-mosquito__img1.png" srcset="images/content/offer-mosquito__img1@2x.png" alt="картинка окна")
+                        .offer__popup-block
+                            p Сотрудничая с дизайнерами , мы готовы к нестандартным задачам и смелым идеям.
+                            a(href="#" class="js-open-modal" data-modal="10") Связаться со специалистом
+                    .offer__item.offer-mosquito__item.swiper-slide
+                        h2 Вставные
+                        picture
+                            source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/offer-mosquito__img2.webp 1x, images/content/offer-mosquito__img2@2x.webp 2x")
+                            img(src="images/content/offer-mosquito__img2.png" srcset="images/content/offer-mosquito__img2@2x.png" alt="картинка окна")
+                        .offer__popup-block
+                            p Наиболее распространённый вид москитных сеток.
+                            a(href="#" class="js-open-modal" data-modal="10") Связаться со специалистом
+                    .offer__item.offer-mosquito__item.swiper-slide
+                        h2 Раздвижные
+                        picture
+                            source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/offer-mosquito__img3.webp 1x, images/content/offer-mosquito__img3@2x.webp 2x")
+                            img(src="images/content/offer-mosquito__img3.png" srcset="images/content/offer-mosquito__img3@2x.png" alt="картинка окна")
+                        .offer__popup-block
+                            p Сотрудничая с дизайнерами , мы готовы к нестандартным задачам и смелым идеям.
+                            a(href="#" class="js-open-modal" data-modal="10") Связаться со специалистом
+                    .offer__item.offer-mosquito__item.swiper-slide
+                        h2 Ролетные
+                        picture
+                            source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/offer-mosquito__img4.webp 1x, images/content/offer-mosquito__img4@2x.webp 2x")
+                            img(src="images/content/offer-mosquito__img4.png" srcset="images/content/offer-mosquito__img4@2x.png" alt="картинка окна")
+                        .offer__popup-block
+                            p Сотрудничая с дизайнерами , мы готовы к нестандартным задачам и смелым идеям.
+                            a(href="#" class="js-open-modal" data-modal="10") Связаться со специалистом
+                    .offer__item.offer-mosquito__item.swiper-slide
+                        h2 Рулонные
+                        picture
+                            source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/offer-mosquito__img5.webp 1x, images/content/offer-mosquito__img5@2x.webp 2x")
+                            img(src="images/content/offer-mosquito__img5.png" srcset="images/content/offer-mosquito__img5@2x.png" alt="картинка окна")
+                        .offer__popup-block
+                            p Сотрудничая с дизайнерами , мы готовы к нестандартным задачам и смелым идеям.
+                            a(href="#" class="js-open-modal" data-modal="10") Связаться со специалистом
+                    .offer__item.offer-mosquito__item.swiper-slide
+                        h2 Дверные
+                        picture
+                            source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/offer-mosquito__img6.webp 1x, images/content/offer-mosquito__img6@2x.webp 2x")
+                            img(src="images/content/offer-mosquito__img6.png" srcset="images/content/offer-mosquito__img6@2x.png" alt="картинка окна")
+                        .offer__popup-block
+                            p Сотрудничая с дизайнерами , мы готовы к нестандартным задачам и смелым идеям.
+                            a(href="#" class="js-open-modal" data-modal="10") Связаться со специалистом
+                .offer__btns
+                    a(href="#" class="offer__arrow offer__left swiper-button-prev slider__arrows")
+                    a(href="#" class="offer__arrow offer__right active swiper-button-next slider__arrows")
+    section.plus
+        .plus__container
+            h1 Москитные сетки можно установить на
+        .plus__wrapper
+            .plus__list
+                .plus__item
+                    +icon("pint")
+                    p Пластиковые окна
+                .plus__item
+                    +icon("pint")
+                    p Деревянные окна
+                .plus__item
+                    +icon("pint")
+                    p Алюминиевые окна
+                .plus__item
+                    +icon("pint")
+                    p Мансардные окна
+                .plus__item
+                    +icon("pint")
+                    p Балкон
+                .plus__item
+                    +icon("pint")
+                    p Лоджию
+                .plus__item
+                    +icon("pint")
+                    p Балконные двери
+                .plus__item
+                    +icon("pint")
+                    p Беседки
+            .plus__img-block
+                picture
+                    source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/plus-mosquito__img.webp 1x, images/content/plus-mosquito__img@2x.webp 2x")
+                    img(src="images/content/plus-mosquito__img.jpg" srcset="images/content/plus-mosquito__img@2x.jpg" class="types__img-window" alt="картинка окна")
+    section.special
+        .special__container
+            h1 Типы москитных полотен
+            p Москитные полотна делятся на следующие типы:
+        .special__slider.swiper-container.slider-mini
+            .special__list.special-laminate__list.swiper-wrapper
+                .special__item.special-laminate__item.swiper-slide
+                    .specila__img-block
+                        picture
+                            source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/special-mosquito__img1.webp 1x, images/content/special-mosquito__img1@2x.webp 2x")
+                            img(src="images/content/special-mosquito__img1.jpg" srcset="images/content/special-mosquito__img1@2x.jpg" alt="картинка окна")
+                    h2 Стандартное
+                .special__item.special-laminate__item.swiper-slide
+                    .specila__img-block
+                        picture
+                            source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/special-mosquito__img2.webp 1x, images/content/special-mosquito__img2@2x.webp 2x")
+                            img(src="images/content/special-mosquito__img2.jpg" srcset="images/content/special-mosquito__img2@2x.jpg" alt="картинка окна")
+                    h2 Антикошка
+                .special__item.special-laminate__item.swiper-slide
+                    .specila__img-block
+                        picture
+                            source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/special-mosquito__img3.webp 1x, images/content/special-mosquito__img3@2x.webp 2x")
+                            img(src="images/content/special-mosquito__img3.jpg" srcset="images/content/special-mosquito__img3@2x.jpg" alt="картинка окна")
+                    h2 Антипыль
+                .special__item.special-laminate__item.swiper-slide
+                    .specila__img-block
+                        picture
+                            source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/special-mosquito__img4.webp 1x, images/content/special-mosquito__img4@2x.webp 2x")
+                            img(src="images/content/special-mosquito__img4.jpg" srcset="images/content/special-mosquito__img4@2x.jpg" alt="картинка окна")
+                    h2 Антипыльца
+                .special__item.special-laminate__item.swiper-slide
+                    .specila__img-block
+                        picture
+                            source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/special-mosquito__img5.webp 1x, images/content/special-mosquito__img5@2x.webp 2x")
+                            img(src="images/content/special-mosquito__img5.jpg" srcset="images/content/special-mosquito__img5@2x.jpg" alt="картинка окна")
+                    h2 Прозрачное
+                .special__item.special-laminate__item.swiper-slide
+                    .specila__img-block
+                        picture
+                            source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/special-mosquito__img6.webp 1x, images/content/special-mosquito__img6@2x.webp 2x")
+                            img(src="images/content/special-mosquito__img6.jpg" srcset="images/content/special-mosquito__img6@2x.jpg" alt="картинка окна")
+                    h2 Алюминиевое
+            .offer__btns
+                a(href="#" class="offer__arrow offer__left swiper-button-prev slider__arrows")
+                a(href="#" class="offer__arrow offer__right active swiper-button-next slider__arrows")

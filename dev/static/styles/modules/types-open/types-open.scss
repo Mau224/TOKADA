@@ -5,6 +5,13 @@
 
   p {
     padding-bottom: $f60;
+    color: #8B8B8B;
+  }
+}
+
+.types-open__title {
+  p {
+    padding-bottom: 0;
   }
 }
 
@@ -64,8 +71,91 @@
   margin-bottom: $f30;
 
   img {
-    width: auto;
+    width: 100%;
     height: 18.8vw;
+  }
+}
+
+//корректировки для страницы slidingdoors
+.types-open__item-slidingdoors-img {
+  position: relative;
+
+  img {
+    min-width: 22.5vw;
+  }
+
+  svg {
+    width: $f40;
+    height: $f24;
+    fill: #33c5f3;
+    position: relative;
+    margin-left: 1vw;
+  }
+}
+
+//корректировки для страницы officedoors
+.types-open__item-officedoors {
+  width: 50%;
+}
+
+//корректировки на wintergarden
+.types-open-wintergarden {
+  padding-top: $f60;
+  background-color: #fff;
+}
+
+//корректировка стилей со страницы slidingpartitions,растягивает img на весь блок и ограничивает их до 2
+.types-open__item-slidingpartitions {
+  width: 50%;
+
+  .types-open__item-img {
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.types-open__item-glassunit {
+  width: 50%;
+
+  .types-open__item-img {
+    img {
+      width: 100%;
+      height: 100%;
+      max-width: 17vw;
+    }
+  }
+}
+
+//корректировка на старницы лофтов
+.types-open-loftpartitions__item-img {
+  img {
+    max-width: 20.7vw;
+  }
+}
+
+//корректировки стилей для страницы торговых павильонов
+.types-open__item-shopping {
+  a {
+    color: white;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.13vw;
+    line-height: 100%;
+    background: #33C5F3;
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 1.375vw 5vw;
+  }
+
+  p {
+    margin-bottom: $f40;
+  }
+
+  .types-open__item-img {
+    border-radius: 8px;
+    background-color: var(--grey-bg);
   }
 }
 
@@ -138,6 +228,69 @@
 
     img {
       height: 221.85px;
+      max-width: 100%;
+      width: auto;
+    }
+  }
+
+  //корректировки для страницы slidingdoors
+
+  .types-open__item-slidingpartitions .types-open__item-img img {
+    height: 310px;
+    max-width: 100%;
+  }
+
+  .types-open__item-slidingdoors-img {
+    position: relative;
+    max-height: 310px;
+    width: 100%;
+
+    img {
+      min-width: 245px;
+      max-height: 310px;
+    }
+
+    svg {
+      width: 32px;
+      height: 18px;
+      fill: #33c5f3;
+      position: relative;
+    }
+  }
+
+  //стили glassunit
+  .types-open__item-glassunit {
+    width: 100%;
+
+    .types-open__item-img {
+      img {
+        width: 100%;
+        height: 100%;
+        max-width: 191px;
+      }
+    }
+  }
+
+  //корректировки стилей для страницы торговых павильонов
+  .types-open__item-shopping {
+    a {
+      color: white;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      border-radius: 8px;
+      line-height: 100%;
+      background: #33C5F3;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      width: 100%;
+      max-width: 335px;
+      display: flex;
+      justify-content: center;
+    }
+
+    p {
+      margin-bottom: 20px;
     }
   }
 }

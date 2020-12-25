@@ -1,6 +1,6 @@
 .form__main {
   width: 100%;
-  max-width: 34.94vw;
+  max-width: 39.94vw;
   padding-top: $f46;
   padding-left: $f46;
 
@@ -10,6 +10,8 @@
 
   p {
     padding-bottom: $f40;
+    color: #8B8B8B;
+    max-width: 100%;
   }
 }
 
@@ -50,7 +52,6 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 31.94vw;
 
   input {
     width: 100%;
@@ -83,7 +84,7 @@
 
   a {
     color: #33C5F3;
-    padding-left: 0.1vw;
+    padding-left: 0.3vw;
   }
 }
 
@@ -97,6 +98,7 @@
   position: relative;
   z-index: 1;
   top: -1vw;
+  border-radius: 8px;
 }
 
 .form__img-pers {

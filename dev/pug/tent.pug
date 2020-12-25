@@ -1,0 +1,78 @@
+extends layout/tent-layout
+
+block variables
+  -var title = 'Навесы и козырьки от производителя'
+  - var description = 'Навесы и козырьки от производителя'
+
+block content
+  section
+    .main-info.main-info__tent-page.main-info__other-page
+      .main-info__container
+        a(href="#" class="main-info__location") Москва и Московская область
+          +icon("marker")
+        h1(data-da="main-info__mob,first,867") навесы и козырьки от производителя
+        p(data-da="main-info__mob,first,867") У нас вы легко подберете подходящую по конструкции, размеру, типу открывания, оформлению и комплектации модель.
+        a(href="#" class="main-info__link-more" data-da="main-info__mob,first,867") Подробнее
+    .main-info__mob
+  section.type-facade
+    .type-facade__container
+      h1 Виды материалов для навесов и козырьков
+      .type-facade__titele.block__title
+        p Выбор материала во многом зависит от формы козырька и способа его крепления.
+        a(href="#" data-modal="10" class="js-open-modal") Получить скидку 30% на остекление
+    .type-facade__slider.slider.swiper-container
+      .type-facade__list.swiper-wrapper
+        .type-facade__item.swiper-slide
+          picture
+            source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/type-tent-img1.webp 1x, images/content/type-tent-img1@2x.webp 2x")
+            img(src="images/content/type-tent-img1.jpg" srcset="images/content/type-tent-img1@2x.jpg" alt="картинка за окном")
+          h2 Алюминиевые
+          p Такие конструкции долговечны, не требуют уходы, устойчивы к непогоде, температурным перепадам и атмосферным явлениям.
+        .type-facade__item.swiper-slide
+          picture
+            source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/type-tent-img2.webp 1x, images/content/type-tent-img2@2x.webp 2x")
+            img(src="images/content/type-tent-img2.jpg" srcset="images/content/type-tent-img2@2x.jpg" alt="картинка за окном")
+          h2 Металлические
+          p Распашные дверные системы предпочтительнее для мест, где предполагается односторонний поток людей.
+        .type-facade__item.swiper-slide
+          picture
+            source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/type-tent-img3.webp 1x, images/content/type-tent-img3@2x.webp 2x")
+            img(src="images/content/type-tent-img3.jpg" srcset="images/content/type-tent-img3@2x.jpg" alt="картинка за окном")
+          h2 Стеклянные
+          p Приобретая навес или козырек из металла , вы делаете выбор в пользу качественного и недорогого изделия.
+      .type-facade__btns
+        button(type="button" class="type-facade__left type-facade__arrow swiper-button-prev slider__arrows")
+        button(type="button" class="type-facade__right active type-facade__arrow swiper-button-next slider__arrows")
+  section.recomend
+    .recomend__container
+      h1 Где применяются
+      p Применение козырьков и навесов в городских и загородных постройках весьма разнообразно - от  установки над входом в здание до защиты цветника.
+    .recomend__slider.swiper-container
+      .recomend__list.swiper-wrapper
+        .recomend__item.recomend__item--first.swiper-slide
+          picture
+            source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/recomend-tent__img1.webp 1x, images/content/recomend-tent__img1@2x.webp 2x")
+            img(src="images/content/recomend-tent__img1.jpg" srcset="images/content/recomend-tent__img1@2x.jpg" class="types__img-window" alt="картинка окна")
+          .recomend__item-title
+            h2 Для дома
+        .recomend__item.swiper-slide
+          picture
+            source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/recomend-tent__img2.webp 1x, images/content/recomend-tent__img2@2x.webp 2x")
+            img(src="images/content/recomend-tent__img2.jpg" srcset="images/content/recomend-tent__img2@2x.jpg" class="types__img-window" alt="картинка окна")
+          .recomend__item-title
+            h2 Для входных групп
+        .recomend__item.swiper-slide
+          picture
+            source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/recomend-tent__img3.webp 1x, images/content/recomend-tent__img3@2x.webp 2x")
+            img(src="images/content/recomend-tent__img3.jpg" srcset="images/content/recomend-tent__img3@2x.jpg" class="types__img-window" alt="картинка окна")
+          .recomend__item-title
+            h2 На крыльцо
+        .recomend__item.recomend__item--first.swiper-slide
+          picture
+            source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/recomend-tent__img1.webp 1x, images/content/recomend-tent__img1@2x.webp 2x")
+            img(src="images/content/recomend-tent__img1.jpg" srcset="images/content/recomend-tent__img1@2x.jpg" class="types__img-window" alt="картинка окна")
+          .recomend__item-title
+            h2 Для дома
+      .recomend__btns
+        a(href="#" class="recomend__arrow recomend__left swiper-button-prev")
+        a(href="#" class="recomend__arrow recomend__right swiper-button-next active")

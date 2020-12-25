@@ -1,0 +1,143 @@
+extends layout/ingroup-layout
+
+block variables
+  -var title = 'Входные группы'
+  - var description = 'Входные группы'
+
+block content
+    section
+        .main-info.main-info__ingroup-page.main-info__other-page
+            .main-info__container
+                a(href="#" class="main-info__location") Москва и Московская область
+                    +icon("marker")
+                h1(data-da="main-info__mob,first,867") ВХОДНЫЕ ГРУППЫ
+                p(data-da="main-info__mob,first,867") У нас вы легко подберете подходящую по конструкции, размеру, типу открывания, оформлению и комплектации модель.
+                a(href="#" class="main-info__link-more" data-da="main-info__mob,first,867") Подробнее
+        .main-info__mob
+    section.offer.offer-ingroup
+        .offer__container
+            h1 Сферы применения
+            .type-facade__titele.block__title
+                p На сегодняшний день большинство входных групп, изготовленных из металлоконструкций, являются неотъемлемой частью фасада любого здания.
+                a(href="#" data-modal="10" class="js-open-modal") Получить скидку 30% на остекление
+            .offer__slider.swiper-container.slider
+                .offer__list.swiper-wrapper
+                    .offer__item.swiper-slide
+                        h2 Жилой дом
+                        picture
+                            source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/offer-ingroup__img1.webp 1x, images/content/offer-ingroup__img1@2x.webp 2x")
+                            img(src="images/content/offer-ingroup__img1.jpg" srcset="images/content/offer-ingroup__img1@2x.jpg" alt="картинка окна")
+                        p Сотрудничая с дизайнерами , мы готовы к нестандартным задачам и смелым идеям.
+                        .offer__popup-block
+                            p Сотрудничая с дизайнерами , мы готовы к нестандартным задачам и смелым идеям.
+                            a(href="#" class="js-open-modal" data-modal="10") Связаться со специалистом
+                    .offer__item.swiper-slide
+                        h2 Коттедж
+                        picture
+                            source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/offer-ingroup__img2.webp 1x, images/content/offer-ingroup__img2@2x.webp 2x")
+                            img(src="images/content/offer-ingroup__img2.jpg" srcset="images/content/offer-ingroup__img2@2x.jpg" alt="картинка окна")
+                        .offer__popup-block
+                            p Защита от непогоды, шума, грязи и пыли, а также стильный элемент оформления фасада загородного дома.
+                            a(href="#" class="js-open-modal" data-modal="10") Связаться со специалистом
+                    .offer__item.swiper-slide
+                        h2 Коммерческие помещения
+                        picture
+                            source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/offer-ingroup__img3.webp 1x, images/content/offer-ingroup__img3@2x.webp 2x")
+                            img(src="images/content/offer-ingroup__img3.jpg" srcset="images/content/offer-ingroup__img3@2x.jpg" alt="картинка окна")
+                        .offer__popup-block
+                            p Сотрудничая с дизайнерами , мы готовы к нестандартным задачам и смелым идеям.
+                            a(href="#" class="js-open-modal" data-modal="10") Связаться со специалистом
+                .offer__btns
+                    a(href="#" class="offer__arrow offer__left swiper-button-prev slider__arrows")
+                    a(href="#" class="offer__arrow offer__right active swiper-button-next slider__arrows")
+    section.types-profile.types-profile-ingroup
+        .types-profile__container
+            h1 Типы конструкций входных групп
+            .types-profile__title
+                p Входные группы из алюминиевого профиля делятся на “теплые” и “холодные”.
+                a(href="#" data-modal="10" class="js-open-modal") Получить скидку 30% на остекление
+        .types-profile__list
+            .types-profile__item
+                h2 Холодные
+                p Изготавливаются из "холодных" алюминиевых профилей без термомостов. В качестве прозрачных вставок обычно заказывают стекло или однокамерный стеклопакет.
+                picture
+                    source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/doors__item-img1.webp 1x, images/content/doors__item-img1@2x.webp 2x")
+                    img(src="images/content/doors__item-img1.jpg" srcset="images/content/doors__item-img1@2x.jpg" alt="картинка окна")
+                .types-profile__advantages-list.types-profile__slidingdoors-list
+                    picture
+                        source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/slididoors-adv-item.webp 1x, images/content/slididoors-adv-item@2x.webp 2x")
+                        img(src="images/content/slididoors-adv-item.png" srcset="images/content/slididoors-adv-item@2x.png" alt="картинка окна")
+                    .type-profile__slididoors-adv-block
+                        h2 Применяется:
+                        p - Внутренние помещения, тамбуры
+                        p - В беседки, летние кухни
+                        p - Холодные веранды и беседки
+                        p - Производственные цеха
+
+                .types-profile__btn
+                    a(href="aluminumdoors.html" class="types-profile__link disabled-on-mob") Заказать
+                    a(href="aluminumdoors.html" class="types-profile__link disabled-on-desktop") Подробнее
+            .types-profile__item
+                h2 Теплые
+                p Изготавливаются из алюминиевого профиля с термомостами, оснащаются двухкамерными энергосберегающими стеклопакетами и уплотнителями.
+                picture
+                    source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/doors__item-img2.webp 1x, images/content/doors__item-img2@2x.webp 2x")
+                    img(src="images/content/doors__item-img2.jpg" srcset="images/content/doors__item-img2@2x.jpg" alt="картинка окна")
+                .types-profile__advantages-list.types-profile__slidingdoors-list
+                    picture
+                        source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/slididoors-adv-item2.webp 1x, images/content/slididoors-adv-item2@2x.webp 2x")
+                        img(src="images/content/slididoors-adv-item2.png" srcset="images/content/slididoors-adv-item2@2x.png" alt="картинка окна")
+                    .type-profile__slididoors-adv-block
+                        h2 Применяется:
+                        p - В частный дом
+                        p - Вход в магазин, офис, ресторан
+                        p - Вход на теплую террасу, веранду
+                        p - Вход в гостиницу
+
+                .types-profile__btn
+                    a(href="window-pvh.html" class="types-profile__link disabled-on-mob") Заказать
+                    a(href="window-pvh.html" class="types-profile__link disabled-on-desktop") Подробнее
+
+    section.plus.plus-ingrpup
+        .plus__container
+            h1 Виды входных групп
+            p Входные группы делятся на несколько видов:
+        .plus__wrapper
+            .plus__list.plus__list-officedoors
+                .plus__item.plus__item-officedoors
+                    .plus__item-officedoors-title
+                        +icon("pint")
+                        h2 Встраиваемые
+                    p Входная группа может быть изготовлена строго по размерам и встроена в проем или в уже предустановленное фасадное остекление.
+                .plus__item.plus__item-officedoors
+                    .plus__item-officedoors-title
+                        +icon("pint")
+                        h2 Пристраиваемые
+                    p Можно организовать вход в здание при помощи стеклянной пристройки, которая будет выполнять роль тамбура - спроектируем, изготовим и произведем монтаж на объекте под ключ.
+                .plus__item.plus__item-officedoors
+                    .plus__item-officedoors-title
+                        +icon("pint")
+                        h2 Открытые
+                    p Открытые входные группы - это центральный вход в ваше здание, который является неотъемлемой частью архитектуры и выполняет роль визитной карточки магазина, ресторана, салона красоты или торгового центра.
+            .plus__img-block
+                picture
+                    source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/plus__ingroup-img.webp 1x, images/content/plus__ingroup-img@2x.webp 2x")
+                    img(src="images/content/plus__ingroup-img.jpg" srcset="images/content/plus__ingroup-img@2x.jpg" class="types__img-window" alt="картинка окна")
+    section.plus__panoramic-advantages
+        h1 Преимущества алюминиевых входных групп
+        .plus__advantage-list.plus__advantage-list-ingroup
+            .plus__advantage-item
+                .plus__advantage-item-img-block
+                    +icon("voice")
+                h2 Усиленная шумоизоляция
+                p Пристроенные тамбуры из "теплого" алюминиевого профиля хорошо задерживают шум с улицы.
+            .plus__advantage-item
+                .plus__advantage-item-img-block
+                    +icon("lock")
+                h2 Надежность
+                p Удобство и безопасность входа. За день через двери проходит много посетителей.
+            .plus__advantage-item
+                .plus__advantage-item-img-block
+                    +icon("clock")
+                h2 Долговечность
+                p Срок эксплуатации. Способность долго сохранять красивый внешний вид очень важна.

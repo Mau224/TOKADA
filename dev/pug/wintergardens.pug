@@ -1,0 +1,119 @@
+extends layout/wintergardens-layout
+
+block variables
+  -var title = 'Зимние сады'
+  - var description = 'Зимние сады'
+
+block content
+    section
+        .main-info.main-info__wintergardens-page.main-info__other-page
+            .main-info__container
+                a(href="#" class="main-info__location") Москва и Московская область
+                    +icon("marker")
+                h1(data-da="main-info__mob,first,867") ЗИМНИЕ САДЫ
+                p(data-da="main-info__mob,first,867") У нас вы легко подберете подходящую по конструкции, размеру, типу открывания, оформлению и комплектации модель.
+                a(href="#" class="main-info__link-more" data-da="main-info__mob,first,867") Подробнее
+        .main-info__mob
+    section.types-profile
+        .types-profile__container
+            h1 Виды конструкций зимнего сада
+            .types-profile__title
+                p Классификация зимних садов от компании «TOKADA»:
+                a(href="#" data-modal="10" class="js-open-modal") Получить скидку 30% на остекление
+        .types-profile__list
+            .types-profile__item
+                h2 Холодные
+                p Холодное остекление зимнего сада выполняется из алюминиевых профилей без терморазрыва. Это допустимый вариант, но при условии сезонного использования.
+                picture
+                    source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/doors__item-img1.webp 1x, images/content/doors__item-img1@2x.webp 2x")
+                    img(src="images/content/doors__item-img1.jpg" srcset="images/content/doors__item-img1@2x.jpg" alt="картинка окна")
+                .types-profile__advantages-list.types-profile__slidingdoors-list
+                    picture
+                        source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/slididoors-adv-item.webp 1x, images/content/slididoors-adv-item@2x.webp 2x")
+                        img(src="images/content/slididoors-adv-item.png" srcset="images/content/slididoors-adv-item@2x.png" alt="картинка окна")
+                    .type-profile__slididoors-adv-block
+                        h2 Применяется:
+                        p - Балконы и лоджии
+                        p - Сезонные оранжереи
+                        p - Летние пристройки
+
+                .types-profile__btn
+                    a(href="window-pvh.html" class="types-profile__link disabled-on-mob") Смотреть подробнее
+                    a(href="window-pvh.html" class="types-profile__link disabled-on-desktop") Подробнее
+            .types-profile__item
+                h2 Теплые
+                p Теплое остекление зимнего сада включает в себя создание индивидуального проекта на основе предполагаемого наполнения оранжереи и места, которое вы определили под нее.
+                picture
+                    source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/doors__item-img2.webp 1x, images/content/doors__item-img2@2x.webp 2x")
+                    img(src="images/content/doors__item-img2.jpg" srcset="images/content/doors__item-img2@2x.jpg" alt="картинка окна")
+                .types-profile__advantages-list.types-profile__slidingdoors-list
+                    picture
+                        source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/slididoors-adv-item2.webp 1x, images/content/slididoors-adv-item2@2x.webp 2x")
+                        img(src="images/content/slididoors-adv-item2.png" srcset="images/content/slididoors-adv-item2@2x.png" alt="картинка окна")
+                    .type-profile__slididoors-adv-block
+                        h2 Применяется:
+                        p - Теплые пристройки к дому
+                        p - Теплые террасы и балконы
+                        p - Теплая оранжерея на крыше
+                .types-profile__btn
+                    a(href="window.html" class="types-profile__link disabled-on-mob") Смотреть подробнее
+                    a(href="window.html" class="types-profile__link disabled-on-desktop") Подробнее
+    section.types-open.types-open-wintergarden
+        .types-open__container
+            h1 Типовые конструкции
+            p Внешний вид зимнего сада должен гармонировать с обликом здания, существует ряд типовых конструкций:
+        .types-open__list
+            .types-open__item
+                .types-open__item-img
+                    picture
+                        source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/types-open__wintergarden-img1.webp 1x, images/content/types-open__wintergarden-img1@2x.webp 2x")
+                        img(src="images/content/types-open__wintergarden-img1.png" srcset="images/content/types-open__wintergarden-img1@2x.png" alt="картинка окна")
+                h2 Прямая односкатная пристройка
+                p Односкатные крыши представляют из себя кровлю, установленную под наклоном от одной из несущих стен дома.
+            .types-open__item
+                .types-open__item-img
+                    picture
+                        source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/types-open__wintergarden-img2.webp 1x, images/content/types-open__wintergarden-img2@2x.webp 2x")
+                        img(src="images/content/types-open__wintergarden-img2.png" srcset="images/content/types-open__wintergarden-img2@2x.png" alt="картинка окна")
+                h2 Прямая двускатная пристройка
+                p В таком варианте кровля имеет двойной наклон в обе стороны.
+            .types-open__item
+                .types-open__item-img
+                    picture
+                        source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/types-open__wintergarden-img3.webp 1x, images/content/types-open__wintergarden-img3@2x.webp 2x")
+                        img(src="images/content/types-open__wintergarden-img3.png" srcset="images/content/types-open__wintergarden-img3@2x.png" alt="картинка окна")
+                h2 Угловая пристройка
+                p Зеленую зону можно создать, используя пристройку к внешнему углу дома.
+    section.recomend.recomend-wintergardeen
+        .recomend__container
+            h1 Где применяются
+            p Оранжерея на лоджии, прямая пристройки к дому - вы определяете место, а мы думаем, как это реализовать!
+        .recomend__slider.swiper-container
+            .recomend__list.swiper-wrapper
+                .recomend__item.recomend__item--first.swiper-slide
+                    picture
+                        source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/recomend-wintergarden__img1.webp 1x, images/content/recomend-wintergarden__img1@2x.webp 2x")
+                        img(src="images/content/recomend-wintergarden__img1.jpg" srcset="images/content/recomend-wintergarden__img1@2x.jpg" class="types__img-window" alt="картинка окна")
+                    .recomend__item-title
+                        h2 Пристройка к дому
+                .recomend__item.swiper-slide
+                    picture
+                        source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/recomend-wintergarden__img2.webp 1x, images/content/recomend-wintergarden__img2@2x.webp 2x")
+                        img(src="images/content/recomend-wintergarden__img2.jpg" srcset="images/content/recomend-wintergarden__img2@2x.jpg" class="types__img-window" alt="картинка окна")
+                    .recomend__item-title
+                        h2 Отдельностоящее строение
+                .recomend__item.swiper-slide
+                    picture
+                        source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/recomend-wintergarden__img3.webp 1x, images/content/recomend-wintergarden__img3@2x.webp 2x")
+                        img(src="images/content/recomend-wintergarden__img3.jpg" srcset="images/content/recomend-wintergarden__img3@2x.jpg" class="types__img-window" alt="картинка окна")
+                    .recomend__item-title
+                        h2 На балконах, лоджиях
+                .recomend__item.swiper-slide
+                    picture
+                        source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/recomend-wintergarden__img3.webp 1x, images/content/recomend-wintergarden__img3@2x.webp 2x")
+                        img(src="images/content/recomend-wintergarden__img3.jpg" srcset="images/content/recomend-wintergarden__img3@2x.jpg" class="types__img-window" alt="картинка окна")
+                    .recomend__item-title
+                        h2 Остекление витрин
+            .recomend__btns
+                a(href="#" class="recomend__arrow recomend__left swiper-button-prev")
+                a(href="#" class="recomend__arrow recomend__right swiper-button-next active")
