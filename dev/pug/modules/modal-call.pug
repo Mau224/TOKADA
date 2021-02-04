@@ -11,13 +11,13 @@ div(data-modal="10" class="modal")
             picture
                 source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/call__img.webp 1x, images/content/call__img@2x.webp 2x")
                 img(src="images/content/call__img.jpg" srcset="images/content/call__img@2x.jpg" alt="1")
-        form(class="modal__form" method="post" action="")
+        form(class="modal__form" id="modalcallform" method="post" action="")
             h1 Заказать звонок
             p Оставьте заявку и мы вам перезвоним прямо сейчас
-            label(for="name-modal")
-            input(type="text", name="name", id="name-modal", placeholder="Имя", title="Введите имя", minlength="2", maxlength="30" required)
-            label(for="phone-modal")
-            input(type="tel", name="phone", id="phone-modal", placeholder="Номер телефона", title="Введите телефон", minlength="3", maxlength="30" required)
+            label(for="name-modal-call")
+            input(type="text", name="name", id="name-modal-call", placeholder="Имя", title="Введите имя", minlength="2", maxlength="30" required)
+            label(for="phone-modal-call")
+            input(type="tel", name="phone", id="phone-modal-call", placeholder="Номер телефона", title="Введите телефон", minlength="3", maxlength="30" required)
             .modal__form-footer
                 p Нажимая на кнопку вы соглашаетесь на обработку
                     a(href="#") персональных данных

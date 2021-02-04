@@ -11,14 +11,14 @@ block content
         a(href="#" class="main-info__location") Москва и Московская область
           +icon("marker")
         h1(data-da="main-info__mob,first,867") Алюминиевые ДВЕРИ от производителя
-        p(data-da="main-info__mob,first,867") У нас вы легко подберете подходящую по конструкции, размеру, типу открывания, оформлению и комплектации модель.
+        //p(data-da="main-info__mob,first,867") У нас вы легко подберете подходящую по конструкции, размеру, типу открывания, оформлению и комплектации модель.
         //a(href="#" class="main-info__link-more" data-da="main-info__mob,first,867") Подробнее
     .main-info__mob
   section.types
     .types__container
-      h1 Виды дверей из алюминия
+      //h1 Виды дверей из алюминия
       .types__title
-        p Если вы хотите иметь качественные, экологичные и максимально долговечные двери, то двери из алюминия - это то, что вам нужно!
+        h1 Виды дверей из алюминия
         a(href="#" data-modal="10" class="js-open-modal") Получить скидку 30% на остекление
       .types__main
         .types__img-block
@@ -29,7 +29,7 @@ block content
             source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/window-elem.webp 1x, images/content/window-elem@2x.webp 2x")
             img(src="images/content/window-elem.png" srcset="images/content/window-elem@2x.png" class="types__img-elem" alt="картинка за окном")
         .types__text-col
-          p Теплый профиль: Alutech, Krauss, Vidnal
+
           h2 Теплый профиль
           p Теплые алюминиевые двери - это входные группы, основная задача которых заключается в создании оптимального микроклимата в помещении.
           .types__advantages-list
@@ -51,7 +51,7 @@ block content
     .types__container
       .types__main.types__main--second
         .types__text-col
-          p Холодный профиль: Alutech, Provedal
+
           h2 Холодный профиль
           p Холодные двери из алюминиевого профиля используются как внутренние, в составе с офисными перегородками, отдельно стоящие, межкомнатные, межэтажные, в составе входных групп.
           .types__advantages-list
@@ -65,7 +65,7 @@ block content
               p Максимум света
             .types__advantages-item.types__advantages-item--second
               .types__svg-block.types__svg-block--second
-                +icon("many")
+                include ../static/images/content/many.svg
               p Недорогой вариант
         .types__img-block
           picture

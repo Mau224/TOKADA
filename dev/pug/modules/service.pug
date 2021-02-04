@@ -4,23 +4,29 @@ section.service
     p В компании «TOKADA» работают настоящие профессионалы, которые в кратчайшие сроки, а главное, качественно, выполняют сборку оконных и дверных конструкций.
     .service__list
       .service__item
-        h3(class="open-spoiler") Окна
+        .service__item-title
+          a(href="windowmain.html" class="service__item-lin-title") Окна
+        .open-spoiler.service__plus-open
           +icon("plus")
         .service__item-wrap
           a(href="window.html") Алюминиевые окна
           a(href="window-pvh.html") Окна ПВХ
           a(href="balcony.html") Балконы и лождии
       .service__item
-        h3(class="open-spoiler") Двери
+        .service__item-title
+          a(href="doors.html" class="service__item-lin-title") Двери
+        .open-spoiler.service__plus-open
           +icon("plus")
         .service__item-wrap
-          a(href="doors.html") Двери ПВХ
+          a(href="doorspvh.html") Двери ПВХ
           a(href="aluminumdoors.html") Алюминиевые двери
           a(href="Swingdoors.html") Распашные двери
           a(href="officedoors.html") Офисные двери
           a(href="loftpatitions.html") Лофт перегородки
       .service__item
-        h3(class="open-spoiler") Фасады
+        .service__item-title
+          a(href="facade.html" class="service__item-lin-title") Фасады
+        .open-spoiler.service__plus-open
           +icon("plus")
         .service__item-wrap
           a(href="tent.html") Навесы и козырьки
@@ -28,7 +34,12 @@ section.service
           a(href="ingroup.html") Входные группы
           a(href="wintergardens.html") Зимние сады
       .service__item
-        h3(class="open-spoiler") Корпоративным клиентам
+        .service__item-title
+          a(href="clients.html" class="service__item-lin-title")
+            | Корпоративным
+            br
+            | клиентам
+        .open-spoiler.service__plus-open
           +icon("plus")
         .service__item-wrap
           a(href="autodoors.html") Автоматические двери
@@ -37,7 +48,9 @@ section.service
           a(href="mobilepartitions.html") Мобильные перегородки
           a(href="shopping.html") Торговые павильоны
       .service__item
-        h3(class="open-spoiler") Комплектующие
+        .service__item-title
+          a(href="complete.html" class="service__item-lin-title") Комплектующие
+        .open-spoiler.service__plus-open
           +icon("plus")
         .service__item-wrap
           a(href="glassunit.html") Стеклопакеты

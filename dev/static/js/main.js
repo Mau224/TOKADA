@@ -28,6 +28,44 @@ let select = function () {
 select();
 
 
+const inputs = document.querySelectorAll('.swaper');
+
+document.addEventListener('DOMContentLoaded', function() {
+    for (let i = 0; i < inputs.length; i++) {
+        inputs[i].addEventListener('click', function () {
+            if (inputs[i].checked) {
+                inputs[i].setAttribute('value', 'да');
+            } else {
+                inputs[i].setAttribute('value', 'нет');
+            }
+        })
+    }
+});
+
+// let removeBtn = document.querySelector('.header__link-action');
+// if (window.innerWidth < 870) {
+//     removeBtn.classList.remove('js-open-modal');
+// } else  {
+//     removeBtn.classList.add('js-open-modal');
+// }
+
+// // const container = document.querySelector('.container');
+//
+// inputs.forEach(el => {
+//     el.addEventListener('click', () => {
+//         // container.textContent = '';
+//         let inputCh = document.querySelectorAll('.swaper:checked');
+//
+//         inputCh.forEach(el_checked => {
+//             if (this.checked) {
+//                 inputCh.setAttribute('value', 'lf');
+//             }
+//         });
+//     });
+// });
+
+
+
 
 !function(e){"function"!=typeof e.matches&&(e.matches=e.msMatchesSelector||e.mozMatchesSelector||e.webkitMatchesSelector||function(e){for(var t=this,o=(t.document||t.ownerDocument).querySelectorAll(e),n=0;o[n]&&o[n]!==t;)++n;return Boolean(o[n])}),"function"!=typeof e.closest&&(e.closest=function(e){for(var t=this;t&&1===t.nodeType;){if(t.matches(e))return t;t=t.parentNode}return null})}(window.Element.prototype);
 
@@ -98,26 +136,55 @@ document.addEventListener('DOMContentLoaded', function() {
 
 (function () {
     const burger = document.querySelector('.header__burger');
+    const burgerWrap = document.querySelector('.header__burger-mega-block');
+    const tabDis = document.querySelector('.header__link-call-mob');
     const body = document.querySelector('.body');
     const overlay = document.querySelector('.overlay-menu');
+    const menuText = document.querySelector('.header__mega-menu-block-text');
+    const mainList = document.querySelector('.header__main-list-hover-links');
+    const megaList = document.querySelector('.header__mega-menu-block');
     burger.addEventListener('click', function () {
         burger.classList.toggle('active');
         overlay.classList.toggle('active');
+        menuText.classList.toggle('active');
+        mainList.classList.toggle('active');
+        megaList.classList.toggle('active');
+        burgerWrap.classList.toggle('active');
         body.classList.toggle('dis');
+
+        if (burger.classList.contains('active')) {
+            body.style.overflow = 'hidden';
+            tabDis.addEventListener('click', function (){
+                burger.classList.remove('active');
+                overlay.classList.remove('active');
+            })
+        } else {
+            body.style.overflow = 'auto';
+        }
     });
 }());
 
 (function () {
     const burger = document.querySelector('.header__link-call-mob');
+    const tabDis = document.querySelector('.header__burger');
     const body = document.querySelector('.body');
     const overlay = document.querySelector('.overlay-mob-tel');
     burger.addEventListener('click', function () {
         burger.classList.toggle('active');
         overlay.classList.toggle('active');
         body.classList.toggle('dis');
+
+        if (burger.classList.contains('active')) {
+            body.style.overflow = 'hidden';
+            tabDis.addEventListener('click', function (){
+                burger.classList.remove('active');
+                overlay.classList.remove('active');
+            })
+        } else {
+            body.style.overflow = 'auto'
+        }
     });
 }());
-
 
 (function () {
     const action = document.querySelector('.header__link-action');
@@ -145,6 +212,15 @@ document.addEventListener('DOMContentLoaded', function() {
         body.classList.remove('dis');
     });
 }());
+
+//блок окна акций на мобильном
+let actionLink = document.querySelector('.header__link-action');
+
+if (window.innerWidth < 870) {
+    actionLink.classList.remove('js-open-modal');
+} else {
+    actionLink.classList.add('js-open-modal');
+}
 
 //метрика
 (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};

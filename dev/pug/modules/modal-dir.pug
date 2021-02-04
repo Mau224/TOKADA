@@ -1,0 +1,25 @@
+//button(id="btn_modal_window") Open Modal
+div(data-modal="14" class="modal modal-vacancies")
+    .modal__vacancies-container
+        .close_modal_window.close__reviews.close__vacancies.js-modal-close
+            span
+            p Закрыть
+        //стили с модалки вакансий, тк они практически одинаковые
+        .modal-vacancies__modal
+            h2 Связь с директором
+            p Оставьте сообщение и его получит директор компании “TOKADA”
+            form(class="modal__form" id="modaldirform" method="post" action="")
+                .modal-vacancies__inputs
+                    label(for="name-modal-dir")
+                    input(type="text", name="name", id="name-modal-dir", placeholder="Имя", title="Введите имя", minlength="2", maxlength="30" required)
+                    label(for="email-dir")
+                    input(type="email", name="email", id="email-dir", placeholder="E-mail", title="Введите E-mail", minlength="3", required)
+                textarea(placeholder="Сообщение для директора")
+                .modal-vacies__check-block
+                    .modal__req
+                        span *
+                        p - обязательные поля
+                    .call__form-footer
+                        p Нажимая на кнопку вы соглашаетесь на обработку
+                            a(href="#") персональных данных
+                        button(type="submit" class="call__sub-btn") Отправить

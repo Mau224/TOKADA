@@ -86,7 +86,7 @@
   position: relative;
   background-color: #ffffff;
   background: url("../images/content/modal__bg.png") no-repeat;
-  background-size: contain;
+  background-size: cover;
   position: relative;
   z-index: 99;
   display: flex;
@@ -109,10 +109,14 @@
   width: 72.69vw;
   height: 37.5vw;
   left: 0%;
-  top: 39vh;
+  top: 6vw;
   position: relative;
   padding: 0;
   background-color: transparent;
+
+  @media (min-width: 1900px) {
+    top: 0;
+  }
 
   span {
     width: $f60;
@@ -217,41 +221,20 @@
   font-style: normal;
   font-weight: 500;
   font-size: 1.13vw;
-  background: #33C5F3;
+  background-color: #33C5F3;
+  background: -o-linear-gradient(left, #88E2FF, #A88AFF, #88E2FF, #A88AFF);
+  background: -webkit-gradient(linear, left top, right top, from(#88E2FF), color-stop(#A88AFF), color-stop(#88E2FF), to(#A88AFF));
+  background: linear-gradient(
+                  90deg
+          , #88E2FF, #A88AFF, #88E2FF, #A88AFF);
+  background-size: 320% 200% !important;
+  animation: GradientBreathe 4s linear infinite;
+
+  transition: background-color 1s ease;
   border-radius: 8px;
   line-height: 100%;
   color: #FFFFFF;
   padding: 1.375vw 4.2vw;
-}
-
-.close_modal_window {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: $f60;
-  height: $f60;
-  right: -5vw;
-  top: 63vh;
-  border-radius: 50%;
-  background-color: #ffffff;
-  z-index: 2000;
-
-  p {
-    top: 3vw;
-  }
-
-  &::before {
-    content: "";
-    position: absolute;
-    width: $f24;
-    height: $f24;
-    background-size: cover;
-    background: url("../images/content/modal-close.svg") no-repeat;
-    background-position: center;
-    background-size: cover;
-  }
 }
 
 .modal__reviews-header {
@@ -287,6 +270,7 @@
   padding-bottom: $f50;
   min-width: 35.63vw;
   border-radius: 8px;
+  height: 27vw;
 
   h3 {
     font-style: normal;
@@ -300,13 +284,21 @@
   }
 
   img {
-    width: fit-content;
-    height: fit-content;
+    width: 13vw;
+    height: 4vw;
     margin-bottom: $f70;
   }
 
   a {
-    background: #33C5F3;
+    background-color: #33C5F3;
+    background: -o-linear-gradient(left, #88E2FF, #A88AFF, #88E2FF, #A88AFF);
+    background: -webkit-gradient(linear, left top, right top, from(#88E2FF), color-stop(#A88AFF), color-stop(#88E2FF), to(#A88AFF));
+    background: linear-gradient(
+                    90deg
+            , #88E2FF, #A88AFF, #88E2FF, #A88AFF);
+    background-size: 320% 200% !important;
+    animation: GradientBreathe 4s linear infinite;
+    transition: background-color 1s ease;
     border-radius: 8px;
     width: 100%;
     font-style: normal;
@@ -323,8 +315,19 @@
 
 .close__reviews {
   position: absolute;
-  top: 32vw;
-  left: 48%;
+  top: 36vw;
+  left: 47.5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 3.7vw;
+  height: 3.7vw;
+  right: -5vw;
+  border-radius: 50%;
+  background-color: #ffffff;
+  z-index: 2000;
+  cursor: pointer;
 
   p {
     font-style: normal;
@@ -335,8 +338,19 @@
     text-transform: uppercase;
     color: #FFFFFF;
     position: relative;
-    top: 3vw;
+    top: 2vw;
     left: 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: $f24;
+    height: $f24;
+    background-size: cover;
+    background: url("../images/content/modal-close.svg") no-repeat;
+    background-position: center;
+    background-size: cover;
   }
 }
 
@@ -356,6 +370,103 @@
     z-index: 200;
     top: 0.7vw;
     max-width: 27vw;
+  }
+}
+
+//стили окна спасибо
+.modal-check {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: $f70;
+  padding-bottom: $f70;
+  width: 100%;
+
+  h1 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: $f36;
+    line-height: 110%;
+
+    margin-bottom: $f20;
+  }
+
+  p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1vw;
+    line-height: 130%;
+    margin-bottom: $f40;
+    color: #000;
+  }
+
+  a {
+    color: white;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.13vw;
+    line-height: 100%;
+    background-color: #33C5F3;
+    background: -o-linear-gradient(left, #88E2FF, #A88AFF, #88E2FF, #A88AFF);
+    background: -webkit-gradient(linear, left top, right top, from(#88E2FF), color-stop(#A88AFF), color-stop(#88E2FF), to(#A88AFF));
+    background: linear-gradient(
+                    90deg
+            , #88E2FF, #A88AFF, #88E2FF, #A88AFF);
+    background-size: 320% 200% !important;
+    animation: GradientBreathe 4s linear infinite;
+    transition: background-color 1s ease;
+    border-radius: 8px;
+    padding: 1.375vw 5vw;
+  }
+}
+
+.close_modal_window {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: $f60;
+  height: $f60;
+  right: -5vw;
+  top: 31vw;
+  border-radius: 50%;
+  background-color: #ffffff;
+  z-index: 2000;
+  cursor: pointer;
+
+  p {
+    top: 3vw;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: $f24;
+    height: $f24;
+    background-size: cover;
+    background: url("../images/content/modal-close.svg") no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+.modal-check__img {
+  width: $f149;
+  height: $f149;
+  border: 0.3vw solid #33c5f3;
+  border-radius: 50%;
+  margin-bottom: $f50;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  svg {
+    width: $f70;
+    height: $f55;
+    fill: #33c5f3;
   }
 }
 
@@ -383,19 +494,19 @@
     max-width: 335px;
     padding: 0px;
     border-radius: 8px;
-    top: 54%;
+    top: 55%;
   }
 
   .modal__img {
     height: 100%;
-    max-height: 275px;
+    max-height: 160px;
 
     img {
       width: 295px;
       height: 275px;
       top: 0;
       padding-left: 0;
-      min-height: 270px;
+      min-height: 157px;
     }
   }
 
@@ -410,6 +521,7 @@
     right: 0;
     max-width: none;
     align-items: center;
+    margin-right: 0;
 
     h1 {
       font-style: normal;
@@ -428,7 +540,7 @@
       padding-bottom: 30px;
     }
 
-    #phone-modal {
+    #name-modal {
       display: none;
     }
 
@@ -581,6 +693,47 @@
 
   .modal-call__img-person {
     min-width: 270px;
+  }
+
+  .close__reviews {
+    p {
+      display: none;
+    }
+  }
+
+  //cтили модального окна спасибо
+  .modal-check {
+    padding-top: 40px;
+    padding-bottom: 30px;
+
+    h1 {
+      font-size: 26px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 16px;
+      margin-bottom: 40px;
+    }
+
+    a {
+      padding-top: 26px;
+      padding-bottom: 26px;
+      font-size: 18px;
+      width: 100%;
+      max-width: 335px;
+    }
+  }
+
+  .modal-check__img {
+    width: 142px;
+    height: 142px;
+    border: 3px solid #33c5f3;
+
+    svg {
+      width: 70.91px;
+      height: 53.79px;
+    }
   }
 }
 

@@ -5,7 +5,8 @@
 
   p {
     padding-bottom: $f60;
-    color: #8B8B8B;
+    color: #6A6868;
+    display: none;//отключение описания
   }
 }
 
@@ -69,10 +70,13 @@
   align-content: center;
   align-items: center;
   margin-bottom: $f30;
+  padding-left: $f20;
+  padding-right: $f20;
 
   img {
     width: 100%;
     height: 18.8vw;
+    border-radius: 8px;
   }
 }
 
@@ -112,6 +116,7 @@
     img {
       width: 100%;
       height: 100%;
+      object-fit: cover;
     }
   }
 }
@@ -143,7 +148,9 @@
     font-weight: 500;
     font-size: 1.13vw;
     line-height: 100%;
-    background: #33C5F3;
+    background: linear-gradient(
+90deg
+, #88E2FF, #A88AFF, #88E2FF, #A88AFF);
     text-decoration: none;
     border-radius: 8px;
     padding: 1.375vw 5vw;
@@ -156,6 +163,40 @@
   .types-open__item-img {
     border-radius: 8px;
     background-color: var(--grey-bg);
+  }
+}
+
+//корректировка для страницы офисных дверей
+.types-open__container-officedoors {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  padding-bottom: $f36;
+
+  a {
+    color: white;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.13vw;
+    line-height: 100%;
+    background: linear-gradient(
+90deg
+, #88E2FF, #A88AFF, #88E2FF, #A88AFF);
+    border-radius: 8px;
+    padding: 1.375vw 2.5vw;
+  }
+
+  h1 {
+    padding-bottom: 0;
+  }
+}
+
+.types-open__item-slidingpartitions {
+  .types-open__item-img {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -238,6 +279,15 @@
   .types-open__item-slidingpartitions .types-open__item-img img {
     height: 310px;
     max-width: 100%;
+    border-radius: 8px;
+  }
+
+  .types-open__item-slidingpartitions {
+    .types-open__item-img {
+      padding-left: 0;
+      padding-right: 0;
+      border-radius: 8px;
+    }
   }
 
   .types-open__item-slidingdoors-img {
@@ -280,7 +330,9 @@
       font-size: 16px;
       border-radius: 8px;
       line-height: 100%;
-      background: #33C5F3;
+      background: linear-gradient(
+90deg
+, #88E2FF, #A88AFF, #88E2FF, #A88AFF);
       padding-top: 20px;
       padding-bottom: 20px;
       width: 100%;
@@ -291,6 +343,18 @@
 
     p {
       margin-bottom: 20px;
+    }
+  }
+
+  //корректировка для страницы офисных дверей
+  .types-open__container-officedoors {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+
+    a {
+      display: none;
     }
   }
 }

@@ -15,7 +15,8 @@
 
   p {
     padding-bottom: $f60;
-    color: #8B8B8B;
+    color: #6A6868;
+    display: none;//отключение описания
   }
 }
 
@@ -125,7 +126,18 @@
     font-weight: 500;
     font-size: 1.13vw;
     line-height: 100%;
-    background: #33C5F3;
+    background-color: #33C5F3;
+    background: -webkit-gradient(linear, left top, right top, from(#88E2FF), color-stop(#A88AFF), color-stop(#88E2FF), to(#A88AFF));
+    background: -o-linear-gradient(left, #88E2FF, #A88AFF, #88E2FF, #A88AFF);
+    background: linear-gradient(
+                    90deg
+            , #88E2FF, #A88AFF, #88E2FF, #A88AFF);
+    background-size: 320% 200%!important;
+    -webkit-animation: GradientBreathe 4s linear infinite;
+    animation: GradientBreathe 4s linear infinite;
+    -webkit-transition: background-color 1s ease;
+    -o-transition: background-color 1s ease;
+    transition: background-color 1s ease;
     border-radius: 8px;
     padding: 1.375vw 2.5vw;
     position: absolute;

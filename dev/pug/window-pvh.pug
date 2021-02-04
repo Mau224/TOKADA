@@ -11,14 +11,14 @@ block content
         a(href="#" class="main-info__location") Москва и Московская область
           +icon("marker")
         h1(data-da="main-info__mob,first,867") ОКНА ПВХ от производителя
-        p(data-da="main-info__mob,first,867") У нас вы легко подберете подходящую по конструкции, размеру, типу открывания, оформлению и комплектации модель.
+        //p(data-da="main-info__mob,first,867") У нас вы легко подберете подходящую по конструкции, размеру, типу открывания, оформлению и комплектации модель.
         a(href="#" class="main-info__link-more" data-da="main-info__mob,first,867") Подробнее
     .main-info__mob
   section.recomend.recomend__pvh
     .recomend__container
-      h1 Где применяются
+      //h1 Где применяются
       .recomend__title.block__title
-        p Новейшие пластиковые окна эффективно отражают жару и удерживают тепло в доме. Обеспечивают поступление свежего воздуха без пыли, сквозняков и уличного шума.
+        h1 Где применяются
         a(href="#" data-modal="10" class="js-open-modal") Получить скидку 30% на остекление
     .recomend__slider.swiper-container
       .recomend__list.swiper-wrapper
@@ -88,7 +88,7 @@ block content
         .plus__advantage-item-img-block
           +icon("pen-line")
         h2 Бесплатный замер
-        p Оконные профили «РЕХАУ» надежно изолируют звук и тепло. ПВХ можно заполнять толстыми стеклопакетами.
+        p Позвоните в компанию «TOKADA» и замерщик приедет к вам совершенно бесплатно!
       .plus__advantage-item
         .plus__advantage-item-img-block
           +icon("bas")
@@ -101,26 +101,28 @@ block content
         p Качественный монтаж – залог того, что конструкции прослужат долго и достойно выполнят возложенную на них миссию.
       .plus__advantage-item
         .plus__advantage-item-img-block
-          +icon("shield")
+          include ../static/images/content/shield.svg
         h2 Гарантия до 10 лет
-        p Мы даем пожизненную гарантию на наши стеклопакеты. Кроме этого, на все наши окна действует гарантия 5 лет.
+        p Мы даем гарантию на наши стеклопакеты.
   section.action
     .action__container.action__container-window
       h1 Не знаете какой профиль выбрать?
       .action__wrapper
         .action__img.action__img-window
-          .action__title.action__title--first(data-da="action__form-window,first,867")
-            h3 Вам может помочь:
-            p Калькулятор расчета
-          picture
-            source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/action-other__mobail-window.webp 1x, images/content/action-other__mobail-window@2x.webp 2x")
-            img(src="images/content/action-other__mobail-window.png" srcset="images/content/action-other__mobail-window@2x.png" alt="картинка телефона в акции")
-        form(class="action__form action__form-window" method="post")
+          a(href="calc.html" class="action__title action__title--first" data-da="action__form-window,first,867")
+            h3 Воспользуйтесь калькулятором для расчета стоимости!
+            a(href="calc.html" class="calc__link")
+              p Калькулятор расчета
+          a(href="calc.html")
+            picture
+              source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/action-other__mobail-window.webp 1x, images/content/action-other__mobail-window@2x.webp 2x")
+              img(src="images/content/action-other__mobail-window.png" srcset="images/content/action-other__mobail-window@2x.png" alt="картинка телефона в акции")
+        form(class="action__form action__form-window" id="windowpvhform" method="post")
           .action__title
             h3 Или:
             p Заполните форму связи и наш специалист свяжется с вами в течении 10 минут!
           label(for="name")
-          input(type="tel" name="phone" id="name" placeholder="Имя" title="Введите имя" minlength="3" maxlength="30" required)
+          input(type="text" name="name" id="name" placeholder="Имя" title="Введите имя" minlength="3" maxlength="30" required)
           label(for="tel")
           input(type="tel" name="phone" id="tel" placeholder="Номер телефона" title="Введите телефон" minlength="3" maxlength="30" required)
           .action__form-footer.action__form-footer-window

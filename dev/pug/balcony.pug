@@ -11,14 +11,14 @@ block content
         a(href="#" class="main-info__location") Москва и Московская область
           +icon("marker")
         h1(data-da="main-info__mob,first,867") ОСТЕКЛЕНИЕ БАЛКОНОВ И ЛОДЖИЙ от производителя
-        p(data-da="main-info__mob,first,867") У нас вы легко подберете подходящую по конструкции, размеру, типу открывания, оформлению и комплектации модель.
+        //p(data-da="main-info__mob,first,867") У нас вы легко подберете подходящую по конструкции, размеру, типу открывания, оформлению и комплектации модель.
         a(href="#" class="main-info__link-more" data-da="main-info__mob,first,867") Подробнее
     .main-info__mob
   section.types
     .types__container
-      h1 Виды остекления
+      //h1 Виды остекления
       .types__title
-        p Остекление балконов и лоджий может быть двух видов: холодным и теплым.
+        h1 Виды остекления
         a(href="#" data-modal="10" class="js-open-modal") Получить скидку 30% на остекление
       .types__main
         .types__img-block
@@ -29,7 +29,7 @@ block content
             source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/window-elem.webp 1x, images/content/window-elem@2x.webp 2x")
             img(src="images/content/window-elem.png" srcset="images/content/window-elem@2x.png" class="types__img-elem" alt="картинка за окном")
         .types__text-col
-          p Теплый профиль: Alutech, Krauss, Vidnal
+
           h2 Теплые окна
           p Теплые пластиковые окна на балконе защитят от шума, мороза. Тёплые окна - решение для помещений, где необходима тепло- и звукоизоляция.
           .types__advantages-list
@@ -51,7 +51,7 @@ block content
     .types__container
       .types__main.types__main--second
         .types__text-col
-          p Холодный профиль: Alutech, Provedal
+
           h2 Холодное остекление
           p Холодные алюминиевые рамы защитят балкон от снега, пыли, дождя, ветра.Холодные окна - максимально доступный по цене вариант остекления из алюминия.
           .types__advantages-list
@@ -65,7 +65,7 @@ block content
               p Максимальное тепло
             .types__advantages-item.types__advantages-item--second
               .types__svg-block.types__svg-block--second
-                +icon("many")
+                include ../static/images/content/many.svg
               p Недорогой вариант
         .types__img-block
           picture
@@ -94,8 +94,8 @@ block content
           .balcony__img-wrapper
             .balcony-price__img-block
               picture
-                source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/balcony-price__img1.webp 1x, images/content/balcony-price__img1@2x.webp 2x")
-                img(src="images/content/balcony-price__img1.png" srcset="images/content/balcony-price__img1@2x.png" alt="картинка за окном")
+                source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/balcony-price__img2.webp 1x, images/content/balcony-price__img2@2x.webp 2x")
+                img(src="images/content/balcony-price__img2.png" srcset="images/content/balcony-price__img2@2x.png" alt="картинка за окном")
           h2 Г-образный балкон
           p Закажите остекление Г-образного балкона под ключ у “Окна TOKADA” по доступной цене.
           a(href="#" data-modal="10" class="js-open-modal") Узнать точную стоимость

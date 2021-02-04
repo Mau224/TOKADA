@@ -15,7 +15,7 @@
 //    font-weight: 500;
 //    font-size: 1.13vw;
 //    line-height: 100%;
-//    background: #33C5F3;
+//    background: linear-gradient(
 //    border-radius: 8px;
 //    padding: 1.375vw 2.5vw;
 //  }
@@ -28,8 +28,9 @@
   }
 
   p {
-    color: #8B8B8B;
+    color: #6A6868;
     padding-bottom: $f60;
+    display: none;//отключение описания
   }
 }
 
@@ -119,13 +120,14 @@
 //страница акций
 .special-action__item {
   max-width: 100%;
+  width: 100%;
 
   span {
     font-style: normal;
     font-weight: normal;
     font-size: $f20;
     line-height: 120%;
-    color: #8B8B8B;
+    color: #6A6868;
   }
 
   p {
@@ -140,7 +142,7 @@
   span {
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
+    font-size: 1vw;
     line-height: 130%;
   }
 
@@ -232,6 +234,12 @@
     .specila__img-block {
       max-height: 230px;
       min-width: 217px;
+    }
+  }
+
+  .special-action__item {
+    span {
+      font-size: 16px;
     }
   }
 

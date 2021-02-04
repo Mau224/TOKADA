@@ -2,7 +2,7 @@ section.calc
 	.calc__container
 		h1 Калькулятор алюминевых окон
 		p Рассчитайте стоимость своего заказа на основе выбранного типа окна, размеров и свойств конструкции, а также дополнительных характеристик.
-		form(class="calc__main" method="post" action="")
+		form(class="calc__main" id="calcform" method="post" action="")
 			.calc__option-row-wrap
 				.calc__option
 					p
@@ -23,8 +23,10 @@ section.calc
 								.select__header
 									span.select__current Премиум, средний
 								.select__body
-									.select__item Премиум
-									.select__item Средний
+									label.select__item Премиум
+									input(type="radio" id="select-1" name="select1"  checked)
+									label.select__item Средний
+									input(type="radio" id="select-2" name="select1"  checked)
 			.calc__option.calc__option-column-wrap
 				p
 					span 03.
@@ -68,29 +70,29 @@ section.calc
 					p Нужен подоконник?
 					.calc__row-wrap
 						.calc__switch-block
-							p Да
-							label(class="switch")
-								input(type="checkbox" class="switch-theme swaper")
-								span(class="slider round")
 							p Нет
+							label(class="switch" for="ch1")
+								input(type="checkbox" id="ch1" name="option1" class="switch-theme swaper" value="нет")
+								span(class="slider round")
+							p Да
 				.calc__column-option
 					p Нужны цветные окна?
 					.calc__row-wrap
 						.calc__switch-block
-							p(class="calc__switch-text mybtn") Да
-							label(class="switch")
-								input(type="checkbox" name="prim" class="switch-theme")
+							p(class="calc__switch-text mybtn") Нет
+							label(class="switch" for="ch2")
+								input(type="checkbox" id="ch2" name="option2" class="switch-theme swaper" value="нет")
 								span(class="slider round" id="swaper")
-							p Нет
+							p Да
 				.calc__column-option
 					p Нужен монтаж окон?
 					.calc__row-wrap
 						.calc__switch-block
-							p Да
-							label(class="switch")
-								input(type="checkbox" id="one" onclick="radioFunCenter(this);" name="prim" class="switch-theme color chkbox")
-								span(class="slider round")
 							p Нет
+							label(class="switch" for="ch3")
+								input(type="checkbox" id="ch3" name="option3" class="swaper swaper1" value="нет")
+								span(class="slider round")
+							p Да
 			.calc__form-wrap
 				.calc__form
 					input(type="text" name="name" id="autor" placeholder="Имя" title="Введите имя" minlength="2" maxlength="30" required)

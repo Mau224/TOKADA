@@ -2,8 +2,8 @@ section.call
   .call__wrapper
     .call__container
       h1 Заказать звонок
-      p Отправьте заявку прямо сейчас, и мы вам перезвоним.
-      form(class="call__form" method="post")
+      p Оставьте заявку и мы вам перезвоним прямо сейчас
+      form(class="call__form" id="callform" method="post")
         .call__form-wrap
           label(for="name")
           input(type="text" name="name" id="name" placeholder="Имя" title="Введите имя" minlength="2" maxlength="30" required)

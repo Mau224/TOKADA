@@ -1,64 +1,66 @@
 section.reviews
 	.reviews__container
-		h1 Отзывы о работе компании
 		.reviews__wrapper
-			p Вы можете найти или оставить отзыв о компании “TOKADA” на сервисах Yandex и Google.
-			a(href="#" class="js-open-modal" data-modal="2" data-da="reviews__footer,first,867") Оставить отзыв
+			h1 Отзывы о работе компании
+			//a(href="#" class="js-open-modal" data-modal="2" data-da="reviews__footer,first,867") Оставить отзыв
 		.reviews__options
-			input(type="radio" id="rev-1" name="radio-rev"  checked)
-			label(for="rev-1") Все отзывы
-			input(type="radio" id="rev-2" name="radio-rev")
-			label(for="rev-2") Отзывы в Yandex
-			input(type="radio" id="rev-3" name="radio-rev")
-			label(for="rev-3") Отзывы в Google
-		.reviews__list
-			.reviews__item
-				.reviews__item-title
-					.reviews__star-list
-						+icon("star")
-						+icon("star")
-						+icon("star")
-						+icon("star")
-						+icon("star")
-					picture
-						source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/reviews__company1.webp 1x, images/content/reviews__company1@2x.webp 2x")
-						img(src="images/content/reviews__company1.jpg" srcset="images/content/reviews__company1@2x.jpg" alt="название копании")
-				p Установка окон данной компанией в квартире, Москва (договор ФО8-554334). Не буду оценивать качество, надежность и долговечность, используемых данной организацией профилей Deceuninck и фурнитуры Elementis, при изготовлении пластиковых окон...
+			.reviews__options-wrap
+				input(type="radio" id="rev-1" name="radio-rev"  checked)
+				label(for="rev-1") Все отзывы
+				input(type="radio" id="rev-2" name="radio-rev")
+				label(for="rev-2") Отзывы в Yandex
+				input(type="radio" id="rev-3" name="radio-rev")
+				label(for="rev-3") Отзывы в Google
+			.reviews__main-btn
+				a(href="#" class="js-open-modal" data-modal="2" data-da="reviews__footer,first,867") Оставить отзыв
+		//.reviews__list
+		//	.reviews__item
+		//		.reviews__item-title
+		//			.reviews__star-list
+		//				+icon("star")
+		//				+icon("star")
+		//				+icon("star")
+		//				+icon("star")
+		//				+icon("star")
+		//			picture
+		//				source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/reviews__company1.webp 1x, images/content/reviews__company1@2x.webp 2x")
+		//				img(src="images/content/reviews__company1.jpg" srcset="images/content/reviews__company1@2x.jpg" alt="название копании")
+		//		p Установка окон данной компанией в квартире, Москва (договор ФО8-554334). Не буду оценивать качество, надежность и долговечность, используемых данной организацией профилей Deceuninck и фурнитуры Elementis, при изготовлении пластиковых окон...
+		//		.reviews__item-footer
+		//			.reviews__item-footer-wrap
+		//				p Сергей
+		//				p 19.10.2020
+		//	.reviews__item
+		//		.reviews__item-title
+		//			.reviews__star-list
+		//				+icon("star")
+		//				+icon("star")
+		//				+icon("star")
+		//				+icon("star")
+		//				+icon("star")
+		//			img(src="images/content/reviews__company1.jpg" alt="название копании")
+		//		p Установка окон данной компанией в квартире, Москва (договор ФО8-554334). Не буду оценивать качество, надежность и долговечность, используемых данной организацией профилей Deceuninck и фурнитуры Elementis, при изготовлении пластиковых окон...
+		//		.reviews__item-footer
+		//			.reviews__item-footer-wrap
+		//				p Сергей
+		//				p 19.10.2020
+		//	.reviews__item
+		//		.reviews__item-title
+		//			.reviews__star-list
+		//				+icon("star")
+		//				+icon("star")
+		//				+icon("star")
+		//				+icon("star")
+		//				+icon("star")
+		//			img(src="images/content/reviews__company1.jpg" alt="название копании")
+		//		p Установка окон данной компанией в квартире, Москва (договор ФО8-554334). Не буду оценивать качество, надежность и долговечность, используемых данной организацией профилей Deceuninck и фурнитуры Elementis, при изготовлении пластиковых окон...
 				.reviews__item-footer
 					.reviews__item-footer-wrap
 						p Сергей
 						p 19.10.2020
-			.reviews__item
-				.reviews__item-title
-					.reviews__star-list
-						+icon("star")
-						+icon("star")
-						+icon("star")
-						+icon("star")
-						+icon("star")
-					img(src="images/content/reviews__company1.jpg" alt="название копании")
-				p Установка окон данной компанией в квартире, Москва (договор ФО8-554334). Не буду оценивать качество, надежность и долговечность, используемых данной организацией профилей Deceuninck и фурнитуры Elementis, при изготовлении пластиковых окон...
-				.reviews__item-footer
-					.reviews__item-footer-wrap
-						p Сергей
-						p 19.10.2020
-			.reviews__item
-				.reviews__item-title
-					.reviews__star-list
-						+icon("star")
-						+icon("star")
-						+icon("star")
-						+icon("star")
-						+icon("star")
-					img(src="images/content/reviews__company1.jpg" alt="название копании")
-				p Установка окон данной компанией в квартире, Москва (договор ФО8-554334). Не буду оценивать качество, надежность и долговечность, используемых данной организацией профилей Deceuninck и фурнитуры Elementis, при изготовлении пластиковых окон...
-				.reviews__item-footer
-					.reviews__item-footer-wrap
-						p Сергей
-						p 19.10.2020
-		.reviews__footer
-			.reviews__footer-btns
-				a(href="#" class="reviews__left-btn")
-				a(href="#" class="reviews__right-btn")
-			a(href="comment.html" class="reviews__disabled-on-mob") Все отзывы
-			a(href="comment.html" class="reviews__disabled-on-desktop") Показать еще
+		//.reviews__footer
+		//	.reviews__footer-btns
+		//		a(href="#" class="reviews__left-btn")
+		//		a(href="#" class="reviews__right-btn")
+		//	a(href="comment.html" class="reviews__disabled-on-mob") Все отзывы
+		//	a(href="comment.html" class="reviews__disabled-on-desktop") Показать еще

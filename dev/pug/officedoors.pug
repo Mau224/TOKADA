@@ -11,13 +11,13 @@ block content
         a(href="#" class="main-info__location") Москва и Московская область
           +icon("marker")
         h1(data-da="main-info__mob,first,867") офисные двери от производителя
-        p(data-da="main-info__mob,first,867") У нас вы легко подберете подходящую по конструкции, размеру, типу открывания, оформлению и комплектации модель.
+        //p(data-da="main-info__mob,first,867") У нас вы легко подберете подходящую по конструкции, размеру, типу открывания, оформлению и комплектации модель.
         a(href="#" class="main-info__link-more" data-da="main-info__mob,first,867") Подробнее
     .main-info__mob
   section.types-open
-    .types-open__container
+    .types-open__container.types-open__container-officedoors
       h1 Способы открывания
-      p По способу открывания офисные двери делятся на распашные и раздвижные.
+      a(href="#" data-modal="10" class="js-open-modal") Получить скидку 30% на остекление
     .types-open__list
       .types-open__item.types-open__item-officedoors
         .types-open__item-img
@@ -73,6 +73,6 @@ block content
         p Соответствующая техника безопасности, наличие защиты на двери могут предотвратить преступление
       .plus__advantage-item
         .plus__advantage-item-img-block
-          +icon("shield")
+          include ../static/images/content/shield.svg
         h2 Противопожарные свойства
         p Противопожарные двери - защита от распространения огня и дыма между офисными помещениями.

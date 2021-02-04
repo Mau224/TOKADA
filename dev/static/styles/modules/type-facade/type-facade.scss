@@ -4,7 +4,7 @@
   }
 
   p {
-    color: #8B8B8B;
+    color: #6A6868;
   }
 }
 
@@ -55,6 +55,11 @@
 
 .type-facade__btns {
   display: none;
+}
+
+//стили для дверей пвх
+.type-facade-doorspvh__list {
+  grid-template-columns: repeat(4,1fr);
 }
 
 @media (max-width: $mobile-width) {
@@ -173,6 +178,30 @@
   .type-facade__left {
     &::after {
       transform: rotate(180deg);
+    }
+  }
+
+  //корректировка для страницы навесов
+  .tent__block {
+    width: 100%!important;
+    display: flex;
+    flex-direction: column;
+
+    .type-facade__item {
+      width: 100%;
+      margin-right: 0;
+      max-width: 100%;
+    }
+
+    .type-facade__list {
+      margin-right: 20px;
+      margin-left: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      grid-template-columns: auto;
+      grid-template-rows: auto;
+      width: auto;
     }
   }
 

@@ -11,14 +11,14 @@ block content
                 a(href="#" class="main-info__location") Москва и Московская область
                     +icon("marker")
                 h1(data-da="main-info__mob,first,867") ТОРГОВЫЕ ПАВИЛЬОНЫ
-                p(data-da="main-info__mob,first,867") У нас вы легко подберете подходящую по конструкции, размеру, типу открывания, оформлению и комплектации модель.
+                //p(data-da="main-info__mob,first,867") У нас вы легко подберете подходящую по конструкции, размеру, типу открывания, оформлению и комплектации модель.
                 a(href="#" class="main-info__link-more" data-da="main-info__mob,first,867") Подробнее
         .main-info__mob
     section.types-open
         .types-open__container
-            h1 Виды торговых павильонов
+            //h1 Виды торговых павильонов
             .types-open__title.block__title
-                p Наша компания занимается производством торговых павильонов, таких как:
+                h1 Виды торговых павильонов
                 a(href="#" data-modal="10" class="js-open-modal") Получить скидку 30% на остекление
         .types-open__list
             .types-open__item.types-open__item-slidingpartitions.types-open__item-shopping
@@ -38,7 +38,7 @@ block content
                 p Островной павильон - это замкнутая система, которую устанавливают посередине торгового зала.
                 a(href="#" class="js-open-modal" data-modal="10") Связаться со специалистом
     section.offer
-        .offer__container
+        .offer__container.offer__container-shopping
             h1 Этапы работы
             .offer__container-title
                 p Работа над объектом происходит в несколько этапов:
@@ -47,37 +47,37 @@ block content
                 .offer__list.swiper-wrapper
                     .offer__item.offer-shopping__item.swiper-slide
                         h2 1. Проектирование
-                        p Изготовление и монтирование металлического каркаса на месте.
+
                         picture
                             source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/offer-shopping__img1.webp 1x, images/content/offer-shopping__img1@2x.webp 2x")
                             img(src="images/content/offer-shopping__img1.jpg" srcset="images/content/offer-shopping__img1@2x.jpg" alt="картинка окна")
                     .offer__item.offer-shopping__item.swiper-slide
                         h2 2. Каркас
-                        p Изготовление и монтирование металлического каркаса на месте.
+
                         picture
                             source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/offer-shopping__img2.webp 1x, images/content/offer-shopping__img2@2x.webp 2x")
                             img(src="images/content/offer-shopping__img2.jpg" srcset="images/content/offer-shopping__img2@2x.jpg" alt="картинка окна")
                     .offer__item.offer-shopping__item.swiper-slide
                         h2 3. Монтаж
-                        p Изготовление и монтирование металлического каркаса на месте.
+
                         picture
                             source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/offer-shopping__img3.webp 1x, images/content/offer-shopping__img3@2x.webp 2x")
                             img(src="images/content/offer-shopping__img3.jpg" srcset="images/content/offer-shopping__img3@2x.jpg" alt="картинка окна")
                     .offer__item.offer-shopping__item.swiper-slide
                         h2 4. Остекление
-                        p Изготовление и монтирование металлического каркаса на месте.
+
                         picture
                             source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/offer-shopping__img4.webp 1x, images/content/offer-shopping__img4@2x.webp 2x")
                             img(src="images/content/offer-shopping__img4.jpg" srcset="images/content/offer-shopping__img4@2x.jpg" alt="картинка окна")
                     .offer__item.offer-shopping__item.swiper-slide
                         h2 5. Внутренняя отделка
-                        p Изготовление и монтирование металлического каркаса на месте.
+
                         picture
                             source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/offer-shopping__img5.webp 1x, images/content/offer-shopping__img5@2x.webp 2x")
                             img(src="images/content/offer-shopping__img5.jpg" srcset="images/content/offer-shopping__img5@2x.jpg" alt="картинка окна")
                     .offer__item.offer-shopping__item.swiper-slide
                         h2 6. Внешняя отделка и коммуникации
-                        p Изготовление и монтирование металлического каркаса на месте.
+
                         picture
                             source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/offer-shopping__img6.webp 1x, images/content/offer-shopping__img6@2x.webp 2x")
                             img(src="images/content/offer-shopping__img6.jpg" srcset="images/content/offer-shopping__img6@2x.jpg" alt="картинка окна")
@@ -90,12 +90,12 @@ block content
         .plus__advantage-list
             .plus__advantage-item
                 .plus__advantage-item-img-block
-                    +icon("wall-torg")
+                    include ../static/images/content/wall-torg.svg
                 h2 Не требуется фундамент
                 p Для установки конструкции не требуется фундамент.
             .plus__advantage-item
                 .plus__advantage-item-img-block
-                    +icon("many")
+                    include ../static/images/content/many.svg
                 h2 Недорогой вариант
                 p Более выгодная цена по сравнению с арендой или выкупом помещения под магазин.
             .plus__advantage-item

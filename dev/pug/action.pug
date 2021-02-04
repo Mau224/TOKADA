@@ -6,18 +6,18 @@ block variables
 
 block content
     section
-        .main-info.main-info__action-page.main-info__other-page
+        .main-info.main-info__action-page
             .main-info__container
                 //a(href="#" class="main-info__location") работаем в Москве и области
                 //    +icon("marker")
                 h1(data-da="main-info__mob,first,867") Скидка на пластиковые и алюминиевые окна - 30 процентов!
-                p(data-da="main-info__mob,first,867") Наличие входной группы с автоматическими дверьми - это признак современного здания, престижа, комфорта и функциональности.
+                //p(data-da="main-info__mob,first,867") Наличие входной группы с автоматическими дверьми - это признак современного здания, престижа, комфорта и функциональности.
                 a(href="#" class="main-info__link-more link__action-slae" data-da="main-info__mob,first,867") Получить скидку
                 picture
                     source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/present.webp 1x, images/content/present@2x.webp 2x")
                     img(src="images/content/present.png" srcset="images/content/present@2x.png" class="action__present" alt="картинка окна")
             .action-page__form.calc__form-wrap
-                form(class="calc__form" method="post")
+                form(class="calc__form" id="actionform" method="post")
                     input(type="text" name="name" id="autor" placeholder="Имя" title="Введите имя" minlength="2" maxlength="30" required)
                     input(type="tel" name="phone" id="mobile" placeholder="Номер телефона" title="Введите телефон" minlength="3" maxlength="30" required)
                     .calc__form-footer

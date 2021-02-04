@@ -11,14 +11,15 @@ block content
                 a(href="#" class="main-info__location") Москва и Московская область
                     +icon("marker")
                 h1(data-da="main-info__mob,first,867") подоконники от производителя
-                p(data-da="main-info__mob,first,867") У нас вы легко подберете подходящую по конструкции, размеру, типу открывания, оформлению и комплектации модель.
+                //p(data-da="main-info__mob,first,867") У нас вы легко подберете подходящую по конструкции, размеру, типу открывания, оформлению и комплектации модель.
                 a(href="#" class="main-info__link-more" data-da="main-info__mob,first,867") Подробнее
         .main-info__mob
     section.special
         .special__container
-            h1 Виды подоконников для пластиковых окон
+            //h1 Виды подоконников для пластиковых окон
             .special__title.block__title
-                p Мы предлагаем подоконники только проверенных и сертифицированных производителей.
+                h1 Виды подоконников для пластиковых окон
+                //p Мы предлагаем подоконники только проверенных и сертифицированных производителей.
                 a(href="#" data-modal="10" class="js-open-modal") Получить скидку 30% на остекление
         .special__list
             .special__item.special-windowsill__item
@@ -48,7 +49,7 @@ block content
         .plus__advantage-list
             .plus__advantage-item
                 .plus__advantage-item-img-block
-                    +icon("shield")
+                    include ../static/images/content/shield.svg
                 h2 Высокая прочность
                 p Очень прочные, не меняют свою геометрию со временем.
             .plus__advantage-item

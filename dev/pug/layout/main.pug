@@ -8,23 +8,20 @@ html(lang="ru-RU" data-theme="light")
 		.wrapper
 			include ../modules/header/header
 			block content
-			include ../modules/advantages
+			include ../modules/advantages-main
 			include ../modules/service
 			include ../modules/call
 			block content2
-			include ../modules/works
-			include ../modules/action
+			include ../modules/works-main
+			//include ../modules/action
 			block content3
 			include ../modules/time
-			include ../modules/calc
+			include ../modules/calc-main
 			block content4
-			include ../modules/reviews
-			include ../modules/map
-			include ../modules/faq
+			include ../modules/reviews-main
+			include ../modules/map-main
+			include ../modules/faq-main
 			include ../modules/footer/footer
-			include ../modules/modal
-			include ../modules/modal-action
-			include ../modules/modal-reviews
-			include ../modules/modal-call
+			include ../helpers/modals
 			script(src="js/vendors.js")
 			script(src="js/main.js")

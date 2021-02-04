@@ -5,7 +5,7 @@
 
   p {
     padding-bottom: $f60;
-    color: #8B8B8B;
+    color: #6A6868;
   }
 }
 
@@ -19,6 +19,7 @@
   padding-bottom: $f40;
   border-radius: 8px;
   height: 15.625vw;
+  cursor: pointer;
   position: relative;
   background-color: var(--grey-bg);
   overflow: hidden;
@@ -139,7 +140,7 @@
     font-size: $f20;
     line-height: 120%;
     color: #37364D;
-    max-width: 9.8vw;
+    max-width: 11.5vw;
     transition: 0.3s;
   }
 }
@@ -159,10 +160,17 @@
 @media (max-width: $mobile-width) {
   .stages__item {
     min-width: 276px;
-    height: 250px;
+    //height: 250px;
     padding: 20px;
     padding-top: 14px;
-    margin-right: 20px;
+
+    overflow: hidden;
+    height: auto;
+    margin-right: 0;
+    cursor: pointer;
+    max-height: none;
+    border-radius: 8px;
+    //margin-right: 20px;
 
     &:target,
     &:hover,
@@ -257,10 +265,15 @@
   }
 
   .stages__list {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-row-gap: 0;
+    grid-column-gap: 0;
+    max-height: none;
     display: flex;
-    justify-content: space-between;
-    grid-column-gap: auto;
-    padding-left: 20px;
+    justify-content: flex-start;
+    margin-left: 20px;
+    margin-right: 40px;
 
     .swiper-slide-active {
       background-color: #33c5f3;

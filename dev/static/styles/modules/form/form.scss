@@ -10,7 +10,7 @@
 
   p {
     padding-bottom: $f40;
-    color: #8B8B8B;
+    color: #6A6868;
     max-width: 100%;
   }
 }
@@ -41,7 +41,9 @@
   font-style: normal;
   font-weight: 500;
   font-size: 1.13vw;
-  background: #33C5F3;
+  background: linear-gradient(
+90deg
+, #88E2FF, #A88AFF, #88E2FF, #A88AFF);
   border-radius: 8px;
   line-height: 100%;
   color: #FFFFFF;

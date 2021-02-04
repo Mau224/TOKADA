@@ -21,7 +21,7 @@
 
   @media (min-width: 1645px) {
     top: 21vw;
-    height: 690px;
+    height: 35vw;
   }
 }
 
@@ -69,6 +69,8 @@
   img {
     border-radius: 8px;
     object-fit: cover;
+    width: 27vw;
+    height: 21vw;
   }
 }
 
@@ -87,4 +89,10 @@
   position: absolute;
   top: 105%;
   left: 47%;
+}
+
+@media (max-width: $mobile-width) {
+  .modal-action {
+    display: none;
+  }
 }

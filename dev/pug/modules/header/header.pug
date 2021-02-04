@@ -2,12 +2,13 @@ header.header
 	.header__container
 		.header__wrap-img
 			a(href="index.html").header__logo
-				p
-					span окна
-					br
-					| Токаdа
+				img(src="images/content/logotokada.svg" alt="logo")
+				//p
+				//	span окна
+				//	br
+				//	| Токаdа
 		.header__main-nav(data-da="header__mob-main-wrap,last,867")
-			a(href="#" class="header__link-action js-open-modal" data-modal="3") Акции
+			a(href="action.html" class="header__link-action js-open-modal" data-modal="3") Акции
 			a(href="comment.html" class="header__link-reviews") Отзывы
 			a(href="works.html") Работы
 			a(href="calc.html" class="disabled-on-mob") Калькулятор
@@ -54,19 +55,140 @@ header.header
 				a(href="#" class="header__mob-avatar js-open-modal" data-modal="1") замер
 					+icon("avatar")
 	.header__list
-		a(href="#" data-da="header__mob-wrapper,last,867").header__burger
-			span
+		.header__burger-mega-block
+			a(href="#" data-da="header__mob-wrapper,last,867").header__burger
+				span
+			p(class="header__mega-menu-block-text") Меню
 		.header__link-list
-			a(href="window.html" class="header__sp-link open-spoiler") Окна
-				+icon("window")
-			a(href="doors.html" class="header__sp-link open-spoiler") Двери
-				+icon("door")
-			a(href="facade.html" class="header__sp-link open-spoiler") Фасады
-				+icon("key")
-			a(href="complete.html" class="header__sp-link open-spoiler") Комплектующие
-				+icon("circle")
-			a(href="clients.html" class="header__sp-link open-spoiler") Корпоративым клиентам
-				+icon("user")
+			.header__mega-menu-block
+				.header__mega-menu-link-wrap
+					.header__mega-block-link
+						+icon("mounted")
+						a(href="images/pdfs/B2C.pdf") Презентация для клиентов (b2c)
+					.header__mega-block-link
+						+icon("mounted")
+						a(href="images/pdfs/B2B.pdf") Презентация для партнеров (b2b)
+
+				.header__place
+					p Наш адрес:
+					a(href="#") Дорожная 29
+						+icon("mark")
+			.header__main-list-hover-links
+				.header__main-link-hover
+					a(href="windowmain.html" class="header__sp-link open-spoiler") Окна
+						+icon("window")
+					.header__hover-block
+						.mega-menu__item-list
+							.mega-menu__hov-link-wrap
+								a(href="windowmain.html" class="header__sp-link") Окна
+								+icon("window")
+							.mega-menu__col-item
+								+icon("mini-win1")
+								a(href="window.html") Алюминиевые окна
+							.mega-menu__col-item
+								+icon("mini-win2")
+								a(href="window-pvh.html") Пластиковые окна
+							.mega-menu__col-item
+								+icon("mini-win3")
+								a(href="balcony.html") Балконы и лождии
+				.header__main-link-hover
+					a(href="doors.html" class="header__sp-link open-spoiler") Двери
+						+icon("door")
+					.header__hover-block
+						.mega-menu__item-list
+							.mega-menu__hov-link-wrap
+								a(href="doors.html" class="header__sp-link") Двери
+								+icon("door")
+							.mega-menu__col-item
+								+icon("mini-door1")
+								a(href="aluminumdoors.html") Алюминиевые двери
+							.mega-menu__col-item
+								+icon("mini-door2")
+								a(href="doorspvh.html") Двери ПВХ
+							.mega-menu__col-item
+								+icon("mini-door3")
+								a(href="Swingdoors.html") Распашные двери
+							.mega-menu__col-item
+								+icon("mini-door4")
+								a(href="slidingdoors.html") Раздвижные двери
+							//.mega-menu__col-item
+							//	+icon("mini-door5")
+							//	a(href="autodoors.html") Автоматические двери
+							.mega-menu__col-item
+								+icon("mini-door6")
+								a(href="officedoors.html") Офисные двери
+							.mega-menu__col-item
+								+icon("mini-door7")
+								a(href="loftpatitions.html") Лофт перегородки
+				.header__main-link-hover
+					a(href="facade.html" class="header__sp-link open-spoiler") Фасады
+						+icon("key")
+					.header__hover-block
+						.mega-menu__item-list
+							.mega-menu__hov-link-wrap
+								a(href="facade.html" class="header__sp-link") Фасады
+								+icon("key")
+							.mega-menu__col-item
+								+icon("mini-fac1")
+								a(href="tent.html") Навесы и козырьки
+							.mega-menu__col-item
+								+icon("mini-fac2")
+								a(href="panoramic.html") Панорамное остекление
+							.mega-menu__col-item
+								+icon("mini-fac3")
+								a(href="ingroup.html") Входные группы
+							.mega-menu__col-item
+								+icon("mini-fac4")
+								a(href="wintergardens.html") Зимние сады
+				.header__main-link-hover
+					a(href="complete.html" class="header__sp-link open-spoiler") Комплектующие
+						+icon("circle")
+					.header__hover-block
+						.mega-menu__item-list
+							.mega-menu__hov-link-wrap
+								a(href="complete.html" class="header__sp-link") Комплектующие
+								+icon("circle")
+							.mega-menu__col-item
+								+icon("mini-comp1")
+								a(href="glassunit.html") Стеклопакеты
+							.mega-menu__col-item
+								+icon("mini-comp2")
+								a(href="windowsill.html") Подоконники
+							.mega-menu__col-item
+								+icon("mini-comp3")
+								a(href="fittings.html") Фурнитура
+							.mega-menu__col-item
+								+icon("mini-comp4")
+								a(href="laminate.html") Ламинация
+							.mega-menu__col-item
+								+icon("mini-comp5")
+								a(href="mosquito.html") Москитные сетки
+							.mega-menu__col-item
+								+icon("mini-comp6")
+								a(href="jalousie.html") Жалюзи
+				.header__main-link-hover
+					a(href="clients.html" class="header__sp-link open-spoiler") Корпоративым клиентам
+						+icon("user")
+					.header__hover-block
+						.mega-menu__item-list
+							.mega-menu__hov-link-wrap
+								a(href="clients.html" class="header__sp-link") Корпоративым клиентам
+								+icon("user")
+							.mega-menu__col-item
+								+icon("mini-cli1")
+								a(href="autodoors.html") Автоматические двери
+							.mega-menu__col-item
+								+icon("mini-cli2")
+								a(href="stationary.html") Стационарные перегородки
+							.mega-menu__col-item
+								+icon("mini-cli3")
+								a(href="slidingpartitions.html") Раздвижные перегородки
+							.mega-menu__col-item
+								+icon("mini-cli4")
+								a(href="mobilepartitions.html") Мобильные перегородки
+							.mega-menu__col-item
+								+icon("mini-cli5")
+								a(href="shopping.html") Торговые павильоны
 		.header__main-links
 			//a(href="#" class="header__link-call") Заказать звонок
 			//	+icon("phone")
@@ -78,7 +200,8 @@ header.header
 				.mega-menu__col
 					.mega-menu__svg-wrapper
 						+icon("door-menu")
-					a(href="#" class="mega-menu__base-link open-spoiler") Окна
+					a(href="windowmain.html" class="mega-menu__base-link") Окна
+					.open-spoiler.mega-menu__main-opener
 					.mega-menu__item-list
 						.mega-menu__col-item
 							+icon("mini-win1")
@@ -92,14 +215,15 @@ header.header
 				.mega-menu__col
 					.mega-menu__svg-wrapper
 						+icon("door-menu2")
-					a(href="#" class="mega-menu__base-link open-spoiler") Двери
+					a(href="#" class="mega-menu__base-link") Двери
+					.open-spoiler.mega-menu__main-opener
 					.mega-menu__item-list
 						.mega-menu__col-item
 							+icon("mini-door1")
 							a(href="aluminumdoors.html") Алюминиевые двери
 						.mega-menu__col-item
 							+icon("mini-door2")
-							a(href="doors.html") Двери ПВХ
+							a(href="doorspvh.html") Двери ПВХ
 						.mega-menu__col-item
 							+icon("mini-door3")
 							a(href="Swingdoors.html") Распашные двери
@@ -118,7 +242,8 @@ header.header
 				.mega-menu__col
 					.mega-menu__svg-wrapper
 						+icon("door-menu3")
-					a(href="#" class="mega-menu__base-link open-spoiler") Фасады
+					a(href="#" class="mega-menu__base-link") Фасады
+					.open-spoiler.mega-menu__main-opener
 					.mega-menu__item-list
 						.mega-menu__col-item
 							+icon("mini-fac1")
@@ -135,7 +260,8 @@ header.header
 				.mega-menu__col
 					.mega-menu__svg-wrapper
 						+icon("door-menu4")
-					a(href="#" class="mega-menu__base-link open-spoiler") Корпоративным клиентам
+					a(href="#" class="mega-menu__base-link") Корпоративным клиентам
+					.open-spoiler.mega-menu__main-opener
 					.mega-menu__item-list
 						.mega-menu__col-item
 							+icon("mini-cli1")
@@ -155,7 +281,8 @@ header.header
 				.mega-menu__col
 					.mega-menu__svg-wrapper
 						+icon("door-menu5")
-					a(href="#" class="mega-menu__base-link open-spoiler") Комплектующие
+					a(href="#" class="mega-menu__base-link") Комплектующие
+					.open-spoiler.mega-menu__main-opener
 					.mega-menu__item-list
 						.mega-menu__col-item
 							+icon("mini-comp1")
@@ -184,16 +311,23 @@ header.header
 			.header__mob-main-wrap
 			h2 Категории
 			.header__spoiler-list
-		.overlay-mob-tel(id="myNav2")
-			.header__mob-info-wrapper
-				.header__mob-addr.header__mob-info
-					h2 Адрес
-					a(href="#") Дорожная 29
-				.header__mob-time.header__mob-info
-					h2 Режим работы
-					a(href="#") Пн-Вс c 8:00 - 22:00
-				.header__mob-tel.header__mob-info
-					h2 Телефон
-					.header__mob-wrap
-						a(href="#") +7 905 7990999
-						p Звонок бесплатный
+			.header__mega-menu-link-wrap
+				.header__mega-block-link
+					+icon("mounted")
+					a(href="images/pdfs/B2C.pdf") Презентация для клиентов (b2c)
+				.header__mega-block-link
+					+icon("mounted")
+					a(href="images/pdfs/B2B.pdf") Презентация для партнеров (b2b)
+	.overlay-mob-tel
+		.header__mob-info-wrapper
+			.header__mob-addr.header__mob-info
+				h2 Адрес
+				a(href="#") Дорожная 29
+			.header__mob-time.header__mob-info
+				h2 Режим работы
+				a(href="#") Пн-Вс c 8:00 - 22:00
+			.header__mob-tel.header__mob-info
+				h2 Телефон
+				.header__mob-wrap
+					a(href="#") +7 905 7990999
+					p Звонок бесплатный

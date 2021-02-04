@@ -6,7 +6,8 @@
 
   p {
     padding-bottom: $f60;
-    color: #8B8B8B;
+    color: #6A6868;
+    display: none;//отключение описания
   }
 }
 
@@ -14,15 +15,15 @@
   display: grid;
   grid-template-columns: repeat(2, fit-content(19vw));
   grid-auto-rows: minmax(min-content, max-content);
-  row-gap: $f40;
-  column-gap: $f40;
+  grid-row-gap: $f40;
+  grid-column-gap: $f40;
   align-content: center;
   align-items: center;
 }
 
 .plus__item {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 
   svg {
     min-width: $f21;
@@ -49,7 +50,7 @@
 
 .plus__img-block {
   img {
-    width: 35.75vw;
+    width: 42.9vw;
     height: 27.25vw;
     border-radius: 8px;
   }
@@ -95,7 +96,7 @@
   p {
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
+    font-size: 1vw;
     line-height: 130%;
     color: #000;
     text-align: center;
@@ -163,6 +164,11 @@
   flex-direction: column;
   align-items: flex-start;
 
+
+  .plus__item {
+    align-items: center;
+  }
+
   h2 {
     font-style: normal;
     font-weight: normal;
@@ -215,6 +221,7 @@
   svg {
     position: relative;
     left: -$f20;
+    top: 0.2vw;
   }
 }
 

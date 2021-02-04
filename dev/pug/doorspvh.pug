@@ -1,0 +1,132 @@
+extends layout/doorspvh-layout
+
+block variables
+  -var title = 'Двери ПВХ от производителя'
+  - var description = 'Двери ПВХ от производителя'
+
+block content
+    section
+        .main-info.main-info__doorspvh-page.main-info__other-page
+            .main-info__container
+                a(href="#" class="main-info__location") Москва и Московская область
+                    +icon("marker")
+                h1(data-da="main-info__mob,first,867") ДВЕРИ ПВХ ОТ ПРОИЗВОДИТЕЛЯ
+                //p(data-da="main-info__mob,first,867") У нас вы легко подберете подходящую по конструкции, размеру, типу открывания, оформлению и комплектации модель.
+                a(href="#" class="main-info__link-more" data-da="main-info__mob,first,867") Подробнее
+        .main-info__mob
+    section.type-facade
+        .type-facade__container
+            //h1 Виды материалов для навесов и козырьков
+            .type-facade__titele.block__title
+                h1 Виды дверей ПВХ
+                a(href="#" data-modal="10" class="js-open-modal") Получить скидку 30% на остекление
+        //tent__block выстраивает блоки на мобилке в колонку
+        .type-facade__slider.tent__block
+            //.type-facade-doorspvh__list делает 4 элемента
+            .type-facade__list.type-facade-doorspvh__list
+                .type-facade__item
+                    picture
+                        source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/type-doorspvh-img1.webp 1x, images/content/type-doorspvh-img1@2x.webp 2x")
+                        img(src="images/content/type-doorspvh-img1.jpg" srcset="images/content/type-doorspvh-img1@2x.jpg" alt="картинка за окном")
+                    h2 Межкомнатные
+                    p Представляют собой полотно на каркасе, покрытое декоративной и защитной пленкой.явлениям.
+                .type-facade__item
+                    picture
+                        source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/type-doorspvh-img2.webp 1x, images/content/type-doorspvh-img2@2x.webp 2x")
+                        img(src="images/content/type-doorspvh-img2.jpg" srcset="images/content/type-doorspvh-img2@2x.jpg" alt="картинка за окном")
+                    h2 Балконные
+                    p Конструкции из ПВХ – оптимальный вариант для монтажа на лоджию или балкон.
+                .type-facade__item
+                    picture
+                        source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/type-doorspvh-img1.webp 1x, images/content/type-doorspvh-img1@2x.webp 2x")
+                        img(src="images/content/type-doorspvh-img1.jpg" srcset="images/content/type-doorspvh-img1@2x.jpg" alt="картинка за окном")
+                    h2 Офисные
+                    p Офисная дверь ПВХ – это недорогой тип двери для установки внутри помещения.
+                .type-facade__item
+                    picture
+                        source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/type-doorspvh-img4.webp 1x, images/content/type-doorspvh-img4@2x.webp 2x")
+                        img(src="images/content/type-doorspvh-img4.jpg" srcset="images/content/type-doorspvh-img4@2x.jpg" alt="картинка за окном")
+                    h2 Входные
+                    p Пластиковая современная входная дверь – это очень практично и надежно.
+    section.types-open
+        .types-open__container
+            h1 Способы остекления
+            p Мы осуществляем остекление дверей при помощи новейших технологий, современного оборудования и высококачественных материалов.
+        .types-open__list
+            .types-open__item
+                .types-open__item-img
+                    picture
+                        source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/types-open-alumin__item-img1.webp 1x, images/content/types-open-alumin__item-img1@2x.webp 2x")
+                        img(src="images/content/types-open-alumin__item-img1.png" srcset="images/content/types-open-alumin__item-img1@2x.png" alt="картинка окна")
+                h2 Глухое заполнение
+                p Оптимальный способ разграничения пространства за максимально короткое время и с минимумом затрат.
+            .types-open__item
+                .types-open__item-img
+                    picture
+                        source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/types-open-alumin__item-img2.webp 1x, images/content/types-open-alumin__item-img2@2x.webp 2x")
+                        img(src="images/content/types-open-alumin__item-img2.png" srcset="images/content/types-open-alumin__item-img2@2x.png" alt="картинка окна")
+                h2 Комбинированное заполнение
+                p Комбинированные перегородки наиболее функциональны и универсальны, они позволяют объединить в одном модуле остекление с непрозрачными вставками.
+            .types-open__item
+                .types-open__item-img
+                    picture
+                        source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/types-open-alumin__item-img3.webp 1x, images/content/types-open-alumin__item-img3@2x.webp 2x")
+                        img(src="images/content/types-open-alumin__item-img3.png" srcset="images/content/types-open-alumin__item-img3@2x.png" alt="картинка окна")
+                h2 Стеклянное заполнение
+                p Это прочные и легкие конструкции, которые возводятся в короткие сроки и имеют невысокую стоимость.
+    section.offer
+        .offer__container
+            h1 Способы открывания
+            .offer__slider.swiper-container.slider
+                .offer__list.swiper-wrapper
+                    .offer__item.swiper-slide
+                        h2 Распашные
+                        picture
+                            source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/offer-doorspvh__img1.webp 1x, images/content/offer-doorspvh__img1@2x.webp 2x")
+                            img(src="images/content/offer-doorspvh__img1.jpg" srcset="images/content/offer-doorspvh__img1@2x.jpg" alt="картинка окна")
+                        p Сотрудничая с дизайнерами , мы готовы к нестандартным задачам и смелым идеям.
+                        .offer__popup-block
+                            p Сотрудничая с дизайнерами , мы готовы к нестандартным задачам и смелым идеям.
+                            a(href="#" class="js-open-modal" data-modal="10") Связаться со специалистом
+                    .offer__item.swiper-slide
+                        h2 Раздвижные
+                        picture
+                            source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/offer-doorspvh__img2.webp 1x, images/content/offer-doorspvh__img2@2x.webp 2x")
+                            img(src="images/content/offer-doorspvh__img2.jpg" srcset="images/content/offer-doorspvh__img2@2x.jpg" alt="картинка окна")
+                        .offer__popup-block
+                            p Сотрудничая с дизайнерами , мы готовы к нестандартным задачам и смелым идеям.
+                            a(href="#" class="js-open-modal" data-modal="10") Связаться со специалистом
+                    .offer__item.swiper-slide
+                        h2 Автоматические
+                        picture
+                            source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/offer-doorspvh__img3.webp 1x, images/content/offer-doorspvh__img3@2x.webp 2x")
+                            img(src="images/content/offer-doorspvh__img3.jpg" srcset="images/content/offer-doorspvh__img3@2x.jpg" alt="картинка окна")
+                        .offer__popup-block
+                            p Сотрудничая с дизайнерами , мы готовы к нестандартным задачам и смелым идеям.
+                            a(href="#" class="js-open-modal" data-modal="10") Связаться со специалистом
+                .offer__btns
+                    a(href="#" class="offer__arrow offer__left swiper-button-prev slider__arrows")
+                    a(href="#" class="offer__arrow offer__right active swiper-button-next slider__arrows")
+    //корректирующие стили для этого блока просто для добавления блока заголовка
+    section.plus__window-advantages
+        .plus__advantage-list
+            .plus__advantage-item
+                .plus__advantage-item-img-block
+                    +icon("broom")
+                h2 Простой уход
+                p Моются любыми моющими средствами и не требуют полироли.
+            .plus__advantage-item
+                .plus__advantage-item-img-block
+                    +icon("flower")
+                h2 Эстетичность
+                p Двери ПВХ могут принимать самый различный вид.компании.
+            .plus__advantage-item
+                .plus__advantage-item-img-block
+                    +icon("clock")
+                h2 Долговечность
+                p Полимерное покрытие обладает высокой износостойкостью.
+            .plus__advantage-item
+                .plus__advantage-item-img-block
+                    include ../static/images/content/many.svg
+                h2 Низкая стоимость
+                p Низкая стоимость дверей при высоком качестве.

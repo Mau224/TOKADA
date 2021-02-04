@@ -2,6 +2,7 @@ const gulp = require('gulp');
 const concat = require('gulp-concat');
 
 const vendorsScripts = [
+  'node_modules/inputmask/dist/inputmask.min.js',
   'node_modules/swiper/swiper-bundle.min.js'
 ];
 

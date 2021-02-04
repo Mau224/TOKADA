@@ -8,8 +8,11 @@
   }
 
   p {
-    color: #8B8B8B;
+    color: #6A6868;
     padding-bottom: $f60;
+    font-size: 0;
+    color: transparent;
+    display: none;//отключение описания
   }
 }
 
@@ -21,6 +24,10 @@
 
 .offer__container-title {
   padding-bottom: $f60;
+
+  h1 {
+    padding-bottom: 0;
+  }
 }
 
 .offer__list {
@@ -34,6 +41,7 @@
   position: relative;
   width: 100%;
   height: 100%;
+  cursor: pointer;
 
   p {
     display: none;
@@ -79,18 +87,22 @@
   z-index: 2;
   height: 100%;
   width: 100%;
+  display: flex;
+  align-items: flex-end;
   padding-top: $f90;
   padding-left: $f40;
   padding-right: $f40;
 
   p {
+    display: block;
     font-style: normal;
     font-weight: normal;
     font-size: 1vw;
     line-height: 130%;
     color: #ffffff;
     padding-bottom: $f60;
-    display: inline-block;
+    font-size: 0;
+    color: transparent;
   }
 
   a {
@@ -101,7 +113,13 @@
     color: #33C5F3;
     padding: $f22 $f40;
     border-radius: 8px;
-    background-color: #ffffff;
+    position: relative;
+    bottom: 2vw;
+
+    min-width: 17vw;
+    text-align: center;
+
+    background: #ffffff;
   }
 }
 
@@ -121,7 +139,9 @@
     font-weight: 500;
     font-size: 1.13vw;
     line-height: 100%;
-    background: #33C5F3;
+    background: linear-gradient(
+90deg
+, #88E2FF, #A88AFF, #88E2FF, #A88AFF);
     border-radius: 8px;
     padding: 1.375vw 2.5vw;
   }
@@ -263,10 +283,17 @@
   margin-bottom: $f60;
 }
 
+//offer c отключеным блоком p
+.offer__dis-p {
+  h2 {
+    padding-bottom: $f60;
+  }
+}
+
 @media (max-width: $mobile-width) {
   .offer {
     padding-top: 46px;
-    padding-bottom: 40px;
+    padding-bottom: 0;
     margin-left: 0;
     margin-right: 0;
   }
@@ -275,6 +302,7 @@
     h1 {
       padding-bottom: 30px;
       padding-left: 20px;
+      padding-right: 20px;
     }
 
     p {
@@ -288,19 +316,38 @@
     grid-template-columns: auto;
     grid-template-rows: auto;
     justify-content: space-between;
-    padding-left: 20px;
+    padding-left: 0;
+    margin-left: 0;
+    row-gap: 0;
+    column-gap: 0;
+    width: 100%;
   }
 
   .offer__slider {
-    width: 94.5%; //cтили для выравнивания перелистывания слайдов
+    width: 100%;
   }
 
   .offer__item {
+    overflow: hidden;
+    padding: 0;
     min-width: 276px;
-    margin-right: 20px;
     height: auto;
+    margin-right: 0;
+    cursor: pointer;
+    max-height: none;
+    border-radius: 8px;
     display: flex;
     flex-direction: column;
+
+    &:hover {
+      p {
+        color: #000000;
+      }
+
+      h2 {
+        color: #000000;
+      }
+    }
 
     img {
       display: flex;
@@ -312,9 +359,9 @@
       font-style: normal;
       font-weight: normal;
       font-size: 16px;
+      display: none;//отключение описания в слайдах
       line-height: 120%;
       color: #000;
-      display: flex;
       order: 3;
       padding-left: 0;
       padding-bottom: 0;
@@ -401,6 +448,9 @@
     background-color: #fff;
     border-radius: 8px;
     min-height: 100%;
+    padding-left: 0;
+    padding-right: 0;
+
 
     &:hover {
       h2 {
@@ -410,11 +460,11 @@
 
     h2 {
       color: #000000;
-      padding-left: 20px;
+      padding-left: 0;
     }
 
     p {
-      padding-left: 20px;
+      padding-left: 0;
     }
   }
 
@@ -426,6 +476,8 @@
     background-color: var(--grey-bg);
     padding-bottom: 34px;
     border-radius: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
 
     svg {
       width: 30px;
@@ -504,6 +556,10 @@
       font-size: 16px;
       top: 0;
     }
+  }
+
+  .offer__container-shopping {
+    margin-bottom: 60px;
   }
 
   //корректировки на странице маскитных сеток

@@ -85,6 +85,7 @@ textarea,
 select {
   font: inherit;
   color: var(--main-color);
+  cursor: pointer;
 }
 
 input::-ms-clear {
@@ -98,6 +99,7 @@ input:invalid {
 button,
 input {
   border: none;
+  cursor: none;
 }
 
 audio,
@@ -121,6 +123,14 @@ button {
   outline: none;
 }
 
+button {
+  cursor: pointer;
+}
+
+input {
+  cursor: text;
+}
+
 button::-moz-focus-inner {
   padding: 0;
   border: 0;
@@ -130,16 +140,70 @@ p {
   color: #000;
 }
 
+.open-spoiler {
+  cursor: pointer;
+}
+
+//страница полтики
+.polit {
+  h1 {
+    padding-bottom: $f20;
+
+    @media (max-width: $mobile-width) {
+      padding-bottom: 20px;
+    }
+  }
+
+  p {
+    padding-bottom: 0.5vw;
+    max-width: 100%;
+
+    @media (max-width: $mobile-width) {
+      color: #000000;
+      padding-bottom: 10px;
+    }
+
+    &:last-child {
+      padding-bottom: $f40;
+    }
+  }
+}
+
+.js-open-modal {
+  background-color: #33C5F3;
+  background: -webkit-gradient(linear, left top, right top, from(#88E2FF), color-stop(#A88AFF), color-stop(#88E2FF), to(#A88AFF));
+  background: -o-linear-gradient(left, #88E2FF, #A88AFF, #88E2FF, #A88AFF);
+  background: linear-gradient(
+                  90deg
+          , #88E2FF, #A88AFF, #88E2FF, #A88AFF);
+  background-size: 320% 200%!important;
+  -webkit-animation: GradientBreathe 4s linear infinite;
+  animation: GradientBreathe 4s linear infinite;
+  -webkit-transition: background-color 1s ease;
+  -o-transition: background-color 1s ease;
+  transition: background-color 1s ease;
+  cursor: pointer;
+}
+
 //блок для скидки 30%
 .block__title {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   padding-bottom: 3.7vw;
+
+  h1 {
+    padding-bottom: 0!important;//для редизайна когда убрали текст
+    max-width: 31vw;
+  }
 
   @media (max-width: $mobile-width) {
     a {
       display: none;
+    }
+
+    h1 {
+      max-width: 100%;
     }
   }
 
@@ -149,14 +213,16 @@ p {
     font-weight: 500;
     font-size: 1.13vw;
     line-height: 100%;
-    background: #33C5F3;
+    background: linear-gradient(
+90deg
+, #88E2FF, #A88AFF, #88E2FF, #A88AFF);
     border-radius: 8px;
     padding: 1.375vw 2.5vw;
   }
 
   p {
     padding-bottom: 0;
-    color: #8B8B8B;
+    color: #6A6868;
   }
 }
 
@@ -208,7 +274,7 @@ p {
     font-weight: normal;
     font-size: 16px;
     line-height: 130%;
-    color: #8B8B8B;
+    color: #6A6868;
     max-width: 335px;
   }
 }

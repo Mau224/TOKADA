@@ -11,14 +11,14 @@ block content
                 a(href="#" class="main-info__location") Москва и Московская область
                     +icon("marker")
                 h1(data-da="main-info__mob,first,867") Панорамное остекление
-                p(data-da="main-info__mob,first,867") У нас вы легко подберете подходящую по конструкции, размеру, типу открывания, оформлению и комплектации модель.
+                //p(data-da="main-info__mob,first,867") У нас вы легко подберете подходящую по конструкции, размеру, типу открывания, оформлению и комплектации модель.
                 a(href="#" class="main-info__link-more" data-da="main-info__mob,first,867") Подробнее
         .main-info__mob
     section.types
         .types__container
-            h1 Виды остекления
+            //h1 Виды остекления
             .types__title
-                p Если вы хотите иметь качественные, экологичные и максимально долговечные окна, то окна из алюминия - это то, что вам нужно!
+                h1 Виды остекления
                 a(href="#" data-modal="10" class="js-open-modal") Получить скидку 30% на остекление
             .types__main
                 .types__img-block
@@ -29,7 +29,7 @@ block content
                         source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/window-elem.webp 1x, images/content/window-elem@2x.webp 2x")
                         img(src="images/content/window-elem.png" srcset="images/content/window-elem@2x.png" class="types__img-elem" alt="картинка за окном")
                 .types__text-col
-                    p Теплый профиль: Alutech, Krauss, Vidnal
+
                     h2 Теплое остекление
                     p Тёплые окна - решение для помещений, где необходима тепло- и звукоизоляция.
                     .types__advantages-list
@@ -51,7 +51,7 @@ block content
         .types__container
             .types__main.types__main--second
                 .types__text-col
-                    p Холодный профиль: Alutech, Provedal
+
                     h2 Холодное остекление
                     p Холодные окна - максимально доступный по цене вариант остекления из алюминия.
                     .types__advantages-list
@@ -65,7 +65,7 @@ block content
                             p Максимум света
                         .types__advantages-item.types__advantages-item--second
                             .types__svg-block.types__svg-block--second
-                                +icon("many")
+                                include ../static/images/content/many.svg
                             p Недорогой вариант
                 .types__img-block
                     picture
@@ -119,7 +119,7 @@ block content
                 p Увеличивает количество дневного света в помещении и обеспечивает прекрасное естественное освещение.
             .plus__advantage-item
                 .plus__advantage-item-img-block
-                    +icon("shield")
+                    include ../static/images/content/shield.svg
                 h2 Надежность конструкции
                 p Алюминиевые конструкции разрабатываются с учетом ветровых нагрузок и массы стеклопакетов.
             .plus__advantage-item

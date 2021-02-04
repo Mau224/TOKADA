@@ -3,14 +3,15 @@ footer.footer
         .footer__header
             .footer__mob-header
             a(href="index.html" data-da="footer__mob-header,last,867").footer__logo
-                p
-                    span окна
-                    br
-                    | Токаdа
+                img(src="images/content/logotokadafooter.svg" alt="logo")
+                //p
+                //    span окна
+                //    br
+                //    | Токаdа
             .footer__header-wrap
                 a(href="#" class="footer__header-link js-open-modal" data-modal="10") Заказать звонок
                     +icon("phone")
-                a(href="#" class="footer__header-link footer__header-link-mail") zakaz@tokada.ru
+                a(href="mailto:zakaz@okna-tokada.ru" class="footer__header-link footer__header-link-mail") zakaz@okna-tokada.ru
                     +icon("mail")
                 a(href="tel:+79057990999" class="footer__header-link") +7 905 799 09 99
                     +icon("phone")
@@ -26,29 +27,29 @@ footer.footer
                 a(href="#" class="footer__arrow-link" data-da="footer__mob-header,last,867")
         .footer__info
             .footer__info-item
-                h3(class="open-spoiler active") Окна
+                h3(class="open-spoiler") Окна
                 .footer__info-item-text
-                    a(href="aluminumdoors.html") Алюминиевые окна
+                    a(href="window.html") Алюминиевые окна
                     a(href="window-pvh.html") Окна ПВХ
                     a(href="balcony.html") Балконы и лождии
             .footer__info-item
-                h3(class="open-spoiler active") Двери
+                h3(class="open-spoiler") Двери
                 .footer__info-item-text
-                    a(href="doors.html") Двери ПВХ
+                    a(href="doorspvh.html") Двери ПВХ
                     a(href="Swingdoors.html") Распашные двери
                     a(href="slidingdoors.html") Раздвижные двери
                     a(href="autodoors.html") Автоматические двери
                     a(href="officedoors.html") Офисные двери
                     a(href="loftpatitions.html") Лофт перегородки
             .footer__info-item
-                h3(class="open-spoiler active") Фасады
+                h3(class="open-spoiler") Фасады
                 .footer__info-item-text
                     a(href="tent.html") Навесы и козырьки
                     a(href="panoramic.html") Панорамное остекление
                     a(href="ingroup.html") Входные группы
                     a(href="wintergardens.html") Зимние сады
             .footer__info-item
-                h3(class="open-spoiler active")
+                h3(class="open-spoiler")
                     | Корпоративным
                     br
                     | клиентам
@@ -58,7 +59,7 @@ footer.footer
                     a(href="slidingpartitions.html") Раздвижные перегородки
                     a(href="mobilepartitions.html") Мобильные перегородки
             .footer__info-item
-                h3(class="open-spoiler active") Комплектующие
+                h3(class="open-spoiler") Комплектующие
                 .footer__info-item-text
                     a(href="glassunit.html") Стеклопакеты
                     a(href="windowsill.html") Подоконники
@@ -68,7 +69,7 @@ footer.footer
                     a(href="jalousie.html") Жалюзи
         .footer__contacts
             .footer__contact-item
-                h3(class="open-spoiler active") О нас
+                h3(class="open-spoiler") О нас
                 .footer__info-item-text
                     a(href="works.html") Работы
                     a(href="comment.html") Отзывы
@@ -77,13 +78,13 @@ footer.footer
                     a(href="calc.html") Калькулятор
                     a(href="#") Часто задаваемые вопросы
             .footer__contact-item.footer__contact-item--actions
-                h3(class="open-spoiler active") Акции
+                h3(class="open-spoiler") Акции
                 .footer__info-item-text
                     a(href="#") Скидка на пластиковые и алюминиевые окна - 30 процентов!
-                    a(href="#") Рассрочка от 3 до 12 месяцев - 0%предоплата, без переплаты
-                    a(href="#") Зимний монтаж
+                    a(href="#") Окна в рассрочку - 0% переплат!
+                    a(href="#") Скидка при от 3 или более окон на продкцию и монтаж
             .footer__contact-item.footer__contact-item--location
-                h3(class="open-spoiler active") Контакты
+                h3(class="open-spoiler") Контакты
                 .footer__info-item-text.footer__info-item-text--location
                     p Наш адрес:
                     a(href="#" class="footer__loction-link") Дорожная 29
@@ -95,14 +96,14 @@ footer.footer
                     a(href="#" class="footer__loction-link") +7 905 7990999
                         +icon("whatsapp")
                     p Почта:
-                    a(href="#" class="footer__loction-link") zakaz@tokada.ru
+                    a(href="mailto:zakaz@okna-tokada.ru" class="footer__loction-link") zakaz@okna-tokada.ru
                         +icon("mail")
             .footer__contact-item.footer__contact-item--pay
-                .footer__dir-col
-                    h3 Дополнительно
-                    .footer__dir-info
-                        a(href="#") Связаться с директором
-                        a(href="#") Вакансии
+                .footer__dir-col.footer__contact-item
+                    h3(class="open-spoiler") Дополнительно
+                    .footer__info-item-text.footer__dir-info
+                        a(href="#" class="js-open-modal" data-modal="14") Связаться с директором
+                        a(href="vacancies.html") Вакансии
                 p Принимаем к оплате:
                 .footer__card-wrap
                     img(src="images/content/master.png" alt="логотип платежной системы")
@@ -115,4 +116,4 @@ footer.footer
             p © 2020  Окна TOKADA.
             a(href="#") Сайт разработан студией
                 span Media Shaper
-            a(href="#") Политика конфиденциальности
+            a(href="polit.html") Политика конфиденциальности

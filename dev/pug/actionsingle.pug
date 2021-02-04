@@ -1,0 +1,27 @@
+extends layout/actionsingle-layout
+
+block variables
+  -var title = 'Скидка на пластиковые и алюминиевые окна - 30 процентов!'
+  - var description = 'Cтраница сайта'
+
+block content
+    section.actionsingle
+        h1 Скидка на пластиковые и алюминиевые окна - 30 процентов!
+        .main-info.main-info__action-page.main-info__actionsingle-page
+            .main-info__container
+                //a(href="#" class="main-info__location") работаем в Москве и области
+                //    +icon("marker")
+                h1(data-da="main-info__mob,first,867") Скидка на пластиковые и алюминиевые окна - 30 процентов!
+                //p(data-da="main-info__mob,first,867") Наличие входной группы с автоматическими дверьми - это признак современного здания, престижа, комфорта и функциональности.
+                a(href="#" class="main-info__link-more link__action-slae" data-da="main-info__mob,first,867") Получить скидку
+                picture
+                    source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/present.webp 1x, images/content/present@2x.webp 2x")
+                    img(src="images/content/present.png" srcset="images/content/present@2x.png" class="action__present" alt="картинка окна")
+        .actionsingle__item
+            .actionsingle__item-title
+                h2 До конца февраля дарим скидку на пластиковые и алюминиевые окна - 30 процентов!
+                .actionsingle__item-date
+                    h3 01 Ноября - 28 Февраля
+            p Подробности акции можно узнать по телефону +7 905 7990999
+            .actionsingle__link
+                a(href="#") Обратный звонок

@@ -1,18 +1,3 @@
-.advantages__title {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  p {
-    font-style: normal;
-    font-weight: normal;
-    font-size: $f20;
-    line-height: 130%;
-    max-width: 34vw;
-    color: #8B8B8B;
-  }
-}
-
 .advantages__container {
   h1 {
     font-style: normal;
@@ -23,13 +8,38 @@
   }
 }
 
+.advantages__wrap-title {
+
+}
+
+.advantages__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: $f20;
+    line-height: 130%;
+    max-width: 34vw;
+    color: #6A6868;
+  }
+
+  h1 {
+    padding-bottom: $f30;
+  }
+}
+
 .advantages__btn {
   color: white;
   font-style: normal;
   font-weight: 500;
   font-size: $f18;
   line-height: 100%;
-  background: #33C5F3;
+  background: linear-gradient(
+90deg
+, #88E2FF, #A88AFF, #88E2FF, #A88AFF);
   border-radius: 8px;
   padding: $f22 $f40;
 }
@@ -65,7 +75,7 @@
     font-size: $f20;
     line-height: 120%;
     color: #37364D;
-    max-width: 14vw;
+    max-width: 12vw;
   }
 
   &--action {
@@ -162,8 +172,6 @@
       font-size: 26px;
       line-height: 100%;
       padding-bottom: 32px;
-      padding-left: 20px;
-      padding-right: 20px;
     }
 
     p {
@@ -197,7 +205,9 @@
   //Другое название , потому что блок чуть-чуть другой не стал заморачиваться уже то же самое что и обертки XXX__slider
   .advantages__block {
     flex-direction: column;
-    width: 94.5%; //cтили для выравнивания перелистывания слайдов
+    //width: 100%;
+    //margin-left: 13px;
+    width: 100%; //cтили для выравнивания перелистывания слайдов
   }
 
   .advantages__list {
@@ -209,8 +219,44 @@
     max-height: none;
     // overflow: hidden;
     display: flex;
-    justify-content: space-between;
-    padding-left: 20px;
+    justify-content: flex-start;
+    //padding-left: 20px;
+    margin-left: 20px;
+    margin-right: 40px;
+
+    .swiper-slide-active {
+      background-color: #33C5F3;
+
+      h3 {
+        color: white;
+      }
+
+      h4 {
+        color: white;
+        max-width: 100%;
+      }
+
+      p {
+        color: white;
+      }
+    }
+
+    .swiper-slide-next {
+      &:last-child {
+        h3 {
+          color: white;
+        }
+
+        h4 {
+          color: white;
+          max-width: 100%;
+        }
+
+        p {
+          color: white;
+        }
+      }
+    }
   }
 
   .advantages__item-title {
@@ -244,12 +290,13 @@
     padding: 26px 20px;
     min-width: 276px;
     height: auto;
-    margin-right: 20px;
+    margin-right: 0;
     cursor: pointer;
     max-height: none;
     border-radius: 8px;
 
     &--action {
+      margin-right: 0;
       svg {
         width: 276px;
         height: 276px;

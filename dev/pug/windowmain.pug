@@ -1,0 +1,183 @@
+extends layout/windowmain-layout
+
+block variables
+  -var title = 'Окна от производителя'
+  - var description = 'Окна от производителя'
+
+block content
+    section
+        .main-info.main-info__windowmain-page.main-info__other-page
+            .main-info__container
+                a(href="#" class="main-info__location") Москва и Московская область
+                    +icon("marker")
+                h1(data-da="main-info__mob,first,867") ОКНА ОТ ПРОИЗВОДИТЕЛЯ
+                //p(data-da="main-info__mob,first,867") У нас вы легко подберете подходящую по конструкции, размеру, типу открывания, оформлению и комплектации модель.
+                a(href="#" class="main-info__link-more" data-da="main-info__mob,first,867") Подробнее
+        .main-info__mob
+    section.types
+        .types__container
+            //h1 Виды алюминиевых окон
+            .types__title
+                h1 Виды окон
+                a(href="#" data-modal="10" class="js-open-modal") Получить скидку 30% на остекление
+            .types__main
+                .types__img-block
+                    picture
+                        source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/window-grad.webp 1x, images/content/window-grad@2x.webp 2x")
+                        img(src="images/content/window-grad.png" srcset="images/content/window-grad@2x.png" class="types__img-window" alt="картинка окна")
+                    picture
+                        source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/window-elem.webp 1x, images/content/window-elem@2x.webp 2x")
+                        img(src="images/content/window-elem.png" srcset="images/content/window-elem@2x.png" class="types__img-elem" alt="картинка за окном")
+                .types__text-col
+
+                    h2 Окна ПВХ
+                    p Тёплые окна - решение для помещений, где необходима тепло- и звукоизоляция.
+                    .types__advantages-list
+                        .types__advantages-item
+                            .types__svg-block
+                                +icon("cup")
+                            p Максимальное тепло
+                        .types__advantages-item
+                            .types__svg-block
+                                +icon("lock")
+                            p Высокая герметичность
+                        .types__advantages-item
+                            .types__svg-block
+                                +icon("flower")
+                            p Элегантный внешний вид
+            .types__btn-block
+                a(href="windowpvh.html") Смотреть подробнее
+    section.types.types--second
+        .types__container
+            .types__main.types__main--second
+                .types__text-col
+
+                    h2 Алюминиевые окна
+                    p Холодные окна - максимально доступный по цене вариант остекления из алюминия.
+                    .types__advantages-list
+                        .types__advantages-item.types__advantages-item--second
+                            .types__svg-block.types__svg-block--second
+                                +icon("pen")
+                            p Легкая конструкция
+                        .types__advantages-item.types__advantages-item--second
+                            .types__svg-block.types__svg-block--second
+                                +icon("san")
+                            p Максимум света
+                        .types__advantages-item.types__advantages-item--second
+                            .types__svg-block.types__svg-block--second
+                                +icon("voice")
+                            p Лучшая шумоизоляция
+                .types__img-block
+                    picture
+                        source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/window-grad2.webp 1x, images/content/window-grad2@2x.webp 2x")
+                        img(src="images/content/window-grad2.png" srcset="images/content/window-grad2@2x.png" class="types__img-window" alt="картинка окна")
+                    picture
+                        source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/window-elem.webp 1x, images/content/window-elem@2x.webp 2x")
+                        img(src="images/content/window-elem.png" srcset="images/content/window-elem@2x.png" class="types__img-elem-second" alt="картинка за окном")
+            .types__btn-block
+                a(href="window.html") Смотреть подробнее
+    section.offer
+                        .offer__container
+                            h1 Где применяется
+                            .offer__slider.swiper-container.slider
+                                .offer__list.swiper-wrapper
+                                    .offer__item.swiper-slide
+                                        h2 Остекление коттеджей
+                                        picture
+                                            source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/offer-windowmain__img1.webp 1x, images/content/offer-windowmain__img1@2x.webp 2x")
+                                            img(src="images/content/offer-windowmain__img1.jpg" srcset="images/content/offer-windowmain__img1@2x.jpg" alt="картинка окна")
+                                        p Сотрудничая с дизайнерами , мы готовы к нестандартным задачам и смелым идеям.
+                                        .offer__popup-block
+                                            p Сотрудничая с дизайнерами , мы готовы к нестандартным задачам и смелым идеям.
+                                            a(href="window-pvh.html") Подробнее
+                                    .offer__item.swiper-slide
+                                        h2 Остекление балконов и лоджий
+                                        picture
+                                            source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/offer-windowmain__img2.webp 1x, images/content/offer-windowmain__img2@2x.webp 2x")
+                                            img(src="images/content/offer-windowmain__img2.jpg" srcset="images/content/offer-windowmain__img2@2x.jpg" alt="картинка окна")
+                                        .offer__popup-block
+                                            p Сотрудничая с дизайнерами , мы готовы к нестандартным задачам и смелым идеям.
+                                            a(href="balcony.html") Подробнее
+                                    .offer__item.swiper-slide
+                                        h2 Фасады
+                                        picture
+                                            source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/offer-windowmain__img3.webp 1x, images/content/offer-windowmain__img3@2x.webp 2x")
+                                            img(src="images/content/offer-windowmain__img3.jpg" srcset="images/content/offer-windowmain__img3@2x.jpg" alt="картинка окна")
+                                        .offer__popup-block
+                                            p Сотрудничая с дизайнерами , мы готовы к нестандартным задачам и смелым идеям.
+                                            a(href="facade.html") Подробнее
+                                    .offer__item.swiper-slide
+                                        h2 Панорамное остекление
+                                        picture
+                                            source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/offer-windowmain__img4.webp 1x, images/content/offer-windowmain__img4@2x.webp 2x")
+                                            img(src="images/content/offer-windowmain__img4.jpg" srcset="images/content/offer-windowmain__img4@2x.jpg" alt="картинка окна")
+                                        .offer__popup-block
+                                            p Сотрудничая с дизайнерами , мы готовы к нестандартным задачам и смелым идеям.
+                                            a(href="panoramic.html") Подробнее
+                                    .offer__item.swiper-slide
+                                        h2 Зимние сады
+                                        picture
+                                            source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/offer-windowmain__img5.webp 1x, images/content/offer-windowmain__img5@2x.webp 2x")
+                                            img(src="images/content/offer-windowmain__img5.jpg" srcset="images/content/offer-windowmain__img5@2x.jpg" alt="картинка окна")
+                                        .offer__popup-block
+                                            p Сотрудничая с дизайнерами , мы готовы к нестандартным задачам и смелым идеям.
+                                            a(href="wintergardens.html") Подробнее
+                                    .offer__item.swiper-slide
+                                        h2 Входные группы
+                                        picture
+                                            source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/offer-windowmain__img6.webp 1x, images/content/offer-windowmain__img6@2x.webp 2x")
+                                            img(src="images/content/offer-windowmain__img6.jpg" srcset="images/content/offer-windowmain__img6@2x.jpg" alt="картинка окна")
+                                        .offer__popup-block
+                                            p Сотрудничая с дизайнерами , мы готовы к нестандартным задачам и смелым идеям.
+                                            a(href="ingroup.html") Подробнее
+                                .offer__btns
+                                    a(href="#" class="offer__arrow offer__left swiper-button-prev slider__arrows")
+                                    a(href="#" class="offer__arrow offer__right active swiper-button-next slider__arrows")
+    //корректирующие стили для этого блока просто для добавления блока заголовка
+    section.plus__window-advantages
+        .plus__advantage-list
+            .plus__advantage-item
+                .plus__advantage-item-img-block
+                    +icon("pen-line")
+                h2 Бесплатный замер
+                p Оконные профили «РЕХАУ» надежно изолируют звук и тепло. ПВХ можно заполнять толстыми стеклопакетами.
+            .plus__advantage-item
+                .plus__advantage-item-img-block
+                    +icon("bas")
+                h2 Быстрая доставка
+                p Ответственность за сохранность оконных конструкций во время доставки полностью лежит на специалистах нашей компании.
+            .plus__advantage-item
+                .plus__advantage-item-img-block
+                    +icon("tool")
+                h2 Качественный монтаж
+                p Качественный монтаж – залог того, что конструкции прослужат долго и достойно выполнят возложенную на них миссию.
+            .plus__advantage-item
+                .plus__advantage-item-img-block
+                    include ../static/images/content/shield.svg
+                h2 Гарантия до 10 лет
+                p Мы даем пожизненную гарантию на наши стеклопакеты. Кроме этого, на все наши окна действует гарантия 5 лет.
+    section.action
+        .action__container.action__container-window
+            h1 Не знаете какой профиль выбрать?
+            .action__wrapper
+                .action__img.action__img-window
+                    a(href="calc.html" class="action__title action__title--first" data-da="action__form-window,first,867")
+                        h3 Воспользуйтесь калькулятором для расчета стоимости!
+                        a(href="calc.html" class="calc__link" data-da="action__title,last,867")
+                            p Калькулятор расчета
+                    a(href="calc.html")
+                        picture
+                            source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/action-other__mobail-window.webp 1x, images/content/action-other__mobail-window@2x.webp 2x")
+                            img(src="images/content/action-other__mobail-window.png" srcset="images/content/action-other__mobail-window@2x.png" alt="картинка телефона в акции")
+                form(class="action__form action__form-window" id="windowform" method="post")
+                    .action__title
+                        h3 Или:
+                        p Заполните форму связи и наш специалист свяжется с вами в течении 10 минут!
+                    label(for="name")
+                    input(type="text" name="name" id="name" placeholder="Имя" title="Введите имя" minlength="3" maxlength="30" required)
+                    label(for="tel")
+                    input(type="tel" name="phone" id="tel" placeholder="Номер телефона" title="Введите телефон" minlength="3" maxlength="30" required)
+                    .action__form-footer.action__form-footer-window
+                        p Нажимая на кнопку вы соглашаетесь на обработку
+                            a(href="#") персональных данных
+                        button(type="submit" class="action__sub-btn") Отправить

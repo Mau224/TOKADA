@@ -6,7 +6,14 @@
 
   p {
     padding-bottom: $f60;
-    color: #8B8B8B;
+    color: #6A6868;
+    display: none; //отключение основных стилей
+  }
+}
+
+.calc__container-main {
+  p {
+    display: inline-block;
   }
 }
 
@@ -29,6 +36,10 @@
   display: flex;
   flex-direction: column;
   padding-bottom: $f40;
+
+  p {
+    display: inline-block;
+  }
 }
 
 .calc__row-wrap {
@@ -268,12 +279,13 @@
     font-weight: normal;
     font-size: $f18;
     line-height: 100%;
-    color: #000000;
+    color: #6A6868;
     padding-bottom: 0;
   }
 
   label {
     padding: 0;
+    top: 0;
     position: relative;
     width: $f34;
     height: $f14;
@@ -291,7 +303,11 @@
 
   /* Hide default HTML checkbox */
   .switch input {
-    display: none;
+    border: 0;
+    //width: 1px;
+    width: 0;
+    background-color: transparent;
+    box-shadow: -3px 0 4px rgba(0, 0, 0, 0.15);
   }
 
   // .slider {
@@ -312,7 +328,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(51, 197, 243, 0.3);;
+    background: rgba(51, 197, 243, 0.3);
     transition: 0.4s;
 
     &::before {
@@ -320,25 +336,27 @@
       content: "";
       height: $f20;
       width: $f20;
-      left: -0.1vw;
-      bottom: -0.3vw;
+
+      left: $f14;
+      bottom: -0.2vw;
+
       background-color: #33C5F3;
-      box-shadow: -3px 0 4px rgba(0, 0, 0, 0.15);
+      box-shadow: 0 0 1px #2196F3;
       transition: 0.4s;
     }
   }
 
   input:checked + .slider {
-    background-color: rgba(139, 139, 139, 0.3);;
+    background-color: rgba(139, 139, 139, 0.3);
   }
 
-  input:focus + .slider {
-    box-shadow: 0 0 1px #2196F3;
-  }
+  //input:focus + .slider {
+  //  box-shadow: -3px 0 4px rgba(0, 0, 0, 0.15);
+  //}
 
   input:checked + .slider::before {
-    transform: translateX($f14);
-    background-color: #8B8B8B;
+    transform: translateX(-$f18);
+    background-color: #6A6868;
   }
 
   .calc__switch-block {
@@ -350,6 +368,7 @@
   /* Rounded sliders */
   .slider.round {
     border-radius: 34px;
+    outline: none;
   }
 
   .slider.round::before {
@@ -360,7 +379,7 @@
 .calc__switch-block.color {
   p {
     &:last-child {
-      color: #000;
+      color: #6A6868;
     }
   }
 }
@@ -368,14 +387,14 @@
 .calc__switch-block {
   p {
     &:last-child {
-      color: #8B8B8B;
+      color: #000;
     }
   }
 }
 
 .calc__switch-block.color {
   p {
-    color: #8B8B8B;
+    color: #000;
   }
 }
 
