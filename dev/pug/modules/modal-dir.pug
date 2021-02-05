@@ -14,7 +14,7 @@ div(data-modal="14" class="modal modal-vacancies")
                     input(type="text", name="name", id="name-modal-dir", placeholder="Имя", title="Введите имя", minlength="2", maxlength="30" required)
                     label(for="email-dir")
                     input(type="email", name="email", id="email-dir", placeholder="E-mail", title="Введите E-mail", minlength="3", required)
-                textarea(placeholder="Сообщение для директора")
+                textarea(id="message-dir" placeholder="Сообщение для директора")
                 .modal-vacies__check-block
                     .modal__req
                         span *
@@ -22,4 +22,4 @@ div(data-modal="14" class="modal modal-vacancies")
                     .call__form-footer
                         p Нажимая на кнопку вы соглашаетесь на обработку
                             a(href="#") персональных данных
-                        button(type="submit" class="call__sub-btn") Отправить
+                        button(type="submit" class="call__sub-btn director-sub-btn") Отправить
