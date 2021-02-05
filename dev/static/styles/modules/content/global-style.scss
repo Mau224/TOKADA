@@ -123,13 +123,31 @@ button {
   outline: none;
 }
 
+
+//закругление на больших экранах
 button {
   cursor: pointer;
+  border-radius: 0.5vw!important;
+
+  @media (max-width: $mobile-width) {
+    border-radius: 8px!important;
+  }
 }
+
+a {
+  border-radius: 0.5vw!important;
+
+  @media (max-width: $mobile-width) {
+    border-radius: 8px!important;
+  }
+}
+
+//
 
 input {
   cursor: text;
 }
+
 
 button::-moz-focus-inner {
   padding: 0;

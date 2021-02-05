@@ -58,8 +58,12 @@
 .main-info {
   background: url("../images/content/bg__main.jpg") no-repeat;
   background-size: cover;
-  border-radius: 8px;
+  border-radius: 0.5vw!important;
   position: relative;
+
+  @media (max-width: $mobile-width) {
+    border-radius: 8px!important;
+  }
 
   &::after {
     content: "";

@@ -151,6 +151,26 @@
   }
 }
 
+
+//появления всплывающей кнопки в акциях
+.special-action__item {
+  .offer__popup-block {
+    height: 21.9vw;
+  }
+}
+
+
+.special-action__item:hover {
+  position: relative;
+
+  .offer__popup-block {
+    opacity: 1;
+    visibility: visible;
+    height: 21.9vw;
+  }
+}
+
+
 @media (max-width: $mobile-width) {
   .special {
     padding-top: 66px;
