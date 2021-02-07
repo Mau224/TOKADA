@@ -77,6 +77,11 @@ a:visited {
 img {
   max-width: 100%;
   display: block;
+  border-radius: 0.5vw;
+
+  @media (max-width: $mobile-width) {
+    border-radius: 8px;
+  }
 }
 
 input,

@@ -264,10 +264,18 @@
   display: none;
 }
 
+.reviews__footer {
+  display: none;
+}
+
 @media (max-width: $mobile-width) {
   .reviews {
     background-color: white;
     padding-bottom: 86px;
+  }
+
+  .reviews__footer {
+    display: flex;
   }
 
   .reviews__container {

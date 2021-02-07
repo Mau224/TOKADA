@@ -141,7 +141,8 @@
     width: 32vw;
     padding-left: 0.4vw;
     height: 27.5vw;
-    max-height: 27.5vw;
+
+    max-height: 28.5vw;
     border-radius: 8px;
   }
 }
@@ -212,6 +213,7 @@
   a {
     padding-left: 0.2vw;
     color: #33C5F3;
+    border-radius: 0!important;
     padding-bottom: 0.05vw;
     border-bottom: 1px solid #33C5F3;
   }
@@ -367,6 +369,9 @@
 
   img {
     max-width: 32vw;
+    height: 28.1vw;
+    border-radius: 0.6vw;
+    left: 0.3vw;
 
     &:first-child {
       position: absolute;
@@ -592,6 +597,7 @@
       font-size: 14px;
       line-height: 130%;
       margin-left: 5px;
+      border-radius: 0!important;
     }
   }
 
@@ -603,18 +609,6 @@
     font-weight: normal;
     font-size: 18px;
     line-height: 100%;
-  }
-
-  .close_modal_window {
-    width: 39px;
-    height: 39px;
-    top: -51px;
-    right: 0;
-
-    &::before {
-      width: 17px;
-      height: 12px;
-    }
   }
 
   .modal-rev {
@@ -636,13 +630,25 @@
 
   .close__reviews {
     left: 86%;
-    top: -12%;
+    top: -10%;
     width: 39px;
     height: 39px;
 
     &::before {
       width: 14px;
       height: 14px;
+    }
+  }
+
+  .close_modal_window {
+    width: 39px;
+    height: 39px;
+    top: -51px;
+    right: 0;
+
+    &::before {
+      width: 17px;
+      height: 12px;
     }
   }
 
@@ -710,7 +716,8 @@
 
   .modal-call__img img {
     max-width: 100%;
-    min-height: 270px;
+    min-height: 186px;
+    border-radius: 8px;
   }
 
   .modal-call__img-person {

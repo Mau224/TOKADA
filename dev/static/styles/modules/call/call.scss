@@ -127,6 +127,7 @@
 .call__img-back {
   width: 40vw;
   height: 28.13vw;
+  border-radius: 0.6vw;
 }
 
 @media (max-width: $mobile-width) {
@@ -159,8 +160,9 @@
   .call__img-back {
     height: 208px;
     width: 100%;
-    max-width: 299px;
-    left: 15px;
+    max-width: 335px;
+    border-radius: 8px;
+    //left: 15px;
     margin: 0 auto;
     position: relative;
     z-index: 1;
