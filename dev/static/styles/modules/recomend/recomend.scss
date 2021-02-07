@@ -61,6 +61,7 @@
 
 .recomend__item.swiper-slide-active {
   min-width: 35.75vw;
+  max-width: 35.75vw;
   // transition: 0.7s  ease;
 
   p {
@@ -81,6 +82,7 @@
   min-width: 28.32vw;
   // margin-right: $f40;
   border-radius: 8px;
+  margin-right: $f40!important;
 
   img {
     width: 28.32vw;

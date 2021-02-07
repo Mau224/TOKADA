@@ -289,6 +289,7 @@
     margin-bottom: $f70;
   }
 
+
   a {
     background-color: #33C5F3;
     background: -o-linear-gradient(left, #88E2FF, #A88AFF, #88E2FF, #A88AFF);
@@ -310,6 +311,13 @@
     justify-content: center;
     padding-top: $f22;
     padding-bottom: $f22;
+  }
+}
+
+.modal__reviews-block-second {
+  img {
+    height: 5vw;
+    margin-bottom: 3.38vw;
   }
 }
 
@@ -628,6 +636,19 @@
 
   .close__reviews {
     left: 86%;
+    top: -12%;
+    width: 39px;
+    height: 39px;
+
+    &::before {
+      width: 14px;
+      height: 14px;
+    }
+  }
+
+  .modal__reviews-container span {
+    width: 14px;
+    height: 14px;
   }
 
   .modal__reviews-header {
@@ -656,6 +677,7 @@
     margin-bottom: 20px;
     margin-right: 0;
     padding: 20px;
+    height: 248.02px;
 
     a {
       font-style: normal;
