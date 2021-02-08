@@ -3,24 +3,6 @@
   padding-bottom: $f60;
 }
 
-//.special__title {
-//  display: flex;
-//  justify-content: space-between;
-//  align-items: center;
-//  padding-bottom: 3.7vw;
-//
-//  a {
-//    color: white;
-//    font-style: normal;
-//    font-weight: 500;
-//    font-size: 1.13vw;
-//    line-height: 100%;
-//    background: linear-gradient(
-//    border-radius: 8px;
-//    padding: 1.375vw 2.5vw;
-//  }
-//}
-
 .special__container {
   h1 {
     padding-bottom: $f35;
@@ -158,6 +140,16 @@
     height: 21.9vw;
     justify-content: center;
     align-items: center;
+  }
+}
+
+.special__modal-action-item {
+  .offer__popup-block {
+    height: 21vw!important;
+    width: 27vw;
+    justify-content: center;
+    align-items: center;
+    transition: none;
   }
 }
 
