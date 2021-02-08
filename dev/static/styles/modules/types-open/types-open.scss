@@ -77,6 +77,7 @@
     width: 100%;
     height: 18.8vw;
     min-width: 16vw;
+    border-radius: 0;
   }
 }
 
@@ -117,6 +118,7 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
+      border-radius: 0.6vw;
     }
   }
 }
@@ -277,7 +279,7 @@
   //корректировки для страницы slidingdoors
 
   .types-open__item-slidingpartitions .types-open__item-img img {
-    height: 310px;
+    //height: 310px;
     max-width: 100%;
     border-radius: 8px;
   }

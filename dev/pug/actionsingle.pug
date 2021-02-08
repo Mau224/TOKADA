@@ -8,7 +8,9 @@ block content
     section.actionsingle
         h1 Скидка на пластиковые и алюминиевые окна - 30 процентов!
         .main-info.main-info__action-page.main-info__actionsingle-page
-            .main-info__container
+            .main-info__container.action__special-container
+                span(class="action__season") Сезонное предложение.
+                span(class="action__season-date") до 28 февраля
                 //a(href="#" class="main-info__location") работаем в Москве и области
                 //    +icon("marker")
                 h1(data-da="main-info__mob,first,867") Скидка на пластиковые и алюминиевые окна - 30 процентов!
@@ -24,4 +26,4 @@ block content
                     h3 01 Ноября - 28 Февраля
             p Подробности акции можно узнать по телефону +7 905 7990999
             .actionsingle__link
-                a(href="#") Обратный звонок
+                a(href="#" class="js-open-modal" data-modal="10") Обратный звонок

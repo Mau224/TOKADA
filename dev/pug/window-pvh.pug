@@ -42,10 +42,10 @@ block content
             h2 В нежилые помещения
         .recomend__item.swiper-slide
           picture
-            source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/pvh__img3.webp 1x, images/content/pvh__img3@2x.webp 2x")
-            img(src="images/content/pvh__img3.jpg" srcset="images/content/pvh__img3@2x.jpg" alt="картинка окна")
+            source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/pvh__img2.webp 1x, images/content/pvh__img2@2x.webp 2x")
+            img(src="images/content/pvh__img2.jpg" srcset="images/content/pvh__img2@2x.jpg" alt="картинка окна")
           .recomend__item-title
-            h2 В нежилые помещения
+            h2 Остекление коммерческих объектов
       .recomend__btns
         a(href="#" class="recomend__arrow recomend__left swiper-button-prev")
         a(href="#" class="recomend__arrow recomend__right active swiper-button-next")
@@ -111,13 +111,13 @@ block content
         .action__img.action__img-window
           a(href="calc.html" class="action__title action__title--first" data-da="action__form-window,first,867")
             h3 Воспользуйтесь калькулятором для расчета стоимости!
-            a(href="calc.html" class="calc__link")
+            a(href="calc.html" class="calc__link" data-da="action__title,last,867")
               p Калькулятор расчета
-          a(href="calc.html")
+          a(href="calc.html" class="calc__link")
             picture
               source(type="image/webp" media="(min-width: 1024px)" srcset="images/content/action-other__mobail-window.webp 1x, images/content/action-other__mobail-window@2x.webp 2x")
               img(src="images/content/action-other__mobail-window.png" srcset="images/content/action-other__mobail-window@2x.png" alt="картинка телефона в акции")
-        form(class="action__form action__form-window" id="windowpvhform" method="post")
+        form(class="action__form action__form-window" id="windowform" method="post")
           .action__title
             h3 Или:
             p Заполните форму связи и наш специалист свяжется с вами в течении 10 минут!
@@ -128,4 +128,4 @@ block content
           .action__form-footer.action__form-footer-window
             p Нажимая на кнопку вы соглашаетесь на обработку
               a(href="#") персональных данных
-            button(type="submit" class="action__sub-btn") Отправить
+            button(type="submit" class="action__sub-btn sub-btn") Отправить

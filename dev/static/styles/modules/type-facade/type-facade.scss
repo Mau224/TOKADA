@@ -91,15 +91,16 @@
     display: flex;
     grid-template-columns: auto;
     grid-template-rows: auto;
-    width: 70%;
+    column-gap: 0;
+    row-gap: 0;
+    //width: 70%;
   }
 
   .type-facade__slider {
-    width: 94.5%; //cтили для выравнивания перелистывания слайдов
+    width: 100%; //cтили для выравнивания перелистывания слайдов
   }
 
   .type-facade__item {
-    margin-right: 20px;
     min-width: 276px;
     width: 276px;
     max-width: 276px;
@@ -189,7 +190,6 @@
 
     .type-facade__item {
       width: 100%;
-      margin-right: 0;
       max-width: 100%;
     }
 
@@ -202,6 +202,8 @@
       grid-template-columns: auto;
       grid-template-rows: auto;
       width: auto;
+      column-gap: 0;
+      row-gap: 0;
     }
   }
 

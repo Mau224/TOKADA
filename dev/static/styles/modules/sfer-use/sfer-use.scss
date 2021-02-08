@@ -56,11 +56,19 @@
   line-height: 100%;
   color: #33C5F3;
   padding: $f22 $f40;
+  position: relative;
+  bottom: $f20;
 
   &:hover {
     background-color: #33C5F3;
     color: white;
   }
+}
+
+.sfer-use__item-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .sfer-use__list {
@@ -113,6 +121,7 @@
     max-width: 335px;
     display: flex;
     justify-content: center;
+    bottom: 0;
   }
 
   .sfer-use__item {
@@ -129,6 +138,7 @@
   .sfer-use__item-col {
     h2 {
       font-size: 24px;
+      padding-bottom: 20px;
     }
 
     p {

@@ -31,6 +31,61 @@
   //}
 }
 
+.action__page {
+  height: auto;
+  margin-bottom: -1vw;
+}
+
+.action__special-container {
+  position: relative;
+  overflow: hidden;
+  max-height: 100% !important;
+  width: 100%;
+  height: 41vw;
+  padding-left: 0;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 54.4vw;
+    height: 54.4vw;
+    right: 1;
+    top: 3.5vw;
+    z-index: 1;
+    background: url(../images/content/bg__circle.svg) no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+}
+
+.action__season {
+  font-style: normal;
+  font-weight: normal;
+  color: #fff;
+  font-size: $f36;
+  line-height: 100%;
+  position: absolute;
+  z-index: 100;
+  display: block!important;
+  left: 7vw;
+  top: 4vw;
+}
+
+
+.action__season-date {
+  font-style: normal;
+  font-weight: normal;
+  color: #fff;
+  font-size: $f24;
+  line-height: 100%;
+  position: absolute;
+  z-index: 100;
+  display: block!important;
+  left: 75vw;
+  top: 35vw;
+  white-space: nowrap;
+}
+
 .action {
   padding-top: 4vw;
   padding-bottom: $f30;
@@ -433,8 +488,7 @@
     img {
       width: 242px;
       height: 100%;
-
-      top: -21px;
+      top: -15px;
       display: flex;
 
     }
@@ -586,6 +640,73 @@
     min-width: 335px;
     margin-top: 40px;
     margin-bottom: 40px;
+  }
+
+
+  .action__season {
+    font-style: normal;
+    font-weight: normal;
+    color: #fff;
+    font-size: 16px;
+    line-height: 100%;
+    position: absolute;
+    z-index: 1000;
+    display: block!important;
+    left: 7vw;
+    top: 4vw;
+  }
+
+
+  .action__season-date {
+    font-style: normal;
+    font-weight: normal;
+    color: #fff;
+    font-size: 16px;
+    line-height: 100%;
+    position: absolute;
+    z-index: 1000;
+    display: block!important;
+    left: 64%;
+
+    top: 90%;
+
+    white-space: nowrap;
+  }
+
+
+  .action__special-container {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 30px;
+    height: 100%;
+    max-height: 100%!important;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      max-width: 100%;
+      height: 100%;
+      top: 48%;
+      right: 0;
+      z-index: 1;
+      background: url(../images/content/bg__circle.svg) no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+  }
+
+  .action {
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+
+  .action__container-window {
+
+    &::before {
+      min-height: 850px;
+      max-height: 850px;
+    }
   }
 }
 
