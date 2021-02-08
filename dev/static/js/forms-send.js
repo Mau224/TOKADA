@@ -4,12 +4,12 @@ var callname = $('#call__form-name');
 var callphone = document.getElementById('call__form-phone');
 
 $('.call-form-btn').on('click', function(e){
+    if(callname.val() != '' && callphone.inputmask.unmaskedvalue() != ''){
         e.preventDefault();
         sendCallForm();
-        // sendMailCallForm();
-        callname.val('');
-        callphone.inputmask.unmaskedvalue('');
+        $('.modal-check').addClass('active');
         return false
+    }
 });
 
 
@@ -29,9 +29,13 @@ function sendCallForm(){
 var furniturephone = document.getElementById('mob');
 
 $('.time__sub-btn').on('click', function(e){
-    e.preventDefault();
-    sendFurnitureForm();
-    return false
+    if(furniturephone.inputmask.unmaskedvalue() != ''){
+        e.preventDefault();
+        sendFurnitureForm();
+        $('.modal-check').addClass('active');
+        return false
+    }
+    
 });
 
 function sendFurnitureForm(){
@@ -75,6 +79,7 @@ $('.calc__sub-btn').on('click', function(e){
     if(calcName.val() != '' && calcphone.inputmask.unmaskedvalue() != ''){
         e.preventDefault();
         sendCalcForm();
+        $('.modal-check').addClass('active');
         return false
     }
     
@@ -112,10 +117,12 @@ var measureName = $('#username');
 var measurephone = document.getElementById('phone-num');
 
 $('.form__sub-btn').on('click', function(e){
-    e.preventDefault();
-    sendMeasureForm();
-    
-    return false
+    if(measureName.val() != '' && measurephone.inputmask.unmaskedvalue() != ''){
+        e.preventDefault();
+        sendMeasureForm();
+        $('.modal-check').addClass('active');
+        return false
+    }
 });
 
 function sendMeasureForm(){
@@ -138,10 +145,14 @@ var modalmeasureName = $('#name-modal');
 var modalmeasurephone = document.getElementById('phone-modal');
 
 $('.modal-measure').on('click', function(e){
-    e.preventDefault();
-    sendModalMeasureForm();
+    if(modalmeasureName.val() != '' && modalmeasurephone.inputmask.unmaskedvalue() != ''){
+        e.preventDefault();
+        sendModalMeasureForm();
+        $('.modal').removeClass('active');
+        $('.modal-check').addClass('active');
+        return false
+    }
     
-    return false
 });
 
 function sendModalMeasureForm(){
@@ -163,9 +174,14 @@ var modalcallname = $('#name-modal-call');
 var modalcallphone = document.getElementById('phone-modal-call');
 
 $('.modal-call-btn').on('click', function(e){
-    e.preventDefault();
-    sendModalCallForm();
-    return false
+    if(modalcallname.val() != '' && modalcallphone.inputmask.unmaskedvalue() != ''){
+        e.preventDefault();
+        sendModalCallForm();
+        $('.modal').removeClass('active');
+        $('.modal-check').addClass('active');
+        return false
+    }
+    
 });
 
 
@@ -187,9 +203,12 @@ var modaldirmail = $('#email-dir');
 var modaldirmessage = $('#message-dir');
 
 $('.director-sub-btn').on('click', function(e){
+    
     if(modaldirname.val() != '' && modaldirmail.val() != '' && modaldirmessage.val() != ''){
         e.preventDefault();
         sendModalDirForm();
+        $('.modal').removeClass('active');
+        $('.modal-check').addClass('active');
         return false 
     }
     
@@ -220,6 +239,8 @@ $('.vac-sub-btn').on('click', function(e){
 
             e.preventDefault();
             sendModalVacForm();
+            $('.modal').removeClass('active');
+            $('.modal-check').addClass('active');
             return false
         }
 });
@@ -245,9 +266,13 @@ var questioncallname = $('#question-name');
 var questioncallphone = document.getElementById('question-phone');
 
 $('.action__sub-btn').on('click', function(e){
-    e.preventDefault();
-    sendQuestionCallForm();
-    return false
+    if(questioncallname.val() != '' && questioncallphone.inputmask.unmaskedvalue() != ''){
+        e.preventDefault();
+        sendQuestionCallForm();
+        $('.modal-check').addClass('active');
+        return false
+    }
+    
 });
 
 
