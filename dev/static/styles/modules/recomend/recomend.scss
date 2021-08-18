@@ -8,6 +8,10 @@
   position: relative;
   // margin-bottom: $f60;
   // padding-right: $psize;
+
+  @media (min-width: 1600px) {
+    padding-left: 12.5vw;
+  }
 }
 
 .recomend__container {
@@ -50,6 +54,10 @@
   width: 100%;
   min-width: 0;
   height: 30vw;
+
+  @media (min-width: 1600px) {
+    height: 25vw;
+  }
 }
 
 .recomend__item-title {
@@ -64,6 +72,11 @@
   max-width: 35.75vw;
   // transition: 0.7s  ease;
 
+  @media (min-width: 1600px) {
+    min-width: 32vw;
+    max-width: 32vw;
+  }
+
   p {
     visibility: visible;
     opacity: 1;
@@ -75,6 +88,9 @@
     width: 35.75vw;
     height: 26.39vw;
     border-radius: 8px;
+    @media (min-width: 1600px) {
+      height: 21vw;
+    }
   }
 }
 
@@ -87,6 +103,15 @@
   img {
     width: 28.32vw;
     height: 21.9vw;
+
+    @media (min-width: 1600px) {
+      width: 25vw;
+      height: 18vw;
+    }
+  }
+
+  @media (min-width: 1600px) {
+    min-width: 26vw;
   }
 
   // &--first {

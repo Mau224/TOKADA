@@ -7,6 +7,18 @@
     padding-bottom: $f60;
     color: #6A6868;
   }
+
+  @media (min-width: 1600px) {
+    h1 {
+      font-size: 1.9vw;
+      padding-bottom: 1vw;
+    }
+
+    p {
+      font-size: 1.1vw;
+      padding-bottom: 2vw;
+    }
+  }
 }
 
 .stages {
@@ -17,7 +29,7 @@
 .stages__item {
   padding: 2.938vw 2.5vw;
   padding-bottom: $f40;
-  border-radius: 8px;
+  border-radius: 0.5vw;
   height: 15.625vw;
   cursor: pointer;
   position: relative;
@@ -33,7 +45,7 @@
     opacity: 0;
     position: relative;
     top: -3.42vw;
-    right: -15vw;
+    right: -11.8vw;
     transition: opacity 0.3s;
     z-index: -1;
     visibility: hidden;
@@ -111,6 +123,26 @@
     padding-top: $f40;
     padding-bottom: 0;
   }
+
+  @media (min-width: 1600px) {
+    padding: 2.2vw 2vw;
+    height: 12vw;
+
+    p {
+      padding-top: 1vw;
+      font-size: $f14;
+    }
+
+    .stages__item-title {
+      h4 {
+        font-size: $f18;
+      }
+
+      h3 {
+        font-size: 2.8vw;
+      }
+    }
+  }
 }
 
 .stages__item-title {
@@ -151,6 +183,11 @@
   grid-template-rows: repeat(2, 1fr);
   grid-column-gap: $f20;
   grid-row-gap: $f20;
+
+  @media (min-width: 1600px) {
+    grid-column-gap: 1vw;
+    grid-row-gap: 1vw;
+  }
 }
 
 .stages__btns {

@@ -6,16 +6,30 @@
   p {
     color: #6A6868;
   }
+  @media (min-width: 1600px) {
+    h1 {
+      font-size: 1.9vw;
+      padding-bottom: 1vw;
+    }
+    p {
+      font-size: 1.1vw;
+    }
+  }
 }
 
 .reviews {
   padding-top: $f60;
   padding-left: $psize;
   padding-right: $psize;
-  padding-bottom: $f60;
+  padding-bottom: 0.6vw;
   margin-right: 0;
   margin-left: 0;
   background-color: #ffffff;
+
+  @media (min-width: 1600px) {
+    padding-left: 12.5vw;
+    padding-right: 12.5vw;
+  }
 }
 
 .reviews__wrapper {
@@ -23,6 +37,10 @@
   justify-content: space-between;
   align-items: center;
   padding-bottom: $f60;
+
+  @media (min-width: 1600px) {
+    padding-bottom: $f40;
+  }
 
   p {
     color: #6A6868;
@@ -82,7 +100,7 @@
     -o-transition: background-color 1s ease;
     transition: background-color 1s ease;
     border-radius: 8px;
-    padding: $f22 5vw;
+    padding: 1.575vw 5vw;
   }
 }
 
@@ -103,7 +121,7 @@
   background: transparent;
   border: 1px solid rgba(12, 115, 254, 0.2);
   box-sizing: border-box;
-  border-radius: 8px;
+  border-radius: 0.5vw;
   font-style: normal;
   font-weight: normal;
   font-size: 1.13vw;
@@ -113,17 +131,27 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  padding: 1.375vw 5vw;
+  padding: $f22 3.7vw;
   cursor: pointer;
   margin-right: 1.9vw;
+
+  @media (min-width: 1600px) {
+    padding: 0.8vw 2.05vw;
+    font-size: 1vw;
+    margin-right: 1.4vw;
+  }
 }
 
 .reviews__options input[type="radio"]:checked + label {
   border: 2px solid #33C5F3;
-  padding: 1.375vw 4.9375vw;
+  padding: 1.375vw 3.6vw;
   box-sizing: border-box;
   border-radius: 8px;
   color: #33C5F3;
+
+  @media (min-width: 1600px) {
+    padding: 0.8vw 2.1vw;
+  }
 }
 
 .reviews__item-title {

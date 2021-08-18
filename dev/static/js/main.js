@@ -133,6 +133,46 @@ document.addEventListener('DOMContentLoaded', function() {
 
 }); // end ready
 
+let modalZamer = document.querySelector('.header__mob-avatar');
+const overlay = document.querySelector('.overlay-menu');
+const burger = document.querySelector('.header__burger');
+const body = document.querySelector('.body');
+const closeModalZamer = document.querySelectorAll('.close_modal_window');
+const megaBlock = document.querySelector('.header__mega-menu-block ');
+const megaBlockText = document.querySelector('.header__mega-menu-block-text');
+const megaBlockLinks = document.querySelector('.header__main-list-hover-links');
+const linkPrice = document.querySelector('.what-price');
+const modalTel = document.querySelector('.overlay-mob-tel');
+const modalTelBtn = document.querySelector('.header__link-call-mob ');
+
+closeModalZamer.forEach(function(item){
+    item.addEventListener('click', function (){
+        body.style.overflow = 'auto';
+        overlay.classList.remove('active');
+        burger.classList.remove('active');
+        megaBlock.classList.remove('active');
+        megaBlockText.classList.remove('active');
+        megaBlockLinks.classList.remove('active');
+    })
+})
+
+
+if(window.innerWidth < 870) {
+    modalZamer.addEventListener('click',function (){
+        overlay.classList.remove('active');
+        burger.classList.remove('active');
+        body.classList.remove('dis');
+        modalTel.classList.remove('active');
+        modalTelBtn.classList.remove('active');
+    })
+
+    linkPrice.addEventListener('click',function (){
+        overlay.classList.remove('active');
+        burger.classList.remove('active');
+        body.classList.remove('dis');
+        // body.style.overflow = 'auto';
+    })
+}
 
 (function () {
     const burger = document.querySelector('.header__burger');

@@ -1,6 +1,11 @@
 .sfer-use {
   padding-top: $f60;
   padding-bottom: $f60;
+
+  @media (min-width: 1600px) {
+    padding-top: $f30;
+    padding-bottom: $f30;
+  }
 }
 
 .sfer-use__container {
@@ -20,6 +25,7 @@
   padding: $f26 $f30;
   border-radius: 8px;
   background-color: #fff;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.04);
 
   &--complete {
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.04);
@@ -30,7 +36,7 @@
   h2 {
     font-style: normal;
     font-weight: bold;
-    font-size: $f24;
+    font-size: $f22;
     line-height: 100%;
     padding-bottom: $f30;
   }
@@ -44,6 +50,18 @@
     max-width: 17vw;
     color: #000;
   }
+
+  @media (min-width: 1600px) {
+    h2 {
+      font-size: $f18;
+      padding-bottom: $f20;
+    }
+
+    p {
+      font-size: 0.9vw;
+      padding-bottom: 2.5vw;
+    }
+  }
 }
 
 .sfer-use__link {
@@ -52,16 +70,21 @@
   border-radius: 8px;
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
+  font-size: 1.2vw;
   line-height: 100%;
   color: #33C5F3;
-  padding: $f22 $f40;
+  padding: 1.275vw 1.4vw;
   position: relative;
   bottom: $f20;
 
   &:hover {
     background-color: #33C5F3;
     color: white;
+  }
+
+  @media (min-width: 1600px) {
+    padding: 1vw 1vw;
+    font-size: 1.1vw;
   }
 }
 
@@ -77,16 +100,25 @@
   grid-template-rows: repeat(2, 1fr);
   row-gap: $f40;
   column-gap: $f40;
+
+  @media (min-width: 1600px) {
+    row-gap: $f30;
+    column-gap: $f30;
+  }
 }
 
 .sfer-use__img-block {
-  width: 18.44vw;
-  height: 18.44vw;
+  width: 16.44vw;
+  height: 16.44vw;
 
   img {
     width: 100%;
     height: 100%;
     border-radius: 8px;
+  }
+
+  @media (min-width: 1600px) {
+    height: 15.44vw;
   }
 }
 

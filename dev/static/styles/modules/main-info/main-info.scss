@@ -1,5 +1,5 @@
 .main-info__container {
-  padding-left: $psize;
+  padding-left: 6.25vw;
   //padding-top: 6vw;
   //padding-bottom: 6vw;
   border-radius: 8px;
@@ -10,6 +10,7 @@
   flex-direction: column;
   justify-content: center;
   width: fit-content;
+
 
   h1 {
     font-style: normal;
@@ -32,6 +33,15 @@
     max-width: 30vw;
     padding-bottom: 4.5vw;
     display: none;
+  }
+
+  @media (min-width: 1600px) {
+    height: 25.45vw;
+
+    h1 {
+      font-size: 2.7vw;
+      max-width: 35vw;
+    }
   }
 }
 
@@ -77,6 +87,12 @@
     background-position: center;
     background-size: contain;
     animation: spin 5s linear 0s infinite;
+
+    @media (min-width: 1600px) {
+      width: 48vw;
+      height: 48vw;
+      top: 14vw;
+    }
   }
 
   &::before {
@@ -87,7 +103,7 @@
     background-size: contain;
     width: 40vw;
     height: 40vw;
-    left: -13vw;
+    left: -20vw;
     top: 28vw;
     z-index: -1;
   }
@@ -161,9 +177,17 @@
   border-radius: 8px;
   position: relative;
 
+  @media (min-width: 1600px) {
+    height: 46vw;//корректировка высоты
+  }
+
   .action-page__form {
     position: relative;
     top: -5vw;
+
+    @media (min-width: 1600px) {
+      top: -10vw;
+    }
   }
 
   .action__present {
@@ -201,6 +225,23 @@
   only screen and (min-resolution: $retina-dppx),
   only screen and (min-resolution: $retina-dpi)  {
     background-image: url("../images/content/bg__main-action@2x.jpg");
+  }
+
+  .calc__form-wrap {
+    padding-top: 2vw;
+    padding-bottom: 1vw;
+    position: relative;
+    z-index: 111111;
+    p {
+      display: none;
+    }
+  }
+
+  .calc__form-footer {
+    p {
+      display: inline-block;
+      max-width: none!important;
+    }
   }
 }
 
@@ -811,7 +852,7 @@
   position: relative;
   font-style: normal;
   font-weight: bold;
-  font-size: 0.875vw;
+  font-size: 0.845vw;
   line-height: 100%;
   letter-spacing: -0.02em;
   text-transform: uppercase;
@@ -949,7 +990,7 @@
       width: 100%;
       height: 60px;
       max-width: 332px;
-      padding: 22px 125px;
+      //padding: 22px 125px;
       justify-content: center;
       align-items: center;
       background-color: #33C5F3;

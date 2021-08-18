@@ -1,6 +1,10 @@
 .special {
   padding-top: $f60;
   padding-bottom: $f60;
+
+  @media (min-width: 1600px) {
+    padding-bottom: $f40;
+  }
 }
 
 .special__container {
@@ -39,9 +43,13 @@
   h2 {
     font-style: normal;
     font-weight: bold;
-    font-size: $f24;
+    font-size: $f22;
     line-height: 120%;
     padding-bottom: $f20;
+
+    @media (min-width: 1600px) {
+      padding-bottom: 1vw;
+    }
   }
 
   p {
@@ -49,7 +57,18 @@
     font-weight: normal;
     font-size: 1vw;
     line-height: 130%;
-    padding-bottom: $f30;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: 1600px) {
+    h2 {
+      font-size: $f18;
+      padding-bottom: 0.8vw;
+    }
+
+    p {
+      font-size: 0.8vw;
+    }
   }
 }
 
@@ -68,8 +87,12 @@
 
 .specila__img-block {
   max-width: 20.94vw;
-  height: 21.88vw;
+  height: 16.88vw;
   margin-bottom: $f30;
+
+  @media (min-width: 1600px) {
+    margin-bottom: 1vw;
+  }
 
   img {
     width: 100%;
@@ -87,6 +110,10 @@
 
   .specila__img-block {
     max-height: 11.5vw;
+
+    @media (min-width: 1600px) {
+      height: 10vw;
+    }
   }
 }
 
@@ -130,6 +157,11 @@
 
   .specila__img-block {
     max-width: 100%;
+    min-height: 21.9vw;
+
+    @media (min-width: 1600px) {
+      min-height: 19vw;
+    }
   }
 }
 
@@ -140,13 +172,17 @@
     height: 21.9vw;
     justify-content: center;
     align-items: center;
+
+    @media (min-width: 1600px) {
+      max-height: 19vw;
+    }
   }
 }
 
 .special__modal-action-item {
   .offer__popup-block {
     height: 21vw!important;
-    width: 27vw;
+    width: 23.7vw;
     justify-content: center;
     align-items: center;
     transition: none;
@@ -259,5 +295,35 @@
 
   .special-laminate__list {
     flex-direction: row;
+  }
+
+  //появления всплывающей кнопки в акциях
+  .special-action__item {
+    .offer__popup-block {
+      height: 21.9vw;
+      justify-content: center;
+      align-items: center;
+      display: flex!important;
+      min-height: 245px;
+
+      a {
+        display: flex;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 100%;
+        width: 100%;
+        height: 60px;
+        max-width: 270px;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+
+  .special__modal-action-item {
+    .offer__popup-block {
+      display: none!important;
+    }
   }
 }

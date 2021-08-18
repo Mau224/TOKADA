@@ -8,6 +8,11 @@
   padding-right: $psize;
   height: 100%;
   min-height: 100vh;
+
+  @media (min-width: 1600px) {
+    padding-left: 12.5vw;
+    padding-right: 12.5vw;
+  }
 }
 
 .footer__header {
@@ -23,6 +28,11 @@
   background-position: 50% 100%;
   background-size: 100% 1px;
   background-origin: padding-box, border-box;
+
+  @media (min-width: 1600px) {
+    padding-top: $f20;
+    padding-bottom: $f24;
+  }
 }
 
 .footer__header-wrap {
@@ -36,10 +46,11 @@
   position: relative;
   font-style: normal;
   font-weight: bold;
-  font-size: $f18;
+  font-size: 1vw;
   line-height: $f28;
   color: #ffffff;
-  margin-right: $f80;
+  margin-right: 2.8vw;
+
 
   &:first-child {
     padding: 1vw 2.91vw;
@@ -52,6 +63,15 @@
     svg {
       left: 1.7vw;
       top: 1.5vw;
+    }
+
+    @media (min-width: 1600px) {
+      padding: 0.8vw 3vw!important;
+      padding-left: 3.5vw!important;
+
+      svg {
+        top: 1.2vw;
+      }
     }
   }
 
@@ -74,13 +94,17 @@
   width: 5vw;
   margin-left: 5.1vw;
 
+  @media (min-width: 1600px) {
+    top: 0.5vw;
+  }
+
   &::before {
     content: "";
     position: absolute;
     width: 5vw;
     height: 5vw;
     background-color: #33C5F3;
-    top: -4.1vw;
+    top: -3.7vw;
     right: 0.1vw;
   }
 
@@ -108,6 +132,11 @@
   background-position: 50% 100%;
   background-size: 100% 1px;
   background-origin: padding-box, border-box;
+
+  @media (min-width: 1600px) {
+    padding-top: $f26;
+    padding-bottom: $f26;
+  }
 }
 
 .footer__info-item {
@@ -123,6 +152,11 @@
     text-transform: uppercase;
     color: #FFFFFF;
     margin-bottom: $f34;
+
+    @media (min-width: 1600px) {
+      font-size: $f18;
+      margin-bottom: $f24;
+    }
   }
 
    a {
@@ -132,6 +166,11 @@
      line-height: 100%;
      color: #FFFFFF;
      margin-bottom: $f24;
+
+     @media (min-width: 1600px) {
+       font-size: 1vw;
+       margin-bottom: $f20;
+     }
 
      &:last-child {
        padding-bottom: 0;
@@ -182,6 +221,11 @@
     text-transform: uppercase;
     color: #FFFFFF;
     margin-bottom: $f34;
+
+    @media (min-width: 1600px) {
+      font-size: $f18;
+      margin-bottom: $f24;
+    }
   }
 
   a {
@@ -191,6 +235,11 @@
     line-height: 100%;
     color: #FFFFFF;
     margin-bottom: $f24;
+
+    @media (min-width: 1600px) {
+      font-size: 1vw;
+      margin-bottom: $f20;
+    }
 
     &:last-child {
       padding-bottom: 0;
@@ -220,6 +269,7 @@
   img {
     max-width: $f60;
     height: $f20;
+    border-radius: 0;
   }
 }
 
@@ -233,6 +283,11 @@
     max-width: 14vw;
     padding-top: $f34;
     padding-bottom: $f46;
+
+    @media (min-width: 1600px) {
+      padding-top: $f26;
+      padding-bottom: $f36;
+    }
   }
 }
 
@@ -244,6 +299,12 @@
     height: 1.6vw;
     fill: white;
     margin-right: $f24;
+
+    @media (min-width: 1600px) {
+      width: 1.3vw;
+      height: 1.3vw;
+      margin-right: $f20;
+    }
   }
 }
 
@@ -348,6 +409,10 @@
   flex-direction: column;
   padding-bottom: $f60;
 
+  @media (min-width: 1600px) {
+    padding-bottom: 2vw;
+  }
+
   a {
     font-style: normal;
     font-weight: normal;
@@ -355,6 +420,10 @@
     line-height: 100%;
     text-transform: none;
     background: transparent;
+
+    @media (min-width: 1600px) {
+      padding: 0!important;
+    }
   }
 }
 

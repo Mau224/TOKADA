@@ -8,6 +8,17 @@
     color: #6A6868;
     display: none;//отключение основных стилей
   }
+
+  @media (min-width: 1600px) {
+    h1 {
+      font-size: 1.9vw;
+      padding-bottom: 1vw;
+    }
+
+    p {
+      font-size: 1.1vw;
+    }
+  }
 }
 
 .map__container-main {
@@ -16,12 +27,17 @@
 
 .map {
   padding-top: $f60;
-  padding-bottom: $f60;
+  padding-bottom: 3.6vw;
 
   //стили для страницы contact.html
   &--contact {
     padding-bottom: $f30;
     padding-top: 0;
+  }
+
+  @media (min-width: 1600px) {
+    padding-bottom: 1vw;
+    padding-top: 2.5vw;
   }
 }
 
@@ -52,6 +68,10 @@
     border-radius: 8px;
     z-index: 100;
     border: 0;
+  }
+
+  @media (min-width: 1600px) {
+    height: 32vw;
   }
 }
 
@@ -90,6 +110,18 @@
     color: #33C5F3;
     position: relative;
   }
+
+  @media (min-width: 1600px) {
+    padding-bottom: 1vw;
+
+    p {
+      font-size: 1vw;
+      padding-top: 1vw;
+    }
+    a {
+      font-size: $f20;
+    }
+  }
 }
 
 .map__info-block {
@@ -107,6 +139,11 @@
 
   p {
     display: block;
+  }
+
+  @media (min-width: 1600px) {
+    max-width: 24vw;
+    top: 1vw;
   }
 }
 
@@ -142,6 +179,18 @@
       position: absolute;
       left: 3vw;
       top: 1.4vw;
+    }
+  }
+
+  @media (min-width: 1600px) {
+    margin-top: 1vw;
+
+    a {
+      font-size: 1vw;
+
+      svg {
+        top: 1.2vw;
+      }
     }
   }
 }

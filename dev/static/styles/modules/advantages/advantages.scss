@@ -46,7 +46,7 @@
 
 .advantages__item {
   padding: $f50 $f40;
-  border-radius: 8px;
+  border-radius: 0.5vw;
   background-color: var(--grey-bg);
   max-height: 15.5vw;
   width: 100%;
@@ -122,6 +122,41 @@
   z-index: 100;
   padding-top: $f50;
   padding-bottom: $f60;
+
+  @media (min-width: 1600px) {
+    padding-top: $f40;
+    padding-bottom: 2.8vw;
+
+    .advantages__title {
+      h1 {
+        padding-bottom: 1.5vw;
+      }
+    }
+
+    .advantages__btn {
+      font-size: 1.1vw;
+    }
+
+    .advantages__block {
+      margin-top: 1.5vw;
+    }
+
+    .advantages__item {
+      padding: 2vw 2vw;
+
+      p {
+        font-size: $f14;
+      }
+
+      h4 {
+        font-size: $f18;
+      }
+
+      h3 {
+        font-size: 2.7vw;
+      }
+    }
+  }
 }
 
 .advantages__list {

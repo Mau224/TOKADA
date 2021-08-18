@@ -8,6 +8,40 @@
   position: relative;
   background-color: #fff;
   transition: 0.3s all;
+
+  @media (min-width: 1600px) {
+    padding-left: $psizeB;
+    padding-right: $psizeB;
+
+    .header__main-nav {
+      a {
+        font-size: $f18;
+      }
+    }
+
+    .header__socials {
+      a {
+        svg {
+          width: 1.3vw;
+          height: 1.3vw;
+        }
+      }
+    }
+
+    .header__tel {
+      a {
+        font-size: 1vw;
+      }
+    }
+
+    .header__wrap-img {
+      img {
+        width: 9vw;
+        height: 1.8vw;
+      }
+    }
+  }
+
 }
 
 //тут стили для модального окна акций
@@ -293,7 +327,7 @@
     padding-left: 1.4vw;
     display: flex;
     align-items: center;
-    max-width: 13.5vw;
+    max-width: $psizeB;
   }
 }
 
@@ -305,6 +339,43 @@
   align-items: center;
   padding-top: $f20;
   padding-bottom: $f20;
+
+  @media (min-width: 1600px) {
+    padding-left: $psizeB;
+    padding-right: $psizeB;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+
+    .header__burger-mega-block {
+      margin-right: 2vw;
+    }
+
+    .header__main-list-hover-links {
+      margin-right: 2vw;
+    }
+
+    .header__link-list {
+      a {
+        font-size: 1.1vw;
+      }
+    }
+
+    .header__main-links{
+
+      svg {
+        width: 1vw;
+        height: 1vw;
+        top: 1.1vw;
+        left: 1.1vw;
+      }
+      a {
+        &:last-child {
+          font-size: 0.75vw;
+          padding-left: 2.5vw !important;
+        }
+      }
+    }
+  }
 }
 
 .header__link-list {
@@ -346,7 +417,7 @@
   a {
     font-style: normal;
     font-weight: bold;
-    font-size: 1vw;
+    font-size: $f14;
     line-height: 100%;
     /* identical to box height, or 16px */
     white-space: nowrap;
@@ -354,7 +425,7 @@
     text-transform: uppercase;
     position: relative;
     margin-right: $f21;
-    padding-left: 3.2vw;
+    padding-left: 2.7vw;
 
     &:last-child {
       margin-right: 0;
@@ -365,7 +436,7 @@
     position: absolute;
     width: 1.1vw;
     height: 1.1vw;
-    top: 1.25vw;
+    top: 1.1vw;
     left: 1.5vw;
   }
 }
@@ -384,6 +455,14 @@
   //margin-right: $f30;
   order: 1;
 
+  @media (min-width: 1600px) {
+    height: 3.2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -392,6 +471,9 @@
     top: 1.8vw;
     background-color: #000000;
     transition: 0.3s linear;
+    @media (min-width: 1600px) {
+      top: 1.6vw;
+    }
   }
 
   &::after {
@@ -402,6 +484,10 @@
     top: 1.4vw;
     background-color: #000000;
     transition: 0.3s linear;
+
+    @media (min-width: 1600px) {
+      top: 1.3vw;
+    }
   }
 
   span {
@@ -411,6 +497,9 @@
     padding-bottom: 0.2vw;
     top: 2.2vw;
     background-color: #000000;
+    @media (min-width: 1600px) {
+      top: 1.95vw;
+    }
   }
 }
 
@@ -422,6 +511,10 @@
   &::after {
     transform: rotate(45deg);
     top: 1.8vw;
+
+    @media (min-width: 1600px) {
+      top: 1.6vw;
+    }
   }
 
   &::before {
@@ -663,7 +756,7 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  margin-right: $f50;
+  margin-right: 1.2vw;
 }
 
 .header__mega-menu-link-wrap {
@@ -677,10 +770,10 @@
   border: 1px solid rgba(51, 197, 243, 0.4);
   box-sizing: border-box;
   border-radius: 8px;
-  padding: $f20;
+  padding: 1vw;
 
   &:first-child {
-    margin-right: $f20;
+    margin-right: $f14;
   }
 
   svg {
@@ -719,7 +812,7 @@
   flex-direction: row-reverse;
   padding-left: $f22;
   padding-right: $f22;
-  margin-right: 3.13vw;
+  margin-right: 5vw;
   justify-content: space-between;
   align-items: center;
   border-radius: 8px;

@@ -23,6 +23,48 @@
   padding-top: $f60;
   padding-bottom: $f50;
 
+
+  @media (min-width: 1600px) {
+    padding-left: $psizeB;
+    padding-right: $psizeB;
+    padding-top: $f50;
+    padding-bottom: $f40;
+
+    .service__container {
+      h1 {
+        font-size: 1.9vw;
+        padding-bottom: 1.2vw;
+      }
+      p {
+        font-size: 1.1vw;
+        padding-bottom: $f36;
+      }
+    }
+
+    .service__item {
+      padding-top: 1.5vw;
+      padding-bottom: 1.5vw;
+
+      .service__item-lin-title {
+        font-size: 1.1vw;
+        margin-left: 1.1vw;
+        margin-right: 1.1vw;
+        margin-bottom: 0.8vw;
+        padding-bottom: 1vw;
+      }
+
+      a {
+        font-size: $f14;
+      }
+    }
+
+    .service__item-wrap {
+      margin-left: 1.1vw;
+      margin-right: 1.1vw;
+      padding-top: 1.1vw;
+    }
+  }
+
   &--commentone {
     background-color: #fff;
   }
@@ -33,7 +75,7 @@
   flex-direction: column;
   padding-left: #f30;
   padding-top: $f30;
-  padding-bottom: $f40;
+  padding-bottom: $f30;
   background: #FFFFFF;
   border: 1px solid rgba(39, 104, 231, 0.2);
   box-sizing: border-box;
@@ -65,9 +107,9 @@
   a {
     font-style: normal;
     font-weight: normal;
-    font-size: $f18;
+    font-size: 1vw;
     line-height: 100%;
-    margin-bottom: $f30;
+    margin-bottom: $f18;
     color: #6A6868;
     display: flex;
     transition: 0.3s ease;

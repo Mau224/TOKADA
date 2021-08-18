@@ -27,36 +27,72 @@ document.addEventListener('DOMContentLoaded', () => {
 
 		if (hours < 10) {
 			hoursVal.textContent = '0' + hours;
-			hoursVal.style.letterSpacing = '7.5vw';
+			hoursVal.style.letterSpacing = '5.8vw';
 		} else if (hours < 20) {
 			hoursVal.textContent = hours;
 			hoursVal.style.letterSpacing = '8.7vw';
 		} else {
 			hoursVal.textContent = hours;
-			hoursVal.style.letterSpacing = '7.5vw';
+			hoursVal.style.letterSpacing = '5.8vw';
 		}
 
 		if (minutes < 10) {
 			minutesVal.textContent = '0' + minutes;
-			minutesVal.style.letterSpacing = '7.8vw';
+			minutesVal.style.letterSpacing = '5.8vw';
 		} else if (minutes < 20) {
 			minutesVal.textContent = minutes;
-			minutesVal.style.letterSpacing = '8.7vw';
+			minutesVal.style.letterSpacing = '6.7vw';
 		} else {
 			minutesVal.textContent = minutes;
-			minutesVal.style.letterSpacing = '7.8vw';
+			minutesVal.style.letterSpacing = '5.8vw';
 		}
 
 		if (seconds < 10) {
 			secondsVal.textContent = '0' + seconds;
-			secondsVal.style.letterSpacing = '7.65vw';
+			secondsVal.style.letterSpacing = '5.75vw';
 		} else if (seconds < 20) {
 			secondsVal.textContent = seconds;
-			secondsVal.style.letterSpacing = '8.7vw';
+			secondsVal.style.letterSpacing = '6.7vw';
 		} else {
 			secondsVal.textContent = seconds;
-			secondsVal.style.letterSpacing = '7.65vw';
+			secondsVal.style.letterSpacing = '5.75vw';
 		}
+
+		if (window.innerWidth > 1600) {
+			if (hours < 10) {
+				hoursVal.textContent = '0' + hours;
+				hoursVal.style.letterSpacing = '5.8vw';
+			} else if (hours < 20) {
+				hoursVal.textContent = hours;
+				hoursVal.style.letterSpacing = '6.7vw';
+			} else {
+				hoursVal.textContent = hours;
+				hoursVal.style.letterSpacing = '5.8vw';
+			}
+
+			if (minutes < 10) {
+				minutesVal.textContent = '0' + minutes;
+				minutesVal.style.letterSpacing = '5.8vw';
+			} else if (minutes < 20) {
+				minutesVal.textContent = minutes;
+				minutesVal.style.letterSpacing = '6.7vw';
+			} else {
+				minutesVal.textContent = minutes;
+				minutesVal.style.letterSpacing = '5.8vw';
+			}
+
+			if (seconds < 10) {
+				secondsVal.textContent = '0' + seconds;
+				secondsVal.style.letterSpacing = '5.7vw';
+			} else if (seconds < 20) {
+				secondsVal.textContent = seconds;
+				secondsVal.style.letterSpacing = '6.1vw';
+			} else {
+				secondsVal.textContent = seconds;
+				secondsVal.style.letterSpacing = '5.7vw';
+			}
+		}
+
 
 		if (window.innerWidth < 870) {
 			if (hours < 10) {

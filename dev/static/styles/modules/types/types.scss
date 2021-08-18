@@ -181,9 +181,10 @@
   position: relative;
 
   &::before {
+    display: none;
     content: "";
     position: absolute;
-    width: 36.7vw;
+    width: 33.7vw;
     height: 28.56vw;
     top: 0;
     left: 0;
@@ -193,17 +194,17 @@
 }
 
 .types__img-window {
-  width: 36.7vw;
-  height: 28.56vw;
+  width: 30.7vw;
+  height: 24.56vw;
   position: relative;
   z-index: 2;
 }
 
 .types__img-elem {
   position: absolute;
-  width: 12.88vw;
-  height: 12.88vw;
-  right: -5vw;
+  width: 10.88vw;
+  height: 10.88vw;
+  right: -2vw;
   top: 17vw;
   z-index: 10;
 }

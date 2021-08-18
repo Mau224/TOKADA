@@ -7,6 +7,45 @@
   padding-top: $f50;
   background-color: var(--grey-bg);
 
+  @media (min-width: 1600px) {
+    padding-left: $psizeB;
+    padding-right: $psizeB;
+
+    padding-top: 2.8vw;
+    padding-bottom: 3vw;
+
+
+    h1 {
+      font-size: 1.9vw;
+      padding-bottom: 1.2vw;
+    }
+
+    p {
+      font-size: 1.1vw;
+      padding-bottom: $f36;
+    }
+
+    .call__form-wrap {
+      input {
+        height: 3.4vw;
+        padding-left: 1.4vw;
+        margin-bottom: 0.8vw;
+
+
+        &::placeholder {
+          font-size: $f14;
+        }
+      }
+    }
+
+    .call__form-footer {
+      p {
+        font-size: 0.75vw;
+      }
+    }
+  }
+
+
   &--commentone {
     background-color: #fff;
   }
@@ -37,6 +76,7 @@
     height: $f60;
     margin-bottom: $f18;
     padding-left: $f28;
+    border-radius: 0.5vw;
 
     &:last-child {
       margin-bottom: $f20;
@@ -125,8 +165,8 @@
 }
 
 .call__img-back {
-  width: 40vw;
-  height: 28.13vw;
+  width: 36vw;
+  height: 24.13vw;
   border-radius: 0.6vw;
 }
 

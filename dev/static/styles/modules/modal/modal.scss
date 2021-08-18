@@ -25,7 +25,7 @@
   width: 100%;
   max-width: 72.69vw;
   position: fixed;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 300; /* Должен быть выше чем у подложки*/
@@ -138,7 +138,7 @@
   img {
     position: relative;
     top: 0.7vw;
-    width: 32vw;
+    width: 35.5vw;
     padding-left: 0.4vw;
     height: 27.5vw;
 
@@ -368,7 +368,7 @@
   position: relative;
 
   img {
-    max-width: 32vw;
+    max-width: 36vw;
     height: 28.1vw;
     border-radius: 0.6vw;
     left: 0.3vw;
@@ -495,7 +495,7 @@
     background-size: cover;
     position: relative;
     z-index: 99;
-    padding: 30px 20px;
+    padding: 20px 20px;
 
     &::before {
       background-size: cover;
@@ -542,7 +542,7 @@
       font-size: 26px;
       line-height: 100%;
       text-align: center;
-      padding-top: 40px;
+      padding-top: 30px;
     }
 
     p {
@@ -550,7 +550,7 @@
       font-weight: normal;
       font-size: 16px;
       line-height: 130%;
-      padding-bottom: 30px;
+      padding-bottom: 10px;
     }
 
     #name-modal {
@@ -716,7 +716,7 @@
 
   .modal-call__img img {
     max-width: 100%;
-    min-height: 186px;
+    min-height: 176px;
     border-radius: 8px;
   }
 

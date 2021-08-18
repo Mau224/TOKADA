@@ -192,6 +192,14 @@ p {
   }
 }
 
+.sub-btn {
+  @media (min-width: 1600px) {
+    padding: 1.2vw 3.1vw!important;
+
+    font-size: 1vw!important;
+  }
+}
+
 .js-open-modal {
   background-color: #33C5F3;
   background: -webkit-gradient(linear, left top, right top, from(#88E2FF), color-stop(#A88AFF), color-stop(#88E2FF), to(#A88AFF));
@@ -206,6 +214,11 @@ p {
   -o-transition: background-color 1s ease;
   transition: background-color 1s ease;
   cursor: pointer;
+
+
+  @media (min-width: 1600px) {
+    padding: 1.2vw 2.2vw!important;
+  }
 }
 
 //блок для скидки 30%
@@ -218,6 +231,20 @@ p {
   h1 {
     padding-bottom: 0!important;//для редизайна когда убрали текст
     max-width: 31vw;
+  }
+
+  @media (min-width: 1600px) {
+    padding-bottom: 2.5vw;
+
+    h1 {
+      font-size: 1.9vw;
+      padding-bottom: 1.2vw;
+    }
+
+    p {
+      font-size: 1.1vw;
+      padding-bottom: 2.25vw;
+    }
   }
 
   @media (max-width: $mobile-width) {
@@ -253,6 +280,11 @@ p {
 section {
   margin-left: $psize;
   margin-right: $psize;
+
+  @media (min-width: 1600px) {
+    margin-left: $psizeB;
+    margin-right: $psizeB;
+  }
 
   @media (max-width: $mobile-width) {
     margin-left: 20px;

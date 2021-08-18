@@ -20,7 +20,7 @@
 }
 
 .types-profile__item {
-  padding: $f60 $f40;
+  padding: 3vw 2vw;
   background-color: var(--grey-bg);
   border-radius: 8px;
   width: 50%;
@@ -35,7 +35,7 @@
     font-weight: normal;
     font-size: $f36;
     line-height: 100%;
-    padding-bottom: $f46;
+    padding-bottom: 1vw;
   }
 
   p {
@@ -43,7 +43,7 @@
     font-weight: normal;
     font-size: $f20;
     line-height: 120%;
-    padding-bottom: $f60;
+    padding-bottom: $f30;
     max-width: 32vw;
   }
 
@@ -62,7 +62,22 @@
     width: 100%;
     height: 22.25vw;
     object-fit: cover;
-    margin-bottom: $f40;
+
+    margin-bottom: 1.4vw;
+
+  }
+
+  @media (min-width: 1600px) {
+    h2 {
+      font-size: 1.9vw;
+      padding-bottom: 1.2vw;
+    }
+
+    p {
+      font-size: 1.1vw;
+      padding-bottom: 2.25vw;
+      max-width: 29vw;
+    }
   }
 }
 
@@ -77,10 +92,12 @@
   align-items: center;
   height: 4.68vw;
   position: relative;
+  width: 50%;
 
   svg {
     width: $f30;
     height: $f30;
+    min-width: $f30;
     fill:#33C5F3;
     z-index: 2;
     position: relative;
@@ -90,10 +107,10 @@
     padding-bottom: 0;
     font-style: normal;
     font-weight: normal;
-    font-size: $f20;
+    font-size: 1.1vw;
     line-height: 120%;
     position: relative;
-    padding-left: $f30;
+    padding-left: 1vw;
     max-width: 13vw;
     color: #000;
   }
@@ -101,6 +118,16 @@
   &--second {
     svg {
       fill: #C7B8F5;
+    }
+  }
+
+  @media (min-width: 1600px) {
+
+    padding: 2.3vw 2vw;
+
+    svg {
+      width: 1.5vw;
+      height: 1.5vw;
     }
   }
 }
@@ -111,6 +138,7 @@
   border-radius: 50%;
   width: 4.68vw;
   height: 4.68vw;
+  min-width: 4.68vw;
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
@@ -119,6 +147,12 @@
 
   &--second {
     border: 1px solid #C7B8F5;
+  }
+
+  @media (min-width: 1600px) {
+    width: 4vw;
+    height: 4vw;
+    min-width: 4vw;
   }
 }
 
@@ -143,7 +177,8 @@
   border-radius: 8px;
   padding: 1.375vw 2.5vw;
   position: absolute;
-  top: 2vw;
+  top: 1vw;
+
   min-width: 15.5vw;
   display: flex;
   justify-content: center;
@@ -187,6 +222,13 @@
   h1 {
     padding-bottom: 0;
   }
+
+  @media (min-width: 1600px) {
+    padding-bottom: 2.5vw;
+    h1 {
+      font-size: 1.9vw;
+    }
+  }
 }
 
 //корректировка стилей для ingroup
@@ -196,6 +238,11 @@
   padding-left: $psize;
   padding-right: $psize;
   //background-color: var(--grey-bg);
+
+  @media (min-width: 1600px) {
+    padding-left: 12.5vw;
+    padding-right: 12.5vw;
+  }
 }
 
 @media (max-width: $mobile-width) {
@@ -329,7 +376,7 @@
   p {
     font-style: normal;
     font-weight: normal;
-    font-size: $f20;
+    font-size: $f18;
     line-height: 120%;
     padding-bottom: $f20;
     color: #000000;
@@ -339,6 +386,10 @@
     max-width: 8.12vw;
     height: 13.55vw;
     margin-right: $f55;
+
+    @media (min-width: 1600px) {
+      height: 11vw;
+    }
   }
 
   .types-profile__title {
